@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#020617"/>
+  <circle cx="938" cy="115" r="216" fill="url(#paint0_radial_1_5)" fill-opacity="0.35"/>
+  <circle cx="251" cy="579" r="272" fill="url(#paint1_radial_1_5)" fill-opacity="0.32"/>
+  <rect x="72" y="86" width="1056" height="458" rx="36" fill="#0F172A" stroke="#1E293B"/>
+  <text x="116" y="208" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600">GarIQ</text>
+  <text x="116" y="292" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">Deine digitale Garage.</text>
+  <text x="116" y="356" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">Alle Fahrzeuge. Alle Dokumente.</text>
+  <text x="116" y="420" fill="#A5B4FC" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">Ein Ort.</text>
+  <rect x="116" y="466" width="330" height="20" rx="10" fill="#334155"/>
+  <rect x="734" y="166" width="296" height="226" rx="26" fill="#111827"/>
+  <rect x="766" y="202" width="164" height="18" rx="9" fill="#F8FAFC"/>
+  <rect x="766" y="236" width="120" height="10" rx="5" fill="#334155"/>
+  <path d="M790 345C822.667 297 859.067 261.8 903.4 261.8C947.733 261.8 972.733 314.467 1002 335.2" stroke="#6366F1" stroke-width="14" stroke-linecap="round"/>
+  <rect x="734" y="414" width="296" height="82" rx="24" fill="#111827"/>
+  <rect x="766" y="440" width="182" height="14" rx="7" fill="#F8FAFC"/>
+  <rect x="766" y="466" width="122" height="10" rx="5" fill="#334155"/>
+  <defs>
+    <radialGradient id="paint0_radial_1_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(938 115) rotate(90) scale(216)">
+      <stop stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial_1_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(251 579) rotate(90) scale(272)">
+      <stop stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

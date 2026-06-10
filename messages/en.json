@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "title": "GarIQ — Your vehicle logbook",
+    "description": "Track fuel, maintenance, insurance, and documents for every vehicle. Log with a photo, PDF, chat, or form — AI proposes, you confirm. Timeline, stats, and Ask over your own data.",
+    "keywords": "vehicle logbook,car maintenance,fuel tracker,OCR receipt,vehicle documents,AI garage"
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "brandTagline": "Vehicle logbook",
+    "localeLabel": "Language"
+  },
+  "header": {
+    "homeAria": "GarIQ home",
+    "navFeatures": "Features",
+    "navAi": "AI",
+    "navScenarios": "Examples",
+    "navPlans": "Plans",
+    "navDownload": "Download",
+    "navFaq": "FAQ",
+    "toggleThemeAria": "Toggle dark mode",
+    "openMenuAria": "Open menu",
+    "themeButton": "Theme",
+    "ctaDownload": "Get the app"
+  },
+  "hero": {
+    "badge": "Vehicle logbook with AI you control",
+    "title": "Your vehicles. One logbook. Every receipt and record in your pocket.",
+    "subtitle": "GarIQ helps you log fuel, maintenance, insurance, taxes, inspections, and expenses — then explore everything on a timeline and in statistics. AI reads receipts and chats with you, but nothing saves until you confirm.",
+    "ctaPrimary": "Download GarIQ",
+    "ctaSecondary": "See how it works",
+    "stat1Title": "Log your way",
+    "stat1Copy": "Form, photo, PDF, or chat — same review step every time.",
+    "stat2Title": "Ask your data",
+    "stat2Copy": "Natural-language answers from your events and uploaded manuals.",
+    "stat3Title": "Your garages",
+    "stat3Copy": "Separate spaces for daily driver, family, or hobby vehicles.",
+    "imageAlt": "GarIQ app showing home, vehicles, timeline, and insert flow"
+  },
+  "vehicleTypes": {
+    "items": ["Cars", "Motorcycles", "Vans & campers", "EV charging", "Classic & weekend", "Family fleet"]
+  },
+  "problem": {
+    "label": "The problem",
+    "title": "Vehicle history falls apart when records live in five different places.",
+    "copy": "Receipts in your wallet, insurance PDFs in email, odometer notes in messages — you lose time, money, and peace of mind when something is due or you need a number for taxes.",
+    "cards": [
+      {
+        "title": "Scattered receipts",
+        "copy": "Fuel and maintenance slips disappear before you log them."
+      },
+      {
+        "title": "Hard-to-find documents",
+        "copy": "Policies and manuals are buried in folders with useless file names."
+      },
+      {
+        "title": "Guesswork on spend",
+        "copy": "“How much did I spend last year?” should not require a spreadsheet marathon."
+      },
+      {
+        "title": "Shared vehicles, no shared log",
+        "copy": "Partners and family members lack one trusted history for the same car."
+      }
+    ]
+  },
+  "solution": {
+    "label": "The solution",
+    "title": "One logbook per vehicle — structured, searchable, and yours.",
+    "copy": "GarIQ keeps events, attachments, and document vault files under your account. Invite co-owners when you need help logging — without turning your garage into enterprise software.",
+    "cards": [
+      {
+        "kicker": "Structure",
+        "title": "Garages that match real life",
+        "copy": "Daily commuter, weekend bike, or household cars — switch active garage on Home."
+      },
+      {
+        "kicker": "Control",
+        "title": "You confirm every save",
+        "copy": "AI drafts from OCR or chat; you review the form, then tap Save. No autosave."
+      },
+      {
+        "kicker": "Clarity",
+        "title": "Timeline & statistics",
+        "copy": "Year-grouped history and spend breakdowns for the vehicles you care about."
+      },
+      {
+        "kicker": "Documents",
+        "title": "Vault + Ask",
+        "copy": "Store manuals and policies; ask questions and get answers grounded in your files."
+      }
+    ]
+  },
+  "features": {
+    "label": "Features",
+    "title": "Built for drivers who want accuracy without paperwork pain.",
+    "items": [
+      {
+        "title": "Event logging",
+        "copy": "Refuel, charge, maintenance, repair, insurance, tax, inspection, expense, and notes."
+      },
+      {
+        "title": "Insert capture sheet",
+        "copy": "Pick event type, then form, photo, PDF, or conversational chat to collect fields."
+      },
+      {
+        "title": "OCR from photos & PDFs",
+        "copy": "Turn a station receipt or invoice into an editable draft in seconds."
+      },
+      {
+        "title": "Ask AI",
+        "copy": "Questions about spend, history, and uploaded documents — answered from your data."
+      },
+      {
+        "title": "Document vault",
+        "copy": "Owner manuals and insurance PDFs with semantic search and registration prefill."
+      },
+      {
+        "title": "Multi-garage",
+        "copy": "Invite co-owners, admins, or loggers with roles — great for families."
+      },
+      {
+        "title": "Deadlines in the app",
+        "copy": "Insurance expiry on the vehicle profile and dates on the timeline — no push alerts in v1."
+      },
+      {
+        "title": "Privacy by design",
+        "copy": "Row-level security: you only see garages and vehicles you belong to."
+      }
+    ]
+  },
+  "howItWorks": {
+    "label": "How it works",
+    "title": "From sign-up to insight in five straightforward steps.",
+    "steps": [
+      {
+        "title": "Create your account",
+        "copy": "Sign up, confirm your email, and sign in on your phone."
+      },
+      {
+        "title": "Add a vehicle",
+        "copy": "Make, model, fuel type, and optional photo — your garage starts here."
+      },
+      {
+        "title": "Log an event",
+        "copy": "Use a form or let AI read a receipt — always review before saving."
+      },
+      {
+        "title": "Upload documents & Ask",
+        "copy": "Store manuals or policies, then chat with your library when you need facts."
+      },
+      {
+        "title": "Explore timeline & stats",
+        "copy": "Filter by year and vehicle to see spend and history at a glance."
+      }
+    ]
+  },
+  "ai": {
+    "label": "AI layer",
+    "title": "AI that speeds up logging — without taking the wheel.",
+    "copy": "GarIQ uses vision OCR, conversational collection, and tool-based Ask. Every AI path ends on a draft you can edit; confirmed events power statistics and answers.",
+    "cards": [
+      {
+        "title": "Receipt & PDF OCR",
+        "copy": "Extract amounts, dates, and fuel details from images and documents."
+      },
+      {
+        "title": "Chat collect",
+        "copy": "Describe maintenance or expenses in plain language; fill the draft when ready."
+      },
+      {
+        "title": "Ask over events",
+        "copy": "Aggregates and lookups on your logged history — not generic car advice."
+      },
+      {
+        "title": "Document search",
+        "copy": "Find passages in your uploaded manuals and policies with citations."
+      }
+    ]
+  },
+  "useCases": {
+    "label": "Who it's for",
+    "title": "One app, many garages — starting with real drivers.",
+    "items": [
+      {
+        "title": "Daily commuters",
+        "copy": "Log fuel and tolls quickly; know monthly spend without opening Excel."
+      },
+      {
+        "title": "Families",
+        "copy": "Share a garage, split logging duties, keep one timeline for the household car."
+      },
+      {
+        "title": "Enthusiasts",
+        "copy": "Track maintenance on a classic or weekend vehicle in its own garage."
+      },
+      {
+        "title": "EV drivers",
+        "copy": "Record charging sessions alongside traditional fuel events."
+      },
+      {
+        "title": "Document keepers",
+        "copy": "Insurance PDFs and manuals searchable when you need a detail on the road."
+      }
+    ]
+  },
+  "scenarios": {
+    "label": "See it in action",
+    "title": "Real workflows GarIQ is built for — not fictional reviews.",
+    "items": [
+      {
+        "title": "Fuel receipt photo",
+        "copy": "Snap the station receipt → OCR draft → adjust liters and price → Save → shows on Timeline and Stats."
+      },
+      {
+        "title": "Ask your spend",
+        "copy": "“How much did I spend on refueling in 2025?” — answered from your logged events."
+      },
+      {
+        "title": "Owner manual PDF",
+        "copy": "Upload to the document vault → Ask “What’s the recommended tire pressure?” — answer cites your file."
+      },
+      {
+        "title": "Maintenance via chat",
+        "copy": "Choose Maintenance → Chat → describe the work → review draft → confirm."
+      },
+      {
+        "title": "Two garages",
+        "copy": "“Daily driver” vs “Weekend motorcycle” — switch active garage on Home."
+      },
+      {
+        "title": "Insurance on file",
+        "copy": "Upload policy → confirm expiry on the vehicle profile — visible in the app (no push in v1)."
+      }
+    ]
+  },
+  "plans": {
+    "label": "Plans & AI",
+    "title": "Free to start. AI included on your plan.",
+    "copy": "GarIQ does not sell subscriptions on this website. Create an account in the app; plan tiers and server-side AI are managed in Settings. Enterprise workspaces can bring their own API keys.",
+    "cta": "Download GarIQ",
+    "points": [
+      "Download the app and log events with forms at no cost.",
+      "Photo, PDF, chat, and Ask use AI features according to your account plan.",
+      "No in-app purchase checkout on the stores in v1 — see in-app Settings for your entitlements.",
+      "You always review and confirm before any event is saved."
+    ]
+  },
+  "download": {
+    "label": "Download",
+    "title": "Get GarIQ on your phone",
+    "copy": "Available on Android and iOS. Install, sign in, and add your first vehicle in minutes.",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "comingSoon": "Coming soon",
+    "comingSoonHint": "Store links will appear here as soon as GarIQ is published."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions before you install.",
+    "items": [
+      {
+        "q": "What can I track?",
+        "a": "Fuel, charging, maintenance, repairs, insurance, taxes, inspections, general expenses, and diary notes — all tied to a vehicle."
+      },
+      {
+        "q": "Does AI save automatically?",
+        "a": "No. AI proposes a draft from OCR or chat; you edit and confirm on the draft screen before anything is stored."
+      },
+      {
+        "q": "Can I use multiple garages?",
+        "a": "Yes. Create separate garages and invite others with co-owner, admin, or logger roles."
+      },
+      {
+        "q": "What about documents?",
+        "a": "Upload owner manuals, policies, and related PDFs to the vehicle document vault; Ask can search them with citations."
+      },
+      {
+        "q": "Will I get push reminders for deadlines?",
+        "a": "Not in v1. Insurance expiry and note follow-up dates are visible in the app — there are no push notifications yet."
+      },
+      {
+        "q": "What language is the app?",
+        "a": "The mobile app UI is English in v1. This marketing site is available in English, German, and Italian."
+      },
+      {
+        "q": "Is my data private?",
+        "a": "GarIQ uses Supabase with row-level security so you only access garages and vehicles you belong to."
+      },
+      {
+        "q": "How do plans and AI billing work?",
+        "a": "Plans are managed in the app. Most tiers include server-side AI; enterprise can use bring-your-own-key — details appear in Settings, not on this page."
+      }
+    ]
+  },
+  "finalCta": {
+    "badge": "Ready when you are",
+    "title": "Stop losing receipts. Start a logbook you'll actually trust.",
+    "copy": "Download GarIQ, add your vehicle, and log your next tank of fuel or service visit — with AI help and human confirmation.",
+    "ctaPrimary": "Download GarIQ",
+    "ctaSecondary": "View plans & AI"
+  },
+  "footer": {
+    "copyright": "© {year} GarIQ. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact"
+  },
+  "welcome": {
+    "title": "Email confirmed",
+    "copy": "Your GarIQ account is verified. Open the app on your phone and sign in with the same email and password.",
+    "hint": "You can close this page.",
+    "cta": "Back to GarIQ home"
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "title": "GarIQ — Dein Fahrtenbuch",
+    "description": "Tanken, Wartung, Versicherung und Dokumente für jedes Fahrzeug. Per Foto, PDF, Chat oder Formular erfassen — KI schlägt vor, du bestätigst. Timeline, Statistik und Ask über deine Daten.",
+    "keywords": "Fahrtenbuch,Autopflege,Spritkosten,Beleg OCR,Fahrzeugdokumente,KI Garage"
+  },
+  "common": {
+    "skipToContent": "Zum Inhalt springen",
+    "brandTagline": "Fahrtenbuch",
+    "localeLabel": "Sprache"
+  },
+  "header": {
+    "homeAria": "GarIQ Startseite",
+    "navFeatures": "Funktionen",
+    "navAi": "KI",
+    "navScenarios": "Beispiele",
+    "navPlans": "Tarife",
+    "navDownload": "Download",
+    "navFaq": "FAQ",
+    "toggleThemeAria": "Dunkelmodus ein- oder ausschalten",
+    "openMenuAria": "Menü öffnen",
+    "themeButton": "Design",
+    "ctaDownload": "App holen"
+  },
+  "hero": {
+    "badge": "Fahrtenbuch mit KI unter deiner Kontrolle",
+    "title": "Deine Fahrzeuge. Ein Logbuch. Jeder Beleg in der Tasche.",
+    "subtitle": "GarIQ hilft dir, Tanken, Wartung, Versicherung, Steuern, Prüfungen und Ausgaben zu erfassen — und alles in Timeline und Statistik zu sehen. KI liest Belege und chattet mit dir, aber nichts wird gespeichert, bis du bestätigst.",
+    "ctaPrimary": "GarIQ laden",
+    "ctaSecondary": "So funktioniert's",
+    "stat1Title": "Dein Weg",
+    "stat1Copy": "Formular, Foto, PDF oder Chat — immer mit Prüfschritt.",
+    "stat2Title": "Frag deine Daten",
+    "stat2Copy": "Antworten in natürlicher Sprache aus Events und Handbüchern.",
+    "stat3Title": "Deine Garagen",
+    "stat3Copy": "Getrennte Bereiche für Alltagsauto, Familie oder Hobbyfahrzeuge.",
+    "imageAlt": "GarIQ-App mit Home, Fahrzeugen, Timeline und Erfassungsflow"
+  },
+  "vehicleTypes": {
+    "items": ["Autos", "Motorräder", "Transporter & Wohnmobile", "E-Laden", "Klassiker & Wochenende", "Familienflotte"]
+  },
+  "problem": {
+    "label": "Das Problem",
+    "title": "Die Fahrzeughistorie zerfasert, wenn Belege überall liegen.",
+    "copy": "Quittungen in der Tasche, Versicherungs-PDFs in der Mail, Kilometerstände in Chats — Zeit, Geld und Ruhe gehen verloren, wenn Fristen anstehen oder du Zahlen für Steuern brauchst.",
+    "cards": [
+      {
+        "title": "Verstreute Belege",
+        "copy": "Tank- und Werkstattbelege verschwinden, bevor du sie erfasst."
+      },
+      {
+        "title": "Dokumente versteckt",
+        "copy": "Policen und Handbücher liegen in Ordnern mit sinnlosen Dateinamen."
+      },
+      {
+        "title": "Ausgaben raten",
+        "copy": "„Wie viel habe ich letztes Jahr ausgegeben?“ soll kein Excel-Marathon sein."
+      },
+      {
+        "title": "Gemeinsames Auto, kein Log",
+        "copy": "Partner und Familie teilen sich kein verlässliches Fahrtenbuch."
+      }
+    ]
+  },
+  "solution": {
+    "label": "Die Lösung",
+    "title": "Ein Logbuch pro Fahrzeug — strukturiert, durchsuchbar, deins.",
+    "copy": "GarIQ bündelt Events, Anhänge und Dokumente unter deinem Konto. Lade Mitbesitzer ein, wenn ihr gemeinsam loggt — ohne Enterprise-Software.",
+    "cards": [
+      {
+        "kicker": "Struktur",
+        "title": "Garagen wie im echten Leben",
+        "copy": "Pendlerauto, Wochenendbike oder Haushaltsautos — aktive Garage auf Home wechseln."
+      },
+      {
+        "kicker": "Kontrolle",
+        "title": "Du bestätigst jeden Save",
+        "copy": "KI-Entwurf aus OCR oder Chat; du prüfst das Formular, dann Speichern. Kein Autosave."
+      },
+      {
+        "kicker": "Überblick",
+        "title": "Timeline & Statistik",
+        "copy": "Nach Jahren gruppierte Historie und Ausgaben für deine Fahrzeuge."
+      },
+      {
+        "kicker": "Dokumente",
+        "title": "Tresor + Ask",
+        "copy": "Handbücher und Policen speichern; Fragen mit Antworten aus deinen Dateien."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funktionen",
+    "title": "Für Fahrer, die Genauigkeit wollen — ohne Papierkram.",
+    "items": [
+      {
+        "title": "Events erfassen",
+        "copy": "Tanken, Laden, Wartung, Reparatur, Versicherung, Steuer, Prüfung, Ausgaben, Notizen."
+      },
+      {
+        "title": "Erfassungs-Sheet",
+        "copy": "Event-Typ wählen, dann Formular, Foto, PDF oder Chat zur Felderfüllung."
+      },
+      {
+        "title": "OCR aus Foto & PDF",
+        "copy": "Tankbeleg oder Rechnung in Sekunden als bearbeitbarer Entwurf."
+      },
+      {
+        "title": "Ask AI",
+        "copy": "Fragen zu Ausgaben, Historie und hochgeladenen Dokumenten — aus deinen Daten."
+      },
+      {
+        "title": "Dokumententresor",
+        "copy": "Handbücher und Policen mit semantischer Suche und Zulassungs-Scan."
+      },
+      {
+        "title": "Mehrere Garagen",
+        "copy": "Co-Owner, Admins oder Logger einladen — ideal für Familien."
+      },
+      {
+        "title": "Fristen in der App",
+        "copy": "Versicherungsende am Fahrzeug und Daten in der Timeline — keine Pushs in v1."
+      },
+      {
+        "title": "Datenschutz",
+        "copy": "Row-Level Security: du siehst nur Garagen und Fahrzeuge, denen du angehörst."
+      }
+    ]
+  },
+  "howItWorks": {
+    "label": "So funktioniert es",
+    "title": "Von der Anmeldung zum Überblick in fünf Schritten.",
+    "steps": [
+      {
+        "title": "Konto anlegen",
+        "copy": "Registrieren, E-Mail bestätigen, in der App anmelden."
+      },
+      {
+        "title": "Fahrzeug hinzufügen",
+        "copy": "Marke, Modell, Kraftstoff, optional Foto — deine Garage beginnt hier."
+      },
+      {
+        "title": "Event loggen",
+        "copy": "Formular oder KI-Beleglesung — immer prüfen vor dem Speichern."
+      },
+      {
+        "title": "Dokumente & Ask",
+        "copy": "Handbücher oder Policen hochladen und bei Bedarf im Chat nachfragen."
+      },
+      {
+        "title": "Timeline & Stats",
+        "copy": "Nach Jahr und Fahrzeug filtern und Ausgaben auf einen Blick sehen."
+      }
+    ]
+  },
+  "ai": {
+    "label": "KI-Ebene",
+    "title": "KI, die das Erfassen beschleunigt — ohne das Steuer abzugeben.",
+    "copy": "Vision-OCR, Chat-Sammlung und toolbasiertes Ask. Jeder KI-Pfad endet in einem bearbeitbaren Entwurf; bestätigte Events speisen Statistik und Antworten.",
+    "cards": [
+      {
+        "title": "Beleg- & PDF-OCR",
+        "copy": "Beträge, Daten und Tankdetails aus Bildern und Dokumenten."
+      },
+      {
+        "title": "Chat collect",
+        "copy": "Wartung oder Kosten in Alltagssprache beschreiben; Entwurf wenn fertig."
+      },
+      {
+        "title": "Ask über Events",
+        "copy": "Aggregationen und Abfragen auf deiner Historie — kein generischer Autorat."
+      },
+      {
+        "title": "Dokumentensuche",
+        "copy": "Passagen in Handbüchern und Policen mit Zitaten finden."
+      }
+    ]
+  },
+  "useCases": {
+    "label": "Für wen",
+    "title": "Eine App, viele Garagen — für echte Fahrer.",
+    "items": [
+      {
+        "title": "Pendler",
+        "copy": "Tanken und Maut schnell loggen; Monatsausgaben ohne Excel."
+      },
+      {
+        "title": "Familien",
+        "copy": "Garage teilen, Logging aufteilen, eine Timeline fürs Haushaltsauto."
+      },
+      {
+        "title": "Enthusiasten",
+        "copy": "Wartung am Klassiker oder Wochenendfahrzeug in eigener Garage."
+      },
+      {
+        "title": "E-Auto-Fahrer",
+        "copy": "Ladesessions neben klassischen Tank-Events erfassen."
+      },
+      {
+        "title": "Dokumenten-Sammler",
+        "copy": "Policen und Handbücher durchsuchbar unterwegs."
+      }
+    ]
+  },
+  "scenarios": {
+    "label": "In der Praxis",
+    "title": "Echte Workflows — keine erfundenen Bewertungen.",
+    "items": [
+      {
+        "title": "Tankbeleg-Foto",
+        "copy": "Foto → OCR-Entwurf → Liter und Preis anpassen → Speichern → Timeline und Stats."
+      },
+      {
+        "title": "Ausgaben fragen",
+        "copy": "„Wie viel Tanken in 2025?“ — Antwort aus deinen Events."
+      },
+      {
+        "title": "Handbuch-PDF",
+        "copy": "In den Tresor → Ask „Empfohlener Reifendruck?“ — Zitat aus deiner Datei."
+      },
+      {
+        "title": "Wartung per Chat",
+        "copy": "Wartung wählen → Chat → Arbeit beschreiben → Entwurf prüfen → bestätigen."
+      },
+      {
+        "title": "Zwei Garagen",
+        "copy": "„Alltagsauto“ vs „Wochenendmotorrad“ — aktive Garage auf Home wechseln."
+      },
+      {
+        "title": "Versicherung abgelegt",
+        "copy": "Police hochladen → Ablauf am Fahrzeug — sichtbar in der App (kein Push in v1)."
+      }
+    ]
+  },
+  "plans": {
+    "label": "Tarife & KI",
+    "title": "Kostenlos starten. KI im Tarif enthalten.",
+    "copy": "GarIQ verkauft hier keine Abos. Konto in der App anlegen; Tarife und serverseitige KI in den Einstellungen. Enterprise kann eigene API-Schlüssel nutzen.",
+    "cta": "GarIQ laden",
+    "points": [
+      "App laden und Events per Formular kostenlos loggen.",
+      "Foto, PDF, Chat und Ask je nach Kontotarif mit KI.",
+      "Kein In-App-Kauf über die Stores in v1 — Entitlements in der App.",
+      "Du prüfst und bestätigst immer vor dem Speichern."
+    ]
+  },
+  "download": {
+    "label": "Download",
+    "title": "GarIQ aufs Smartphone",
+    "copy": "Für Android und iOS. Installieren, anmelden, erstes Fahrzeug in Minuten anlegen.",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "comingSoon": "Demnächst",
+    "comingSoonHint": "Store-Links erscheinen hier, sobald GarIQ veröffentlicht ist."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Fragen vor der Installation.",
+    "items": [
+      {
+        "q": "Was kann ich erfassen?",
+        "a": "Tanken, Laden, Wartung, Reparaturen, Versicherung, Steuern, Prüfungen, Ausgaben und Notizen — pro Fahrzeug."
+      },
+      {
+        "q": "Speichert die KI automatisch?",
+        "a": "Nein. KI erstellt einen Entwurf aus OCR oder Chat; du bearbeitest und bestätigst auf dem Entwurfsbildschirm."
+      },
+      {
+        "q": "Mehrere Garagen?",
+        "a": "Ja. Getrennte Garagen und Einladungen mit Co-Owner-, Admin- oder Logger-Rollen."
+      },
+      {
+        "q": "Welche Dokumente?",
+        "a": "Handbücher, Policen und PDFs im Dokumententresor; Ask durchsucht sie mit Zitaten."
+      },
+      {
+        "q": "Push-Erinnerungen für Fristen?",
+        "a": "Nicht in v1. Versicherungsende und Notiz-Follow-ups sind in der App sichtbar — noch keine Push-Benachrichtigungen."
+      },
+      {
+        "q": "Welche Sprache hat die App?",
+        "a": "Die mobile UI ist in v1 auf Englisch. Diese Website gibt es auf Deutsch, Englisch und Italienisch."
+      },
+      {
+        "q": "Sind meine Daten privat?",
+        "a": "Supabase mit Row-Level Security — du siehst nur deine Garagen und Fahrzeuge."
+      },
+      {
+        "q": "Wie funktionieren Tarife und KI?",
+        "a": "Tarife in der App. Die meisten Pläne inkludieren serverseitige KI; Enterprise BYOK — Details in den Einstellungen."
+      }
+    ]
+  },
+  "finalCta": {
+    "badge": "Bereit, wenn du es bist",
+    "title": "Schluss mit verlorenen Belegen. Ein Logbuch, dem du vertraust.",
+    "copy": "GarIQ laden, Fahrzeug anlegen und den nächsten Tank oder die nächste Wartung erfassen — mit KI-Hilfe und menschlicher Bestätigung.",
+    "ctaPrimary": "GarIQ laden",
+    "ctaSecondary": "Tarife & KI"
+  },
+  "footer": {
+    "copyright": "© {year} GarIQ. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt"
+  },
+  "welcome": {
+    "title": "E-Mail bestätigt",
+    "copy": "Dein GarIQ-Konto ist verifiziert. Öffne die App auf dem Handy und melde dich mit derselben E-Mail und dem Passwort an.",
+    "hint": "Du kannst diese Seite schließen.",
+    "cta": "Zur GarIQ-Startseite"
+  }
+}

@@ -1,0 +1,449 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (replaces darkMode: 'class' from the old config) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Design tokens migrated from the inline tailwind.config in index.html */
+@theme {
+  --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
+
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+
+  --color-slateplus: #0b1020;
+
+  --shadow-soft: 0 20px 80px rgba(15, 23, 42, 0.12);
+}
+
+:root {
+  --ring: rgba(99, 102, 241, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 70;
+  width: 100%;
+  height: 2px;
+  pointer-events: none;
+}
+
+.scroll-progress::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: left center;
+  transform: scaleX(var(--scroll-progress, 0));
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.78), rgba(34, 211, 238, 0.68));
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+[data-parallax] {
+  will-change: transform;
+}
+
+.section-label {
+  display: inline-flex;
+  border-radius: 9999px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgb(79 70 229);
+}
+
+.dark .section-label {
+  border-color: rgba(99, 102, 241, 0.2);
+  background: rgba(99, 102, 241, 0.08);
+  color: rgb(199 210 254);
+}
+
+.section-title {
+  margin-top: 1rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.section-copy {
+  margin-top: 1rem;
+  max-width: 40rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgb(71 85 105);
+}
+
+.dark .section-copy {
+  color: rgb(148 163 184);
+}
+
+.problem-card,
+.solution-card,
+.feature-card,
+.step-card,
+.ai-card,
+.use-case-card,
+.testimonial-card,
+.pricing-card,
+.faq-item {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  transition: transform 240ms ease, border-color 240ms ease, box-shadow 240ms ease, background 240ms ease;
+}
+
+.dark .problem-card,
+.dark .solution-card,
+.dark .feature-card,
+.dark .step-card,
+.dark .ai-card,
+.dark .use-case-card,
+.dark .testimonial-card,
+.dark .pricing-card,
+.dark .faq-item {
+  border-color: rgba(51, 65, 85, 0.75);
+  background: rgba(15, 23, 42, 0.78);
+}
+
+.problem-card,
+.solution-card,
+.feature-card,
+.step-card,
+.ai-card,
+.use-case-card {
+  padding: 1.5rem;
+}
+
+.problem-card:hover,
+.solution-card:hover,
+.feature-card:hover,
+.step-card:hover,
+.ai-card:hover,
+.use-case-card:hover,
+.testimonial-card:hover,
+.pricing-card:hover,
+.faq-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.problem-card h3,
+.solution-card h3,
+.feature-card h3,
+.step-card h3,
+.ai-card h3,
+.use-case-card h3,
+.pricing-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.problem-card p,
+.solution-card p,
+.feature-card p,
+.step-card p,
+.ai-card p,
+.use-case-card p,
+.pricing-card p {
+  margin-top: 0.75rem;
+  color: rgb(71 85 105);
+  line-height: 1.7;
+}
+
+.dark .problem-card p,
+.dark .solution-card p,
+.dark .feature-card p,
+.dark .step-card p,
+.dark .ai-card p,
+.dark .use-case-card p,
+.dark .pricing-card p {
+  color: rgb(148 163 184);
+}
+
+.solution-kicker {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(99 102 241);
+}
+
+.step-card span {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  border-radius: 9999px;
+  background: rgba(99, 102, 241, 0.1);
+  padding: 0.45rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgb(79 70 229);
+}
+
+.testimonial-card {
+  padding: 2rem;
+}
+
+.testimonial-card blockquote {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: rgb(15 23 42);
+}
+
+.dark .testimonial-card blockquote {
+  color: rgb(226 232 240);
+}
+
+.testimonial-card figcaption {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: rgb(100 116 139);
+  font-size: 0.95rem;
+}
+
+.dark .testimonial-card figcaption {
+  color: rgb(148 163 184);
+}
+
+.pricing-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.pricing-card-featured {
+  border-color: rgba(99, 102, 241, 0.28);
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.08), rgba(255, 255, 255, 0.9));
+}
+
+.dark .pricing-card-featured {
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.12), rgba(15, 23, 42, 0.86));
+}
+
+.price-tag {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.price-tag span {
+  margin-left: 0.35rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: rgb(100 116 139);
+}
+
+.dark .price-tag span {
+  color: rgb(148 163 184);
+}
+
+.pricing-card ul {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pricing-card li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: rgb(51 65 85);
+}
+
+.dark .pricing-card li {
+  color: rgb(203 213 225);
+}
+
+.pricing-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgb(99 102 241);
+}
+
+.pricing-button {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  padding: 0.9rem 1.25rem;
+  font-weight: 600;
+  color: rgb(15 23 42);
+}
+
+.dark .pricing-button {
+  border-color: rgba(71, 85, 105, 0.7);
+  color: rgb(241 245 249);
+}
+
+.pricing-button-featured {
+  background: rgb(15 23 42);
+  color: white;
+  border-color: transparent;
+}
+
+.dark .pricing-button-featured {
+  background: white;
+  color: rgb(15 23 42);
+}
+
+.faq-item {
+  padding: 1.25rem 1.5rem;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.25rem;
+  color: rgb(99 102 241);
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  color: rgb(71 85 105);
+  line-height: 1.75;
+}
+
+.dark .faq-item p {
+  color: rgb(148 163 184);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+header nav a {
+  position: relative;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 100%;
+  height: 2px;
+  border-radius: 9999px;
+  background: rgba(99, 102, 241, 0.72);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 220ms ease;
+}
+
+header nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.logo-hover {
+  transition: transform 260ms ease, filter 260ms ease;
+}
+
+.logo-hover:hover {
+  transform: rotate(-3deg) scale(1.03);
+  filter: saturate(1.08);
+}
+
+.btn-soft {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.btn-soft:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.14);
+}
+
+.pricing-card-featured {
+  animation: featuredGlow 4.2s ease-in-out infinite;
+}
+
+@keyframes featuredGlow {
+  0%,
+  100% {
+    box-shadow: 0 14px 36px rgba(99, 102, 241, 0.08);
+  }
+  50% {
+    box-shadow: 0 16px 36px rgba(99, 102, 241, 0.12);
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .scroll-progress {
+    display: none;
+  }
+}

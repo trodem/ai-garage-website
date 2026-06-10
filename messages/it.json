@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "title": "GarIQ — Il tuo libretto di bordo",
+    "description": "Carburante, manutenzione, assicurazione e documenti per ogni veicolo. Foto, PDF, chat o modulo — l'IA propone, tu confermi. Timeline, statistiche e Ask sui tuoi dati.",
+    "keywords": "libretto auto,manutenzione auto,spese carburante,OCR scontrino,documenti veicolo,garage digitale"
+  },
+  "common": {
+    "skipToContent": "Vai al contenuto",
+    "brandTagline": "Libretto veicoli",
+    "localeLabel": "Lingua"
+  },
+  "header": {
+    "homeAria": "Home GarIQ",
+    "navFeatures": "Funzioni",
+    "navAi": "IA",
+    "navScenarios": "Esempi",
+    "navPlans": "Piani",
+    "navDownload": "Download",
+    "navFaq": "FAQ",
+    "toggleThemeAria": "Attiva o disattiva tema scuro",
+    "openMenuAria": "Apri menu",
+    "themeButton": "Tema",
+    "ctaDownload": "Scarica l'app"
+  },
+  "hero": {
+    "badge": "Libretto con IA sotto il tuo controllo",
+    "title": "I tuoi veicoli. Un libretto. Ogni ricevuta in tasca.",
+    "subtitle": "GarIQ ti aiuta a registrare rifornimenti, manutenzione, assicurazione, tasse, revisioni e spese — e a rivederli in timeline e statistiche. L'IA legge gli scontrini e chatta con te, ma nulla si salva finché non confermi.",
+    "ctaPrimary": "Scarica GarIQ",
+    "ctaSecondary": "Come funziona",
+    "stat1Title": "A modo tuo",
+    "stat1Copy": "Modulo, foto, PDF o chat — sempre con revisione.",
+    "stat2Title": "Chiedi ai tuoi dati",
+    "stat2Copy": "Risposte in linguaggio naturale da eventi e manuali caricati.",
+    "stat3Title": "I tuoi garage",
+    "stat3Copy": "Spazi separati per auto quotidiana, famiglia o hobby.",
+    "imageAlt": "App GarIQ con home, veicoli, timeline e inserimento eventi"
+  },
+  "vehicleTypes": {
+    "items": ["Auto", "Moto", "Furgoni e camper", "Ricarica EV", "Classiche e weekend", "Flotta familiare"]
+  },
+  "problem": {
+    "label": "Il problema",
+    "title": "La storia del veicolo si disperde quando i documenti sono ovunque.",
+    "copy": "Scontrini in tasca, PDF assicurativi in email, chilometraggi nei messaggi — perdi tempo e tranquillità quando serve una scadenza o un numero per le tasse.",
+    "cards": [
+      {
+        "title": "Ricevute sparse",
+        "copy": "Scontrini di benzina e officina spariscono prima di registrarli."
+      },
+      {
+        "title": "Documenti nascosti",
+        "copy": "Polizze e manuali sepolti in cartelle con nomi inutili."
+      },
+      {
+        "title": "Spese a occhio",
+        "copy": "«Quanto ho speso l'anno scorso?» non dovrebbe richiedere Excel."
+      },
+      {
+        "title": "Auto condivisa, nessun log",
+        "copy": "Partner e famiglia senza una cronologia affidabile dello stesso veicolo."
+      }
+    ]
+  },
+  "solution": {
+    "label": "La soluzione",
+    "title": "Un libretto per veicolo — strutturato, ricercabile, tuo.",
+    "copy": "GarIQ tiene eventi, allegati e documenti sotto il tuo account. Invita co-proprietari quando serve — senza software enterprise.",
+    "cards": [
+      {
+        "kicker": "Struttura",
+        "title": "Garage come nella vita reale",
+        "copy": "Auto pendolare, moto del weekend o auto di famiglia — cambia garage attivo in Home."
+      },
+      {
+        "kicker": "Controllo",
+        "title": "Confermi ogni salvataggio",
+        "copy": "Bozza IA da OCR o chat; controlli il modulo, poi Salva. Niente autosalvataggio."
+      },
+      {
+        "kicker": "Chiarezza",
+        "title": "Timeline e statistiche",
+        "copy": "Cronologia per anno e spese per i veicoli che contano."
+      },
+      {
+        "kicker": "Documenti",
+        "title": "Archivio + Ask",
+        "copy": "Manuali e polizze; domande con risposte dai tuoi file."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funzioni",
+    "title": "Per chi vuole precisione senza cartaio.",
+    "items": [
+      {
+        "title": "Registro eventi",
+        "copy": "Rifornimento, ricarica, manutenzione, riparazione, assicurazione, tasse, revisione, spese, note."
+      },
+      {
+        "title": "Foglio di inserimento",
+        "copy": "Tipo evento, poi modulo, foto, PDF o chat per i campi."
+      },
+      {
+        "title": "OCR da foto e PDF",
+        "copy": "Scontrino o fattura in bozza modificabile in pochi secondi."
+      },
+      {
+        "title": "Ask AI",
+        "copy": "Domande su spese, cronologia e documenti — dai tuoi dati."
+      },
+      {
+        "title": "Archivio documenti",
+        "copy": "Manuali e polizze con ricerca semantica e scansione libretto."
+      },
+      {
+        "title": "Più garage",
+        "copy": "Invita co-proprietari, admin o logger — ideale per famiglie."
+      },
+      {
+        "title": "Scadenze in app",
+        "copy": "Scadenza assicurazione sul veicolo e date in timeline — niente push in v1."
+      },
+      {
+        "title": "Privacy",
+        "copy": "Row-level security: vedi solo garage e veicoli a cui appartieni."
+      }
+    ]
+  },
+  "howItWorks": {
+    "label": "Come funziona",
+    "title": "Dalla registrazione al quadro completo in cinque passi.",
+    "steps": [
+      {
+        "title": "Crea l'account",
+        "copy": "Registrati, conferma l'email e accedi dal telefono."
+      },
+      {
+        "title": "Aggiungi un veicolo",
+        "copy": "Marca, modello, carburante, foto opzionale — il garage inizia qui."
+      },
+      {
+        "title": "Registra un evento",
+        "copy": "Modulo o IA sullo scontrino — sempre revisione prima del salvataggio."
+      },
+      {
+        "title": "Documenti e Ask",
+        "copy": "Carica manuali o polizze e chiedi dettagli quando serve."
+      },
+      {
+        "title": "Timeline e stats",
+        "copy": "Filtra per anno e veicolo per vedere spese e cronologia."
+      }
+    ]
+  },
+  "ai": {
+    "label": "Livello IA",
+    "title": "IA che accelera l'inserimento — senza prendere il volante.",
+    "copy": "OCR visione, raccolta conversazionale e Ask con strumenti. Ogni percorso IA finisce in una bozza modificabile; gli eventi confermati alimentano statistiche e risposte.",
+    "cards": [
+      {
+        "title": "OCR scontrini e PDF",
+        "copy": "Importi, date e dettagli carburante da immagini e documenti."
+      },
+      {
+        "title": "Chat collect",
+        "copy": "Descrivi manutenzione o spese a parole; bozza quando è pronta."
+      },
+      {
+        "title": "Ask sugli eventi",
+        "copy": "Aggregazioni sulla tua cronologia — non consigli generici."
+      },
+      {
+        "title": "Ricerca documenti",
+        "copy": "Passaggi in manuali e polizze con citazioni."
+      }
+    ]
+  },
+  "useCases": {
+    "label": "Per chi è",
+    "title": "Un'app, molti garage — per guidatori reali.",
+    "items": [
+      {
+        "title": "Pendolari",
+        "copy": "Rifornimenti e pedaggi veloci; spese mensili senza Excel."
+      },
+      {
+        "title": "Famiglie",
+        "copy": "Garage condiviso, logging diviso, una timeline per l'auto di casa."
+      },
+      {
+        "title": "Appassionati",
+        "copy": "Manutenzione su classica o veicolo weekend in garage dedicato."
+      },
+      {
+        "title": "Guidatori EV",
+        "copy": "Sessioni di ricarica accanto ai rifornimenti tradizionali."
+      },
+      {
+        "title": "Archivisti",
+        "copy": "Polizze e manuali ricercabili quando serve un dettaglio."
+      }
+    ]
+  },
+  "scenarios": {
+    "label": "Nella pratica",
+    "title": "Flussi reali — non recensioni inventate.",
+    "items": [
+      {
+        "title": "Foto scontrino",
+        "copy": "Scatta → bozza OCR → litri e prezzo → Salva → timeline e statistiche."
+      },
+      {
+        "title": "Chiedi le spese",
+        "copy": "«Quanto rifornimento nel 2025?» — dalla tua cronologia."
+      },
+      {
+        "title": "PDF manuale",
+        "copy": "In archivio → Ask «Pressione gomme consigliata?» — citazione dal tuo file."
+      },
+      {
+        "title": "Manutenzione in chat",
+        "copy": "Manutenzione → chat → descrivi il lavoro → rivedi bozza → conferma."
+      },
+      {
+        "title": "Due garage",
+        "copy": "«Auto tutti i giorni» vs «Moto weekend» — cambia garage in Home."
+      },
+      {
+        "title": "Assicurazione archiviata",
+        "copy": "Carica polizza → scadenza sul veicolo — visibile in app (niente push in v1)."
+      }
+    ]
+  },
+  "plans": {
+    "label": "Piani e IA",
+    "title": "Gratis per iniziare. IA inclusa nel piano.",
+    "copy": "GarIQ non vende abbonamenti su questo sito. Crea l'account nell'app; piani e IA lato server nelle Impostazioni. Enterprise può usare chiavi API proprie.",
+    "cta": "Scarica GarIQ",
+    "points": [
+      "Scarica l'app e registra eventi con i moduli senza costo.",
+      "Foto, PDF, chat e Ask secondo il piano del tuo account.",
+      "Nessun acquisto in-app sugli store in v1 — vedi le Impostazioni.",
+      "Rivedi e confermi sempre prima di salvare un evento."
+    ]
+  },
+  "download": {
+    "label": "Download",
+    "title": "GarIQ sul telefono",
+    "copy": "Su Android e iOS. Installa, accedi e aggiungi il primo veicolo in pochi minuti.",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "comingSoon": "In arrivo",
+    "comingSoonHint": "I link agli store appariranno qui alla pubblicazione di GarIQ."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Domande prima di installare.",
+    "items": [
+      {
+        "q": "Cosa posso registrare?",
+        "a": "Rifornimento, ricarica, manutenzione, riparazioni, assicurazione, tasse, revisioni, spese e note — per veicolo."
+      },
+      {
+        "q": "L'IA salva da sola?",
+        "a": "No. L'IA propone una bozza da OCR o chat; modifichi e confermi nella schermata bozza."
+      },
+      {
+        "q": "Più garage?",
+        "a": "Sì. Garage separati e inviti con ruoli co-proprietario, admin o logger."
+      },
+      {
+        "q": "Quali documenti?",
+        "a": "Manuali, polizze e PDF in archivio; Ask li cerca con citazioni."
+      },
+      {
+        "q": "Promemoria push per scadenze?",
+        "a": "Non in v1. Scadenza assicurazione e date note sono visibili in app — ancora niente notifiche push."
+      },
+      {
+        "q": "In che lingua è l'app?",
+        "a": "L'interfaccia mobile è in inglese in v1. Questo sito è in inglese, tedesco e italiano."
+      },
+      {
+        "q": "I miei dati sono privati?",
+        "a": "Supabase con row-level security — accedi solo ai garage e veicoli tuoi."
+      },
+      {
+        "q": "Come funzionano piani e IA?",
+        "a": "Piani nell'app. La maggior parte include IA server; enterprise BYOK — dettagli nelle Impostazioni."
+      }
+    ]
+  },
+  "finalCta": {
+    "badge": "Quando vuoi tu",
+    "title": "Basta scontrini persi. Un libretto di cui ti fidi.",
+    "copy": "Scarica GarIQ, aggiungi il veicolo e registra il prossimo pieno o tagliando — con aiuto IA e conferma umana.",
+    "ctaPrimary": "Scarica GarIQ",
+    "ctaSecondary": "Piani e IA"
+  },
+  "footer": {
+    "copyright": "© {year} GarIQ. Tutti i diritti riservati.",
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "contact": "Contatto"
+  },
+  "welcome": {
+    "title": "Email confermata",
+    "copy": "Il tuo account GarIQ è verificato. Apri l'app sul telefono e accedi con la stessa email e password.",
+    "hint": "Puoi chiudere questa pagina.",
+    "cta": "Torna alla home GarIQ"
+  }
+}
