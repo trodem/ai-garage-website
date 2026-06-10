@@ -234,14 +234,64 @@
   },
   "plans": {
     "label": "Tarife & KI",
-    "title": "Kostenlos starten. KI im Tarif enthalten.",
-    "copy": "GarIQ verkauft hier keine Abos. Konto in der App anlegen; Tarife und serverseitige KI in den Einstellungen. Enterprise kann eigene API-Schlüssel nutzen.",
+    "title": "Vier Kontotarife. Eine App — wächst mit deiner Garage.",
+    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe, monatliche Server-KI). Tarife werden dem Konto in der App zugewiesen — keine Zahlung auf dieser Seite.",
+    "footnote": "Monatliche KI-Nutzung zählt Completion-Tokens für OCR, Chat-Insert und Ask (nicht Dokument-Embeddings). Du bestätigst jedes Event vor dem Speichern.",
+    "popularBadge": "Am flexibelsten",
     "cta": "GarIQ laden",
-    "points": [
-      "App laden und Events per Formular kostenlos loggen.",
-      "Foto, PDF, Chat und Ask je nach Kontotarif mit KI.",
-      "Kein In-App-Kauf über die Stores in v1 — Entitlements in der App.",
-      "Du prüfst und bestätigst immer vor dem Speichern."
+    "tiers": [
+      {
+        "id": "free",
+        "name": "Free",
+        "description": "Einstieg mit Formularen und kleinem Server-KI-Kontingent.",
+        "featured": false,
+        "highlights": [
+          "1 eigene Garage",
+          "Bis zu 3 Fahrzeuge pro Garage",
+          "Volles Fahrtenbuch & Statistik",
+          "~100K Server-KI-Tokens / Monat",
+          "Keine Garagen-Freigabe"
+        ]
+      },
+      {
+        "id": "basic",
+        "name": "Basic",
+        "description": "Mehr Fahrzeuge und Familie in einer Garage einladen.",
+        "featured": false,
+        "highlights": [
+          "2 eigene Garagen",
+          "Bis zu 10 Fahrzeuge pro Garage",
+          "Freigabe (bis zu 3 Mitglieder)",
+          "~500K Server-KI-Tokens / Monat",
+          "Foto, PDF, Chat-Insert & Ask per Server-KI"
+        ]
+      },
+      {
+        "id": "advanced",
+        "name": "Advanced",
+        "description": "Mehrere Garagen und höheres KI-Kontingent für aktive Nutzer.",
+        "featured": true,
+        "highlights": [
+          "5 eigene Garagen",
+          "Bis zu 30 Fahrzeuge pro Garage",
+          "Freigabe (bis zu 10 Mitglieder)",
+          "~2M Server-KI-Tokens / Monat",
+          "Gleiche KI-Features, höheres Monatslimit"
+        ]
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "description": "Große Garagen und Workspace-LLM mit eigenen API-Schlüsseln (BYOK).",
+        "featured": false,
+        "highlights": [
+          "20 eigene Garagen",
+          "Bis zu 100 Fahrzeuge pro Garage",
+          "Freigabe mit unbegrenzt vielen Mitgliedern",
+          "Unbegrenztes KI-Kontingent (Workspace BYOK)",
+          "Eigene API-Schlüssel fürs Team-LLM"
+        ]
+      }
     ]
   },
   "download": {

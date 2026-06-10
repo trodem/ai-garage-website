@@ -234,14 +234,64 @@
   },
   "plans": {
     "label": "Plans & AI",
-    "title": "Free to start. AI included on your plan.",
-    "copy": "GarIQ does not sell subscriptions on this website. Create an account in the app; plan tiers and server-side AI are managed in Settings. Enterprise workspaces can bring their own API keys.",
+    "title": "Four account tiers. Same app — scales with your garage.",
+    "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly server AI usage). Plans are assigned to your account in the app — this page does not process payments.",
+    "footnote": "Monthly AI usage counts completion tokens for OCR, chat insert, and Ask (not document embeddings). You always confirm before an event is saved.",
+    "popularBadge": "Most flexible",
     "cta": "Download GarIQ",
-    "points": [
-      "Download the app and log events with forms at no cost.",
-      "Photo, PDF, chat, and Ask use AI features according to your account plan.",
-      "No in-app purchase checkout on the stores in v1 — see in-app Settings for your entitlements.",
-      "You always review and confirm before any event is saved."
+    "tiers": [
+      {
+        "id": "free",
+        "name": "Free",
+        "description": "Start logging with forms and a small server AI allowance.",
+        "featured": false,
+        "highlights": [
+          "1 owned garage",
+          "Up to 3 vehicles per garage",
+          "Full event logbook & statistics",
+          "~100K server AI tokens / month",
+          "Garage sharing not included"
+        ]
+      },
+      {
+        "id": "basic",
+        "name": "Basic",
+        "description": "More vehicles and invite family to share one garage.",
+        "featured": false,
+        "highlights": [
+          "2 owned garages",
+          "Up to 10 vehicles per garage",
+          "Garage sharing (up to 3 members)",
+          "~500K server AI tokens / month",
+          "Photo, PDF, chat insert & Ask on server AI"
+        ]
+      },
+      {
+        "id": "advanced",
+        "name": "Advanced",
+        "description": "Multiple garages and higher AI headroom for active loggers.",
+        "featured": true,
+        "highlights": [
+          "5 owned garages",
+          "Up to 30 vehicles per garage",
+          "Garage sharing (up to 10 members)",
+          "~2M server AI tokens / month",
+          "Same AI features, higher monthly cap"
+        ]
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "description": "Large garages and workspace LLM credentials (BYOK).",
+        "featured": false,
+        "highlights": [
+          "20 owned garages",
+          "Up to 100 vehicles per garage",
+          "Sharing with unlimited members",
+          "Unlimited server AI quota (workspace BYOK)",
+          "Bring your own API keys for team LLM"
+        ]
+      }
     ]
   },
   "download": {

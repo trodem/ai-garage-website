@@ -234,14 +234,64 @@
   },
   "plans": {
     "label": "Piani e IA",
-    "title": "Gratis per iniziare. IA inclusa nel piano.",
-    "copy": "GarIQ non vende abbonamenti su questo sito. Crea l'account nell'app; piani e IA lato server nelle Impostazioni. Enterprise può usare chiavi API proprie.",
+    "title": "Quattro piani account. Stessa app — cresce con il tuo garage.",
+    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione, IA server mensile). I piani sono assegnati all'account nell'app — nessun pagamento su questa pagina.",
+    "footnote": "L'uso IA mensile conta i token di completion per OCR, insert chat e Ask (non gli embedding documenti). Confermi sempre prima di salvare un evento.",
+    "popularBadge": "Più flessibile",
     "cta": "Scarica GarIQ",
-    "points": [
-      "Scarica l'app e registra eventi con i moduli senza costo.",
-      "Foto, PDF, chat e Ask secondo il piano del tuo account.",
-      "Nessun acquisto in-app sugli store in v1 — vedi le Impostazioni.",
-      "Rivedi e confermi sempre prima di salvare un evento."
+    "tiers": [
+      {
+        "id": "free",
+        "name": "Free",
+        "description": "Inizia con i moduli e un piccolo contingente IA server.",
+        "featured": false,
+        "highlights": [
+          "1 garage di proprietà",
+          "Fino a 3 veicoli per garage",
+          "Libretto e statistiche completi",
+          "~100K token IA server / mese",
+          "Condivisione garage non inclusa"
+        ]
+      },
+      {
+        "id": "basic",
+        "name": "Basic",
+        "description": "Più veicoli e invita la famiglia in un garage.",
+        "featured": false,
+        "highlights": [
+          "2 garage di proprietà",
+          "Fino a 10 veicoli per garage",
+          "Condivisione (fino a 3 membri)",
+          "~500K token IA server / mese",
+          "Foto, PDF, chat insert e Ask su IA server"
+        ]
+      },
+      {
+        "id": "advanced",
+        "name": "Advanced",
+        "description": "Più garage e più IA per chi registra spesso.",
+        "featured": true,
+        "highlights": [
+          "5 garage di proprietà",
+          "Fino a 30 veicoli per garage",
+          "Condivisione (fino a 10 membri)",
+          "~2M token IA server / mese",
+          "Stesse funzioni IA, tetto mensile più alto"
+        ]
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "description": "Garage grandi e credenziali LLM workspace (BYOK).",
+        "featured": false,
+        "highlights": [
+          "20 garage di proprietà",
+          "Fino a 100 veicoli per garage",
+          "Condivisione con membri illimitati",
+          "Quota IA illimitata (workspace BYOK)",
+          "Chiavi API proprie per LLM di team"
+        ]
+      }
     ]
   },
   "download": {
