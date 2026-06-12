@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import AppPreview from "@/components/AppPreview";
 
 export default async function Hero() {
   const t = await getTranslations("hero");
@@ -51,19 +51,8 @@ export default async function Hero() {
           </dl>
         </div>
 
-        <div className="relative">
-          <div className="absolute -left-8 top-12 h-20 w-20 rounded-full bg-primary-500/15 blur-3xl" />
-          <div className="absolute -right-8 bottom-8 h-20 w-20 rounded-full bg-cyan-400/15 blur-3xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-3 shadow-soft dark:border-slate-800 dark:bg-slate-900">
-            <Image
-              src="/images/app-dashboard.svg"
-              alt={t("imageAlt")}
-              width={1440}
-              height={1080}
-              className="w-full rounded-[1.5rem] border border-slate-200 dark:border-slate-800"
-              priority
-            />
-          </div>
+        <div className="flex items-center justify-center py-8 lg:py-0">
+          <AppPreview />
         </div>
       </div>
     </section>

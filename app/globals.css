@@ -7,11 +7,14 @@
 @theme {
   --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
 
-  --color-primary-50: #eef2ff;
-  --color-primary-100: #e0e7ff;
-  --color-primary-500: #6366f1;
-  --color-primary-600: #4f46e5;
-  --color-primary-700: #4338ca;
+  --color-primary-50: #e8e7fc;
+  --color-primary-100: #c8c7f8;
+  --color-primary-500: #1F1BE8;
+  --color-primary-600: #1916CC;
+  --color-primary-700: #1210A8;
+
+  --color-brand-cyan: #00A7E5;
+  --color-brand-pink: #F2137B;
 
   --color-slateplus: #0b1020;
 
@@ -19,7 +22,7 @@
 }
 
 :root {
-  --ring: rgba(99, 102, 241, 0.22);
+  --ring: rgba(31, 27, 232, 0.22);
 }
 
 * {
@@ -47,8 +50,8 @@ body {
   height: 100%;
   transform-origin: left center;
   transform: scaleX(var(--scroll-progress, 0));
-  background: linear-gradient(90deg, rgba(99, 102, 241, 0.78), rgba(34, 211, 238, 0.68));
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+  background: linear-gradient(90deg, rgba(31, 27, 232, 0.85), rgba(0, 167, 229, 0.75));
+  box-shadow: 0 4px 12px rgba(31, 27, 232, 0.25);
 }
 
 [data-parallax] {
@@ -58,20 +61,20 @@ body {
 .section-label {
   display: inline-flex;
   border-radius: 9999px;
-  border: 1px solid rgba(148, 163, 184, 0.24);
-  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(31, 27, 232, 0.2);
+  background: rgba(31, 27, 232, 0.06);
   padding: 0.4rem 0.8rem;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgb(79 70 229);
+  color: #1916CC;
 }
 
 .dark .section-label {
-  border-color: rgba(99, 102, 241, 0.2);
-  background: rgba(99, 102, 241, 0.08);
-  color: rgb(199 210 254);
+  border-color: rgba(0, 167, 229, 0.25);
+  background: rgba(0, 167, 229, 0.1);
+  color: #00A7E5;
 }
 
 .section-title {
@@ -142,8 +145,8 @@ body {
 .pricing-card:hover,
 .faq-item:hover {
   transform: translateY(-3px);
-  border-color: rgba(99, 102, 241, 0.35);
-  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  border-color: rgba(31, 27, 232, 0.3);
+  box-shadow: 0 20px 60px rgba(31, 27, 232, 0.07);
 }
 
 .problem-card h3,
@@ -187,18 +190,27 @@ body {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgb(99 102 241);
+  color: #1F1BE8;
+}
+
+.dark .solution-kicker {
+  color: #00A7E5;
 }
 
 .step-card span {
   display: inline-flex;
   margin-bottom: 1rem;
   border-radius: 9999px;
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(31, 27, 232, 0.1);
   padding: 0.45rem 0.75rem;
   font-size: 0.85rem;
   font-weight: 700;
-  color: rgb(79 70 229);
+  color: #1916CC;
+}
+
+.dark .step-card span {
+  background: rgba(0, 167, 229, 0.12);
+  color: #00A7E5;
 }
 
 .testimonial-card {
@@ -238,12 +250,12 @@ body {
 }
 
 .pricing-card-featured {
-  border-color: rgba(99, 102, 241, 0.28);
-  background: linear-gradient(180deg, rgba(99, 102, 241, 0.08), rgba(255, 255, 255, 0.9));
+  border-color: rgba(242, 19, 123, 0.3);
+  background: linear-gradient(180deg, rgba(242, 19, 123, 0.06), rgba(255, 255, 255, 0.92));
 }
 
 .dark .pricing-card-featured {
-  background: linear-gradient(180deg, rgba(99, 102, 241, 0.12), rgba(15, 23, 42, 0.86));
+  background: linear-gradient(180deg, rgba(242, 19, 123, 0.1), rgba(15, 23, 42, 0.88));
 }
 
 .price-tag {
@@ -286,7 +298,11 @@ body {
   content: "•";
   position: absolute;
   left: 0;
-  color: rgb(99 102 241);
+  color: #1F1BE8;
+}
+
+.dark .pricing-card li::before {
+  color: #00A7E5;
 }
 
 .pricing-button {
@@ -337,7 +353,11 @@ body {
   right: 0;
   top: 0;
   font-size: 1.25rem;
-  color: rgb(99 102 241);
+  color: #1F1BE8;
+}
+
+.dark .faq-item summary::after {
+  color: #00A7E5;
 }
 
 .faq-item[open] summary::after {
@@ -377,7 +397,7 @@ header nav a::after {
   width: 100%;
   height: 2px;
   border-radius: 9999px;
-  background: rgba(99, 102, 241, 0.72);
+  background: linear-gradient(90deg, #1F1BE8, #00A7E5);
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 220ms ease;
@@ -412,10 +432,10 @@ header nav a:hover::after {
 @keyframes featuredGlow {
   0%,
   100% {
-    box-shadow: 0 14px 36px rgba(99, 102, 241, 0.08);
+    box-shadow: 0 14px 36px rgba(242, 19, 123, 0.1);
   }
   50% {
-    box-shadow: 0 16px 36px rgba(99, 102, 241, 0.12);
+    box-shadow: 0 16px 36px rgba(242, 19, 123, 0.18);
   }
 }
 
