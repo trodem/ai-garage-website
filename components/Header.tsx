@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import LogoIcon from "@/components/LogoIcon";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const NAV_KEYS = [
@@ -38,16 +38,11 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-950/80">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#top" className="flex items-center gap-3" aria-label={t("homeAria")}>
-          <Image
-            src="/images/garageapp-icon.png"
-            alt="GarIQ"
-            width={40}
-            height={40}
-            className="logo-hover h-10 w-10 rounded-2xl object-cover shadow-lg shadow-slate-900/10"
-            priority
-          />
+          <LogoIcon className="logo-hover h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24" />
           <div>
-            <div className="text-sm font-semibold tracking-tight">GarIQ</div>
+            <div className="text-xl font-extrabold tracking-tight">
+              <span className="text-[#1F1BE8] dark:text-[#00A7E5]">Gar</span><span className="text-[#F2137B]">IQ</span>
+            </div>
             <div className="text-xs text-slate-500 dark:text-slate-400">
               {tCommon("brandTagline")}
             </div>

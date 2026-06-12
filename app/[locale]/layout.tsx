@@ -63,7 +63,14 @@ export async function generateMetadata({
         it: `${siteUrl}/it`,
       },
     },
-    icons: { icon: { url: "/images/favicon.svg", type: "image/svg+xml" } },
+    icons: {
+      icon: [
+        { url: "/images/favicon.ico" },
+        { url: "/images/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+        { url: "/images/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+      ],
+      apple: { url: "/images/apple-touch-icon.png" },
+    },
     openGraph: {
       type: "website",
       locale: ogLocale,
