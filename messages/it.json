@@ -355,9 +355,35 @@
     "contact": "Contatto"
   },
   "welcome": {
-    "title": "Email confermata",
-    "copy": "Il tuo account GarIQ è verificato. Apri l'app sul telefono e accedi con la stessa email e password.",
-    "hint": "Puoi chiudere questa pagina.",
-    "cta": "Torna alla home GarIQ"
+    "metaTitle": "Email confermata — GarIQ",
+    "metaDescription": "La registrazione a GarIQ è completata e il tuo indirizzo email è confermato.",
+    "badge": "Email confermata",
+    "title": "Registrazione completata",
+    "lead": "Il tuo account GarIQ è attivo e l'indirizzo email è verificato. Torna all'app sul dispositivo con cui ti sei registrato per accedere.",
+    "stepsTitle": "Prossimi passi nell'app",
+    "step1": "Apri GarIQ sul dispositivo con cui hai completato la registrazione.",
+    "step2": "Accedi con la stessa email e password usate in registrazione.",
+    "step3": "Aggiungi il primo veicolo da Home o Veicoli per usare timeline, statistiche e registrazioni.",
+    "benefitsTitle": "Cosa ti offre GarIQ",
+    "benefit1": "Registra rifornimenti, manutenzione e altro — con modulo, foto, PDF o chat. Controlli e confermi ogni voce.",
+    "benefit2": "Timeline per anno e statistiche di costo sui tuoi veicoli.",
+    "benefit3": "Archivia documenti nel vault e fai domande basate sui tuoi dati.",
+    "footerHint": "Puoi chiudere questa pagina."
+  },
+  "authCallback": {
+    "signup": {
+      "badge": "Email confirmed",
+      "title": "Signup complete",
+      "lead": "Your GarIQ account is active and your email address has been verified. Return to the app on your phone to sign in and get started.",
+      "stepsTitle": "Next in the app",
+      "step1": "Open GarIQ on the device where you signed up.",
+      "step2": "Sign in with the same email and password you used to register.",
+      "step3": "Add your first vehicle from Home or Vehicles to unlock timeline, statistics, and logging.",
+      "benefitsTitle": "What GarIQ gives you",
+      "benefit1": "Log fuel, maintenance, and more — by form, photo, PDF, or chat. You review and confirm every entry.",
+      "benefit2": "Browse a year-grouped timeline and cost statistics for your vehicles.",
+      "benefit3": "Keep documents in your vault and Ask questions based on your own data.",
+      "footerHint": "You can close this page."
+    }
   }
 }

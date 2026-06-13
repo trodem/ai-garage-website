@@ -19,7 +19,7 @@ Separate git repo from the mobile app (`031_ai_garage_app`).
 | `/de` | German |
 | `/it` | Italian |
 
-Signup email confirmation uses `https://gariq.app/auth/callback` (`AUTH_SIGNUP_EMAIL_REDIRECT_TO` in the app; see **ADR-047**). Optional localized copy lives on `/[locale]/welcome` for marketing only, not in the auth redirect allow-list.
+Signup email confirmation uses `https://gariq.app/auth/callback` (`AUTH_SIGNUP_EMAIL_REDIRECT_TO` in the app; see **ADR-047**). **Protected surfaces:** `/auth/callback` (middleware + client gate in `lib/authCallbackAccess.ts`) and `/[locale]/welcome` (middleware redirect to locale home). No buttons/links on callback pages — informational copy only after a valid Supabase redirect.
 
 ## Environment
 
@@ -37,6 +37,8 @@ npm run dev
 
 Open `http://localhost:3000` (middleware redirects to `/en`).
 
+If the welcome or auth pages look **blank** and the browser console shows **404** on `_next/static/chunks/…`, stop the dev server, run `npm run dev:clean` (deletes `.next` then starts dev), and hard-refresh the tab (Ctrl+Shift+R). Do not mix `next start` with an old `.next` folder while developing.
+
 ## Production
 
 ```bash
@@ -49,3 +51,7 @@ Deploy on Vercel; set env vars in the project dashboard.
 ## Content
 
 All marketing strings live in `messages/en.json`, `messages/de.json`, `messages/it.json`. Keep claims aligned with the mobile app (`docs/functional-requirements.md` in the app repo): no push notifications in v1, AI proposes / user confirms, no store subscription checkout on this page.
+
+## UI conventions
+
+See [`docs/coding-rules.md`](./docs/coding-rules.md): **one screen component per route/flow**, shared brand atoms only, **responsive** typography and spacing for phone through desktop (standalone pages like welcome and auth callback).

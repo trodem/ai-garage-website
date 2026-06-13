@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=\"--require ./scripts/patch-readlink.cjs\" next dev",
+    "dev:clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\" && npm run dev",
     "build": "cross-env NODE_OPTIONS=\"--require ./scripts/patch-readlink.cjs\" next build",
     "start": "cross-env NODE_OPTIONS=\"--require ./scripts/patch-readlink.cjs\" next start",
     "lint": "next lint"

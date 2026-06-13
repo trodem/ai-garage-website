@@ -1,0 +1,36 @@
+---
+description: GarIQ website — one screen component per route/flow; responsive typography and layout
+globs: app/**/*.{tsx,ts},components/**/*.{tsx,ts},app/globals.css
+alwaysApply: false
+---
+
+# Page-owned components + responsive UI (GarIQ website)
+
+## One primary screen component per page / flow
+
+- **Do not** grow a single “god” client component that renders every auth outcome and marketing page via a large `switch` + dozens of optional props.
+- **Do** keep route files thin: `page.tsx` loads data/translations and renders **one dedicated screen component** for that URL.
+- **Auth callback:** `AuthCallbackClient` stays a **router only** (reads `type` / error, picks the view). Each outcome gets its own file, e.g. `components/auth-callback/AuthCallbackSignupView.tsx`, `AuthCallbackRecoveryView.tsx`, `AuthCallbackErrorView.tsx`, …
+- **Welcome:** `/[locale]/welcome` is **not public** (404). Post-signup UI is **`/auth/callback` only**, gated by Supabase params.
+- **Shared layer = atoms only:** brand primitives (`GarIqWordmark`, `LogoIcon`), tiny reusable pieces (`StoreDownloadHint`, `OpenAppButton`) with **narrow** APIs. If two screens need the same block and it is **identical** (not “similar”), extract then — not upfront.
+
+## Responsive layout (mandatory)
+
+Post-confirm and standalone pages are opened on **phones, tablets, and desktop** from email links. Every new or redesigned screen must:
+
+1. **Fluid type:** Headlines use `clamp(min, preferred, max)` (see `.section-title` in `app/globals.css`) **or** Tailwind scales with breakpoints, e.g. `text-2xl sm:text-3xl md:text-4xl` — never a single fixed `text-3xl` for primary titles on full-page flows.
+2. **Body copy:** `text-base sm:text-lg` with `leading-relaxed`; max readable width (`max-w-prose` / `max-w-xl`).
+3. **Spacing:** `px-4 py-12 sm:px-6 sm:py-16 md:py-20`; gaps `gap-4 sm:gap-6`; logo `h-20 w-20 sm:h-24 sm:w-24` (adjust per design).
+4. **Touch targets:** Primary CTAs `min-h-11` (44px), full-width on narrow viewports (`w-full sm:w-auto`) where appropriate.
+5. **No horizontal scroll** at 320px width; test mentally for long DE strings.
+6. **Dark mode:** Pair every surface/text class with `dark:` variants when using slate/white cards.
+7. **Post-signup / email confirmed:** UI on **`/auth/callback` only** (gated); **`/[locale]/welcome` → 404**. Signup celebration: informational only — no download/deep-link CTAs.
+
+## Verification before marking UI done
+
+- Resize devtools: **320**, **390**, **768**, **1280** px.
+- `npm run build` passes.
+
+## Reference peers
+
+Landing patterns: `components/Hero.tsx` (breakpoint title scale), `app/globals.css` (`.section-title` clamp).
