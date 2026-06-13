@@ -72,7 +72,7 @@ export default function AuthCallbackClient({ type, tokenHash, error, errorDescri
   return (
     <main className="mx-auto flex min-h-screen max-w-lg flex-col items-center justify-center px-6 py-16 text-center">
       <Image
-        src="/images/garageapp-icon.png"
+        src="/images/logo_gariq.svg"
         alt="GarIQ"
         width={72}
         height={72}
