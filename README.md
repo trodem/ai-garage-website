@@ -58,7 +58,7 @@ Internal API for the mobile app Edge function **`garage-invite-notify`** (**ADR-
 | `GARAGE_INVITE_EMAIL_FROM` | Verified sender (e.g. `GarIQ <notifications@gariq.app>`) |
 | `GARAGE_INVITE_INTERNAL_SECRET` | Bearer token; same value as Supabase Edge secret |
 
-Templates: `emails/GarageInvitationEmail.tsx` (German). Route: `POST /api/internal/send-garage-invitation`.
+Templates: `emails/GarageInvitationEmail.tsx`, `emails/GarageSharingRevokedEmail.tsx` (German). Routes: `POST /api/internal/send-garage-invitation`, `POST /api/internal/send-garage-sharing-revoked`.
 
 Local test (replace secret and recipient):
 
