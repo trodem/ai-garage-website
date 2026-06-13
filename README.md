@@ -19,7 +19,7 @@ Separate git repo from the mobile app (`031_ai_garage_app`).
 | `/de` | German |
 | `/it` | Italian |
 
-Signup email confirmation uses `https://gariq.app/auth/signup-success` when you set `AUTH_SIGNUP_EMAIL_REDIRECT_TO` in the app (see app repo **ADR-047**). The hop redirects to `/[locale]/welcome` from the browser language.
+Signup email confirmation lands on `https://gariq.app/{en|de|it}/welcome` when the app sets `emailRedirectTo` via `getSignupEmailRedirectTo()` (see app repo **ADR-047**).
 
 ## Environment
 
