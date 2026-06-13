@@ -48,6 +48,27 @@ npm run start
 
 Deploy on Vercel; set env vars in the project dashboard.
 
+## Garage invitation email (Resend)
+
+Internal API for the mobile app Edge function **`garage-invite-notify`** (**ADR-057** in the app repo). Not for browser or public clients.
+
+| Variable | Purpose |
+|----------|---------|
+| `RESEND_API_KEY` | Resend dashboard |
+| `GARAGE_INVITE_EMAIL_FROM` | Verified sender (e.g. `GarIQ <notifications@gariq.app>`) |
+| `GARAGE_INVITE_INTERNAL_SECRET` | Bearer token; same value as Supabase Edge secret |
+
+Templates: `emails/GarageInvitationEmail.tsx` (German). Route: `POST /api/internal/send-garage-invitation`.
+
+Local test (replace secret and recipient):
+
+```bash
+curl -s -X POST http://localhost:3000/api/internal/send-garage-invitation \
+  -H "Authorization: Bearer YOUR_GARAGE_INVITE_INTERNAL_SECRET" \
+  -H "Content-Type: application/json" \
+  -d "{\"to\":\"you@example.com\",\"garageName\":\"Test Garage\",\"inviterDisplayName\":\"Alex\",\"roleLabel\":\"Protokollführer\"}"
+```
+
 ## Content
 
 All marketing strings live in `messages/en.json`, `messages/de.json`, `messages/it.json`. Keep claims aligned with the mobile app (`docs/functional-requirements.md` in the app repo): no push notifications in v1, AI proposes / user confirms, no store subscription checkout on this page.
