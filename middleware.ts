@@ -34,8 +34,11 @@ export function shouldMiddlewareRedirectAuthCallback(searchParams: URLSearchPara
 export default function middleware(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl;
 
-  if (pathname === "/auth/callback" && shouldMiddlewareRedirectAuthCallback(searchParams)) {
-    return NextResponse.redirect(new URL("/en", request.url));
+  if (pathname === "/auth/callback") {
+    if (shouldMiddlewareRedirectAuthCallback(searchParams)) {
+      return NextResponse.redirect(new URL("/en", request.url));
+    }
+    return NextResponse.next();
   }
 
   const welcomeMatch = pathname.match(WELCOME_PATH);
