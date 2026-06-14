@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "GarIQ — Your vehicle logbook",
-    "description": "Track fuel, maintenance, insurance, and documents for every vehicle. Log with a photo, PDF, chat, or form — AI proposes, you confirm. Timeline, stats, and Ask over your own data.",
-    "keywords": "vehicle logbook,car maintenance,fuel tracker,OCR receipt,vehicle documents,AI garage"
+    "title": "GarIQ — The smart logbook for your vehicles",
+    "description": "Much more than an expense tracker: log with a photo, PDF, or chat (AI proposes, you confirm), ask your own data and documents, and analyze spend on a timeline and in statistics — even across currencies.",
+    "keywords": "vehicle logbook,car maintenance,fuel tracker,AI car assistant,OCR receipt,vehicle documents,vehicle statistics,multi currency,AI garage"
   },
   "common": {
     "skipToContent": "Skip to content",
@@ -13,6 +13,7 @@
     "homeAria": "GarIQ home",
     "navFeatures": "Features",
     "navAi": "AI",
+    "navStats": "Statistics",
     "navScenarios": "Examples",
     "navPlans": "Plans",
     "navDownload": "Download",
@@ -23,9 +24,9 @@
     "ctaDownload": "Get the app"
   },
   "hero": {
-    "badge": "Vehicle logbook with AI you control",
-    "title": "Your vehicles. One logbook. Every receipt and record in your pocket.",
-    "subtitle": "GarIQ helps you log fuel, maintenance, insurance, taxes, inspections, and expenses — then explore everything on a timeline and in statistics. AI reads receipts and chats with you, but nothing saves until you confirm.",
+    "badge": "Logbook + AI you control",
+    "title": "Much more than an expense tracker — the brain of your garage.",
+    "subtitle": "Photo, PDF, or chat → AI drafts the entry and you confirm, every time. Then ask anything about your vehicles and documents — in your language. Fuel, service, insurance, taxes, inspections, EV charging, and expenses: all on a timeline and in statistics, even across currencies.",
     "ctaPrimary": "Download GarIQ",
     "ctaSecondary": "See how it works",
     "stat1Title": "Log your way",
@@ -37,7 +38,33 @@
     "imageAlt": "GarIQ app showing home, vehicles, timeline, and insert flow"
   },
   "vehicleTypes": {
-    "items": ["Cars", "Motorcycles", "Vans & campers", "EV charging", "Classic & weekend", "Family fleet"]
+    "label": "For every vehicle",
+    "items": ["Cars", "Motorcycles", "Vans & campers", "Classic & weekend", "Family fleet"]
+  },
+  "notJustTracker": {
+    "label": "More than a tracker",
+    "title": "An expense app gives you numbers. GarIQ gives you the whole picture.",
+    "copy": "Expense trackers stop at what you paid. GarIQ connects spend, history, documents, and AI answers — across vehicles, garages, and currencies.",
+    "oldLabel": "Expense tracker",
+    "newLabel": "GarIQ",
+    "rows": [
+      {
+        "old": "Just spend totals",
+        "new": "Spend + history + documents + AI answers"
+      },
+      {
+        "old": "One currency, one vehicle",
+        "new": "Multiple garages, vehicles, automatic multi-currency"
+      },
+      {
+        "old": "Search and add up by hand",
+        "new": "Ask and AI answers from your data, with citations"
+      },
+      {
+        "old": "Type everything manually",
+        "new": "Photo, PDF, or chat → AI draft → you confirm"
+      }
+    ]
   },
   "problem": {
     "label": "The problem",
@@ -95,7 +122,7 @@
     "items": [
       {
         "title": "Event logging",
-        "copy": "Refuel, charge, maintenance, repair, insurance, tax, inspection, expense, and notes."
+        "copy": "Refuel, charge, workshop, insurance, tax, inspection, expense, and notes."
       },
       {
         "title": "Insert capture sheet",
@@ -120,6 +147,14 @@
       {
         "title": "Deadlines in the app",
         "copy": "Insurance expiry on the vehicle profile and dates on the timeline — no push alerts in v1."
+      },
+      {
+        "title": "Automatic multi-currency",
+        "copy": "Pay abroad: GarIQ converts at the day's rate into your garage currency."
+      },
+      {
+        "title": "CSV export",
+        "copy": "Export every event across all vehicles — your data stays yours."
       },
       {
         "title": "Privacy by design",
@@ -153,6 +188,42 @@
       }
     ]
   },
+  "walkthrough": {
+    "label": "Step by step",
+    "title": "From a tank of fuel to a smart answer, in a few taps.",
+    "steps": [
+      {
+        "title": "Capture your way",
+        "copy": "Pick the event type, then photo, PDF, chat, or form. AI prepares a draft with amounts, liters, and dates — you review and confirm.",
+        "alt": "GarIQ screen: a fuel receipt photo turned into a draft with prefilled fields and a Confirm button."
+      },
+      {
+        "title": "Everything on a timeline",
+        "copy": "Every confirmed event lands in your year-grouped history, with a type icon, cost, and date.",
+        "alt": "GarIQ screen: an event timeline grouped by year with icons and costs."
+      },
+      {
+        "title": "Clear statistics",
+        "copy": "Spend by category, monthly trend, and vehicle comparison — filter by year and vehicle.",
+        "alt": "GarIQ screen: statistics with spend by category and a monthly chart."
+      },
+      {
+        "title": "Ask your data",
+        "copy": "“How much on workshop in 2025?” or “recommended tire pressure?” — answers from your events and documents, with citations.",
+        "alt": "GarIQ screen: assistant chat with an answer and a citation from a PDF manual."
+      },
+      {
+        "title": "Many garages, one app",
+        "copy": "Separate cars, bikes, and family into garages, with roles for who logs (co-owner, admin, logger).",
+        "alt": "GarIQ screen: multi-garage home with a vehicle carousel and active-garage switcher."
+      },
+      {
+        "title": "Pay in any currency",
+        "copy": "Expenses abroad are converted automatically at the day's rate into your garage currency — no manual math.",
+        "alt": "GarIQ screen: event detail with a euro amount and automatic conversion from a foreign currency."
+      }
+    ]
+  },
   "ai": {
     "label": "AI layer",
     "title": "AI that speeds up logging — without taking the wheel.",
@@ -167,12 +238,36 @@
         "copy": "Describe maintenance or expenses in plain language; fill the draft when ready."
       },
       {
-        "title": "Ask over events",
-        "copy": "Aggregates and lookups on your logged history — not generic car advice."
+        "title": "Cited Ask",
+        "copy": "Answers on spend, history, and documents — from your data, citing the source file."
       },
       {
-        "title": "Document search",
-        "copy": "Find passages in your uploaded manuals and policies with citations."
+        "title": "In your language",
+        "copy": "The assistant replies in Italian, German, English, French, or Spanish."
+      }
+    ]
+  },
+  "stats": {
+    "label": "Statistics",
+    "title": "From scattered numbers to clear decisions.",
+    "copy": "Filter by year and vehicle: spend by category, monthly trend, and vehicle comparison — all in your garage currency.",
+    "vizSpend": "Total spend",
+    "vizCategory": "By category",
+    "vizTrend": "Last 12 months",
+    "vizFilters": "2025 · All vehicles",
+    "categories": ["Workshop", "Refueling", "Insurance", "Other"],
+    "cards": [
+      {
+        "title": "By category",
+        "copy": "See where the money really goes: workshop, fuel, insurance, and more."
+      },
+      {
+        "title": "Monthly trend",
+        "copy": "Compare spend month by month and across years."
+      },
+      {
+        "title": "By vehicle",
+        "copy": "Which vehicle costs most? Filter and compare in a tap."
       }
     ]
   },
@@ -229,6 +324,10 @@
       {
         "title": "Insurance on file",
         "copy": "Upload policy → confirm expiry on the vehicle profile — visible in the app (no push in v1)."
+      },
+      {
+        "title": "Refuel abroad",
+        "copy": "Pay in CHF or USD → GarIQ converts at the day's rate into your garage currency."
       }
     ]
   },
@@ -282,14 +381,14 @@
       {
         "id": "enterprise",
         "name": "Enterprise",
-        "description": "Large garages and workspace LLM credentials (BYOK).",
+        "description": "Large garages and top AI headroom for teams and workshops.",
         "featured": false,
         "highlights": [
           "20 owned garages",
           "Up to 100 vehicles per garage",
           "Sharing with unlimited members",
-          "Unlimited server AI quota (workspace BYOK)",
-          "Bring your own API keys for team LLM"
+          "Highest monthly server AI cap",
+          "All AI features included"
         ]
       }
     ]
@@ -309,7 +408,7 @@
     "items": [
       {
         "q": "What can I track?",
-        "a": "Fuel, charging, maintenance, repairs, insurance, taxes, inspections, general expenses, and diary notes — all tied to a vehicle."
+        "a": "Fuel, charging, workshop, insurance, taxes, inspections, general expenses, and diary notes — all tied to a vehicle."
       },
       {
         "q": "Does AI save automatically?",
@@ -336,8 +435,20 @@
         "a": "GarIQ uses Supabase with row-level security so you only access garages and vehicles you belong to."
       },
       {
-        "q": "How do plans and AI billing work?",
-        "a": "Plans are managed in the app. Most tiers include server-side AI; enterprise can use bring-your-own-key — details appear in Settings, not on this page."
+        "q": "Which currencies can I log expenses in?",
+        "a": "You can pay in a currency other than your garage's: GarIQ fetches the day's rate and converts automatically, with no manual override."
+      },
+      {
+        "q": "What language does the AI answer in?",
+        "a": "Choose the assistant language in Settings: Italian, German, English, French, or Spanish."
+      },
+      {
+        "q": "Can I export my data?",
+        "a": "Yes. Export every event across all vehicles as CSV from Settings — your data stays yours."
+      },
+      {
+        "q": "How do plans and AI work?",
+        "a": "Plans are managed in the app and include a monthly server AI allowance — details appear in Settings, and this page does not process payments."
       }
     ]
   },

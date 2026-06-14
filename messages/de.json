@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "GarIQ — Dein Fahrtenbuch",
-    "description": "Tanken, Wartung, Versicherung und Dokumente für jedes Fahrzeug. Per Foto, PDF, Chat oder Formular erfassen — KI schlägt vor, du bestätigst. Timeline, Statistik und Ask über deine Daten.",
-    "keywords": "Fahrtenbuch,Autopflege,Spritkosten,Beleg OCR,Fahrzeugdokumente,KI Garage"
+    "title": "GarIQ — Das smarte Fahrtenbuch für deine Fahrzeuge",
+    "description": "Viel mehr als ein Ausgaben-Tracker: per Foto, PDF oder Chat erfassen (KI schlägt vor, du bestätigst), deine Daten und Dokumente fragen und Ausgaben in Timeline und Statistik analysieren — auch über mehrere Währungen.",
+    "keywords": "Fahrtenbuch,Autopflege,Spritkosten,KI Auto Assistent,Beleg OCR,Fahrzeugdokumente,Fahrzeugstatistik,Multi-Währung,KI Garage"
   },
   "common": {
     "skipToContent": "Zum Inhalt springen",
@@ -13,6 +13,7 @@
     "homeAria": "GarIQ Startseite",
     "navFeatures": "Funktionen",
     "navAi": "KI",
+    "navStats": "Statistik",
     "navScenarios": "Beispiele",
     "navPlans": "Tarife",
     "navDownload": "Download",
@@ -23,9 +24,9 @@
     "ctaDownload": "App holen"
   },
   "hero": {
-    "badge": "Fahrtenbuch mit KI unter deiner Kontrolle",
-    "title": "Deine Fahrzeuge. Ein Logbuch. Jeder Beleg in der Tasche.",
-    "subtitle": "GarIQ hilft dir, Tanken, Wartung, Versicherung, Steuern, Prüfungen und Ausgaben zu erfassen — und alles in Timeline und Statistik zu sehen. KI liest Belege und chattet mit dir, aber nichts wird gespeichert, bis du bestätigst.",
+    "badge": "Logbuch + KI unter deiner Kontrolle",
+    "title": "Viel mehr als ein Ausgaben-Tracker — das Gehirn deiner Garage.",
+    "subtitle": "Foto, PDF oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann frag alles zu deinen Fahrzeugen und Dokumenten — in deiner Sprache. Tanken, Wartung, Versicherung, Steuern, Prüfungen, E-Laden und Ausgaben: alles in Timeline und Statistik, auch über mehrere Währungen.",
     "ctaPrimary": "GarIQ laden",
     "ctaSecondary": "So funktioniert's",
     "stat1Title": "Dein Weg",
@@ -37,7 +38,33 @@
     "imageAlt": "GarIQ-App mit Home, Fahrzeugen, Timeline und Erfassungsflow"
   },
   "vehicleTypes": {
-    "items": ["Autos", "Motorräder", "Transporter & Wohnmobile", "E-Laden", "Klassiker & Wochenende", "Familienflotte"]
+    "label": "Für jedes Fahrzeug",
+    "items": ["Autos", "Motorräder", "Transporter & Wohnmobile", "Klassiker & Wochenende", "Familienflotte"]
+  },
+  "notJustTracker": {
+    "label": "Mehr als ein Tracker",
+    "title": "Eine Ausgaben-App liefert Zahlen. GarIQ liefert das ganze Bild.",
+    "copy": "Ausgaben-Tracker hören bei der Zahlung auf. GarIQ verbindet Ausgaben, Historie, Dokumente und KI-Antworten — über Fahrzeuge, Garagen und Währungen hinweg.",
+    "oldLabel": "Ausgaben-Tracker",
+    "newLabel": "GarIQ",
+    "rows": [
+      {
+        "old": "Nur Ausgabensummen",
+        "new": "Ausgaben + Historie + Dokumente + KI-Antworten"
+      },
+      {
+        "old": "Eine Währung, ein Fahrzeug",
+        "new": "Mehrere Garagen, Fahrzeuge, automatische Multi-Währung"
+      },
+      {
+        "old": "Manuell suchen und rechnen",
+        "new": "Fragen und KI antwortet aus deinen Daten, mit Zitaten"
+      },
+      {
+        "old": "Alles manuell eintippen",
+        "new": "Foto, PDF oder Chat → KI-Entwurf → du bestätigst"
+      }
+    ]
   },
   "problem": {
     "label": "Das Problem",
@@ -95,7 +122,7 @@
     "items": [
       {
         "title": "Events erfassen",
-        "copy": "Tanken, Laden, Wartung, Reparatur, Versicherung, Steuer, Prüfung, Ausgaben, Notizen."
+        "copy": "Tanken, Laden, Werkstatt, Versicherung, Steuer, Prüfung, Ausgaben und Notizen."
       },
       {
         "title": "Erfassungs-Sheet",
@@ -120,6 +147,14 @@
       {
         "title": "Fristen in der App",
         "copy": "Versicherungsende am Fahrzeug und Daten in der Timeline — keine Pushs in v1."
+      },
+      {
+        "title": "Automatische Multi-Währung",
+        "copy": "Im Ausland zahlen: GarIQ rechnet zum Tageskurs in die Garagenwährung um."
+      },
+      {
+        "title": "CSV-Export",
+        "copy": "Alle Events aller Fahrzeuge exportieren — deine Daten bleiben deins."
       },
       {
         "title": "Datenschutz",
@@ -153,6 +188,42 @@
       }
     ]
   },
+  "walkthrough": {
+    "label": "Schritt für Schritt",
+    "title": "Vom Tanken zur smarten Antwort, in wenigen Taps.",
+    "steps": [
+      {
+        "title": "Erfassen wie du willst",
+        "copy": "Event-Typ wählen, dann Foto, PDF, Chat oder Formular. Die KI erstellt einen Entwurf mit Beträgen, Litern und Daten — du prüfst und bestätigst.",
+        "alt": "GarIQ-Screen: ein Tankbeleg-Foto wird zum Entwurf mit ausgefüllten Feldern und Bestätigen-Button."
+      },
+      {
+        "title": "Alles in der Timeline",
+        "copy": "Jedes bestätigte Event landet in der nach Jahren gruppierten Historie, mit Typ-Icon, Kosten und Datum.",
+        "alt": "GarIQ-Screen: eine nach Jahren gruppierte Event-Timeline mit Icons und Kosten."
+      },
+      {
+        "title": "Klare Statistik",
+        "copy": "Ausgaben nach Kategorie, Monatsverlauf und Fahrzeugvergleich — nach Jahr und Fahrzeug filtern.",
+        "alt": "GarIQ-Screen: Statistik mit Ausgaben nach Kategorie und Monatsdiagramm."
+      },
+      {
+        "title": "Frag deine Daten",
+        "copy": "„Wie viel Werkstatt 2025?“ oder „empfohlener Reifendruck?“ — Antworten aus deinen Events und Dokumenten, mit Zitaten.",
+        "alt": "GarIQ-Screen: Assistenten-Chat mit Antwort und Zitat aus einem PDF-Handbuch."
+      },
+      {
+        "title": "Viele Garagen, eine App",
+        "copy": "Autos, Bikes und Familie in Garagen trennen, mit Rollen fürs Logging (Co-Owner, Admin, Logger).",
+        "alt": "GarIQ-Screen: Multi-Garage-Home mit Fahrzeug-Karussell und Umschalter für die aktive Garage."
+      },
+      {
+        "title": "In jeder Währung zahlen",
+        "copy": "Ausgaben im Ausland werden automatisch zum Tageskurs in die Garagenwährung umgerechnet — ohne manuelle Rechnerei.",
+        "alt": "GarIQ-Screen: Event-Detail mit Euro-Betrag und automatischer Umrechnung aus einer Fremdwährung."
+      }
+    ]
+  },
   "ai": {
     "label": "KI-Ebene",
     "title": "KI, die das Erfassen beschleunigt — ohne das Steuer abzugeben.",
@@ -167,12 +238,36 @@
         "copy": "Wartung oder Kosten in Alltagssprache beschreiben; Entwurf wenn fertig."
       },
       {
-        "title": "Ask über Events",
-        "copy": "Aggregationen und Abfragen auf deiner Historie — kein generischer Autorat."
+        "title": "Ask mit Zitaten",
+        "copy": "Antworten zu Ausgaben, Historie und Dokumenten — aus deinen Daten, mit Quellenangabe."
       },
       {
-        "title": "Dokumentensuche",
-        "copy": "Passagen in Handbüchern und Policen mit Zitaten finden."
+        "title": "In deiner Sprache",
+        "copy": "Der Assistent antwortet auf Italienisch, Deutsch, Englisch, Französisch oder Spanisch."
+      }
+    ]
+  },
+  "stats": {
+    "label": "Statistik",
+    "title": "Von verstreuten Zahlen zu klaren Entscheidungen.",
+    "copy": "Nach Jahr und Fahrzeug filtern: Ausgaben nach Kategorie, Monatsverlauf und Fahrzeugvergleich — alles in der Garagenwährung.",
+    "vizSpend": "Gesamtausgaben",
+    "vizCategory": "Nach Kategorie",
+    "vizTrend": "Letzte 12 Monate",
+    "vizFilters": "2025 · Alle Fahrzeuge",
+    "categories": ["Werkstatt", "Tanken", "Versicherung", "Sonstiges"],
+    "cards": [
+      {
+        "title": "Nach Kategorie",
+        "copy": "Sieh, wohin das Geld wirklich geht: Werkstatt, Sprit, Versicherung und mehr."
+      },
+      {
+        "title": "Monatsverlauf",
+        "copy": "Ausgaben Monat für Monat und über Jahre vergleichen."
+      },
+      {
+        "title": "Nach Fahrzeug",
+        "copy": "Welches Fahrzeug kostet am meisten? Filtern und vergleichen mit einem Tippen."
       }
     ]
   },
@@ -229,6 +324,10 @@
       {
         "title": "Versicherung abgelegt",
         "copy": "Police hochladen → Ablauf am Fahrzeug — sichtbar in der App (kein Push in v1)."
+      },
+      {
+        "title": "Tanken im Ausland",
+        "copy": "Zahlung in CHF oder USD → GarIQ rechnet zum Tageskurs in die Garagenwährung um."
       }
     ]
   },
@@ -282,14 +381,14 @@
       {
         "id": "enterprise",
         "name": "Enterprise",
-        "description": "Große Garagen und Workspace-LLM mit eigenen API-Schlüsseln (BYOK).",
+        "description": "Große Garagen und maximales KI-Kontingent für Teams und Werkstätten.",
         "featured": false,
         "highlights": [
           "20 eigene Garagen",
           "Bis zu 100 Fahrzeuge pro Garage",
           "Freigabe mit unbegrenzt vielen Mitgliedern",
-          "Unbegrenztes KI-Kontingent (Workspace BYOK)",
-          "Eigene API-Schlüssel fürs Team-LLM"
+          "Höchstes monatliches Server-KI-Limit",
+          "Alle KI-Funktionen inklusive"
         ]
       }
     ]
@@ -309,7 +408,7 @@
     "items": [
       {
         "q": "Was kann ich erfassen?",
-        "a": "Tanken, Laden, Wartung, Reparaturen, Versicherung, Steuern, Prüfungen, Ausgaben und Notizen — pro Fahrzeug."
+        "a": "Tanken, Laden, Werkstatt, Versicherung, Steuern, Prüfungen, Ausgaben und Notizen — pro Fahrzeug."
       },
       {
         "q": "Speichert die KI automatisch?",
@@ -336,8 +435,20 @@
         "a": "Supabase mit Row-Level Security — du siehst nur deine Garagen und Fahrzeuge."
       },
       {
+        "q": "In welchen Währungen kann ich Ausgaben erfassen?",
+        "a": "Du kannst in einer anderen Währung als der Garagenwährung zahlen: GarIQ holt den Tageskurs und rechnet automatisch um, ohne manuelle Anpassung."
+      },
+      {
+        "q": "In welcher Sprache antwortet die KI?",
+        "a": "Wähle die Assistenzsprache in den Einstellungen: Italienisch, Deutsch, Englisch, Französisch oder Spanisch."
+      },
+      {
+        "q": "Kann ich meine Daten exportieren?",
+        "a": "Ja. Exportiere alle Events aller Fahrzeuge als CSV aus den Einstellungen — deine Daten bleiben deins."
+      },
+      {
         "q": "Wie funktionieren Tarife und KI?",
-        "a": "Tarife in der App. Die meisten Pläne inkludieren serverseitige KI; Enterprise BYOK — Details in den Einstellungen."
+        "a": "Tarife werden in der App verwaltet und enthalten ein monatliches Server-KI-Kontingent — Details in den Einstellungen, keine Zahlung auf dieser Seite."
       }
     ]
   },

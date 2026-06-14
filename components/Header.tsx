@@ -8,6 +8,7 @@ import LocaleSwitcher from "@/components/LocaleSwitcher";
 const NAV_KEYS = [
   { href: "#features", key: "navFeatures" as const },
   { href: "#ai", key: "navAi" as const },
+  { href: "#stats", key: "navStats" as const },
   { href: "#scenarios", key: "navScenarios" as const },
   { href: "#plans", key: "navPlans" as const },
   { href: "#download", key: "navDownload" as const },

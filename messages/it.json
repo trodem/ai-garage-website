@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "GarIQ — Il tuo libretto di bordo",
-    "description": "Carburante, manutenzione, assicurazione e documenti per ogni veicolo. Foto, PDF, chat o modulo — l'IA propone, tu confermi. Timeline, statistiche e Ask sui tuoi dati.",
-    "keywords": "libretto auto,manutenzione auto,spese carburante,OCR scontrino,documenti veicolo,garage digitale"
+    "title": "GarIQ — Il libretto intelligente per i tuoi veicoli",
+    "description": "Molto più di un tracker spese: registra con foto, PDF o chat (l'IA propone, tu confermi), chiedi ai tuoi dati e documenti e analizza le spese in timeline e statistiche — anche in più valute.",
+    "keywords": "libretto auto,manutenzione auto,spese carburante,assistente IA auto,OCR scontrino,documenti veicolo,statistiche veicolo,multi valuta,garage digitale"
   },
   "common": {
     "skipToContent": "Vai al contenuto",
@@ -13,6 +13,7 @@
     "homeAria": "Home GarIQ",
     "navFeatures": "Funzioni",
     "navAi": "IA",
+    "navStats": "Statistiche",
     "navScenarios": "Esempi",
     "navPlans": "Piani",
     "navDownload": "Download",
@@ -23,9 +24,9 @@
     "ctaDownload": "Scarica l'app"
   },
   "hero": {
-    "badge": "Libretto con IA sotto il tuo controllo",
-    "title": "I tuoi veicoli. Un libretto. Ogni ricevuta in tasca.",
-    "subtitle": "GarIQ ti aiuta a registrare rifornimenti, manutenzione, assicurazione, tasse, revisioni e spese — e a rivederli in timeline e statistiche. L'IA legge gli scontrini e chatta con te, ma nulla si salva finché non confermi.",
+    "badge": "Libretto + IA sotto il tuo controllo",
+    "title": "Molto più di un registro spese: il cervello del tuo garage.",
+    "subtitle": "Foto, PDF o chat → l'IA prepara la voce e tu confermi, sempre. Poi chiedi qualsiasi cosa ai tuoi veicoli e ai tuoi documenti — nella tua lingua. Rifornimenti, tagliandi, assicurazioni, tasse, revisioni, ricariche EV e spese: tutto in timeline e statistiche, anche in più valute.",
     "ctaPrimary": "Scarica GarIQ",
     "ctaSecondary": "Come funziona",
     "stat1Title": "A modo tuo",
@@ -37,7 +38,33 @@
     "imageAlt": "App GarIQ con home, veicoli, timeline e inserimento eventi"
   },
   "vehicleTypes": {
-    "items": ["Auto", "Moto", "Furgoni e camper", "Ricarica EV", "Classiche e weekend", "Flotta familiare"]
+    "label": "Per ogni veicolo",
+    "items": ["Auto", "Moto", "Furgoni e camper", "Classiche e weekend", "Flotta familiare"]
+  },
+  "notJustTracker": {
+    "label": "Più di un tracker",
+    "title": "Un'app spese ti dà numeri. GarIQ ti dà il quadro completo.",
+    "copy": "I tracker di spese si fermano a quanto hai pagato. GarIQ collega spese, cronologia, documenti e risposte IA — su più veicoli, più garage e più valute.",
+    "oldLabel": "Tracker di spese",
+    "newLabel": "GarIQ",
+    "rows": [
+      {
+        "old": "Solo importi di spesa",
+        "new": "Spese + cronologia + documenti + risposte IA"
+      },
+      {
+        "old": "Una valuta, un veicolo",
+        "new": "Più garage, più veicoli, multi-valuta automatica"
+      },
+      {
+        "old": "Cerchi e calcoli a mano",
+        "new": "Chiedi e l'IA risponde dai tuoi dati, con citazioni"
+      },
+      {
+        "old": "Digiti tutto manualmente",
+        "new": "Foto, PDF o chat → bozza IA → tu confermi"
+      }
+    ]
   },
   "problem": {
     "label": "Il problema",
@@ -95,7 +122,7 @@
     "items": [
       {
         "title": "Registro eventi",
-        "copy": "Rifornimento, ricarica, manutenzione, riparazione, assicurazione, tasse, revisione, spese, note."
+        "copy": "Rifornimento, ricarica, officina, assicurazione, tasse, revisione, spese e note."
       },
       {
         "title": "Foglio di inserimento",
@@ -120,6 +147,14 @@
       {
         "title": "Scadenze in app",
         "copy": "Scadenza assicurazione sul veicolo e date in timeline — niente push in v1."
+      },
+      {
+        "title": "Multi-valuta automatica",
+        "copy": "Paga all'estero: l'app converte col cambio del giorno nella valuta del garage."
+      },
+      {
+        "title": "Export CSV",
+        "copy": "Esporta tutti gli eventi di tutti i veicoli — i tuoi dati restano tuoi."
       },
       {
         "title": "Privacy",
@@ -153,6 +188,42 @@
       }
     ]
   },
+  "walkthrough": {
+    "label": "Passo per passo",
+    "title": "Dal pieno alla risposta intelligente, in pochi tocchi.",
+    "steps": [
+      {
+        "title": "Cattura come preferisci",
+        "copy": "Scegli il tipo di evento, poi foto, PDF, chat o modulo. L'IA prepara una bozza con importi, litri e date — tu controlli e confermi.",
+        "alt": "Schermata GarIQ: foto di uno scontrino trasformata in una bozza con i campi compilati e il pulsante Conferma."
+      },
+      {
+        "title": "Tutto in timeline",
+        "copy": "Ogni evento confermato finisce nella cronologia per anno, con icona del tipo, costo e data.",
+        "alt": "Schermata GarIQ: timeline degli eventi raggruppata per anno con icone e costi."
+      },
+      {
+        "title": "Statistiche chiare",
+        "copy": "Spesa per categoria, andamento mensile e confronto tra veicoli — filtra per anno e veicolo.",
+        "alt": "Schermata GarIQ: statistiche con spesa per categoria e grafico mensile."
+      },
+      {
+        "title": "Chiedi ai tuoi dati",
+        "copy": "«Quanto ho speso di officina nel 2025?» o «pressione gomme consigliata?» — risposte dai tuoi eventi e documenti, con citazioni.",
+        "alt": "Schermata GarIQ: chat dell'assistente con risposta e citazione da un manuale PDF."
+      },
+      {
+        "title": "Più garage in un'app",
+        "copy": "Separa auto, moto e famiglia in garage diversi, con ruoli per chi registra (co-proprietario, admin, logger).",
+        "alt": "Schermata GarIQ: home multi-garage con carosello di veicoli e selettore del garage attivo."
+      },
+      {
+        "title": "Paga in ogni valuta",
+        "copy": "Spese all'estero convertite in automatico col cambio del giorno nella valuta del garage — senza calcoli manuali.",
+        "alt": "Schermata GarIQ: dettaglio evento con importo in euro e conversione automatica da valuta estera."
+      }
+    ]
+  },
   "ai": {
     "label": "Livello IA",
     "title": "IA che accelera l'inserimento — senza prendere il volante.",
@@ -167,12 +238,36 @@
         "copy": "Descrivi manutenzione o spese a parole; bozza quando è pronta."
       },
       {
-        "title": "Ask sugli eventi",
-        "copy": "Aggregazioni sulla tua cronologia — non consigli generici."
+        "title": "Ask con citazioni",
+        "copy": "Risposte su spese, cronologia e documenti — dai tuoi dati, con citazione dal file."
       },
       {
-        "title": "Ricerca documenti",
-        "copy": "Passaggi in manuali e polizze con citazioni."
+        "title": "Nella tua lingua",
+        "copy": "L'assistente risponde in italiano, tedesco, inglese, francese o spagnolo."
+      }
+    ]
+  },
+  "stats": {
+    "label": "Statistiche",
+    "title": "Dai numeri sparsi a decisioni chiare.",
+    "copy": "Filtra per anno e per veicolo: spesa per categoria, andamento mensile e confronto tra veicoli — tutto nella valuta del garage.",
+    "vizSpend": "Spesa totale",
+    "vizCategory": "Per categoria",
+    "vizTrend": "Ultimi 12 mesi",
+    "vizFilters": "2025 · Tutti i veicoli",
+    "categories": ["Officina", "Rifornimento", "Assicurazione", "Altro"],
+    "cards": [
+      {
+        "title": "Per categoria",
+        "copy": "Vedi dove vanno davvero i soldi: officina, carburante, assicurazione e altro."
+      },
+      {
+        "title": "Andamento mensile",
+        "copy": "Confronta la spesa mese per mese e tra anni diversi."
+      },
+      {
+        "title": "Per veicolo",
+        "copy": "Quale veicolo costa di più? Filtra e confronta in un tocco."
       }
     ]
   },
@@ -229,6 +324,10 @@
       {
         "title": "Assicurazione archiviata",
         "copy": "Carica polizza → scadenza sul veicolo — visibile in app (niente push in v1)."
+      },
+      {
+        "title": "Rifornimento all'estero",
+        "copy": "Paghi in CHF o USD → l'app converte col cambio del giorno nella valuta del garage."
       }
     ]
   },
@@ -282,14 +381,14 @@
       {
         "id": "enterprise",
         "name": "Enterprise",
-        "description": "Garage grandi e credenziali LLM workspace (BYOK).",
+        "description": "Garage grandi e quota IA al massimo per team e officine.",
         "featured": false,
         "highlights": [
           "20 garage di proprietà",
           "Fino a 100 veicoli per garage",
           "Condivisione con membri illimitati",
-          "Quota IA illimitata (workspace BYOK)",
-          "Chiavi API proprie per LLM di team"
+          "Massima quota IA server / mese",
+          "Tutte le funzioni IA incluse"
         ]
       }
     ]
@@ -309,7 +408,7 @@
     "items": [
       {
         "q": "Cosa posso registrare?",
-        "a": "Rifornimento, ricarica, manutenzione, riparazioni, assicurazione, tasse, revisioni, spese e note — per veicolo."
+        "a": "Rifornimento, ricarica, officina, assicurazione, tasse, revisioni, spese e note — per veicolo."
       },
       {
         "q": "L'IA salva da sola?",
@@ -336,8 +435,20 @@
         "a": "Supabase con row-level security — accedi solo ai garage e veicoli tuoi."
       },
       {
+        "q": "In che valute posso registrare le spese?",
+        "a": "Puoi pagare in valuta diversa da quella del garage: l'app prende il cambio del giorno e converte automaticamente, senza override manuale."
+      },
+      {
+        "q": "In che lingua risponde l'IA?",
+        "a": "Scegli la lingua dell'assistente nelle Impostazioni: italiano, tedesco, inglese, francese o spagnolo."
+      },
+      {
+        "q": "Posso esportare i miei dati?",
+        "a": "Sì. Esporti in CSV tutti gli eventi di tutti i veicoli dalle Impostazioni — i tuoi dati restano tuoi."
+      },
+      {
         "q": "Come funzionano piani e IA?",
-        "a": "Piani nell'app. La maggior parte include IA server; enterprise BYOK — dettagli nelle Impostazioni."
+        "a": "I piani si gestiscono nell'app e includono un contingente di IA server mensile — dettagli nelle Impostazioni, nessun pagamento su questa pagina."
       }
     ]
   },

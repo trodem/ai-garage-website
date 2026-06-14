@@ -4,10 +4,13 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import VehicleTypesBar from "@/components/VehicleTypesBar";
 import ProblemSection from "@/components/ProblemSection";
+import NotJustTracker from "@/components/NotJustTracker";
 import SolutionSection from "@/components/SolutionSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import HowItWorks from "@/components/HowItWorks";
+import WalkthroughSection from "@/components/WalkthroughSection";
 import AiSection from "@/components/AiSection";
+import StatsSection from "@/components/StatsSection";
 import UseCases from "@/components/UseCases";
 import ScenarioStories from "@/components/ScenarioStories";
 import PlansExplainer from "@/components/PlansExplainer";
@@ -42,10 +45,13 @@ export default async function HomePage({ params }: PageProps) {
         <Hero />
         <VehicleTypesBar />
         <ProblemSection />
+        <NotJustTracker />
         <SolutionSection />
         <FeaturesSection />
         <HowItWorks />
+        <WalkthroughSection />
         <AiSection />
+        <StatsSection />
         <UseCases />
         <ScenarioStories />
         <PlansExplainer />
