@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import HowItWorksPreview from "./HowItWorksPreview";
 import { getTranslations } from "next-intl/server";
 
 type Step = { title: string; copy: string };
@@ -9,9 +10,12 @@ export default async function HowItWorks() {
 
   return (
     <section id="how-it-works" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <div className="max-w-2xl">
-        <span className="section-label">{t("label")}</span>
-        <h2 className="section-title">{t("title")}</h2>
+      <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="max-w-2xl">
+          <span className="section-label">{t("label")}</span>
+          <h2 className="section-title">{t("title")}</h2>
+        </div>
+        <HowItWorksPreview />
       </div>
       <div className="mt-12 grid gap-6 lg:grid-cols-5">
         {steps.map((step, index) => (
