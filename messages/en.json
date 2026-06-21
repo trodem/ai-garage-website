@@ -342,6 +342,7 @@
       {
         "id": "free",
         "name": "Free",
+        "price": "Free forever",
         "description": "Start with forms and server AI after you add your first vehicle.",
         "featured": false,
         "highlights": [
@@ -356,6 +357,7 @@
       {
         "id": "basic",
         "name": "Basic",
+        "price": "In-app",
         "description": "More vehicles and invite family to share one garage.",
         "featured": false,
         "highlights": [
@@ -369,6 +371,7 @@
       {
         "id": "advanced",
         "name": "Advanced",
+        "price": "In-app",
         "description": "Multiple garages and higher AI headroom for active loggers.",
         "featured": true,
         "highlights": [
@@ -382,6 +385,7 @@
       {
         "id": "enterprise",
         "name": "Enterprise",
+        "price": "In-app",
         "description": "Large garages and top AI headroom for teams and workshops.",
         "featured": false,
         "highlights": [

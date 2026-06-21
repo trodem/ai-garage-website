@@ -342,6 +342,7 @@
       {
         "id": "free",
         "name": "Free",
+        "price": "Kostenlos",
         "description": "Einstieg mit Formularen und Server-KI ab dem ersten Fahrzeug.",
         "featured": false,
         "highlights": [
@@ -356,6 +357,7 @@
       {
         "id": "basic",
         "name": "Basic",
+        "price": "In-App",
         "description": "Mehr Fahrzeuge und Familie in einer Garage einladen.",
         "featured": false,
         "highlights": [
@@ -369,6 +371,7 @@
       {
         "id": "advanced",
         "name": "Advanced",
+        "price": "In-App",
         "description": "Mehrere Garagen und höheres KI-Kontingent für aktive Nutzer.",
         "featured": true,
         "highlights": [
@@ -382,6 +385,7 @@
       {
         "id": "enterprise",
         "name": "Enterprise",
+        "price": "In-App",
         "description": "Große Garagen und maximales KI-Kontingent für Teams und Werkstätten.",
         "featured": false,
         "highlights": [

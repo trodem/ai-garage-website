@@ -342,6 +342,7 @@
       {
         "id": "free",
         "name": "Free",
+        "price": "Gratuito",
         "description": "Inizia con i moduli e l'IA server dopo il primo veicolo.",
         "featured": false,
         "highlights": [
@@ -356,6 +357,7 @@
       {
         "id": "basic",
         "name": "Basic",
+        "price": "In-app",
         "description": "Più veicoli e invita la famiglia in un garage.",
         "featured": false,
         "highlights": [
@@ -369,6 +371,7 @@
       {
         "id": "advanced",
         "name": "Advanced",
+        "price": "In-app",
         "description": "Più garage e più IA per chi registra spesso.",
         "featured": true,
         "highlights": [
@@ -382,6 +385,7 @@
       {
         "id": "enterprise",
         "name": "Enterprise",
+        "price": "In-app",
         "description": "Garage grandi e quota IA al massimo per team e officine.",
         "featured": false,
         "highlights": [

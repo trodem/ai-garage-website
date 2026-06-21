@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 type PlanTier = {
   id: string;
   name: string;
+  price: string;
   description: string;
   featured: boolean;
   highlights: string[];
@@ -26,15 +27,14 @@ export default async function PlansExplainer() {
           <Reveal
             as="article"
             key={plan.id}
-            className={`pricing-card${plan.featured ? " pricing-card-featured" : ""}`}
+            className={`pricing-card pricing-tier-${plan.id}${plan.featured ? " pricing-card-featured" : ""}`}
           >
             <div>
               {plan.featured && (
-                <div className="mb-3 inline-flex rounded-full bg-primary-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary-700 dark:text-primary-100">
-                  {t("popularBadge")}
-                </div>
+                <div className="pricing-badge">{t("popularBadge")}</div>
               )}
               <h3>{plan.name}</h3>
+              <p className="pricing-price">{plan.price}</p>
               <p>{plan.description}</p>
             </div>
             <ul>
@@ -42,6 +42,12 @@ export default async function PlansExplainer() {
                 <li key={feature}>{feature}</li>
               ))}
             </ul>
+            <a
+              href="#download"
+              className={`pricing-button${plan.featured ? " pricing-button-featured" : ""}`}
+            >
+              {t("cta")}
+            </a>
           </Reveal>
         ))}
       </div>
