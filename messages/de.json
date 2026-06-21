@@ -334,21 +334,22 @@
   "plans": {
     "label": "Tarife & KI",
     "title": "Vier Kontotarife. Eine App — wächst mit deiner Garage.",
-    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe, monatliche Server-KI). Tarife werden dem Konto in der App zugewiesen — keine Zahlung auf dieser Seite.",
-    "footnote": "Monatliche KI-Nutzung zählt Completion-Tokens für OCR, Chat-Insert und Ask (nicht Dokument-Embeddings). Du bestätigst jedes Event vor dem Speichern.",
+    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe, monatliche Server-KI). Tarife werden dem Konto in der App zugewiesen — keine Zahlung auf dieser Seite. Beim Free-Tarif beginnt die monatliche Server-KI-Periode mit deinem ersten Fahrzeug.",
+    "footnote": "Monatliche KI-Nutzung zählt Completion-Tokens für OCR, Chat-Insert und Ask (nicht Dokument-Embeddings). Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen das Monatslimit; Formular-Einträge bleiben verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern.",
     "popularBadge": "Am flexibelsten",
     "cta": "GarIQ laden",
     "tiers": [
       {
         "id": "free",
         "name": "Free",
-        "description": "Einstieg mit Formularen und kleinem Server-KI-Kontingent.",
+        "description": "Einstieg mit Formularen und Server-KI ab dem ersten Fahrzeug.",
         "featured": false,
         "highlights": [
           "1 eigene Garage",
-          "Bis zu 3 Fahrzeuge pro Garage",
+          "1 Fahrzeug pro Garage",
           "Volles Fahrtenbuch & Statistik",
-          "~100K Server-KI-Tokens / Monat",
+          "~100K Server-KI-Tokens / Monat ab dem ersten Fahrzeug",
+          "Fahrzeugschein-Scan vor dem ersten Fahrzeug ohne Monatslimit",
           "Keine Garagen-Freigabe"
         ]
       },
@@ -448,7 +449,7 @@
       },
       {
         "q": "Wie funktionieren Tarife und KI?",
-        "a": "Tarife werden in der App verwaltet und enthalten ein monatliches Server-KI-Kontingent — Details in den Einstellungen, keine Zahlung auf dieser Seite."
+        "a": "Tarife werden in der App verwaltet und enthalten ein monatliches Server-KI-Kontingent — Details in den Einstellungen, keine Zahlung auf dieser Seite. Beim Free beginnt das Monatslimit mit dem ersten Fahrzeug; der Schein-Scan davor ist unbegrenzt, und manuelle Einträge bleiben möglich, wenn du das Limit erreichst."
       }
     ]
   },

@@ -334,21 +334,22 @@
   "plans": {
     "label": "Piani e IA",
     "title": "Quattro piani account. Stessa app — cresce con il tuo garage.",
-    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione, IA server mensile). I piani sono assegnati all'account nell'app — nessun pagamento su questa pagina.",
-    "footnote": "L'uso IA mensile conta i token di completion per OCR, insert chat e Ask (non gli embedding documenti). Confermi sempre prima di salvare un evento.",
+    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione, IA server mensile). I piani sono assegnati all'account nell'app — nessun pagamento su questa pagina. Sul Free, il periodo mensile di IA server inizia quando aggiungi il primo veicolo.",
+    "footnote": "L'uso IA mensile conta i token di completion per OCR, insert chat e Ask (non gli embedding documenti). Sul Free, la scansione del libretto prima del primo veicolo non consuma il tetto mensile; i moduli manuali restano disponibili se raggiungi il limite. Confermi sempre prima di salvare un evento.",
     "popularBadge": "Più flessibile",
     "cta": "Scarica GarIQ",
     "tiers": [
       {
         "id": "free",
         "name": "Free",
-        "description": "Inizia con i moduli e un piccolo contingente IA server.",
+        "description": "Inizia con i moduli e l'IA server dopo il primo veicolo.",
         "featured": false,
         "highlights": [
           "1 garage di proprietà",
-          "Fino a 3 veicoli per garage",
+          "1 veicolo per garage",
           "Libretto e statistiche completi",
-          "~100K token IA server / mese",
+          "~100K token IA server / mese dal primo veicolo",
+          "Scansione libretto prima del primo veicolo senza consumo del tetto mensile",
           "Condivisione garage non inclusa"
         ]
       },
@@ -448,7 +449,7 @@
       },
       {
         "q": "Come funzionano piani e IA?",
-        "a": "I piani si gestiscono nell'app e includono un contingente di IA server mensile — dettagli nelle Impostazioni, nessun pagamento su questa pagina."
+        "a": "I piani si gestiscono nell'app e includono un contingente di IA server mensile — dettagli nelle Impostazioni, nessun pagamento su questa pagina. Sul Free il tetto mensile parte dal primo veicolo; la scansione libretto prima di allora è illimitata e puoi registrare eventi a mano se raggiungi il limite."
       }
     ]
   },

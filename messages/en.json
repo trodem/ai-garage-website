@@ -334,21 +334,22 @@
   "plans": {
     "label": "Plans & AI",
     "title": "Four account tiers. Same app — scales with your garage.",
-    "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly server AI usage). Plans are assigned to your account in the app — this page does not process payments.",
-    "footnote": "Monthly AI usage counts completion tokens for OCR, chat insert, and Ask (not document embeddings). You always confirm before an event is saved.",
+    "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly server AI usage). Plans are assigned to your account in the app — this page does not process payments. On Free, your monthly server AI period starts when you add your first vehicle.",
+    "footnote": "Monthly AI usage counts completion tokens for OCR, chat insert, and Ask (not document embeddings). On Free, scanning your registration before your first vehicle does not use the monthly cap; manual event forms stay available if you reach the limit. You always confirm before an event is saved.",
     "popularBadge": "Most flexible",
     "cta": "Download GarIQ",
     "tiers": [
       {
         "id": "free",
         "name": "Free",
-        "description": "Start logging with forms and a small server AI allowance.",
+        "description": "Start with forms and server AI after you add your first vehicle.",
         "featured": false,
         "highlights": [
           "1 owned garage",
-          "Up to 3 vehicles per garage",
+          "1 vehicle per garage",
           "Full event logbook & statistics",
-          "~100K server AI tokens / month",
+          "~100K server AI tokens / month from your first vehicle",
+          "Registration scan before your first vehicle doesn't use the monthly cap",
           "Garage sharing not included"
         ]
       },
@@ -448,7 +449,7 @@
       },
       {
         "q": "How do plans and AI work?",
-        "a": "Plans are managed in the app and include a monthly server AI allowance — details appear in Settings, and this page does not process payments."
+        "a": "Plans are managed in the app and include a monthly server AI allowance — details appear in Settings, and this page does not process payments. On Free, the monthly cap starts with your first vehicle; registration scan before that is unlimited, and you can still log events manually if you hit the limit."
       }
     ]
   },
