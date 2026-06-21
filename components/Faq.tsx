@@ -17,7 +17,11 @@ export default async function Faq() {
         {items.map((faq) => (
           <Reveal as="details" key={faq.q} className="faq-item">
             <summary>{faq.q}</summary>
-            <p>{faq.a}</p>
+            <div className="faq-answer">
+              <div>
+                <p>{faq.a}</p>
+              </div>
+            </div>
           </Reveal>
         ))}
       </div>

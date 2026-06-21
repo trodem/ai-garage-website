@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
+import CountUp from "./CountUp";
 
 const SPEND_ITEMS = [
-  { label: "Refueling", color: "#00A7E5", pct: 14, amount: "€ 515.52"   },
-  { label: "Workshop",  color: "#F2137B", pct: 38, amount: "€ 1,355.95" },
-  { label: "Other",     color: "#94a3b8", pct: 48, amount: "€ 1,719.00" },
+  { key: "refueling", color: "#00A7E5", pct: 14, amount: "€ 515.52" },
+  { key: "workshop", color: "#F2137B", pct: 38, amount: "€ 1,355.95" },
+  { key: "other", color: "#94a3b8", pct: 48, amount: "€ 1,719.00" },
 ];
 
 const YEARLY = [
@@ -14,8 +16,8 @@ const YEARLY = [
 ];
 
 const VEHICLES = [
-  { emoji: "🏍️", name: "DUCATI Multistrada", km: "6,450 km tracked",  cost: "€ 2,984.35", color: "#1F1BE8" },
-  { emoji: "🚙", name: "HYUNDAI Santa Fe",   km: "30,431 km tracked", cost: "€ 585.00",    color: "#F2137B" },
+  { emoji: "🏍️", name: "DUCATI Multistrada", kmValue: "6,450", cost: "€ 2,984.35", color: "#1F1BE8" },
+  { emoji: "🚙", name: "HYUNDAI Santa Fe", kmValue: "30,431", cost: "€ 585.00", color: "#F2137B" },
 ];
 
 function Card({
@@ -46,6 +48,7 @@ function Card({
 }
 
 export default function AppPreview() {
+  const t = useTranslations("mockups.appPreview");
   const wrapRef  = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
   const [visible,  setVisible]  = useState(false);
@@ -110,18 +113,18 @@ export default function AppPreview() {
         {/* ── Total Spend — front layer ── */}
         <Card z={48} delay={0} visible={visible}>
           <div className="mb-4 flex flex-wrap items-baseline justify-between gap-1">
-            <span className="text-xs font-semibold text-slate-400 sm:text-sm">Total spend</span>
+            <span className="text-xs font-semibold text-slate-400 sm:text-sm">{t("totalSpend")}</span>
             <span className="text-xl font-black tracking-tight text-primary-500 dark:text-[#4A47FF] sm:text-2xl lg:text-3xl">
-              € 3,590.47
+              <CountUp value={3590.47} prefix="€ " decimals={2} />
             </span>
           </div>
           <div className="space-y-3">
             {SPEND_ITEMS.map((item, i) => (
-              <div key={item.label}>
+              <div key={item.key}>
                 <div className="mb-1 flex justify-between gap-2 text-xs sm:text-sm">
                   <span className="flex min-w-0 items-center gap-1.5 font-medium text-slate-700 dark:text-slate-300">
                     <span className="h-2 w-2 shrink-0 rounded-full sm:h-2.5 sm:w-2.5" style={{ background: item.color }} />
-                    <span className="truncate">{item.label}</span>
+                    <span className="truncate">{t(item.key)}</span>
                   </span>
                   <span className="shrink-0 font-bold text-slate-600 dark:text-slate-300">{item.amount}</span>
                 </div>
@@ -145,7 +148,7 @@ export default function AppPreview() {
 
           <Card z={24} delay={180} visible={visible}>
             <p className="mb-3 text-[10px] font-bold uppercase tracking-widest text-slate-400 sm:mb-4 sm:text-[11px]">
-              Yearly trend
+              {t("yearlyTrend")}
             </p>
             <div className="flex items-end justify-around gap-2 sm:gap-4" style={{ height: 80 }}>
               {YEARLY.map((y) => {
@@ -176,7 +179,7 @@ export default function AppPreview() {
 
           <Card z={36} delay={320} visible={visible} className="flex flex-col justify-between">
             <p className="mb-3 text-[10px] font-bold uppercase tracking-widest text-slate-400 sm:mb-4 sm:text-[11px]">
-              By vehicle
+              {t("byVehicle")}
             </p>
             <div className="space-y-2 sm:space-y-3">
               {VEHICLES.map((v, i) => (
@@ -187,7 +190,7 @@ export default function AppPreview() {
                   <span className="text-lg leading-none sm:text-2xl">{v.emoji}</span>
                   <div className="min-w-0 flex-1">
                     <p className="truncate text-[10px] font-bold text-slate-700 dark:text-slate-200 sm:text-xs">{v.name}</p>
-                    <p className="text-[9px] text-slate-400 sm:text-[10px]">{v.km}</p>
+                    <p className="text-[9px] text-slate-400 sm:text-[10px]">{v.kmValue} {t("kmTracked")}</p>
                   </div>
                   <span
                     className="shrink-0 text-[11px] font-black sm:text-sm"

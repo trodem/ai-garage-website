@@ -1,4 +1,7 @@
+"use client";
+
 import type { ReactNode } from "react";
+import { useTranslations } from "next-intl";
 import {
   FuelIcon,
   WrenchIcon,
@@ -10,6 +13,7 @@ import {
   HomeIcon,
   SparkleIcon,
   SwapIcon,
+  MicIcon,
 } from "./icons/AppIcons";
 
 /** Shared flat "app card" shell — matches AiPreview / FeaturesPreview / StatsPreview style. */
@@ -34,21 +38,66 @@ function Bar({ w = "100%", c }: { w?: string; c?: string }) {
   );
 }
 
+/* 0 — Registration scan → prefilled new-vehicle form */
+function RegistrationScanMockup() {
+  const t = useTranslations("mockups.walkthrough");
+  const fields = [
+    { label: t("make"), value: "DUCATI" },
+    { label: t("model"), value: "Multistrada" },
+    { label: t("plate"), value: "AB 123 CD" },
+    { label: t("vin"), value: "ZDM…A1B2" },
+  ];
+  return (
+    <Frame>
+      <div className="mb-4 flex items-center gap-2">
+        <CarIcon className="h-5 w-5 text-slate-700 dark:text-slate-200" />
+        <span className="text-sm font-bold text-slate-800 dark:text-white">{t("newVehicle")}</span>
+        <span className="ml-auto flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-[11px] font-semibold text-emerald-600 dark:bg-emerald-500/15 dark:text-emerald-400">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" /> {t("fromRegistration")}
+        </span>
+      </div>
+      <div className="mb-4 flex items-center gap-3 rounded-2xl border border-slate-100 bg-slate-50/80 p-3 dark:border-slate-800 dark:bg-slate-800/50">
+        <div className="flex h-12 w-10 shrink-0 items-center justify-center rounded-lg bg-white text-slate-500 shadow-sm dark:bg-slate-700 dark:text-slate-300">
+          <ReceiptIcon className="h-6 w-6" />
+        </div>
+        <div className="flex-1 space-y-1.5">
+          <Bar w="70%" />
+          <Bar w="85%" />
+          <Bar w="50%" />
+        </div>
+        <span className="text-lg text-primary-500 dark:text-brand-cyan">↓</span>
+      </div>
+      <div className="grid grid-cols-2 gap-2">
+        {fields.map((f) => (
+          <div key={f.label} className="rounded-xl border border-slate-100 bg-slate-50/80 px-3 py-2 dark:border-slate-800 dark:bg-slate-800/50">
+            <p className="text-[10px] text-slate-400">{f.label}</p>
+            <p className="truncate text-sm font-bold text-slate-700 dark:text-slate-200">{f.value}</p>
+          </div>
+        ))}
+      </div>
+      <div className="mt-4 flex items-center justify-center gap-2 rounded-full bg-slate-900 py-2.5 text-sm font-semibold text-white dark:bg-white dark:text-slate-950">
+        <span>✓</span><span>{t("reviewSave")}</span>
+      </div>
+    </Frame>
+  );
+}
+
 /* 1 — Capture: photo → editable AI draft */
 function CaptureMockup() {
+  const t = useTranslations("mockups.walkthrough");
   const fields = [
-    { label: "Litri", value: "45 L" },
-    { label: "€/L", value: "1.83" },
-    { label: "Totale", value: "€ 82.35", hl: true },
-    { label: "Km", value: "48.230" },
+    { label: t("liters"), value: "45 L" },
+    { label: t("pricePerLiter"), value: "1.83" },
+    { label: t("total"), value: "€ 82.35", hl: true },
+    { label: "Km", value: "48,230" },
   ];
   return (
     <Frame>
       <div className="mb-4 flex items-center gap-2">
         <FuelIcon className="h-5 w-5 text-slate-700 dark:text-slate-200" />
-        <span className="text-sm font-bold text-slate-800 dark:text-white">Rifornimento</span>
+        <span className="text-sm font-bold text-slate-800 dark:text-white">{t("refueling")}</span>
         <span className="ml-auto flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-[11px] font-semibold text-emerald-600 dark:bg-emerald-500/15 dark:text-emerald-400">
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" /> Bozza IA
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" /> {t("aiDraft")}
         </span>
       </div>
       <div className="mb-4 flex items-center gap-3 rounded-2xl border border-slate-100 bg-slate-50/80 p-3 dark:border-slate-800 dark:bg-slate-800/50">
@@ -71,7 +120,7 @@ function CaptureMockup() {
         ))}
       </div>
       <div className="mt-4 flex items-center justify-center gap-2 rounded-full bg-slate-900 py-2.5 text-sm font-semibold text-white dark:bg-white dark:text-slate-950">
-        <span>✓</span><span>Conferma e salva</span>
+        <span>✓</span><span>{t("confirmSave")}</span>
       </div>
     </Frame>
   );
@@ -79,10 +128,11 @@ function CaptureMockup() {
 
 /* 2 — Timeline grouped by year */
 function TimelineMockup() {
+  const t = useTranslations("mockups.walkthrough");
   const rows = [
-    { Icon: FuelIcon, c: "#00A7E5", cost: "€ 82,35", date: "14 giu" },
-    { Icon: WrenchIcon, c: "#F2137B", cost: "€ 240,00", date: "2 giu" },
-    { Icon: ShieldIcon, c: "#1F1BE8", cost: "€ 410,00", date: "20 mag" },
+    { Icon: FuelIcon, c: "#00A7E5", cost: "€ 82,35", date: t("timelineDate1") },
+    { Icon: WrenchIcon, c: "#F2137B", cost: "€ 240,00", date: t("timelineDate2") },
+    { Icon: ShieldIcon, c: "#1F1BE8", cost: "€ 410,00", date: t("timelineDate3") },
   ];
   return (
     <Frame>
@@ -121,6 +171,7 @@ function TimelineMockup() {
 
 /* 3 — Statistics: per-vehicle comparison */
 function VehicleStatsMockup() {
+  const t = useTranslations("mockups.walkthrough");
   const vehicles = [
     { Icon: MotorcycleIcon, pct: 100, cost: "€ 2.984", c: "#1F1BE8" },
     { Icon: VanIcon, pct: 38, cost: "€ 1.135", c: "#F2137B" },
@@ -129,7 +180,7 @@ function VehicleStatsMockup() {
   return (
     <Frame>
       <div className="mb-4 flex items-center justify-between">
-        <span className="text-sm font-bold text-slate-800 dark:text-white">Per veicolo</span>
+        <span className="text-sm font-bold text-slate-800 dark:text-white">{t("perVehicle")}</span>
         <span className="rounded-full bg-primary-500/10 px-2.5 py-1 text-[11px] font-semibold text-primary-600 dark:bg-brand-cyan/12 dark:text-brand-cyan">2025</span>
       </div>
       <div className="space-y-4">
@@ -154,27 +205,31 @@ function VehicleStatsMockup() {
 
 /* 4 — Ask with a document citation */
 function AskCitationMockup() {
+  const t = useTranslations("mockups.walkthrough");
   return (
     <Frame>
       <div className="mb-4 flex items-center gap-2">
         <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary-500/10 text-primary-600 dark:text-primary-400">
           <SparkleIcon className="h-4 w-4" />
         </div>
-        <span className="text-sm font-bold text-slate-800 dark:text-white">Ask AI</span>
+        <span className="text-sm font-bold text-slate-800 dark:text-white">{t("askAi")}</span>
         <span className="ml-auto flex h-2 w-2 rounded-full bg-emerald-400" />
       </div>
       <div className="space-y-3">
-        <div className="flex justify-end">
+        <div className="flex items-end justify-end gap-2">
           <div className="max-w-[80%] rounded-2xl rounded-br-sm bg-slate-100 px-3.5 py-2.5 text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-            Pressione gomme consigliata?
+            {t("tirePressureQuestion")}
           </div>
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-pink/12 text-brand-pink">
+            <MicIcon className="h-4 w-4" />
+          </span>
         </div>
         <div className="flex gap-2">
           <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-500/10 text-primary-600 dark:text-primary-400">
             <SparkleIcon className="h-4 w-4" />
           </div>
           <div className="flex-1 rounded-2xl rounded-tl-sm bg-primary-500/8 px-3.5 py-2.5 dark:bg-primary-500/15">
-            <p className="mb-2 text-xs text-slate-700 dark:text-slate-200">2,4 bar (anteriore) · 2,6 bar (posteriore)</p>
+            <p className="mb-2 text-xs text-slate-700 dark:text-slate-200">{t("tirePressureAnswer")}</p>
             <div className="flex items-center gap-2 rounded-lg border-l-2 border-brand-cyan bg-white/70 px-2.5 py-1.5 dark:bg-slate-800/70">
               <span className="flex h-7 w-6 items-center justify-center rounded bg-brand-cyan/15 text-[9px] font-bold text-brand-cyan">PDF</span>
               <div className="flex-1 space-y-1">
@@ -233,15 +288,16 @@ function MultiGarageMockup() {
 
 /* 6 — Automatic currency conversion */
 function MultiCurrencyMockup() {
+  const t = useTranslations("mockups.walkthrough");
   return (
     <Frame>
       <div className="mb-4 flex items-center gap-2">
         <FuelIcon className="h-5 w-5 text-slate-700 dark:text-slate-200" />
-        <span className="text-sm font-bold text-slate-800 dark:text-white">Rifornimento</span>
-        <span className="ml-auto text-[10px] text-slate-400">12 giu</span>
+        <span className="text-sm font-bold text-slate-800 dark:text-white">{t("refueling")}</span>
+        <span className="ml-auto text-[10px] text-slate-400">12 Jun</span>
       </div>
       <div className="rounded-2xl border border-slate-100 bg-slate-50/80 p-4 text-center dark:border-slate-800 dark:bg-slate-800/50">
-        <p className="text-[10px] uppercase tracking-widest text-slate-400">Costo nel garage</p>
+        <p className="text-[10px] uppercase tracking-widest text-slate-400">{t("garageCost")}</p>
         <p className="mt-1 text-3xl font-black tracking-tight text-primary-500 dark:text-[#4A47FF]">€ 74,20</p>
         <div className="mt-4 flex items-center justify-center gap-3 rounded-xl bg-white/70 px-3 py-2.5 dark:bg-slate-900/60">
           <span className="flex items-center gap-1.5 text-sm font-bold text-slate-700 dark:text-slate-200">
@@ -254,13 +310,14 @@ function MultiCurrencyMockup() {
             74,20
           </span>
         </div>
-        <p className="mt-2 text-[10px] text-slate-400">1 CHF = 1,091 € · cambio del 12 giu</p>
+        <p className="mt-2 text-[10px] text-slate-400">{t("fxNote")}</p>
       </div>
     </Frame>
   );
 }
 
 const MOCKUPS = [
+  RegistrationScanMockup,
   CaptureMockup,
   TimelineMockup,
   VehicleStatsMockup,

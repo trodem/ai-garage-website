@@ -1,25 +1,29 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const FIELDS = [
-  { label: "Data",   value: "14 giu 2025" },
-  { label: "Km",     value: "48.230" },
-  { label: "Litri",  value: "45 L" },
-  { label: "€/L",    value: "1.83" },
-  { label: "Totale", value: "€ 82.35", highlight: true },
+  { key: "date", value: "14 Jun 2025" },
+  { key: "km", value: "48,230" },
+  { key: "liters", value: "45 L" },
+  { key: "pricePerLiter", value: "1.83" },
+  { key: "total", value: "€ 82.35", highlight: true },
 ];
 
 const CHIPS = [
-  { icon: "⛽", label: "Rifornimento", active: true },
-  { icon: "🔧", label: "Manutenzione" },
-  { icon: "🛡️", label: "Assicurazione" },
+  { icon: "⛽", key: "refueling", active: true },
+  { icon: "🔧", key: "maintenance" },
+  { icon: "🛡️", key: "insurance" },
 ];
 
 export default function FeaturesPreview() {
+  const t = useTranslations("mockups.featuresPreview");
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [animated, setAnimated] = useState(false);
+  const [tilt, setTilt] = useState({ x: 0, y: 0 });
+  const leaving = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -38,8 +42,28 @@ export default function FeaturesPreview() {
     return () => io.disconnect();
   }, []);
 
+  const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (leaving.current) clearTimeout(leaving.current);
+    const el = ref.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const dx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
+    const dy = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
+    setTilt({ x: -dy * 6, y: dx * 8 });
+  };
+
+  const onMouseLeave = () => {
+    leaving.current = setTimeout(() => setTilt({ x: 0, y: 0 }), 80);
+  };
+
   return (
-    <div ref={ref} className="relative flex items-center justify-center py-4">
+    <div
+      ref={ref}
+      className="relative flex items-center justify-center py-4"
+      style={{ perspective: "900px" }}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
+    >
       <div className="pointer-events-none absolute -right-8 -top-8 h-56 w-56 rounded-full bg-primary-500/10 blur-3xl" />
       <div className="pointer-events-none absolute bottom-0 left-4 h-40 w-40 rounded-full bg-brand-cyan/10 blur-2xl" />
 
@@ -47,19 +71,22 @@ export default function FeaturesPreview() {
         className="w-full max-w-sm rounded-3xl border border-slate-200/80 bg-white/95 p-6 shadow-[0_24px_60px_rgba(15,23,42,0.12)] backdrop-blur dark:border-slate-700/50 dark:bg-slate-900/90"
         style={{
           opacity: visible ? 1 : 0,
-          transform: `translateY(${visible ? 0 : 20}px)`,
-          transition: "opacity 700ms ease, transform 700ms cubic-bezier(.4,0,.2,1)",
+          transformStyle: "preserve-3d",
+          transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) translateY(${visible ? 0 : 20}px)`,
+          transition: visible
+            ? "transform 180ms ease-out, opacity 700ms ease"
+            : "opacity 700ms ease, transform 700ms cubic-bezier(.4,0,.2,1)",
         }}
       >
         {/* header */}
         <div className="mb-5 flex items-center justify-between">
-          <span className="text-sm font-bold text-slate-800 dark:text-white">Nuovo evento</span>
+          <span className="text-sm font-bold text-slate-800 dark:text-white">{t("newEvent")}</span>
           <span
             className="flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-[11px] font-semibold text-emerald-600 dark:bg-emerald-500/15 dark:text-emerald-400"
             style={{ opacity: animated ? 1 : 0, transition: "opacity 400ms ease 80ms" }}
           >
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-500" />
-            Bozza IA
+            {t("aiDraft")}
           </span>
         </div>
 
@@ -67,14 +94,14 @@ export default function FeaturesPreview() {
         <div className="mb-5 flex flex-wrap gap-2">
           {CHIPS.map((chip) => (
             <span
-              key={chip.label}
+              key={chip.key}
               className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${
                 chip.active
                   ? "bg-primary-500 text-white"
                   : "border border-slate-200 text-slate-400 dark:border-slate-700 dark:text-slate-500"
               }`}
             >
-              {chip.icon} {chip.label}
+              {chip.icon} {t(chip.key)}
             </span>
           ))}
         </div>
@@ -83,7 +110,7 @@ export default function FeaturesPreview() {
         <div className="space-y-2.5">
           {FIELDS.map((f, i) => (
             <div
-              key={f.label}
+              key={f.key}
               className="flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50/80 px-3.5 py-2.5 dark:border-slate-800 dark:bg-slate-800/50"
               style={{
                 opacity: animated ? 1 : 0,
@@ -91,7 +118,7 @@ export default function FeaturesPreview() {
                 transition: `opacity 400ms ease ${i * 70}ms, transform 400ms ease ${i * 70}ms`,
               }}
             >
-              <span className="text-xs font-medium text-slate-400">{f.label}</span>
+              <span className="text-xs font-medium text-slate-400">{t(f.key)}</span>
               <span
                 className={`text-sm font-bold ${
                   f.highlight
@@ -116,7 +143,7 @@ export default function FeaturesPreview() {
         >
           <div className="flex items-center justify-center gap-2 rounded-full bg-slate-900 py-2.5 text-sm font-semibold text-white dark:bg-white dark:text-slate-950">
             <span>✓</span>
-            <span>Conferma e salva</span>
+            <span>{t("confirm")}</span>
           </div>
         </div>
       </div>

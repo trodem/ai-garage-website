@@ -7,14 +7,29 @@ let revealIndex = 0;
 type RevealProps = {
   as?: ElementType;
   className?: string;
+  variant?: "up" | "left" | "right" | "scale";
   children: ReactNode;
+  [key: `data-${string}`]: unknown;
 };
+
+const VARIANT_CLASS = {
+  up: "",
+  left: "reveal-left",
+  right: "reveal-right",
+  scale: "reveal-scale",
+} as const;
 
 /**
  * Wraps content with the `.reveal` animation, mirroring the IntersectionObserver
  * behaviour from the original main.js (staggered transition delay + is-visible).
  */
-export default function Reveal({ as: Tag = "div", className = "", children }: RevealProps) {
+export default function Reveal({
+  as: Tag = "div",
+  className = "",
+  variant = "up",
+  children,
+  ...rest
+}: RevealProps) {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -46,7 +61,7 @@ export default function Reveal({ as: Tag = "div", className = "", children }: Re
   }, []);
 
   return (
-    <Tag ref={ref} className={`reveal ${className}`}>
+    <Tag ref={ref} className={`reveal ${VARIANT_CLASS[variant]} ${className}`} {...rest}>
       {children}
     </Tag>
   );

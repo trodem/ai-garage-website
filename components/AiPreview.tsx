@@ -4,7 +4,36 @@ import { useEffect, useRef, useState } from "react";
 
 const S = { IDLE: 0, USER: 1, TYPING: 2, RESPONSE: 3, CARD: 4, BUTTON: 5 };
 
-export default function AiPreview() {
+type AiPreviewFields = {
+  date: string;
+  location: string;
+  total: string;
+  pricePerLiter: string;
+  odometer: string;
+  liters: string;
+};
+
+type AiPreviewValues = AiPreviewFields;
+
+type AiPreviewProps = {
+  assistant: string;
+  userMessage: string;
+  answerIntro: string;
+  eventTitle: string;
+  fields: AiPreviewFields;
+  values: AiPreviewValues;
+  confirm: string;
+};
+
+export default function AiPreview({
+  assistant,
+  userMessage,
+  answerIntro,
+  eventTitle,
+  fields,
+  values,
+  confirm,
+}: AiPreviewProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [stage, setStage] = useState(S.IDLE);
 
@@ -14,11 +43,11 @@ export default function AiPreview() {
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => setStage(S.USER),     300);
-          setTimeout(() => setStage(S.TYPING),   900);
+          setTimeout(() => setStage(S.USER), 300);
+          setTimeout(() => setStage(S.TYPING), 900);
           setTimeout(() => setStage(S.RESPONSE), 1800);
-          setTimeout(() => setStage(S.CARD),     2300);
-          setTimeout(() => setStage(S.BUTTON),   2800);
+          setTimeout(() => setStage(S.CARD), 2300);
+          setTimeout(() => setStage(S.BUTTON), 2800);
           io.disconnect();
         }
       },
@@ -33,6 +62,15 @@ export default function AiPreview() {
     transform: `translateY(${stage >= s ? 0 : 8}px)`,
     transition: "opacity 350ms ease, transform 350ms cubic-bezier(.4,0,.2,1)",
   });
+
+  const draftFields = [
+    { label: fields.date, value: values.date },
+    { label: fields.location, value: values.location },
+    { label: fields.total, value: values.total, highlight: true },
+    { label: fields.pricePerLiter, value: values.pricePerLiter },
+    { label: fields.odometer, value: values.odometer },
+    { label: fields.liters, value: values.liters },
+  ];
 
   return (
     <div ref={ref} className="relative flex items-center justify-center py-4">
@@ -52,15 +90,15 @@ export default function AiPreview() {
           <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary-500/10 text-xs text-primary-600 dark:text-primary-400">
             ✦
           </div>
-          <span className="text-sm font-bold text-slate-800 dark:text-white">Ask AI</span>
+          <span className="text-sm font-bold text-slate-800 dark:text-white">{assistant}</span>
           <span className="ml-auto flex h-2 w-2 rounded-full bg-emerald-400" />
         </div>
 
         <div className="space-y-3 text-sm">
           {/* user message */}
           <div className="flex justify-end" style={shown(S.USER)}>
-            <div className="max-w-[78%] rounded-2xl rounded-br-sm bg-slate-100 px-3.5 py-2.5 text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-              Ho fotografato lo scontrino del pieno 📸
+            <div className="max-w-[84%] rounded-2xl rounded-br-sm bg-slate-100 px-3.5 py-2.5 text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+              {userMessage}
             </div>
           </div>
 
@@ -88,11 +126,11 @@ export default function AiPreview() {
               ✦
             </div>
             <div className="rounded-2xl rounded-tl-sm bg-primary-500/8 px-3.5 py-2.5 text-xs text-slate-700 dark:bg-primary-500/15 dark:text-slate-200">
-              Ho trovato questi dati dallo scontrino:
+              {answerIntro}
             </div>
           </div>
 
-          {/* extracted event card */}
+          {/* extracted draft card */}
           <div
             className="ml-9"
             style={{
@@ -105,23 +143,19 @@ export default function AiPreview() {
               <div className="mb-2.5 flex items-center gap-2">
                 <span className="text-base leading-none">⛽</span>
                 <span className="text-xs font-bold text-slate-700 dark:text-slate-200">
-                  Rifornimento
+                  {eventTitle}
                 </span>
-                <span className="ml-auto text-[10px] text-slate-400">14 giu</span>
               </div>
               <div className="grid grid-cols-2 gap-1.5">
-                {[
-                  { label: "Litri",  value: "45 L"     },
-                  { label: "Totale", value: "€ 82.35"  },
-                  { label: "€/L",    value: "1.83"     },
-                  { label: "Km",     value: "48.230"   },
-                ].map((f) => (
+                {draftFields.map((f) => (
                   <div
                     key={f.label}
                     className="rounded-lg bg-white/70 px-2.5 py-1.5 dark:bg-slate-800/60"
                   >
                     <p className="text-[9px] text-slate-400">{f.label}</p>
-                    <p className="text-xs font-bold text-slate-700 dark:text-slate-200">{f.value}</p>
+                    <p className={`truncate text-xs font-bold ${f.highlight ? "text-primary-500 dark:text-[#4A47FF]" : "text-slate-700 dark:text-slate-200"}`}>
+                      {f.value}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -132,7 +166,7 @@ export default function AiPreview() {
           <div className="ml-9" style={shown(S.BUTTON)}>
             <div className="flex items-center justify-center gap-2 rounded-full bg-slate-900 py-2 text-xs font-semibold text-white dark:bg-white dark:text-slate-950">
               <span>✓</span>
-              <span>Conferma e salva</span>
+              <span>{confirm}</span>
             </div>
           </div>
         </div>

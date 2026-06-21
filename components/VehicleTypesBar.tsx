@@ -27,10 +27,15 @@ export default async function VehicleTypesBar() {
             return (
               <div key={type} className="group flex w-28 flex-col items-center gap-4 text-center sm:w-32">
                 <span
-                  className="flex h-20 w-20 items-center justify-center rounded-2xl transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105 sm:h-24 sm:w-24"
-                  style={{ background: `${accent}1f`, boxShadow: `0 14px 36px ${accent}1a`, color: accent }}
+                  className="float-idle flex h-20 w-20 items-center justify-center rounded-2xl transition-all duration-300 group-hover:-translate-y-1.5 group-hover:scale-110 sm:h-24 sm:w-24"
+                  style={{
+                    background: `${accent}1f`,
+                    boxShadow: `0 14px 36px ${accent}1a`,
+                    color: accent,
+                    animationDelay: `${i * 0.4}s`,
+                  }}
                 >
-                  <Icon className="h-9 w-9 sm:h-11 sm:w-11" />
+                  <Icon className="h-9 w-9 transition-transform duration-300 group-hover:scale-110 sm:h-11 sm:w-11" />
                 </span>
                 <span className="text-base font-semibold text-slate-700 dark:text-slate-200 sm:text-lg">
                   {type}

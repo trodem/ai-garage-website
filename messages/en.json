@@ -39,7 +39,13 @@
   },
   "vehicleTypes": {
     "label": "For every vehicle",
-    "items": ["Cars", "Motorcycles", "Vans & campers", "Classic & weekend", "Family fleet"]
+    "items": [
+      "Cars",
+      "Motorcycles",
+      "Vans & campers",
+      "Classic & weekend",
+      "Family fleet"
+    ]
   },
   "notJustTracker": {
     "label": "More than a tracker",
@@ -141,6 +147,14 @@
         "copy": "Owner manuals and insurance PDFs with semantic search and registration prefill."
       },
       {
+        "title": "Voice input for Ask",
+        "copy": "Tap the mic and dictate your question — on-device speech in your preferred language."
+      },
+      {
+        "title": "Scan your documents",
+        "copy": "Snap your registration to create a vehicle, and extract data from insurance policies and purchase contracts."
+      },
+      {
         "title": "Multi-garage",
         "copy": "Invite co-owners, admins, or loggers with roles — great for families."
       },
@@ -193,6 +207,11 @@
     "title": "From a tank of fuel to a smart answer, in a few taps.",
     "steps": [
       {
+        "title": "Start from your registration",
+        "copy": "Adding a vehicle? Snap the registration document and AI fills in make, model, plate, and VIN — you just review and save.",
+        "alt": "GarIQ screen: a vehicle registration photo turned into a prefilled new-vehicle form."
+      },
+      {
         "title": "Capture your way",
         "copy": "Pick the event type, then photo, PDF, chat, or form. AI prepares a draft with amounts, liters, and dates — you review and confirm.",
         "alt": "GarIQ screen: a fuel receipt photo turned into a draft with prefilled fields and a Confirm button."
@@ -208,9 +227,9 @@
         "alt": "GarIQ screen: statistics with spend by category and a monthly chart."
       },
       {
-        "title": "Ask your data",
-        "copy": "“How much on workshop in 2025?” or “recommended tire pressure?” — answers from your events and documents, with citations.",
-        "alt": "GarIQ screen: assistant chat with an answer and a citation from a PDF manual."
+        "title": "Ask your data — even by voice",
+        "copy": "“How much on workshop in 2025?” or “recommended tire pressure?” Type or tap the mic to dictate — answers from your events and documents, with citations.",
+        "alt": "GarIQ screen: assistant chat with a voice mic, an answer, and a citation from a PDF manual."
       },
       {
         "title": "Many garages, one app",
@@ -245,7 +264,30 @@
         "title": "In your language",
         "copy": "The assistant replies in Italian, German, English, French, or Spanish."
       }
-    ]
+    ],
+    "preview": {
+      "assistant": "Chat insert",
+      "userMessage": "Today in Zurich I refueled for 100 CHF, paid 1.95 CHF/L, at 55,250 km.",
+      "answerIntro": "I prepared this refueling draft:",
+      "eventTitle": "Refueling",
+      "fields": {
+        "date": "Date",
+        "location": "Location",
+        "total": "Total",
+        "pricePerLiter": "CHF/L",
+        "odometer": "Km",
+        "liters": "Liters"
+      },
+      "values": {
+        "date": "Today",
+        "location": "Zurich",
+        "total": "100 CHF",
+        "pricePerLiter": "1.95",
+        "odometer": "55,250",
+        "liters": "51.3 L"
+      },
+      "confirm": "Review and save"
+    }
   },
   "stats": {
     "label": "Statistics",
@@ -255,7 +297,12 @@
     "vizCategory": "By category",
     "vizTrend": "Last 12 months",
     "vizFilters": "2025 · All vehicles",
-    "categories": ["Workshop", "Refueling", "Insurance", "Other"],
+    "categories": [
+      "Workshop",
+      "Refueling",
+      "Insurance",
+      "Other"
+    ],
     "cards": [
       {
         "title": "By category",
@@ -302,6 +349,10 @@
     "title": "Real workflows GarIQ is built for — not fictional reviews.",
     "items": [
       {
+        "title": "New vehicle from registration",
+        "copy": "Snap the registration document → AI prefills make, model, plate, and VIN → review → your vehicle is ready."
+      },
+      {
         "title": "Fuel receipt photo",
         "copy": "Snap the station receipt → OCR draft → adjust liters and price → Save → shows on Timeline and Stats."
       },
@@ -328,6 +379,10 @@
       {
         "title": "Refuel abroad",
         "copy": "Pay in CHF or USD → GarIQ converts at the day's rate into your garage currency."
+      },
+      {
+        "title": "Ask hands-free",
+        "copy": "Tap the mic → “What's my average fuel cost?” → GarIQ answers from your data — no typing."
       }
     ]
   },
@@ -520,6 +575,93 @@
       "title": "Link could not be completed",
       "bodyFallback": "This link is invalid or has expired. Request a new confirmation or reset email from the GarIQ app if you still need access.",
       "footerHint": "You can close this page."
+    }
+  },
+  "mockups": {
+    "appPreview": {
+      "totalSpend": "Total spend",
+      "yearlyTrend": "Yearly trend",
+      "byVehicle": "By vehicle",
+      "refueling": "Refueling",
+      "workshop": "Workshop",
+      "other": "Other",
+      "kmTracked": "km tracked"
+    },
+    "featuresPreview": {
+      "newEvent": "New event",
+      "aiDraft": "AI draft",
+      "refueling": "Refueling",
+      "maintenance": "Maintenance",
+      "insurance": "Insurance",
+      "date": "Date",
+      "km": "Km",
+      "liters": "Liters",
+      "pricePerLiter": "€/L",
+      "total": "Total",
+      "confirm": "Confirm and save"
+    },
+    "walkthrough": {
+      "newVehicle": "New vehicle",
+      "fromRegistration": "From registration",
+      "make": "Make",
+      "model": "Model",
+      "plate": "Plate",
+      "vin": "VIN",
+      "reviewSave": "Review and save",
+      "refueling": "Refueling",
+      "aiDraft": "AI draft",
+      "confirmSave": "Confirm and save",
+      "perVehicle": "By vehicle",
+      "askAi": "Ask AI",
+      "tirePressureQuestion": "Recommended tire pressure?",
+      "garageCost": "Garage cost",
+      "liters": "Liters",
+      "pricePerLiter": "€/L",
+      "total": "Total",
+      "timelineDate1": "Jun 14",
+      "timelineDate2": "Jun 2",
+      "timelineDate3": "May 20",
+      "tirePressureAnswer": "2.4 bar (front) · 2.6 bar (rear)",
+      "fxNote": "1 CHF = 1.091 € · rate from Jun 12"
+    },
+    "phoneMockup": {
+      "vehicles": "Vehicles",
+      "timeline": "Timeline",
+      "stats": "Stats",
+      "ask": "Ask",
+      "refueling": "Refueling",
+      "workshop": "Workshop",
+      "insurance": "Insurance",
+      "today": "today",
+      "jun10": "Jun 10",
+      "jun2": "Jun 2",
+      "may28": "May 28",
+      "fuelDetail1": "48 L · €82.50",
+      "workshopDetail": "Workshop · €240",
+      "fuelDetail2": "42 L · €71.40",
+      "monthlyKm": "Monthly km",
+      "latestEvents": "Latest events",
+      "service": "Service",
+      "brakes": "Front brakes",
+      "oilFilters": "Oil + filters",
+      "brakePads": "Pads replaced",
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "may15": "May 15"
+    },
+    "howItWorksPreview": {
+      "title": "Your journey",
+      "create": "Create account",
+      "add": "Add vehicle",
+      "log": "Log event",
+      "docs": "Documents & Ask",
+      "timeline": "Timeline & stats",
+      "active": "In progress",
+      "progress": "Progress"
     }
   }
 }

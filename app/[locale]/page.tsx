@@ -35,9 +35,12 @@ export default async function HomePage({ params }: PageProps) {
 
       <ScrollProgress />
 
-      <div className="fixed inset-x-0 top-0 -z-10 overflow-hidden">
-        <div className="mx-auto h-[28rem] max-w-6xl bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.14),transparent_56%),radial-gradient(circle_at_30%_20%,rgba(14,165,233,0.1),transparent_34%)] blur-3xl dark:bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.22),transparent_56%),radial-gradient(circle_at_30%_20%,rgba(14,165,233,0.1),transparent_34%)]" />
+      <div className="fixed inset-x-0 top-0 -z-10 mx-auto max-w-6xl overflow-hidden">
+        <div className="aurora" />
+        <div className="aurora-pink" />
       </div>
+
+      <div className="noise-overlay" aria-hidden="true" />
 
       <Header />
 

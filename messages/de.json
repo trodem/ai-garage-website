@@ -39,7 +39,13 @@
   },
   "vehicleTypes": {
     "label": "Für jedes Fahrzeug",
-    "items": ["Autos", "Motorräder", "Transporter & Wohnmobile", "Klassiker & Wochenende", "Familienflotte"]
+    "items": [
+      "Autos",
+      "Motorräder",
+      "Transporter & Wohnmobile",
+      "Klassiker & Wochenende",
+      "Familienflotte"
+    ]
   },
   "notJustTracker": {
     "label": "Mehr als ein Tracker",
@@ -141,6 +147,14 @@
         "copy": "Handbücher und Policen mit semantischer Suche und Zulassungs-Scan."
       },
       {
+        "title": "Spracheingabe für Ask",
+        "copy": "Tippe aufs Mikrofon und diktiere deine Frage — Spracherkennung auf dem Gerät, in deiner Sprache."
+      },
+      {
+        "title": "Dokumente scannen",
+        "copy": "Fotografiere den Fahrzeugschein, um ein Fahrzeug anzulegen, und extrahiere Daten aus Policen und Kaufverträgen."
+      },
+      {
         "title": "Mehrere Garagen",
         "copy": "Co-Owner, Admins oder Logger einladen — ideal für Familien."
       },
@@ -193,6 +207,11 @@
     "title": "Vom Tanken zur smarten Antwort, in wenigen Taps.",
     "steps": [
       {
+        "title": "Starte mit dem Fahrzeugschein",
+        "copy": "Fahrzeug hinzufügen? Fotografiere den Fahrzeugschein und die KI füllt Marke, Modell, Kennzeichen und FIN aus — du prüfst nur und speicherst.",
+        "alt": "GarIQ-Screen: ein Fahrzeugschein-Foto wird zum vorausgefüllten Neues-Fahrzeug-Formular."
+      },
+      {
         "title": "Erfassen wie du willst",
         "copy": "Event-Typ wählen, dann Foto, PDF, Chat oder Formular. Die KI erstellt einen Entwurf mit Beträgen, Litern und Daten — du prüfst und bestätigst.",
         "alt": "GarIQ-Screen: ein Tankbeleg-Foto wird zum Entwurf mit ausgefüllten Feldern und Bestätigen-Button."
@@ -208,9 +227,9 @@
         "alt": "GarIQ-Screen: Statistik mit Ausgaben nach Kategorie und Monatsdiagramm."
       },
       {
-        "title": "Frag deine Daten",
-        "copy": "„Wie viel Werkstatt 2025?“ oder „empfohlener Reifendruck?“ — Antworten aus deinen Events und Dokumenten, mit Zitaten.",
-        "alt": "GarIQ-Screen: Assistenten-Chat mit Antwort und Zitat aus einem PDF-Handbuch."
+        "title": "Frag deine Daten — auch per Sprache",
+        "copy": "„Wie viel Werkstatt 2025?“ oder „empfohlener Reifendruck?“ Tippen oder aufs Mikrofon tippen und diktieren — Antworten aus deinen Events und Dokumenten, mit Zitaten.",
+        "alt": "GarIQ-Screen: Assistenten-Chat mit Sprachmikrofon, Antwort und Zitat aus einem PDF-Handbuch."
       },
       {
         "title": "Viele Garagen, eine App",
@@ -245,7 +264,30 @@
         "title": "In deiner Sprache",
         "copy": "Der Assistent antwortet auf Italienisch, Deutsch, Englisch, Französisch oder Spanisch."
       }
-    ]
+    ],
+    "preview": {
+      "assistant": "Chat-Eintrag",
+      "userMessage": "Heute habe ich in Zürich für 100 CHF getankt, 1,95 CHF/L bezahlt, bei 55.250 km.",
+      "answerIntro": "Ich habe diesen Tank-Entwurf vorbereitet:",
+      "eventTitle": "Tanken",
+      "fields": {
+        "date": "Datum",
+        "location": "Ort",
+        "total": "Summe",
+        "pricePerLiter": "CHF/L",
+        "odometer": "Km",
+        "liters": "Liter"
+      },
+      "values": {
+        "date": "Heute",
+        "location": "Zürich",
+        "total": "100 CHF",
+        "pricePerLiter": "1,95",
+        "odometer": "55.250",
+        "liters": "51,3 L"
+      },
+      "confirm": "Prüfen und speichern"
+    }
   },
   "stats": {
     "label": "Statistik",
@@ -255,7 +297,12 @@
     "vizCategory": "Nach Kategorie",
     "vizTrend": "Letzte 12 Monate",
     "vizFilters": "2025 · Alle Fahrzeuge",
-    "categories": ["Werkstatt", "Tanken", "Versicherung", "Sonstiges"],
+    "categories": [
+      "Werkstatt",
+      "Tanken",
+      "Versicherung",
+      "Sonstiges"
+    ],
     "cards": [
       {
         "title": "Nach Kategorie",
@@ -302,6 +349,10 @@
     "title": "Echte Workflows — keine erfundenen Bewertungen.",
     "items": [
       {
+        "title": "Neues Fahrzeug aus dem Schein",
+        "copy": "Fahrzeugschein fotografieren → die KI füllt Marke, Modell, Kennzeichen und FIN aus → prüfen → Fahrzeug ist bereit."
+      },
+      {
         "title": "Tankbeleg-Foto",
         "copy": "Foto → OCR-Entwurf → Liter und Preis anpassen → Speichern → Timeline und Stats."
       },
@@ -328,6 +379,10 @@
       {
         "title": "Tanken im Ausland",
         "copy": "Zahlung in CHF oder USD → GarIQ rechnet zum Tageskurs in die Garagenwährung um."
+      },
+      {
+        "title": "Freihändig fragen",
+        "copy": "Aufs Mikrofon tippen → „Wie hoch sind meine durchschnittlichen Spritkosten?“ → GarIQ antwortet aus deinen Daten — ohne Tippen."
       }
     ]
   },
@@ -500,6 +555,93 @@
       "benefit2": "Browse a year-grouped timeline and cost statistics for your vehicles.",
       "benefit3": "Keep documents in your vault and Ask questions based on your own data.",
       "footerHint": "You can close this page."
+    }
+  },
+  "mockups": {
+    "appPreview": {
+      "totalSpend": "Gesamtausgaben",
+      "yearlyTrend": "Jahrestrend",
+      "byVehicle": "Nach Fahrzeug",
+      "refueling": "Tanken",
+      "workshop": "Werkstatt",
+      "other": "Sonstiges",
+      "kmTracked": "km erfasst"
+    },
+    "featuresPreview": {
+      "newEvent": "Neues Event",
+      "aiDraft": "KI-Entwurf",
+      "refueling": "Tanken",
+      "maintenance": "Wartung",
+      "insurance": "Versicherung",
+      "date": "Datum",
+      "km": "Km",
+      "liters": "Liter",
+      "pricePerLiter": "€/L",
+      "total": "Summe",
+      "confirm": "Bestätigen und speichern"
+    },
+    "walkthrough": {
+      "newVehicle": "Neues Fahrzeug",
+      "fromRegistration": "Aus dem Schein",
+      "make": "Marke",
+      "model": "Modell",
+      "plate": "Kennzeichen",
+      "vin": "FIN",
+      "reviewSave": "Prüfen und speichern",
+      "refueling": "Tanken",
+      "aiDraft": "KI-Entwurf",
+      "confirmSave": "Bestätigen und speichern",
+      "perVehicle": "Nach Fahrzeug",
+      "askAi": "Ask AI",
+      "tirePressureQuestion": "Empfohlener Reifendruck?",
+      "garageCost": "Garagenkosten",
+      "liters": "Liter",
+      "pricePerLiter": "€/L",
+      "total": "Summe",
+      "timelineDate1": "14. Juni",
+      "timelineDate2": "2. Juni",
+      "timelineDate3": "20. Mai",
+      "tirePressureAnswer": "2,4 bar (vorn) · 2,6 bar (hinten)",
+      "fxNote": "1 CHF = 1,091 € · Kurs vom 12. Juni"
+    },
+    "phoneMockup": {
+      "vehicles": "Fahrzeuge",
+      "timeline": "Timeline",
+      "stats": "Stats",
+      "ask": "Ask",
+      "refueling": "Tanken",
+      "workshop": "Werkstatt",
+      "insurance": "Versicherung",
+      "today": "heute",
+      "jun10": "10. Juni",
+      "jun2": "2. Juni",
+      "may28": "28. Mai",
+      "fuelDetail1": "48 L · €82,50",
+      "workshopDetail": "Werkstatt · €240",
+      "fuelDetail2": "42 L · €71,40",
+      "monthlyKm": "Monats-km",
+      "latestEvents": "Letzte Events",
+      "service": "Service",
+      "brakes": "Vordere Bremsen",
+      "oilFilters": "Öl + Filter",
+      "brakePads": "Beläge ersetzt",
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mär",
+      "apr": "Apr",
+      "may": "Mai",
+      "jun": "Jun",
+      "may15": "15. Mai"
+    },
+    "howItWorksPreview": {
+      "title": "Dein Ablauf",
+      "create": "Account erstellen",
+      "add": "Fahrzeug hinzufügen",
+      "log": "Event erfassen",
+      "docs": "Dokumente & Ask",
+      "timeline": "Timeline & Stats",
+      "active": "Aktiv",
+      "progress": "Fortschritt"
     }
   }
 }

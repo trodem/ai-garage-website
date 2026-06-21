@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import FeaturesPreview from "./FeaturesPreview";
+import SpotlightGroup from "./SpotlightGroup";
 import { getTranslations } from "next-intl/server";
 
 type FeatureItem = { title: string; copy: string };
@@ -17,14 +18,20 @@ export default async function FeaturesSection() {
         </div>
         <FeaturesPreview />
       </div>
-      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        {items.map((feature) => (
-          <Reveal as="article" key={feature.title} className="feature-card">
+      <SpotlightGroup className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {items.map((feature, i) => (
+          <Reveal
+            as="article"
+            key={feature.title}
+            variant={i % 2 === 0 ? "left" : "right"}
+            className="feature-card"
+            data-spotlight
+          >
             <h3>{feature.title}</h3>
             <p>{feature.copy}</p>
           </Reveal>
         ))}
-      </div>
+      </SpotlightGroup>
     </section>
   );
 }

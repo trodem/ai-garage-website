@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import CountUp from "./CountUp";
 
 type StatsPreviewProps = {
   spendLabel: string;
@@ -28,6 +29,8 @@ export default function StatsPreview({
 }: StatsPreviewProps) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const [animated, setAnimated] = useState(false);
+  const [tilt, setTilt] = useState({ x: 0, y: 0 });
+  const leaving = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const el = wrapRef.current;
@@ -45,9 +48,36 @@ export default function StatsPreview({
     return () => io.disconnect();
   }, []);
 
+  const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (leaving.current) clearTimeout(leaving.current);
+    const el = wrapRef.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const dx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
+    const dy = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
+    setTilt({ x: -dy * 6, y: dx * 8 });
+  };
+
+  const onMouseLeave = () => {
+    leaving.current = setTimeout(() => setTilt({ x: 0, y: 0 }), 80);
+  };
+
   return (
-    <div ref={wrapRef} className="w-full">
-      <div className="rounded-3xl border border-slate-200/80 bg-white/95 p-6 shadow-[0_24px_60px_rgba(15,23,42,0.13)] backdrop-blur dark:border-slate-700/50 dark:bg-slate-900/90">
+    <div
+      ref={wrapRef}
+      className="w-full"
+      style={{ perspective: "900px" }}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
+    >
+      <div
+        className="rounded-3xl border border-slate-200/80 bg-white/95 p-6 shadow-[0_24px_60px_rgba(15,23,42,0.13)] backdrop-blur dark:border-slate-700/50 dark:bg-slate-900/90"
+        style={{
+          transformStyle: "preserve-3d",
+          transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+          transition: "transform 180ms ease-out",
+        }}
+      >
         {/* Filter chips */}
         <div className="mb-5 flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-primary-500/10 px-3 py-1 text-xs font-semibold text-primary-600 dark:bg-brand-cyan/12 dark:text-brand-cyan">
@@ -61,7 +91,7 @@ export default function StatsPreview({
             {spendLabel}
           </span>
           <span className="text-2xl font-black tracking-tight text-primary-500 dark:text-[#4A47FF] lg:text-3xl">
-            € 3,228
+            <CountUp value={3228} prefix="€ " />
           </span>
         </div>
 

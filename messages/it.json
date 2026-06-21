@@ -39,7 +39,13 @@
   },
   "vehicleTypes": {
     "label": "Per ogni veicolo",
-    "items": ["Auto", "Moto", "Furgoni e camper", "Classiche e weekend", "Flotta familiare"]
+    "items": [
+      "Auto",
+      "Moto",
+      "Furgoni e camper",
+      "Classiche e weekend",
+      "Flotta familiare"
+    ]
   },
   "notJustTracker": {
     "label": "Più di un tracker",
@@ -141,6 +147,14 @@
         "copy": "Manuali e polizze con ricerca semantica e scansione libretto."
       },
       {
+        "title": "Comandi vocali per Ask",
+        "copy": "Tocca il microfono e detta la domanda — riconoscimento vocale sul dispositivo, nella tua lingua."
+      },
+      {
+        "title": "Scansiona i documenti",
+        "copy": "Fotografa il libretto per creare il veicolo ed estrai i dati da polizze e contratti d'acquisto."
+      },
+      {
         "title": "Più garage",
         "copy": "Invita co-proprietari, admin o logger — ideale per famiglie."
       },
@@ -193,6 +207,11 @@
     "title": "Dal pieno alla risposta intelligente, in pochi tocchi.",
     "steps": [
       {
+        "title": "Parti dal libretto",
+        "copy": "Aggiungi un veicolo? Fotografa il libretto e l'IA compila marca, modello, targa e telaio — a te basta controllare e salvare.",
+        "alt": "Schermata GarIQ: foto del libretto trasformata in un modulo nuovo veicolo già compilato."
+      },
+      {
         "title": "Cattura come preferisci",
         "copy": "Scegli il tipo di evento, poi foto, PDF, chat o modulo. L'IA prepara una bozza con importi, litri e date — tu controlli e confermi.",
         "alt": "Schermata GarIQ: foto di uno scontrino trasformata in una bozza con i campi compilati e il pulsante Conferma."
@@ -208,9 +227,9 @@
         "alt": "Schermata GarIQ: statistiche con spesa per categoria e grafico mensile."
       },
       {
-        "title": "Chiedi ai tuoi dati",
-        "copy": "«Quanto ho speso di officina nel 2025?» o «pressione gomme consigliata?» — risposte dai tuoi eventi e documenti, con citazioni.",
-        "alt": "Schermata GarIQ: chat dell'assistente con risposta e citazione da un manuale PDF."
+        "title": "Chiedi ai tuoi dati — anche a voce",
+        "copy": "«Quanto ho speso di officina nel 2025?» o «pressione gomme consigliata?» Scrivi o tocca il microfono per dettare — risposte dai tuoi eventi e documenti, con citazioni.",
+        "alt": "Schermata GarIQ: chat dell'assistente con microfono vocale, risposta e citazione da un manuale PDF."
       },
       {
         "title": "Più garage in un'app",
@@ -245,7 +264,30 @@
         "title": "Nella tua lingua",
         "copy": "L'assistente risponde in italiano, tedesco, inglese, francese o spagnolo."
       }
-    ]
+    ],
+    "preview": {
+      "assistant": "Inserimento chat",
+      "userMessage": "Oggi a Zurigo ho fatto rifornimento per 100 CHF e ho pagato 1,95 CHF/L a 55.250 km.",
+      "answerIntro": "Ho preparato questa bozza di rifornimento:",
+      "eventTitle": "Rifornimento",
+      "fields": {
+        "date": "Data",
+        "location": "Luogo",
+        "total": "Totale",
+        "pricePerLiter": "CHF/L",
+        "odometer": "Km",
+        "liters": "Litri"
+      },
+      "values": {
+        "date": "Oggi",
+        "location": "Zurigo",
+        "total": "100 CHF",
+        "pricePerLiter": "1,95",
+        "odometer": "55.250",
+        "liters": "51,3 L"
+      },
+      "confirm": "Controlla e salva"
+    }
   },
   "stats": {
     "label": "Statistiche",
@@ -255,7 +297,12 @@
     "vizCategory": "Per categoria",
     "vizTrend": "Ultimi 12 mesi",
     "vizFilters": "2025 · Tutti i veicoli",
-    "categories": ["Officina", "Rifornimento", "Assicurazione", "Altro"],
+    "categories": [
+      "Officina",
+      "Rifornimento",
+      "Assicurazione",
+      "Altro"
+    ],
     "cards": [
       {
         "title": "Per categoria",
@@ -302,6 +349,10 @@
     "title": "Flussi reali — non recensioni inventate.",
     "items": [
       {
+        "title": "Nuovo veicolo dal libretto",
+        "copy": "Fotografa il libretto → l'IA compila marca, modello, targa e telaio → controlli → il veicolo è pronto."
+      },
+      {
         "title": "Foto scontrino",
         "copy": "Scatta → bozza OCR → litri e prezzo → Salva → timeline e statistiche."
       },
@@ -328,6 +379,10 @@
       {
         "title": "Rifornimento all'estero",
         "copy": "Paghi in CHF o USD → l'app converte col cambio del giorno nella valuta del garage."
+      },
+      {
+        "title": "Chiedi a mani libere",
+        "copy": "Tocca il microfono → «Qual è il mio costo medio di carburante?» → GarIQ risponde dai tuoi dati — senza digitare."
       }
     ]
   },
@@ -500,6 +555,93 @@
       "benefit2": "Browse a year-grouped timeline and cost statistics for your vehicles.",
       "benefit3": "Keep documents in your vault and Ask questions based on your own data.",
       "footerHint": "You can close this page."
+    }
+  },
+  "mockups": {
+    "appPreview": {
+      "totalSpend": "Spesa totale",
+      "yearlyTrend": "Trend annuale",
+      "byVehicle": "Per veicolo",
+      "refueling": "Rifornimento",
+      "workshop": "Officina",
+      "other": "Altro",
+      "kmTracked": "km tracciati"
+    },
+    "featuresPreview": {
+      "newEvent": "Nuovo evento",
+      "aiDraft": "Bozza IA",
+      "refueling": "Rifornimento",
+      "maintenance": "Manutenzione",
+      "insurance": "Assicurazione",
+      "date": "Data",
+      "km": "Km",
+      "liters": "Litri",
+      "pricePerLiter": "€/L",
+      "total": "Totale",
+      "confirm": "Conferma e salva"
+    },
+    "walkthrough": {
+      "newVehicle": "Nuovo veicolo",
+      "fromRegistration": "Da libretto",
+      "make": "Marca",
+      "model": "Modello",
+      "plate": "Targa",
+      "vin": "Telaio",
+      "reviewSave": "Controlla e salva",
+      "refueling": "Rifornimento",
+      "aiDraft": "Bozza IA",
+      "confirmSave": "Conferma e salva",
+      "perVehicle": "Per veicolo",
+      "askAi": "Ask AI",
+      "tirePressureQuestion": "Pressione gomme consigliata?",
+      "garageCost": "Costo nel garage",
+      "liters": "Litri",
+      "pricePerLiter": "€/L",
+      "total": "Totale",
+      "timelineDate1": "14 giu",
+      "timelineDate2": "2 giu",
+      "timelineDate3": "20 mag",
+      "tirePressureAnswer": "2,4 bar (anteriore) · 2,6 bar (posteriore)",
+      "fxNote": "1 CHF = 1,091 € · cambio del 12 giu"
+    },
+    "phoneMockup": {
+      "vehicles": "Veicoli",
+      "timeline": "Timeline",
+      "stats": "Stats",
+      "ask": "Ask",
+      "refueling": "Rifornimento",
+      "workshop": "Officina",
+      "insurance": "Assicurazione",
+      "today": "oggi",
+      "jun10": "10 giu",
+      "jun2": "2 giu",
+      "may28": "28 mag",
+      "fuelDetail1": "48 L · €82,50",
+      "workshopDetail": "Officina · €240",
+      "fuelDetail2": "42 L · €71,40",
+      "monthlyKm": "Km mensili",
+      "latestEvents": "Ultimi eventi",
+      "service": "Tagliando",
+      "brakes": "Freni anteriori",
+      "oilFilters": "Olio + filtri",
+      "brakePads": "Pastiglie sost.",
+      "jan": "Gen",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "Mag",
+      "jun": "Giu",
+      "may15": "15 mag"
+    },
+    "howItWorksPreview": {
+      "title": "Il tuo percorso",
+      "create": "Crea account",
+      "add": "Aggiungi veicolo",
+      "log": "Registra evento",
+      "docs": "Documenti e Ask",
+      "timeline": "Timeline e stats",
+      "active": "In corso",
+      "progress": "Progresso"
     }
   }
 }

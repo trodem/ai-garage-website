@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import AppPreview from "@/components/AppPreview";
+import MagneticButton from "@/components/MagneticButton";
 
 export default async function Hero() {
   const t = await getTranslations("hero");
@@ -19,18 +20,18 @@ export default async function Hero() {
             {t("badge")}
           </div>
           <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl">
-            {t("title")}
+            <span className="text-gradient">{t("title")}</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
             {t("subtitle")}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
+            <MagneticButton
               href="#download"
-              className="btn-soft inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+              className="btn-shine inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
             >
               {t("ctaPrimary")}
-            </a>
+            </MagneticButton>
             <a
               href="#how-it-works"
               className="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-950 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:text-white"
@@ -54,6 +55,10 @@ export default async function Hero() {
         <div className="flex items-center justify-center py-8 lg:py-0">
           <AppPreview />
         </div>
+      </div>
+
+      <div className="pointer-events-none hidden justify-center pb-8 text-slate-400 lg:flex dark:text-slate-500">
+        <span className="scroll-cue" aria-hidden="true" />
       </div>
     </section>
   );

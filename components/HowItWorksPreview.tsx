@@ -1,16 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const STEPS = [
-  { num: "01", label: "Crea account",      status: "done"    },
-  { num: "02", label: "Aggiungi veicolo",  status: "done"    },
-  { num: "03", label: "Registra evento",   status: "active"  },
-  { num: "04", label: "Documenti e Ask",   status: "pending" },
-  { num: "05", label: "Timeline e stats",  status: "pending" },
+  { num: "01", key: "create", status: "done" },
+  { num: "02", key: "add", status: "done" },
+  { num: "03", key: "log", status: "active" },
+  { num: "04", key: "docs", status: "pending" },
+  { num: "05", key: "timeline", status: "pending" },
 ] as const;
 
 export default function HowItWorksPreview() {
+  const t = useTranslations("mockups.howItWorksPreview");
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -46,7 +48,7 @@ export default function HowItWorksPreview() {
         }}
       >
         <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-          Il tuo percorso
+          {t("title")}
         </p>
 
         <div className="space-y-2">
@@ -92,12 +94,12 @@ export default function HowItWorksPreview() {
                       : "text-slate-400 dark:text-slate-500"
                   }`}
                 >
-                  {s.label}
+                  {t(s.key)}
                 </span>
 
                 {isActive && (
                   <span className="ml-auto shrink-0 rounded-full bg-primary-500/10 px-2 py-0.5 text-[10px] font-bold text-primary-600 dark:text-primary-400">
-                    In corso
+                    {t("active")}
                   </span>
                 )}
               </div>
@@ -108,7 +110,7 @@ export default function HowItWorksPreview() {
         {/* progress bar */}
         <div className="mt-5">
           <div className="mb-1.5 flex justify-between text-[10px] text-slate-400">
-            <span>Progresso</span>
+            <span>{t("progress")}</span>
             <span style={{ transition: "all 700ms ease 600ms" }}>{visible ? "60%" : "0%"}</span>
           </div>
           <div className="h-1.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">

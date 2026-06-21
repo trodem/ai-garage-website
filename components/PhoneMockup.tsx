@@ -1,21 +1,24 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import LogoIcon from "@/components/LogoIcon";
 
 const BAR_DATA = [
-  { month: "Gen", km: 420 },
-  { month: "Feb", km: 310 },
-  { month: "Mar", km: 580 },
-  { month: "Apr", km: 490 },
-  { month: "Mag", km: 720 },
-  { month: "Giu", km: 390 },
+  { monthKey: "jan", km: 420 },
+  { monthKey: "feb", km: 310 },
+  { monthKey: "mar", km: 580 },
+  { monthKey: "apr", km: 490 },
+  { monthKey: "may", km: 720 },
+  { monthKey: "jun", km: 390 },
 ];
 
 const MAX_KM = Math.max(...BAR_DATA.map((d) => d.km));
 
 const TIMELINE = [
-  { type: "refuel",   icon: "⛽", label: "Rifornimento",  detail: "48 L · €82,50",  date: "10 giu" },
-  { type: "workshop", icon: "🔧", label: "Tagliando",      detail: "Olio + filtri",   date: "2 giu"  },
-  { type: "refuel",   icon: "⛽", label: "Rifornimento",  detail: "42 L · €71,40",  date: "28 mag" },
-  { type: "workshop", icon: "🔧", label: "Freni anteriori", detail: "Pastiglie sost.", date: "15 mag" },
+  { type: "refuel", labelKey: "refueling", detailKey: "fuelDetail1", dateKey: "jun10" },
+  { type: "workshop", labelKey: "service", detailKey: "oilFilters", dateKey: "jun2" },
+  { type: "refuel", labelKey: "refueling", detailKey: "fuelDetail2", dateKey: "may28" },
+  { type: "workshop", labelKey: "brakes", detailKey: "brakePads", dateKey: "may15" },
 ];
 
 const TYPE_COLORS: Record<string, string> = {
@@ -24,6 +27,8 @@ const TYPE_COLORS: Record<string, string> = {
 };
 
 export default function PhoneMockup() {
+  const t = useTranslations("mockups.phoneMockup");
+
   return (
     <div className="relative flex items-center justify-center">
       {/* ambient glow */}
@@ -58,14 +63,14 @@ export default function PhoneMockup() {
           {/* ── Bar chart ── */}
           <div className="mb-4 rounded-2xl border border-white/5 bg-white/5 p-3">
             <div className="mb-2 text-[9px] font-bold uppercase tracking-widest text-slate-400">
-              Km mensili
+              {t("monthlyKm")}
             </div>
             <div className="flex items-end justify-between gap-1" style={{ height: 56 }}>
               {BAR_DATA.map((d, i) => {
                 const pct = (d.km / MAX_KM) * 100;
                 const isLast = i === BAR_DATA.length - 1;
                 return (
-                  <div key={d.month} className="flex flex-1 flex-col items-center gap-1">
+                  <div key={d.monthKey} className="flex flex-1 flex-col items-center gap-1">
                     <div
                       className="w-full rounded-t-sm"
                       style={{
@@ -76,7 +81,7 @@ export default function PhoneMockup() {
                         minHeight: 4,
                       }}
                     />
-                    <span className="text-[8px] text-slate-500">{d.month}</span>
+                    <span className="text-[8px] text-slate-500">{t(d.monthKey)}</span>
                   </div>
                 );
               })}
@@ -86,7 +91,7 @@ export default function PhoneMockup() {
           {/* ── Timeline ── */}
           <div className="rounded-2xl border border-white/5 bg-white/5 p-3">
             <div className="mb-2 text-[9px] font-bold uppercase tracking-widest text-slate-400">
-              Ultimi eventi
+              {t("latestEvents")}
             </div>
             <div className="relative space-y-3 pl-5">
               {/* vertical line */}
@@ -105,10 +110,10 @@ export default function PhoneMockup() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="flex items-baseline justify-between">
-                      <span className="text-[10px] font-semibold text-white">{ev.label}</span>
-                      <span className="text-[8px] text-slate-500">{ev.date}</span>
+                      <span className="text-[10px] font-semibold text-white">{t(ev.labelKey)}</span>
+                      <span className="text-[8px] text-slate-500">{t(ev.dateKey)}</span>
                     </div>
-                    <div className="text-[9px] text-slate-400">{ev.detail}</div>
+                    <div className="text-[9px] text-slate-400">{t(ev.detailKey)}</div>
                   </div>
                 </div>
               ))}
