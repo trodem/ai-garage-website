@@ -26,7 +26,7 @@
   "hero": {
     "badge": "Logbuch + KI unter deiner Kontrolle",
     "title": "Viel mehr als ein Ausgaben-Tracker — das Gehirn deiner Garage.",
-    "subtitle": "Foto, PDF oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann frag alles zu deinen Fahrzeugen und Dokumenten — in deiner Sprache. Tanken, Wartung, Versicherung, Steuern, Prüfungen, E-Laden und Ausgaben: alles in Timeline und Statistik, auch über mehrere Währungen.",
+    "subtitle": "Foto, PDF oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann frag alles zu deinen Fahrzeugen und Dokumenten — in deiner Sprache. Tanken, Wartung, Versicherung, Steuern, Prüfungen, E-Laden, Ausgaben und Fahrten: alles in Timeline und Statistik, auch über mehrere Währungen.",
     "ctaPrimary": "GarIQ laden",
     "ctaSecondary": "So funktioniert's",
     "stat1Title": "Dein Weg",
@@ -128,7 +128,11 @@
     "items": [
       {
         "title": "Events erfassen",
-        "copy": "Tanken, Laden, Werkstatt, Versicherung, Steuer, Prüfung, Ausgaben und Notizen."
+        "copy": "Tanken, Laden, Werkstatt, Versicherung, Steuer, Prüfung, Ausgaben, Notizen und Fahrten."
+      },
+      {
+        "title": "Fahrten erfassen",
+        "copy": "Routen mit Fahrer, Abfahrt und Kilometerstand — Ankunft später ergänzen. Keine Ausgabenzeile; Fahrten stehen in der Timeline neben Tanken und Werkstatt."
       },
       {
         "title": "Erfassungs-Sheet",
@@ -468,7 +472,7 @@
     "items": [
       {
         "q": "Was kann ich erfassen?",
-        "a": "Tanken, Laden, Werkstatt, Versicherung, Steuern, Prüfungen, Ausgaben und Notizen — pro Fahrzeug."
+        "a": "Tanken, Laden, Werkstatt, Versicherung, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten (Route, Fahrer und Kilometerstand — kein Ausgabeneintrag) — pro Fahrzeug."
       },
       {
         "q": "Speichert die KI automatisch?",

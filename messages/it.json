@@ -26,7 +26,7 @@
   "hero": {
     "badge": "Libretto + IA sotto il tuo controllo",
     "title": "Molto più di un registro spese: il cervello del tuo garage.",
-    "subtitle": "Foto, PDF o chat → l'IA prepara la voce e tu confermi, sempre. Poi chiedi qualsiasi cosa ai tuoi veicoli e ai tuoi documenti — nella tua lingua. Rifornimenti, tagliandi, assicurazioni, tasse, revisioni, ricariche EV e spese: tutto in timeline e statistiche, anche in più valute.",
+    "subtitle": "Foto, PDF o chat → l'IA prepara la voce e tu confermi, sempre. Poi chiedi qualsiasi cosa ai tuoi veicoli e ai tuoi documenti — nella tua lingua. Rifornimenti, tagliandi, assicurazioni, tasse, revisioni, ricariche EV, spese e viaggi: tutto in timeline e statistiche, anche in più valute.",
     "ctaPrimary": "Scarica GarIQ",
     "ctaSecondary": "Come funziona",
     "stat1Title": "A modo tuo",
@@ -128,7 +128,11 @@
     "items": [
       {
         "title": "Registro eventi",
-        "copy": "Rifornimento, ricarica, officina, assicurazione, tasse, revisione, spese e note."
+        "copy": "Rifornimento, ricarica, officina, assicurazione, tasse, revisione, spese, note e viaggi."
+      },
+      {
+        "title": "Registro viaggi",
+        "copy": "Percorsi con autista, partenza e chilometraggio — completa l'arrivo quando vuoi. Nessun importo spesa; i viaggi stanno in timeline accanto a carburante e officina."
       },
       {
         "title": "Foglio di inserimento",
@@ -468,7 +472,7 @@
     "items": [
       {
         "q": "Cosa posso registrare?",
-        "a": "Rifornimento, ricarica, officina, assicurazione, tasse, revisioni, spese e note — per veicolo."
+        "a": "Rifornimento, ricarica, officina, assicurazione, tasse, revisioni, spese, note e viaggi (percorso, autista e chilometraggio — senza riga spesa) — per veicolo."
       },
       {
         "q": "L'IA salva da sola?",

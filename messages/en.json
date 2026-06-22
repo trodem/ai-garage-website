@@ -26,7 +26,7 @@
   "hero": {
     "badge": "Logbook + AI you control",
     "title": "Much more than an expense tracker — the brain of your garage.",
-    "subtitle": "Photo, PDF, or chat → AI drafts the entry and you confirm, every time. Then ask anything about your vehicles and documents — in your language. Fuel, service, insurance, taxes, inspections, EV charging, and expenses: all on a timeline and in statistics, even across currencies.",
+    "subtitle": "Photo, PDF, or chat → AI drafts the entry and you confirm, every time. Then ask anything about your vehicles and documents — in your language. Fuel, service, insurance, taxes, inspections, EV charging, expenses, and trips — all on a timeline and in statistics, even across currencies.",
     "ctaPrimary": "Download GarIQ",
     "ctaSecondary": "See how it works",
     "stat1Title": "Log your way",
@@ -128,7 +128,11 @@
     "items": [
       {
         "title": "Event logging",
-        "copy": "Refuel, charge, workshop, insurance, tax, inspection, expense, and notes."
+        "copy": "Refuel, charge, workshop, insurance, tax, inspection, expense, notes, and trips."
+      },
+      {
+        "title": "Trip logging",
+        "copy": "Record routes with driver, departure, and odometer — add arrival when ready. No spend line; trips live on your timeline next to fuel and service."
       },
       {
         "title": "Insert capture sheet",
@@ -468,7 +472,7 @@
     "items": [
       {
         "q": "What can I track?",
-        "a": "Fuel, charging, workshop, insurance, taxes, inspections, general expenses, and diary notes — all tied to a vehicle."
+        "a": "Fuel, charging, workshop, insurance, taxes, inspections, general expenses, diary notes, and trips (route, driver, and odometer — not a spend entry) — all tied to a vehicle."
       },
       {
         "q": "Does AI save automatically?",
