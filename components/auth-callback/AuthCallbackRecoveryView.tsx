@@ -1,8 +1,15 @@
 import AuthCallbackMessageView from "./AuthCallbackMessageView";
-import en from "@/messages/en.json";
+import {
+  getAuthCallbackCopy,
+  type AuthCallbackLocale,
+} from "@/lib/authCallbackMessages";
 
-export default function AuthCallbackRecoveryView() {
-  const copy = en.authCallback.recovery;
+type Props = {
+  locale?: AuthCallbackLocale;
+};
+
+export default function AuthCallbackRecoveryView({ locale = "en" }: Props) {
+  const copy = getAuthCallbackCopy(locale).recovery;
   return (
     <AuthCallbackMessageView
       title={copy.title}

@@ -1,9 +1,14 @@
 import type { WelcomeCelebrationCopy } from "@/components/welcome/WelcomeCelebration";
-import en from "@/messages/en.json";
+import {
+  getAuthCallbackCopy,
+  type AuthCallbackLocale,
+} from "@/lib/authCallbackMessages";
 import WelcomeCelebration from "@/components/welcome/WelcomeCelebration";
 
-export function getAuthCallbackSignupCopy(): WelcomeCelebrationCopy {
-  const s = en.authCallback.signup;
+export function getAuthCallbackSignupCopy(
+  locale: AuthCallbackLocale = "en",
+): WelcomeCelebrationCopy {
+  const s = getAuthCallbackCopy(locale).signup;
   return {
     badge: s.badge,
     title: s.title,
@@ -20,6 +25,10 @@ export function getAuthCallbackSignupCopy(): WelcomeCelebrationCopy {
   };
 }
 
-export default function AuthCallbackSignupView() {
-  return <WelcomeCelebration copy={getAuthCallbackSignupCopy()} />;
+type Props = {
+  locale?: AuthCallbackLocale;
+};
+
+export default function AuthCallbackSignupView({ locale = "en" }: Props) {
+  return <WelcomeCelebration copy={getAuthCallbackSignupCopy(locale)} />;
 }

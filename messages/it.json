@@ -40,9 +40,10 @@
   "vehicleTypes": {
     "label": "Per ogni veicolo",
     "items": [
-      "Auto",
-      "Moto",
-      "Furgoni e camper",
+      "Auto e SUV",
+      "Moto e scooter",
+      "Furgoni, camion e camper",
+      "E-bike e rimorchi",
       "Classiche e weekend",
       "Flotta familiare"
     ]
@@ -140,7 +141,19 @@
       },
       {
         "title": "OCR da foto e PDF",
-        "copy": "Scontrino o fattura in bozza modificabile in pochi secondi."
+        "copy": "Scontrino o fattura in bozza modificabile in pochi secondi, con indicatori di affidabilità sui campi compilati dall'AI."
+      },
+      {
+        "title": "Cerca nella timeline",
+        "copy": "Ricerca full-text tra gli eventi, filtrabile per anno e veicolo — lo stesso motore che alimenta Ask."
+      },
+      {
+        "title": "Rilevamento duplicati",
+        "copy": "Un avviso discreto segnala quando esiste già una voce simile — decidi tu cosa salvare."
+      },
+      {
+        "title": "Veicoli attivi e archiviati",
+        "copy": "Imposta un veicolo come inattivo per nasconderlo da Home, Timeline e Statistiche mantenendone lo storico completo."
       },
       {
         "title": "Ask AI",
@@ -547,18 +560,38 @@
   },
   "authCallback": {
     "signup": {
-      "badge": "Email confirmed",
-      "title": "Signup complete",
-      "lead": "Your GarIQ account is active and your email address has been verified. Return to the app on your phone to sign in and get started.",
-      "stepsTitle": "Next in the app",
-      "step1": "Open GarIQ on the device where you signed up.",
-      "step2": "Sign in with the same email and password you used to register.",
-      "step3": "Add your first vehicle from Home or Vehicles to unlock timeline, statistics, and logging.",
-      "benefitsTitle": "What GarIQ gives you",
-      "benefit1": "Log fuel, maintenance, and more — by form, photo, PDF, or chat. You review and confirm every entry.",
-      "benefit2": "Browse a year-grouped timeline and cost statistics for your vehicles.",
-      "benefit3": "Keep documents in your vault and Ask questions based on your own data.",
-      "footerHint": "You can close this page."
+      "badge": "Email confermata",
+      "title": "Registrazione completata",
+      "lead": "Il tuo account GarIQ è attivo e l'indirizzo email è verificato. Torna all'app sul dispositivo con cui ti sei registrato per accedere.",
+      "stepsTitle": "Prossimi passi nell'app",
+      "step1": "Apri GarIQ sul dispositivo con cui hai completato la registrazione.",
+      "step2": "Accedi con la stessa email e password usate in registrazione.",
+      "step3": "Aggiungi il primo veicolo da Home o Veicoli per usare timeline, statistiche e registrazioni.",
+      "benefitsTitle": "Cosa ti offre GarIQ",
+      "benefit1": "Registra rifornimenti, manutenzione e altro — con modulo, foto, PDF o chat. Controlli e confermi ogni voce.",
+      "benefit2": "Timeline per anno e statistiche di costo sui tuoi veicoli.",
+      "benefit3": "Archivia documenti nel vault e fai domande basate sui tuoi dati.",
+      "footerHint": "Puoi chiudere questa pagina."
+    },
+    "recovery": {
+      "title": "Link di reimpostazione password confermato",
+      "body": "Questo link è stato aperto nel browser. Per impostare una nuova password, apri GarIQ sul telefono da cui hai richiesto la reimpostazione e segui i passaggi nell'app.",
+      "footerHint": "Puoi chiudere questa pagina."
+    },
+    "invite": {
+      "title": "Invito al garage",
+      "body": "Qualcuno ha condiviso un garage GarIQ con te. Apri GarIQ sul telefono e accedi per accettare l'invito.",
+      "footerHint": "Puoi chiudere questa pagina."
+    },
+    "emailChange": {
+      "title": "Indirizzo email aggiornato",
+      "body": "La modifica dell'email GarIQ è stata confermata. Apri l'app sul telefono e accedi per continuare.",
+      "footerHint": "Puoi chiudere questa pagina."
+    },
+    "error": {
+      "title": "Impossibile completare il link",
+      "bodyFallback": "Questo link non è valido o è scaduto. Se hai ancora bisogno di accedere, richiedi una nuova email di conferma o di reimpostazione dall'app GarIQ.",
+      "footerHint": "Puoi chiudere questa pagina."
     }
   },
   "mockups": {

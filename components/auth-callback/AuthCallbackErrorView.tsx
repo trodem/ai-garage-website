@@ -1,12 +1,16 @@
 import AuthCallbackMessageView from "./AuthCallbackMessageView";
-import en from "@/messages/en.json";
+import {
+  getAuthCallbackCopy,
+  type AuthCallbackLocale,
+} from "@/lib/authCallbackMessages";
 
 type Props = {
   body: string;
+  locale?: AuthCallbackLocale;
 };
 
-export default function AuthCallbackErrorView({ body }: Props) {
-  const copy = en.authCallback.error;
+export default function AuthCallbackErrorView({ body, locale = "en" }: Props) {
+  const copy = getAuthCallbackCopy(locale).error;
   return (
     <AuthCallbackMessageView
       variant="error"

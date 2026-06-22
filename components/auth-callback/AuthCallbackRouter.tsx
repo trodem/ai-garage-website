@@ -3,48 +3,57 @@ import AuthCallbackRecoveryView from "@/components/auth-callback/AuthCallbackRec
 import AuthCallbackInviteView from "@/components/auth-callback/AuthCallbackInviteView";
 import AuthCallbackGenericView from "@/components/auth-callback/AuthCallbackGenericView";
 import AuthCallbackErrorView from "@/components/auth-callback/AuthCallbackErrorView";
-import en from "@/messages/en.json";
+import {
+  getAuthCallbackCopy,
+  type AuthCallbackLocale,
+} from "@/lib/authCallbackMessages";
 import type { AuthCallbackSearchParams } from "@/lib/authCallbackAccess";
 
 type AuthType = "signup" | "recovery" | "email_change" | "invite" | "error" | "unknown";
+
+type Props = AuthCallbackSearchParams & {
+  locale?: AuthCallbackLocale;
+};
 
 export default function AuthCallbackRouter({
   type,
   error,
   error_description: errorDescription,
-}: AuthCallbackSearchParams) {
+  locale = "en",
+}: Props) {
   const actualType: AuthType = error ? "error" : ((type as AuthType) ?? "signup");
+  const copy = getAuthCallbackCopy(locale);
 
   if (actualType === "error") {
     return (
       <AuthCallbackErrorView
-        body={errorDescription ?? en.authCallback.error.bodyFallback}
+        locale={locale}
+        body={errorDescription ?? copy.error.bodyFallback}
       />
     );
   }
 
   if (actualType === "signup" || actualType === "unknown") {
-    return <AuthCallbackSignupView />;
+    return <AuthCallbackSignupView locale={locale} />;
   }
 
   if (actualType === "recovery") {
-    return <AuthCallbackRecoveryView />;
+    return <AuthCallbackRecoveryView locale={locale} />;
   }
 
   if (actualType === "invite") {
-    return <AuthCallbackInviteView />;
+    return <AuthCallbackInviteView locale={locale} />;
   }
 
   if (actualType === "email_change") {
-    const copy = en.authCallback.emailChange;
     return (
       <AuthCallbackGenericView
-        title={copy.title}
-        body={copy.body}
-        footerHint={copy.footerHint}
+        title={copy.emailChange.title}
+        body={copy.emailChange.body}
+        footerHint={copy.emailChange.footerHint}
       />
     );
   }
 
-  return <AuthCallbackSignupView />;
+  return <AuthCallbackSignupView locale={locale} />;
 }

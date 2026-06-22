@@ -40,9 +40,10 @@
   "vehicleTypes": {
     "label": "For every vehicle",
     "items": [
-      "Cars",
-      "Motorcycles",
-      "Vans & campers",
+      "Cars & SUVs",
+      "Motorcycles & scooters",
+      "Vans, trucks & campers",
+      "E-bikes & trailers",
       "Classic & weekend",
       "Family fleet"
     ]
@@ -140,7 +141,19 @@
       },
       {
         "title": "OCR from photos & PDFs",
-        "copy": "Turn a station receipt or invoice into an editable draft in seconds."
+        "copy": "Turn a station receipt or invoice into an editable draft in seconds, with confidence hints on AI-filled fields."
+      },
+      {
+        "title": "Search your timeline",
+        "copy": "Full-text search across events, filtered by year and vehicle — the same engine that powers Ask."
+      },
+      {
+        "title": "Duplicate detection",
+        "copy": "A gentle banner warns when a similar entry already exists — you stay in control of what to save."
+      },
+      {
+        "title": "Active & archived vehicles",
+        "copy": "Set a vehicle inactive to hide it from Home, Timeline, and Stats while keeping its full history."
       },
       {
         "title": "Ask AI",
