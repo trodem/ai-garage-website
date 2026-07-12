@@ -26,7 +26,7 @@
   "hero": {
     "badge": "Logbuch + KI unter deiner Kontrolle",
     "title": "Viel mehr als ein Ausgaben-Tracker — das Gehirn deiner Garage.",
-    "subtitle": "Foto, PDF oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann frag alles zu deinen Fahrzeugen und Dokumenten — in deiner Sprache. Tanken, Wartung, Versicherung, Steuern, Prüfungen, E-Laden, Ausgaben und Fahrten: alles in Timeline und Statistik, auch über mehrere Währungen.",
+    "subtitle": "Foto, PDF oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann frag alles zu deinen Fahrzeugen und Dokumenten — in deiner Sprache. Tanken, Wartung, Steuern, Prüfungen, E-Laden, Ausgaben und Fahrten in Timeline und Statistik — plus Versicherungspolicen in der Dokumentenablage — auch über mehrere Währungen.",
     "ctaPrimary": "GarIQ laden",
     "ctaSecondary": "So funktioniert's",
     "stat1Title": "Dein Weg",
@@ -129,7 +129,7 @@
     "items": [
       {
         "title": "Events erfassen",
-        "copy": "Tanken, Laden, Werkstatt, Versicherung, Steuer, Prüfung, Ausgaben, Notizen und Fahrten."
+        "copy": "Tanken, Laden, Werkstatt, Steuer, Prüfung, Ausgaben, Notizen und Fahrten. Versicherungspolicen liegen in der Dokumentenablage — nicht als eigener Erfassungstyp."
       },
       {
         "title": "Fahrten erfassen",
@@ -184,8 +184,8 @@
         "copy": "Im Ausland zahlen: GarIQ rechnet zum Tageskurs in die Garagenwährung um."
       },
       {
-        "title": "CSV-Export",
-        "copy": "Alle Events aller Fahrzeuge exportieren — deine Daten bleiben deins."
+        "title": "Timeline-Jahrexport",
+        "copy": "Exportiere ein Kalenderjahr als CSV oder PDF aus der Timeline — Tarif Advanced (Upgrade in der App)."
       },
       {
         "title": "Datenschutz",
@@ -405,9 +405,9 @@
   },
   "plans": {
     "label": "Tarife & KI",
-    "title": "Vier Kontotarife. Eine App — wächst mit deiner Garage.",
-    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe, monatliche Server-KI). Tarife werden dem Konto in der App zugewiesen — keine Zahlung auf dieser Seite. Beim Free-Tarif beginnt die monatliche Server-KI-Periode mit deinem ersten Fahrzeug.",
-    "footnote": "Monatliche KI-Nutzung zählt Completion-Tokens für OCR, Chat-Insert und Ask (nicht Dokument-Embeddings). Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen das Monatslimit; Formular-Einträge bleiben verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern.",
+    "title": "Drei Kontotarife. Eine App — wächst mit deiner Garage.",
+    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe und monatliche KI-Credits). Abo und Tarifverwaltung in der GarIQ-App — keine Zahlung auf dieser Seite. Beim Free-Tarif beginnt die monatliche KI-Credit-Periode mit deinem ersten Fahrzeug.",
+    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert und Ask ab (nicht Dokument-Embeddings). Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Formular-Einträge bleiben verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern.",
     "popularBadge": "Am flexibelsten",
     "cta": "GarIQ laden",
     "tiers": [
@@ -421,8 +421,9 @@
           "1 eigene Garage",
           "1 Fahrzeug pro Garage",
           "Volles Fahrtenbuch & Statistik",
-          "~100K Server-KI-Tokens / Monat ab dem ersten Fahrzeug",
-          "Fahrzeugschein-Scan vor dem ersten Fahrzeug ohne Monatslimit",
+          "10 KI-Credits / Monat ab dem ersten Fahrzeug",
+          "Fahrzeugschein-Scan vor dem ersten Fahrzeug ohne monatliche Credits",
+          "OCR für Tanken & Laden; Chat für Notizen, Tanken & Laden",
           "Keine Garagen-Freigabe"
         ]
       },
@@ -433,11 +434,12 @@
         "description": "Mehr Fahrzeuge und Familie in einer Garage einladen.",
         "featured": false,
         "highlights": [
-          "2 eigene Garagen",
-          "Bis zu 10 Fahrzeuge pro Garage",
-          "Freigabe (bis zu 3 Mitglieder)",
-          "~500K Server-KI-Tokens / Monat",
-          "Foto, PDF, Chat-Insert & Ask per Server-KI"
+          "1 eigene Garage",
+          "Bis zu 5 Fahrzeuge pro Garage",
+          "Freigabe (bis zu 5 Mitglieder)",
+          "100 KI-Credits / Monat",
+          "Foto/PDF und Chat-Insert für alle Ereignistypen",
+          "KI für alle Fahrzeugdokumente"
         ]
       },
       {
@@ -447,26 +449,11 @@
         "description": "Mehrere Garagen und höheres KI-Kontingent für aktive Nutzer.",
         "featured": true,
         "highlights": [
-          "5 eigene Garagen",
-          "Bis zu 30 Fahrzeuge pro Garage",
+          "3 eigene Garagen",
+          "Bis zu 10 Fahrzeuge pro Garage",
           "Freigabe (bis zu 10 Mitglieder)",
-          "~2M Server-KI-Tokens / Monat",
-          "Gleiche KI-Features, höheres Monatslimit",
-          "Originalfoto/-PDF am Ereignis speichern und später öffnen"
-        ]
-      },
-      {
-        "id": "enterprise",
-        "name": "Enterprise",
-        "price": "In-App",
-        "description": "Große Garagen und maximales KI-Kontingent für Teams und Werkstätten.",
-        "featured": false,
-        "highlights": [
-          "20 eigene Garagen",
-          "Bis zu 100 Fahrzeuge pro Garage",
-          "Freigabe mit unbegrenzt vielen Mitgliedern",
-          "Höchstes monatliches Server-KI-Limit",
-          "Alle KI-Funktionen inklusive",
+          "300 KI-Credits / Monat",
+          "Timeline-Jahrexport (CSV und PDF)",
           "Originalfoto/-PDF am Ereignis speichern und später öffnen"
         ]
       }
@@ -487,7 +474,7 @@
     "items": [
       {
         "q": "Was kann ich erfassen?",
-        "a": "Tanken, Laden, Werkstatt, Versicherung, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten (Route, Fahrer und Kilometerstand — kein Ausgabeneintrag) — pro Fahrzeug."
+        "a": "Tanken, Laden, Werkstatt, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten (Route, Fahrer und Kilometerstand — kein Ausgabeneintrag) — pro Fahrzeug. Versicherungspolicen und Kaufverträge gehören in die Dokumentenablage."
       },
       {
         "q": "Speichert die KI automatisch?",
@@ -507,7 +494,7 @@
       },
       {
         "q": "Welche Sprache hat die App?",
-        "a": "Die mobile UI ist in v1 auf Englisch. Diese Website gibt es auf Deutsch, Englisch und Italienisch."
+        "a": "Die GarIQ-App-Oberfläche gibt es auf Englisch, Deutsch und Italienisch — dieselben Sprachen wie diese Website."
       },
       {
         "q": "Sind meine Daten privat?",
@@ -523,11 +510,11 @@
       },
       {
         "q": "Kann ich meine Daten exportieren?",
-        "a": "Ja. Exportiere alle Events aller Fahrzeuge als CSV aus den Einstellungen — deine Daten bleiben deins."
+        "a": "Ja. Mit Advanced exportierst du ein Timeline-Kalenderjahr als CSV oder PDF aus dem Timeline-Tab. Ein Voll-Konto-Export aus den Einstellungen ist in v1 noch nicht verfügbar — deine Daten bleiben deins."
       },
       {
         "q": "Wie funktionieren Tarife und KI?",
-        "a": "Tarife werden in der App verwaltet und enthalten ein monatliches Server-KI-Kontingent — Details in den Einstellungen, keine Zahlung auf dieser Seite. Beim Free beginnt das Monatslimit mit dem ersten Fahrzeug; der Schein-Scan davor ist unbegrenzt, und manuelle Einträge bleiben möglich, wenn du das Limit erreichst."
+        "a": "Basic oder Advanced abonnierst und verwaltest du in der GarIQ-App (keine Zahlung auf dieser Seite). Jeder Tarif enthält monatliche KI-Credits — Details in den Einstellungen. Beim Free beginnt die monatliche Credit-Periode mit dem ersten Fahrzeug; der Schein-Scan davor verbraucht keine Credits, und manuelle Einträge bleiben möglich, wenn du das Limit erreichst."
       }
     ]
   },

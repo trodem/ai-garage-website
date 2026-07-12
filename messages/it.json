@@ -26,7 +26,7 @@
   "hero": {
     "badge": "Libretto + IA sotto il tuo controllo",
     "title": "Molto più di un registro spese: il cervello del tuo garage.",
-    "subtitle": "Foto, PDF o chat → l'IA prepara la voce e tu confermi, sempre. Poi chiedi qualsiasi cosa ai tuoi veicoli e ai tuoi documenti — nella tua lingua. Rifornimenti, tagliandi, assicurazioni, tasse, revisioni, ricariche EV, spese e viaggi: tutto in timeline e statistiche, anche in più valute.",
+    "subtitle": "Foto, PDF o chat → l'IA prepara la voce e tu confermi, sempre. Poi chiedi qualsiasi cosa ai tuoi veicoli e ai tuoi documenti — nella tua lingua. Rifornimenti, tagliandi, tasse, revisioni, ricariche EV, spese e viaggi in timeline e statistiche — più le polizze assicurative nel vault documenti — anche in più valute.",
     "ctaPrimary": "Scarica GarIQ",
     "ctaSecondary": "Come funziona",
     "stat1Title": "A modo tuo",
@@ -129,7 +129,7 @@
     "items": [
       {
         "title": "Registro eventi",
-        "copy": "Rifornimento, ricarica, officina, assicurazione, tasse, revisione, spese, note e viaggi."
+        "copy": "Rifornimento, ricarica, officina, tasse, revisione, spese, note e viaggi. Le polizze assicurative stanno nel vault documenti — non come tipo di inserimento separato."
       },
       {
         "title": "Registro viaggi",
@@ -184,8 +184,8 @@
         "copy": "Paga all'estero: l'app converte col cambio del giorno nella valuta del garage."
       },
       {
-        "title": "Export CSV",
-        "copy": "Esporta tutti gli eventi di tutti i veicoli — i tuoi dati restano tuoi."
+        "title": "Export timeline per anno",
+        "copy": "Esporta un anno di eventi in CSV o PDF dalla Timeline — piano Advanced (upgrade nell'app)."
       },
       {
         "title": "Privacy",
@@ -405,9 +405,9 @@
   },
   "plans": {
     "label": "Piani e IA",
-    "title": "Quattro piani account. Stessa app — cresce con il tuo garage.",
-    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione, IA server mensile). I piani sono assegnati all'account nell'app — nessun pagamento su questa pagina. Sul Free, il periodo mensile di IA server inizia quando aggiungi il primo veicolo.",
-    "footnote": "L'uso IA mensile conta i token di completion per OCR, insert chat e Ask (non gli embedding documenti). Sul Free, la scansione del libretto prima del primo veicolo non consuma il tetto mensile; i moduli manuali restano disponibili se raggiungi il limite. Confermi sempre prima di salvare un evento.",
+    "title": "Tre piani account. Stessa app — cresce con il tuo garage.",
+    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione e crediti IA mensili). Abbonati e gestisci il piano nell'app GarIQ — nessun pagamento su questa pagina. Sul Free, il periodo mensile di crediti IA inizia quando aggiungi il primo veicolo.",
+    "footnote": "I crediti IA mensili coprono OCR, insert chat e Ask (non gli embedding documenti). Sul Free, la scansione del libretto prima del primo veicolo non consuma i crediti mensili; i moduli manuali restano disponibili se raggiungi il limite. Confermi sempre prima di salvare un evento.",
     "popularBadge": "Più flessibile",
     "cta": "Scarica GarIQ",
     "tiers": [
@@ -421,8 +421,9 @@
           "1 garage di proprietà",
           "1 veicolo per garage",
           "Libretto e statistiche completi",
-          "~100K token IA server / mese dal primo veicolo",
-          "Scansione libretto prima del primo veicolo senza consumo del tetto mensile",
+          "10 crediti IA / mese dal primo veicolo",
+          "Scansione libretto prima del primo veicolo senza consumare crediti mensili",
+          "OCR per carburante e ricarica; chat per note, carburante e ricarica",
           "Condivisione garage non inclusa"
         ]
       },
@@ -433,41 +434,27 @@
         "description": "Più veicoli e invita la famiglia in un garage.",
         "featured": false,
         "highlights": [
-          "2 garage di proprietà",
-          "Fino a 10 veicoli per garage",
-          "Condivisione (fino a 3 membri)",
-          "~500K token IA server / mese",
-          "Foto, PDF, chat insert e Ask su IA server"
+          "1 garage di proprietà",
+          "Fino a 5 veicoli per garage",
+          "Condivisione (fino a 5 membri)",
+          "100 crediti IA / mese",
+          "Foto/PDF e chat insert per tutti i tipi di evento",
+          "IA per tutti i documenti veicolo"
         ]
       },
       {
         "id": "advanced",
         "name": "Advanced",
         "price": "In-app",
-        "description": "Più garage e più IA per chi registra spesso.",
+        "description": "Più garage e più crediti IA per chi registra spesso.",
         "featured": true,
         "highlights": [
-          "5 garage di proprietà",
-          "Fino a 30 veicoli per garage",
+          "3 garage di proprietà",
+          "Fino a 10 veicoli per garage",
           "Condivisione (fino a 10 membri)",
-          "~2M token IA server / mese",
-          "Stesse funzioni IA, tetto mensile più alto",
-          "Salva la foto/PDF originale sull’evento e aprila quando vuoi"
-        ]
-      },
-      {
-        "id": "enterprise",
-        "name": "Enterprise",
-        "price": "In-app",
-        "description": "Garage grandi e quota IA al massimo per team e officine.",
-        "featured": false,
-        "highlights": [
-          "20 garage di proprietà",
-          "Fino a 100 veicoli per garage",
-          "Condivisione con membri illimitati",
-          "Massima quota IA server / mese",
-          "Tutte le funzioni IA incluse",
-          "Salva la foto/PDF originale sull’evento e aprila quando vuoi"
+          "300 crediti IA / mese",
+          "Export timeline per anno (CSV e PDF)",
+          "Salva la foto/PDF originale sull'evento e aprila quando vuoi"
         ]
       }
     ]
@@ -487,7 +474,7 @@
     "items": [
       {
         "q": "Cosa posso registrare?",
-        "a": "Rifornimento, ricarica, officina, assicurazione, tasse, revisioni, spese, note e viaggi (percorso, autista e chilometraggio — senza riga spesa) — per veicolo."
+        "a": "Carburante, ricariche, officina, tasse, revisioni, spese generiche, note e viaggi (percorso, conducente e chilometraggio — non una spesa) — tutti legati a un veicolo. Polizze assicurative e contratti d'acquisto vanno nel vault documenti."
       },
       {
         "q": "L'IA salva da sola?",
@@ -507,7 +494,7 @@
       },
       {
         "q": "In che lingua è l'app?",
-        "a": "L'interfaccia mobile è in inglese in v1. Questo sito è in inglese, tedesco e italiano."
+        "a": "L'interfaccia di GarIQ è disponibile in inglese, tedesco e italiano — le stesse lingue di questo sito."
       },
       {
         "q": "I miei dati sono privati?",
@@ -523,11 +510,11 @@
       },
       {
         "q": "Posso esportare i miei dati?",
-        "a": "Sì. Esporti in CSV tutti gli eventi di tutti i veicoli dalle Impostazioni — i tuoi dati restano tuoi."
+        "a": "Sì. Con Advanced puoi esportare un anno di Timeline in CSV o PDF dalla scheda Timeline. L'export completo account dalle Impostazioni non è ancora in v1 — i tuoi dati restano tuoi."
       },
       {
         "q": "Come funzionano piani e IA?",
-        "a": "I piani si gestiscono nell'app e includono un contingente di IA server mensile — dettagli nelle Impostazioni, nessun pagamento su questa pagina. Sul Free il tetto mensile parte dal primo veicolo; la scansione libretto prima di allora è illimitata e puoi registrare eventi a mano se raggiungi il limite."
+        "a": "Abbonati e gestisci Basic o Advanced nell'app GarIQ (nessun pagamento su questa pagina). Ogni piano include crediti IA mensili — dettagli nelle Impostazioni. Sul Free il periodo mensile parte dal primo veicolo; la scansione libretto prima di allora non consuma crediti e puoi registrare eventi a mano se raggiungi il limite."
       }
     ]
   },

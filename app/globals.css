@@ -510,8 +510,7 @@ body {
 
 .pricing-tier-free::before,
 .pricing-tier-basic::before,
-.pricing-tier-advanced::before,
-.pricing-tier-enterprise::before {
+.pricing-tier-advanced::before {
   content: "";
   position: absolute;
   top: 0;
@@ -524,7 +523,6 @@ body {
 .pricing-tier-free     { --tier-accent: rgba(100, 116, 139, 0.55); }
 .pricing-tier-basic    { --tier-accent: #1F1BE8; }
 .pricing-tier-advanced { --tier-accent: rgb(242, 19, 123); }
-.pricing-tier-enterprise { --tier-accent: rgb(99, 102, 241); }
 
 .pricing-badge {
   display: inline-flex;

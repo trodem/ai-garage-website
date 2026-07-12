@@ -26,7 +26,7 @@
   "hero": {
     "badge": "Logbook + AI you control",
     "title": "Much more than an expense tracker — the brain of your garage.",
-    "subtitle": "Photo, PDF, or chat → AI drafts the entry and you confirm, every time. Then ask anything about your vehicles and documents — in your language. Fuel, service, insurance, taxes, inspections, EV charging, expenses, and trips — all on a timeline and in statistics, even across currencies.",
+    "subtitle": "Photo, PDF, or chat → AI drafts the entry and you confirm, every time. Then ask anything about your vehicles and documents — in your language. Fuel, service, taxes, inspections, EV charging, expenses, and trips on a timeline and in statistics — plus insurance policies in your document vault — even across currencies.",
     "ctaPrimary": "Download GarIQ",
     "ctaSecondary": "See how it works",
     "stat1Title": "Log your way",
@@ -129,7 +129,7 @@
     "items": [
       {
         "title": "Event logging",
-        "copy": "Refuel, charge, workshop, insurance, tax, inspection, expense, notes, and trips."
+        "copy": "Refuel, charge, workshop, tax, inspection, expense, notes, and trips. Insurance policies live in the document vault — not as a separate insert type."
       },
       {
         "title": "Trip logging",
@@ -184,8 +184,8 @@
         "copy": "Pay abroad: GarIQ converts at the day's rate into your garage currency."
       },
       {
-        "title": "CSV export",
-        "copy": "Export every event across all vehicles — your data stays yours."
+        "title": "Timeline year export",
+        "copy": "Export a calendar year of events as CSV or PDF from Timeline — Advanced plan (upgrade in the app)."
       },
       {
         "title": "Privacy by design",
@@ -405,9 +405,9 @@
   },
   "plans": {
     "label": "Plans & AI",
-    "title": "Four account tiers. Same app — scales with your garage.",
-    "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly server AI usage). Plans are assigned to your account in the app — this page does not process payments. On Free, your monthly server AI period starts when you add your first vehicle.",
-    "footnote": "Monthly AI usage counts completion tokens for OCR, chat insert, and Ask (not document embeddings). On Free, scanning your registration before your first vehicle does not use the monthly cap; manual event forms stay available if you reach the limit. You always confirm before an event is saved.",
+    "title": "Three account tiers. Same app — scales with your garage.",
+    "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly AI credits). Subscribe and manage your plan in the GarIQ app — this page does not process payments. On Free, your monthly AI credit period starts when you add your first vehicle.",
+    "footnote": "Monthly AI credits cover OCR, chat insert, and Ask (not document embeddings). On Free, scanning your registration before your first vehicle does not use monthly credits; manual event forms stay available if you reach the limit. You always confirm before an event is saved.",
     "popularBadge": "Most flexible",
     "cta": "Download GarIQ",
     "tiers": [
@@ -421,8 +421,9 @@
           "1 owned garage",
           "1 vehicle per garage",
           "Full event logbook & statistics",
-          "~100K server AI tokens / month from your first vehicle",
-          "Registration scan before your first vehicle doesn't use the monthly cap",
+          "10 AI credits / month from your first vehicle",
+          "Registration scan before your first vehicle does not use monthly credits",
+          "OCR for fuel & charge; chat for notes, fuel & charge",
           "Garage sharing not included"
         ]
       },
@@ -433,11 +434,12 @@
         "description": "More vehicles and invite family to share one garage.",
         "featured": false,
         "highlights": [
-          "2 owned garages",
-          "Up to 10 vehicles per garage",
-          "Garage sharing (up to 3 members)",
-          "~500K server AI tokens / month",
-          "Photo, PDF, chat insert & Ask on server AI"
+          "1 owned garage",
+          "Up to 5 vehicles per garage",
+          "Garage sharing (up to 5 members)",
+          "100 AI credits / month",
+          "Photo/PDF and chat insert for all event types",
+          "AI for all vehicle documents"
         ]
       },
       {
@@ -447,26 +449,11 @@
         "description": "Multiple garages and higher AI headroom for active loggers.",
         "featured": true,
         "highlights": [
-          "5 owned garages",
-          "Up to 30 vehicles per garage",
+          "3 owned garages",
+          "Up to 10 vehicles per garage",
           "Garage sharing (up to 10 members)",
-          "~2M server AI tokens / month",
-          "Same AI features, higher monthly cap",
-          "Save the original photo/PDF on the event and open it later"
-        ]
-      },
-      {
-        "id": "enterprise",
-        "name": "Enterprise",
-        "price": "In-app",
-        "description": "Large garages and top AI headroom for teams and workshops.",
-        "featured": false,
-        "highlights": [
-          "20 owned garages",
-          "Up to 100 vehicles per garage",
-          "Sharing with unlimited members",
-          "Highest monthly server AI cap",
-          "All AI features included",
+          "300 AI credits / month",
+          "Timeline year export (CSV and PDF)",
           "Save the original photo/PDF on the event and open it later"
         ]
       }
@@ -487,7 +474,7 @@
     "items": [
       {
         "q": "What can I track?",
-        "a": "Fuel, charging, workshop, insurance, taxes, inspections, general expenses, diary notes, and trips (route, driver, and odometer — not a spend entry) — all tied to a vehicle."
+        "a": "Fuel, charging, workshop, taxes, inspections, general expenses, diary notes, and trips (route, driver, and odometer — not a spend entry) — all tied to a vehicle. Insurance policies and purchase contracts go in the document vault."
       },
       {
         "q": "Does AI save automatically?",
@@ -507,7 +494,7 @@
       },
       {
         "q": "What language is the app?",
-        "a": "The mobile app UI is English in v1. This marketing site is available in English, German, and Italian."
+        "a": "The GarIQ app UI is available in English, German, and Italian — same languages as this marketing site."
       },
       {
         "q": "Is my data private?",
@@ -523,11 +510,11 @@
       },
       {
         "q": "Can I export my data?",
-        "a": "Yes. Export every event across all vehicles as CSV from Settings — your data stays yours."
+        "a": "Yes. On Advanced, export a Timeline calendar year as CSV or PDF from the Timeline tab. Full-account export from Settings is not in v1 yet — your data stays yours."
       },
       {
         "q": "How do plans and AI work?",
-        "a": "Plans are managed in the app and include a monthly server AI allowance — details appear in Settings, and this page does not process payments. On Free, the monthly cap starts with your first vehicle; registration scan before that is unlimited, and you can still log events manually if you hit the limit."
+        "a": "Subscribe and manage Basic or Advanced in the GarIQ app (this page does not process payments). Each plan includes monthly AI credits — details appear in Settings. On Free, the monthly credit period starts with your first vehicle; registration scan before that does not use credits, and you can still log events manually if you hit the limit."
       }
     ]
   },
