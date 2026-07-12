@@ -15,7 +15,7 @@ type CapTab = {
 export default function CapabilitiesSection() {
   const t = useTranslations("capabilities");
   const tabs = t.raw("tabs") as CapTab[];
-  const [activeId, setActiveId] = useState(tabs[0]?.id ?? "logbook");
+  const [activeId, setActiveId] = useState(tabs[0]?.id ?? "capture");
   const baseId = useId();
   const active = tabs.find((tab) => tab.id === activeId) ?? tabs[0];
 

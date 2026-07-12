@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "GarIQ — Das smarte Fahrtenbuch für deine Fahrzeuge",
-    "description": "Viel mehr als ein Ausgaben-Tracker: per Foto, PDF oder Chat erfassen (KI schlägt vor, du bestätigst), deine Daten und Dokumente fragen und Ausgaben in Timeline und Statistik analysieren — auch über mehrere Währungen.",
-    "keywords": "Fahrtenbuch,Autopflege,Spritkosten,KI Auto Assistent,Beleg OCR,Fahrzeugdokumente,Fahrzeugstatistik,Multi-Währung,KI Garage"
+    "title": "GarIQ — KI-Fahrtenbuch mit Scan & Ask",
+    "description": "Belege scannen (Foto, PDF, Smart Scan) und Logbuch oder Dokumente fragen — KI entwirft, du bestätigst immer. Timeline, Stats, geteilte Garagen. Italienisch, Deutsch, Englisch.",
+    "keywords": "Fahrtenbuch,Beleg OCR,Smart Scan,Ask KI,Autopflege,Spritkosten,Fahrzeugdokumente,Garagenfreigabe,Multi-Währung"
   },
   "common": {
     "skipToContent": "Zum Inhalt springen",
@@ -22,19 +22,19 @@
     "ctaDownload": "App holen"
   },
   "hero": {
-    "badge": "Belege scannen. Historie fragen.",
+    "badge": "Scan + Ask — du bestätigst jedes Speichern",
     "title": "Viel mehr als ein Ausgaben-Tracker — das Gehirn deiner Garage.",
-    "subtitle": "Foto, PDF oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann frag alles zu deinen Fahrzeugen und Dokumenten — in deiner Sprache. Tanken, Wartung, Steuern, Prüfungen, E-Laden, Ausgaben und Fahrten in Timeline und Statistik — plus Versicherungspolicen in der Dokumentenablage — auch über mehrere Währungen.",
+    "subtitle": "Foto, PDF, Smart Scan oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann Ask im Logbuch oder in der Dokumentenablage — auf Italienisch, Deutsch oder Englisch. Tanken, Wartung, Steuern, Prüfungen, E-Laden, Ausgaben und Fahrten in Timeline und Statistik — plus Policen im Vault — auch über mehrere Währungen.",
     "ctaPrimary": "GarIQ laden",
     "ctaSecondary": "So funktioniert's",
     "stat1Title": "Dein Weg",
-    "stat1Copy": "Formular, Foto, PDF oder Chat — immer mit Prüfschritt.",
+    "stat1Copy": "Formular, Foto, PDF, Chat oder Smart Scan — immer mit Prüfschritt.",
     "stat2Title": "Frag deine Daten",
-    "stat2Copy": "Antworten in natürlicher Sprache aus Events und Handbüchern.",
+    "stat2Copy": "Logbuch-Modus für Events und Ausgaben; Dokumente-Modus für Vault-Q&A mit Zitaten.",
     "stat3Title": "Deine Garagen",
     "stat3Copy": "Getrennte Bereiche für Alltagsauto, Familie oder Hobbyfahrzeuge.",
     "imageAlt": "GarIQ-App mit Home, Fahrzeugen, Timeline und Erfassungsflow",
-    "subtitleShort": "Foto oder PDF scannen — die KI erstellt den Entwurf, du bestätigst. Dann frag dein Fahrtenbuch alles zu Ausgaben und Historie."
+    "subtitleShort": "Foto oder PDF scannen — oder Smart Scan ohne Typwahl. KI entwirft; du bestätigst. Dann Ask an Logbuch oder Dokumente."
   },
   "vehicleTypes": {
     "label": "Für jedes Fahrzeug",
@@ -262,19 +262,23 @@
   "ai": {
     "label": "KI-Ebene",
     "title": "KI, die das Erfassen beschleunigt — ohne das Steuer abzugeben.",
-    "copy": "Vision-OCR, Chat-Sammlung und toolbasiertes Ask. Jeder KI-Pfad endet in einem bearbeitbaren Entwurf; bestätigte Events speisen Statistik und Antworten.",
+    "copy": "Vision-OCR, Smart Scan, Chat-Sammlung und toolbasiertes Ask in zwei Modi. Jeder Insert-Pfad endet in einem Entwurf, den du bearbeitest; nichts wird gespeichert, bevor du bestätigst.",
     "cards": [
       {
         "title": "Beleg- & PDF-OCR",
-        "copy": "Beträge, Daten und Tankdetails aus Bildern und Dokumenten extrahieren."
+        "copy": "Beträge, Daten und Tankdetails aus Fotos und PDFs — inklusive Smart Scan, wenn du den Eventtyp überspringst."
       },
       {
         "title": "Chat-Collect",
-        "copy": "Wartung oder Ausgaben in Alltagssprache beschreiben; Entwurf fertigstellen, wenn du bereit bist."
+        "copy": "Wartung oder Ausgaben in Alltagssprache beschreiben; Entwurf jederzeit prüfen; speichern erst wenn bereit."
       },
       {
-        "title": "Ask mit Zitaten",
-        "copy": "Antworten zu Ausgaben, Historie und Dokumenten — aus deinen Daten, mit Quellenangabe."
+        "title": "Ask · Logbuch",
+        "copy": "Antworten in natürlicher Sprache zu Ausgaben, Historie und Aggregaten — aus deinen Events unter RLS."
+      },
+      {
+        "title": "Ask · Dokumente",
+        "copy": "Q&A über deine Ablage mit Zitaten zu Titel und Seite — derselbe KI-Credit-Pool wie Logbuch-Ask."
       }
     ],
     "preview": {
@@ -401,8 +405,8 @@
   "plans": {
     "label": "Tarife & KI",
     "title": "Drei Kontotarife. Eine App — wächst mit deiner Garage.",
-    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe und monatliche KI-Credits). Abo und Tarifverwaltung in der GarIQ-App — keine Zahlung auf dieser Seite. Beim Free-Tarif beginnt die monatliche KI-Credit-Periode mit deinem ersten Fahrzeug.",
-    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert und Ask ab (nicht Dokument-Embeddings). Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Formular-Einträge bleiben verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern.",
+    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe und monatliche KI-Credits). Abo und Tarifverwaltung in der GarIQ-App über App Store oder Google Play — diese Website verarbeitet keine Zahlungen. Beim Free-Tarif beginnt die monatliche KI-Credit-Periode mit deinem ersten Fahrzeug.",
+    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert, Ask (Logbuch und Dokumente) und verwandte abgerechnete KI-Aktionen ab. Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Document-AI für Vault-Kategorien außer Schein ist aus. Das manuelle Formular bleibt immer verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern.",
     "popularBadge": "Am flexibelsten",
     "cta": "GarIQ laden",
     "tiers": [
@@ -419,7 +423,9 @@
           "10 KI-Credits / Monat ab dem ersten Fahrzeug",
           "Fahrzeugschein-Scan vor dem ersten Fahrzeug ohne monatliche Credits",
           "OCR für Tanken & Laden; Chat für Notizen, Tanken & Laden",
-          "Keine Garagen-Freigabe"
+          "Document-AI für Vault-Kategorien außer Schein: aus",
+          "Keine Garagen-Freigabe",
+          "Manuelles Formular immer verfügbar bei leeren Credits"
         ]
       },
       {
@@ -434,7 +440,8 @@
           "Freigabe (bis zu 5 Mitglieder)",
           "100 KI-Credits / Monat",
           "Foto/PDF und Chat-Insert für alle Ereignistypen",
-          "KI für alle Fahrzeugdokumente"
+          "Document-AI für Fahrzeug-Vault-Kategorien an",
+          "Timeline-Jahrexport gesperrt (sichtbar + Upgrade)"
         ]
       },
       {
@@ -448,8 +455,8 @@
           "Bis zu 10 Fahrzeuge pro Garage",
           "Freigabe (bis zu 10 Mitglieder)",
           "300 KI-Credits / Monat",
-          "Timeline-Jahrexport (CSV und PDF)",
-          "Originalfoto/-PDF am Ereignis speichern und später öffnen"
+          "Timeline-Jahrexport (CSV und gebrandetes PDF)",
+          "Originalfoto/-PDF am Ereignis behalten und später öffnen"
         ]
       }
     ]
@@ -469,23 +476,35 @@
     "items": [
       {
         "q": "Was kann ich erfassen?",
-        "a": "Tanken, Laden, Werkstatt, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten — pro Fahrzeug. Versicherungspolicen und Kaufverträge gehören in die Dokumentenablage."
+        "a": "Tanken, Laden, Werkstatt, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten — pro Fahrzeug. Versicherungszahlungen kannst du als Events loggen; aktuelle Policen und Kaufverträge liegen in der Dokumentenablage (nicht über Insert → Versicherung für die Police selbst)."
       },
       {
         "q": "Speichert die KI automatisch?",
-        "a": "Nein. KI erstellt einen Entwurf aus OCR oder Chat; du bearbeitest und bestätigst auf dem Entwurfsbildschirm."
+        "a": "Nein. KI erstellt einen Entwurf aus OCR, Smart Scan oder Chat; du bearbeitest und bestätigst auf dem Entwurfsbildschirm."
+      },
+      {
+        "q": "Was ist Smart Scan?",
+        "a": "Eine Home-Aktion: Foto oder PDF ohne vorherige Eventtyp-Wahl. OCR erkennt den Typ unter dokumentähnlichen Events; danach prüfst du denselben Entwurf und bestätigst."
+      },
+      {
+        "q": "Was sind die zwei Ask-Modi?",
+        "a": "Logbuch-Ask beantwortet Fragen zu Events, Kosten und Aggregaten. Dokumente-Ask beantwortet Fragen zur Fahrzeugablage und kann Titel und Seite zitieren. Beide nutzen denselben monatlichen KI-Credit-Pool."
+      },
+      {
+        "q": "Was passiert bei leeren KI-Credits?",
+        "a": "KI-Methoden (OCR, Chat-Insert, Ask) sind deaktiviert bis Credits zurückgesetzt werden oder du upgradest. Das manuelle Formular bleibt immer verfügbar."
       },
       {
         "q": "Mehrere Garagen?",
-        "a": "Free und Basic umfassen 1 eigene Garage. Advanced bis zu 3. Bei Basic und Advanced kannst du Co-Owner, Admins oder Logger einladen; Free hat keine Freigabe."
+        "a": "Free und Basic umfassen 1 eigene Garage. Advanced bis zu 3. Bei Basic und Advanced kannst du Co-Owner, Admins oder Logger einladen (keine Viewer-Rolle in v1); Free hat keine Freigabe."
       },
       {
-        "q": "Welche Dokumente?",
-        "a": "Lade Handbücher, Policen und PDFs in die Fahrzeug-Dokumentenablage; Ask kann sie mit Zitaten durchsuchen."
+        "q": "Police vs. Versicherungszahlung?",
+        "a": "Aktuelle Police-PDFs und Deckungsdaten liegen unter Dokumente / Police-Hub. Eine Versicherungszahlung ist ein separates Logbuch-Event. Nutze Insert → Versicherung nicht, um eine Police anzulegen."
       },
       {
         "q": "Welche Sprachen unterstützt GarIQ?",
-        "a": "App-Oberfläche und Assistent: Englisch, Deutsch und Italienisch — eine bevorzugte Sprache in den Einstellungen für beides."
+        "a": "App-Oberfläche und Assistent: Italienisch, Deutsch und Englisch — eine bevorzugte Sprache in den Einstellungen für beides."
       },
       {
         "q": "In welchen Währungen kann ich Ausgaben erfassen?",
@@ -493,11 +512,15 @@
       },
       {
         "q": "Kann ich meine Daten exportieren?",
-        "a": "Ja. Mit Advanced exportierst du ein Timeline-Kalenderjahr als CSV oder PDF. Ein Voll-Konto-Export aus den Einstellungen ist in v1 noch nicht verfügbar."
+        "a": "Mit Advanced exportierst du ein Timeline-Kalenderjahr als CSV oder gebrandetes PDF (Steuerelemente bei Free/Basic sichtbar aber gesperrt). Ein Voll-Konto-Export aus den Einstellungen ist in v1 noch nicht verfügbar."
       },
       {
-        "q": "Wie funktionieren Tarife und KI?",
-        "a": "Basic oder Advanced abonnierst und verwaltest du in der GarIQ-App (keine Zahlung auf dieser Seite). Jeder Tarif enthält monatliche KI-Credits. Beim Free beginnt die Credit-Periode mit dem ersten Fahrzeug; manuelle Einträge bleiben möglich."
+        "q": "Kann ich auf dieser Website abonnieren?",
+        "a": "Nein. Basic und Advanced kaufst du in der GarIQ-App über App Store oder Google Play (RevenueCat). Diese Marketing-Website verarbeitet keine Zahlungen und ist kein Checkout."
+      },
+      {
+        "q": "Wie funktionieren die Free-Limits?",
+        "a": "1 eigene Garage, 1 Fahrzeug, 10 KI-Credits/Monat ab dem ersten Fahrzeug. OCR nur für Tanken und Laden; Chat-Insert für Notizen, Tanken und Laden. Document-AI für Vault-Kategorien außer Schein ist aus. Der Schein-Scan vor dem ersten Fahrzeug verbraucht keine monatlichen Credits."
       }
     ]
   },
@@ -701,20 +724,20 @@
   },
   "whyGarIq": {
     "label": "Warum GarIQ",
-    "title": "Eine Ausgaben-App liefert Zahlen. GarIQ liefert die ganze Garagen-Geschichte.",
-    "copy": "Belege, Policen und Kilometer-Notizen verstreuen sich. GarIQ hält Events, Dokumente und KI-Antworten an einem Ort — und du bestätigst jedes Speichern.",
+    "title": "Eine Ausgaben-App liefert Zahlen. GarIQ liefert Scan, Ask und Kontrolle.",
+    "copy": "Herzstück: Belege und Dokumente scannen, dann die eigene Historie fragen — mit KI, die nie ohne deine Bestätigung schreibt.",
     "points": [
       {
-        "title": "Du behältst die Kontrolle",
-        "copy": "KI erstellt Entwürfe aus Foto, PDF oder Chat. Du prüfst das Formular und speicherst. Kein Autosave."
+        "title": "Du bestätigst jedes Speichern",
+        "copy": "KI erstellt Entwürfe aus Foto, PDF, Smart Scan oder Chat. Du prüfst das Formular und speicherst. Kein Autosave."
       },
       {
         "title": "Struktur fürs echte Leben",
         "copy": "Garagen, Fahrzeuge, Timeline und Statistik — Fokus wechseln, ohne Historie zu verlieren."
       },
       {
-        "title": "Frag deine eigenen Daten",
-        "copy": "Fragen zu Ausgaben und hochgeladenen Handbüchern — Antworten aus deinen Dateien."
+        "title": "Ask Logbuch oder Dokumente",
+        "copy": "Zwei Ask-Modi: Events und Ausgaben, oder Vault-Q&A mit Zitaten — derselbe Credit-Pool."
       },
       {
         "title": "Mehrere Währungen ohne Tabelle",
@@ -733,7 +756,7 @@
       },
       {
         "title": "Erfassen wie du willst",
-        "copy": "Eventtyp wählen, dann Formular, Foto, PDF oder Chat. KI bereitet den Entwurf vor — du bestätigst.",
+        "copy": "Eventtyp wählen, dann Formular, Foto, PDF oder Chat — oder Smart Scan ohne Typwahl. KI bereitet den Entwurf vor; du bestätigst.",
         "alt": "GarIQ-Screen: Tankbeleg wird zum bearbeitbaren Entwurf."
       },
       {
@@ -743,70 +766,84 @@
       },
       {
         "title": "Alles fragen",
-        "copy": "Handbücher oder Policen hochladen, dann in deiner Sprache fragen — Antworten zitieren deine Daten.",
+        "copy": "Ask-Logbuch für Ausgaben und Historie, oder Dokumente für Vault-Dateien — Antworten zitieren deine Daten.",
         "alt": "GarIQ-Screen: Ask-Chat mit zitierter Antwort aus einem PDF."
       }
     ]
   },
   "capabilities": {
     "label": "Funktionen",
-    "title": "Alles, was GarIQ kann — so organisiert, wie du es nutzt.",
-    "copy": "Wechsle die Tabs, um das ganze Produkt zu sehen. Nichts Wichtiges fehlt — es ist nur gruppiert.",
+    "title": "Scan, Ask und alles rund um die Garage — in klaren Säulen.",
+    "copy": "Wechsle die Tabs zu Capture, Ask, Dokumente, Timeline & Stats, Geteilte Garagen und Tarife. Nichts Wichtiges fehlt.",
     "tabs": [
       {
-        "id": "logbook",
-        "label": "Fahrtenbuch",
-        "title": "Ein vollständiges Fahrzeug-Logbuch",
+        "id": "capture",
+        "label": "Capture",
+        "title": "Vier Insert-Methoden — plus Smart Scan",
         "bullets": [
-          "Tanken, Laden, Werkstatt, Steuer, Prüfung, Ausgaben, Notizen und Fahrten erfassen",
-          "Versicherungspolicen und Kaufverträge liegen in der Dokumentenablage",
-          "Fahrzeuge inaktiv setzen — aus Home, Timeline und Stats ausgeblendet, Historie bleibt",
-          "Privacy by design: du siehst nur Garagen, zu denen du gehörst"
-        ]
-      },
-      {
-        "id": "insert",
-        "label": "So erfassest du",
-        "title": "Einmal erfassen, einmal bestätigen",
-        "bullets": [
-          "Capture-Sheet: Formular, Foto, PDF oder Chat",
-          "OCR macht aus Belegen und Rechnungen einen bearbeitbaren Entwurf",
-          "Du prüfst und bestätigst immer vor dem Speichern",
-          "Ein sanfter Hinweis warnt bei möglichen Doppel-Einträgen"
+          "Formular, Foto, PDF oder Chat für einen festgelegten Eventtyp",
+          "Smart Scan: Foto oder PDF ohne Typwahl — OCR erkennt den Typ, dann derselbe Entwurf",
+          "OCR macht aus Belegen und Rechnungen einen bearbeitbaren Entwurf mit Konfidenz-Hinweisen",
+          "Du prüfst und tippst Speichern — KI speichert nie automatisch",
+          "Das manuelle Formular bleibt verfügbar, wenn KI-Credits leer sind",
+          "Tanken, Laden, Werkstatt, Steuer, Prüfung, Ausgaben, Notizen und Fahrten erfassen"
         ]
       },
       {
         "id": "ask",
-        "label": "Ask & Dokumente",
-        "title": "Frag deine Daten und Dateien",
+        "label": "Ask",
+        "title": "Zwei Ask-Modi auf deinen Daten",
         "bullets": [
-          "Ask zu Ausgaben, Historie und Dokumenten — mit Zitaten",
-          "Geführte Slots: Schein, Handbuch, Police, Kaufvertrag",
-          "Schein scannen; Daten aus Police und Kaufvertrag extrahieren",
-          "Ask-Fragen diktieren (On-Device-Sprache)",
-          "UI und Assistent teilen eine Sprache: Italienisch, Deutsch oder Englisch"
+          "Logbuch-Modus: Fragen in natürlicher Sprache zu Events, Kosten, Profil und Aggregaten",
+          "Dokumente-Modus: Q&A über die Fahrzeugablage — Antworten zitieren Titel und Seite, wenn verfügbar",
+          "Optionale Spracheingabe in den Composer — du sendest; kein Autosend",
+          "Derselbe monatliche KI-Credit-Pool; bei leeren Credits ist Ask gesperrt mit Upgrade-Pfad",
+          "UI und Assistent: Italienisch, Deutsch oder Englisch"
+        ]
+      },
+      {
+        "id": "documents",
+        "label": "Dokumente",
+        "title": "Fahrzeug-Dokumentenablage",
+        "bullets": [
+          "Geführte Slots: Schein, aktuelle Police, Kaufvertrag, Handbuch — plus weitere Dateien",
+          "Die Police liegt im Vault-Hub — nicht über Insert → Versicherung (das ist für Zahlungs-Events)",
+          "Schein scannen zum Vorausfüllen; Police und Kauf in bearbeitbare Hubs extrahieren",
+          "Ask zu diesem Dokument, wenn die Indexierung bereit ist",
+          "Free: Upload/Indexierung anderer Vault-Kategorien außer Schein ist aus; Basic und Advanced schalten Document-AI frei"
         ]
       },
       {
         "id": "insights",
         "label": "Timeline & Stats",
-        "title": "Sieh, wohin das Geld geht",
+        "title": "Historie und Ausgaben, denen du vertraust",
         "bullets": [
-          "Jahrweise Timeline mit Volltextsuche",
-          "Statistik nach Kategorie, Fahrzeug und Trend",
-          "Automatische Mehrwährung: auswärts zahlen, Totals in Garagenwährung",
-          "Advanced: Timeline-Kalenderjahr als CSV oder PDF exportieren"
+          "Jahrweise Timeline mit gemeinsamem Jahr-Regler und Volltextsuche",
+          "Statistik nach Kategorie, Fahrzeug und Trend in der Garagenwährung",
+          "Automatisches FX: auswärts zahlen, Totals zum Tageskurs umrechnen",
+          "Advanced: Timeline-Kalenderjahr als CSV oder gebrandetes PDF (bei Free/Basic sichtbar aber gesperrt)"
         ]
       },
       {
         "id": "garage",
-        "label": "Garagen & Tarife",
-        "title": "Räume, die mitwachsen",
+        "label": "Geteilte Garagen",
+        "title": "Workspaces, die mitwachsen",
         "bullets": [
-          "Mehrere Garagen mit Co-Owner-, Admin- oder Logger-Rollen",
-          "Free und Basic: 1 eigene Garage · Advanced: bis zu 3",
-          "Freigabe bei Basic und Advanced (nicht bei Free)",
-          "Tarife in der App abonnieren und verwalten — siehe Tarife unten"
+          "Eine aktive Garage begrenzt Home, Timeline, Stats, Insert und Ask",
+          "Lade Co-Owner, Admins oder Logger ein — keine Viewer-Rolle in v1",
+          "In geteilten Timelines siehst du, wer geloggt und wer aktualisiert hat",
+          "KI-Credit-Verbrauch zählt gegen den Plan des Primary Owners"
+        ]
+      },
+      {
+        "id": "plans",
+        "label": "Tarife",
+        "title": "Free, Basic, Advanced — Kauf in der App",
+        "bullets": [
+          "Free: 1 Garage, 1 Fahrzeug, 10 KI-Credits/Monat nach dem ersten Fahrzeug",
+          "Basic: 1 Garage, 5 Fahrzeuge, Freigabe bis 5 Mitglieder, 100 Credits",
+          "Advanced: 3 Garagen, 10 Fahrzeuge, 10 Mitglieder, 300 Credits, Jahres-Export, OCR-Anhänge behalten",
+          "Abo über App Store / Google Play — diese Website verarbeitet keine Zahlungen"
         ],
         "cta": {
           "href": "#plans",

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "GarIQ — Il libretto intelligente per i tuoi veicoli",
-    "description": "Molto più di un tracker spese: registra con foto, PDF o chat (l'IA propone, tu confermi), chiedi ai tuoi dati e documenti e analizza le spese in timeline e statistiche — anche in più valute.",
-    "keywords": "libretto auto,manutenzione auto,spese carburante,assistente IA auto,OCR scontrino,documenti veicolo,statistiche veicolo,multi valuta,garage digitale"
+    "title": "GarIQ — Libretto AI con Scan e Ask",
+    "description": "Scansiona scontrini (foto, PDF, Smart Scan) e chiedi al libretto o ai documenti — l'IA propone, tu confermi sempre. Timeline, stats, garage condivisi. Italiano, tedesco, inglese.",
+    "keywords": "libretto auto,OCR scontrino,Smart Scan,Ask IA,manutenzione auto,spese carburante,documenti veicolo,garage condiviso,multi valuta"
   },
   "common": {
     "skipToContent": "Vai al contenuto",
@@ -22,19 +22,19 @@
     "ctaDownload": "Scarica l'app"
   },
   "hero": {
-    "badge": "Scansiona scontrini. Chiedi allo storico.",
+    "badge": "Scan + Ask — confermi tu ogni salvataggio",
     "title": "Molto più di un registro spese: il cervello del tuo garage.",
-    "subtitle": "Foto, PDF o chat → l'IA prepara la voce e tu confermi, sempre. Poi chiedi qualsiasi cosa ai tuoi veicoli e ai tuoi documenti — nella tua lingua. Rifornimenti, tagliandi, tasse, revisioni, ricariche EV, spese e viaggi in timeline e statistiche — più le polizze assicurative nel vault documenti — anche in più valute.",
+    "subtitle": "Foto, PDF, Smart Scan o chat → l'IA prepara la voce e tu confermi, sempre. Poi Ask sul libretto o sul vault documenti — in italiano, tedesco o inglese. Rifornimenti, tagliandi, tasse, revisioni, ricariche EV, spese e viaggi in timeline e statistiche — più le polizze nel vault — anche in più valute.",
     "ctaPrimary": "Scarica GarIQ",
     "ctaSecondary": "Come funziona",
     "stat1Title": "A modo tuo",
-    "stat1Copy": "Modulo, foto, PDF o chat — sempre con revisione.",
+    "stat1Copy": "Form, foto, PDF, chat o Smart Scan — sempre con revisione.",
     "stat2Title": "Chiedi ai tuoi dati",
-    "stat2Copy": "Risposte in linguaggio naturale da eventi e manuali caricati.",
+    "stat2Copy": "Modalità Libretto per eventi e spese; Documenti per Q&A sul vault con citazioni.",
     "stat3Title": "I tuoi garage",
     "stat3Copy": "Spazi separati per auto quotidiana, famiglia o hobby.",
     "imageAlt": "App GarIQ con home, veicoli, timeline e inserimento eventi",
-    "subtitleShort": "Scansiona foto o PDF — l'IA prepara la bozza, tu confermi. Poi chiedi allo storico qualsiasi cosa su spese e storia."
+    "subtitleShort": "Scansiona foto o PDF — o Smart Scan senza scegliere il tipo. L'IA prepara la bozza, tu confermi. Poi Ask al libretto o ai documenti."
   },
   "vehicleTypes": {
     "label": "Per ogni veicolo",
@@ -262,19 +262,23 @@
   "ai": {
     "label": "Livello IA",
     "title": "IA che accelera l'inserimento — senza prendere il volante.",
-    "copy": "OCR visione, raccolta conversazionale e Ask con strumenti. Ogni percorso IA finisce in una bozza modificabile; gli eventi confermati alimentano statistiche e risposte.",
+    "copy": "OCR visione, Smart Scan, raccolta conversazionale e Ask con strumenti in due modalità. Ogni percorso insert finisce in una bozza che editi; niente è salvato finché non confermi.",
     "cards": [
       {
         "title": "OCR foto e PDF",
-        "copy": "Estrae importi, date e dettagli carburante da immagini e documenti."
+        "copy": "Estrae importi, date e dettagli carburante da foto e PDF — incluso Smart Scan quando salti la scelta del tipo."
       },
       {
         "title": "Chat collect",
-        "copy": "Descrivi manutenzione o spese in linguaggio naturale; completa la bozza quando sei pronto."
+        "copy": "Descrivi manutenzione o spese in linguaggio naturale; apri Review draft quando vuoi; salvi solo quando sei pronto."
       },
       {
-        "title": "Ask con citazioni",
-        "copy": "Risposte su spese, storico e documenti — dai tuoi dati, citando il file."
+        "title": "Ask · Libretto",
+        "copy": "Risposte in linguaggio naturale su spese, storico e aggregati — ancorate ai tuoi eventi sotto RLS."
+      },
+      {
+        "title": "Ask · Documenti",
+        "copy": "Q&A sul vault con citazioni a titolo e pagina — stesso pool di crediti IA dell'Ask libretto."
       }
     ],
     "preview": {
@@ -401,8 +405,8 @@
   "plans": {
     "label": "Piani e IA",
     "title": "Tre piani account. Stessa app — cresce con il tuo garage.",
-    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione e crediti IA mensili). Abbonati e gestisci il piano nell'app GarIQ — nessun pagamento su questa pagina. Sul Free, il periodo mensile di crediti IA inizia quando aggiungi il primo veicolo.",
-    "footnote": "I crediti IA mensili coprono OCR, insert chat e Ask (non gli embedding documenti). Sul Free, la scansione del libretto prima del primo veicolo non consuma i crediti mensili; i moduli manuali restano disponibili se raggiungi il limite. Confermi sempre prima di salvare un evento.",
+    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione e crediti IA mensili). Abbonati e gestisci il piano nell'app GarIQ via App Store o Google Play — questo sito non processa pagamenti. Sul Free, il periodo mensile di crediti IA inizia quando aggiungi il primo veicolo.",
+    "footnote": "I crediti IA mensili coprono OCR, insert chat, Ask (libretto e documenti) e le azioni IA fatturate. Sul Free, la scansione del libretto prima del primo veicolo non consuma i crediti mensili; document AI per categorie vault diverse dal libretto è off. Il Form manuale resta sempre disponibile se raggiungi il limite. Confermi sempre prima di salvare un evento.",
     "popularBadge": "Più flessibile",
     "cta": "Scarica GarIQ",
     "tiers": [
@@ -419,7 +423,9 @@
           "10 crediti IA / mese dal primo veicolo",
           "Scansione libretto prima del primo veicolo senza consumare crediti mensili",
           "OCR per carburante e ricarica; chat per note, carburante e ricarica",
-          "Condivisione garage non inclusa"
+          "Document AI per categorie vault diverse dal libretto: off",
+          "Condivisione garage non inclusa",
+          "Form manuale sempre disponibile a crediti esauriti"
         ]
       },
       {
@@ -434,7 +440,8 @@
           "Condivisione (fino a 5 membri)",
           "100 crediti IA / mese",
           "Foto/PDF e chat insert per tutti i tipi di evento",
-          "IA per tutti i documenti veicolo"
+          "Document AI per le categorie vault veicolo on",
+          "Export timeline annuale bloccato (visibile + upgrade)"
         ]
       },
       {
@@ -448,8 +455,8 @@
           "Fino a 10 veicoli per garage",
           "Condivisione (fino a 10 membri)",
           "300 crediti IA / mese",
-          "Export timeline per anno (CSV e PDF)",
-          "Salva la foto/PDF originale sull'evento e aprila quando vuoi"
+          "Export timeline per anno (CSV e PDF brandizzato)",
+          "Conserva la foto/PDF originale sull'evento e aprila quando vuoi"
         ]
       }
     ]
@@ -469,23 +476,35 @@
     "items": [
       {
         "q": "Cosa posso registrare?",
-        "a": "Carburante, ricariche, officina, tasse, revisioni, spese, note e viaggi — tutti legati a un veicolo. Polizze e contratti d'acquisto vanno nel vault documenti."
+        "a": "Carburante, ricariche, officina, tasse, revisioni, spese, note e viaggi — tutti legati a un veicolo. I pagamenti assicurativi si possono registrare come eventi; polizze correnti e contratti d'acquisto stanno nel vault documenti (non via Insert → Assicurazione per la polizza)."
       },
       {
         "q": "L'IA salva da sola?",
-        "a": "No. L'IA propone una bozza da OCR o chat; modifichi e confermi nella schermata bozza."
+        "a": "No. L'IA propone una bozza da OCR, Smart Scan o chat; modifichi e confermi nella schermata bozza."
+      },
+      {
+        "q": "Cos'è Smart Scan?",
+        "a": "Azione dalla Home: foto o PDF senza scegliere prima il tipo di evento. L'OCR deduce il tipo tra gli eventi document-like, poi revisioni la stessa bozza e confermi."
+      },
+      {
+        "q": "Quali sono le due modalità Ask?",
+        "a": "Ask Libretto risponde su eventi, costi e aggregati. Ask Documenti risponde sul vault veicolo e può citare titolo e pagina. Entrambe usano lo stesso pool di crediti IA mensili."
+      },
+      {
+        "q": "Cosa succede a crediti IA esauriti?",
+        "a": "I metodi IA (OCR, chat insert, Ask) si disabilitano fino al reset crediti o all'upgrade. Il Form manuale resta sempre disponibile per continuare a registrare."
       },
       {
         "q": "Più garage?",
-        "a": "Free e Basic includono 1 garage di proprietà. Advanced fino a 3. Su Basic e Advanced puoi invitare co-owner, admin o logger; sul Free non c'è condivisione."
+        "a": "Free e Basic includono 1 garage di proprietà. Advanced fino a 3. Su Basic e Advanced puoi invitare co-owner, admin o logger (nessun Viewer in v1); sul Free non c'è condivisione."
       },
       {
-        "q": "Quali documenti?",
-        "a": "Carichi manuali, polizze e PDF nel vault del veicolo; Ask può cercarli con citazioni."
+        "q": "Polizza vs pagamento assicurazione?",
+        "a": "PDF di polizza e date di copertura stanno sotto Documenti / hub Polizza. Registrare un pagamento assicurativo è un evento di libretto separato. Non usare Insert → Assicurazione per aggiungere la polizza."
       },
       {
         "q": "Quali lingue supporta GarIQ?",
-        "a": "Interfaccia e assistente: inglese, tedesco e italiano — una sola lingua preferita nelle Impostazioni."
+        "a": "Interfaccia e assistente: italiano, tedesco e inglese — una sola lingua preferita nelle Impostazioni."
       },
       {
         "q": "In che valute posso registrare le spese?",
@@ -493,11 +512,15 @@
       },
       {
         "q": "Posso esportare i miei dati?",
-        "a": "Sì. Con Advanced esporti un anno di Timeline in CSV o PDF. L'export completo account dalle Impostazioni non è ancora in v1."
+        "a": "Con Advanced esporti un anno di Timeline in CSV o PDF brandizzato (controlli visibili ma bloccati su Free/Basic). L'export completo account dalle Impostazioni non è ancora in v1."
       },
       {
-        "q": "Come funzionano piani e IA?",
-        "a": "Abbonati e gestisci Basic o Advanced nell'app GarIQ (nessun pagamento su questa pagina). Ogni piano include crediti IA mensili. Sul Free il periodo parte dal primo veicolo; puoi comunque registrare a mano se raggiungi il limite."
+        "q": "Posso abbonarmi su questo sito?",
+        "a": "No. Basic e Advanced si acquistano nell'app GarIQ via App Store o Google Play (RevenueCat). Questo sito marketing non processa pagamenti né funge da checkout."
+      },
+      {
+        "q": "Come funzionano i limiti Free?",
+        "a": "1 garage di proprietà, 1 veicolo, 10 crediti IA/mese dopo il primo veicolo. OCR limitato a carburante e ricarica; chat insert a note, carburante e ricarica. Document AI per categorie vault diverse dal libretto è off. La scansione libretto prima del primo veicolo non usa crediti mensili."
       }
     ]
   },
@@ -701,20 +724,20 @@
   },
   "whyGarIq": {
     "label": "Perché GarIQ",
-    "title": "Un'app spese ti dà i numeri. GarIQ ti dà la storia del garage.",
-    "copy": "Scontrini, polizze e note chilometriche si disperdono. GarIQ tiene eventi, documenti e risposte IA in un posto — e confermi ogni salvataggio.",
+    "title": "Un'app spese ti dà i numeri. GarIQ ti dà Scan, Ask e controllo.",
+    "copy": "Cuore del prodotto: scansiona scontrini e documenti, poi chiedi al tuo storico — con un'IA che non scrive mai senza la tua conferma.",
     "points": [
       {
-        "title": "Restituisci il controllo",
-        "copy": "L'IA propone da foto, PDF o chat. Tu revisioni il modulo e salvi. Niente autosave."
+        "title": "Confermi tu ogni salvataggio",
+        "copy": "L'IA propone da foto, PDF, Smart Scan o chat. Tu revisioni il modulo e salvi. Niente autosave."
       },
       {
         "title": "Struttura per la vita reale",
         "copy": "Garage, veicoli, timeline e statistiche — cambi focus senza perdere lo storico."
       },
       {
-        "title": "Chiedi ai tuoi dati",
-        "copy": "Domande su spese e manuali caricati: risposte ancorate ai tuoi file."
+        "title": "Ask libretto o documenti",
+        "copy": "Due modalità Ask: eventi e spese, oppure Q&A sul vault con citazioni — stesso pool di crediti."
       },
       {
         "title": "Più valute, senza fogli",
@@ -732,8 +755,8 @@
         "alt": "Schermata GarIQ: foto del libretto trasformata in form nuovo veicolo precompilato."
       },
       {
-        "title": "Registra come vuoi",
-        "copy": "Scegli il tipo di evento, poi form, foto, PDF o chat. L'IA prepara la bozza — tu confermi.",
+        "title": "Cattura come vuoi",
+        "copy": "Scegli il tipo di evento, poi form, foto, PDF o chat — oppure Smart Scan senza scegliere il tipo. L'IA prepara la bozza; tu confermi.",
         "alt": "Schermata GarIQ: scontrino carburante trasformato in bozza modificabile."
       },
       {
@@ -743,70 +766,84 @@
       },
       {
         "title": "Chiedi qualsiasi cosa",
-        "copy": "Carica manuali o polizze, poi chiedi nella tua lingua — le risposte citano i tuoi dati.",
+        "copy": "Ask modalità libretto per spese e storico, o documenti per i file del vault — le risposte citano i tuoi dati.",
         "alt": "Schermata GarIQ: chat Ask con risposta citata da un PDF."
       }
     ]
   },
   "capabilities": {
     "label": "Funzioni",
-    "title": "Tutto ciò che fa GarIQ — organizzato come lo usi.",
-    "copy": "Cambia tab per esplorare il prodotto completo. Niente di importante è nascosto: è solo raggruppato.",
+    "title": "Scan, Ask e tutto intorno al garage — in pilastri chiari.",
+    "copy": "Cambia tab per esplorare Capture, Ask, Documenti, Timeline e Stats, Garage condivisi e Piani. Niente di importante è nascosto.",
     "tabs": [
       {
-        "id": "logbook",
-        "label": "Libretto",
-        "title": "Un libretto veicolo completo",
+        "id": "capture",
+        "label": "Capture",
+        "title": "Quattro metodi di insert — più Smart Scan",
         "bullets": [
-          "Registra rifornimento, ricarica, officina, tasse, revisione, spese, note e viaggi",
-          "Polizze e contratti d'acquisto stanno nel vault documenti",
-          "Veicoli inattivi nascosti da Home, Timeline e Stats — lo storico resta",
-          "Privacy by design: vedi solo i garage a cui appartieni"
-        ]
-      },
-      {
-        "id": "insert",
-        "label": "Come registri",
-        "title": "Cattura una volta, conferma una volta",
-        "bullets": [
-          "Foglio di cattura: Form, Foto, PDF o Chat",
-          "OCR trasforma scontrini e fatture in bozza modificabile",
-          "Revisioni e confermi sempre prima di salvare",
-          "Un banner soft avvisa se potrebbe esistere una voce simile"
+          "Form, Foto, PDF o Chat conversazionale per un tipo di evento bloccato",
+          "Smart Scan: foto o PDF senza scegliere prima il tipo — l'OCR lo deduce, poi la stessa bozza",
+          "OCR trasforma scontrini e fatture in bozza modificabile con hint di confidenza",
+          "Revisioni e salvi sempre tu — l'IA non fa mai autosave",
+          "Il Form manuale resta disponibile quando i crediti IA finiscono",
+          "Registra rifornimento, ricarica, officina, tasse, revisione, spese, note e viaggi"
         ]
       },
       {
         "id": "ask",
-        "label": "Ask e documenti",
-        "title": "Chiedi ai dati e ai file",
+        "label": "Ask",
+        "title": "Due modalità Ask sui tuoi dati",
         "bullets": [
-          "Ask su spese, storico e documenti caricati — con citazioni",
-          "Slot guidati: libretto, manuale, polizza, contratto d'acquisto",
-          "Scansione libretto e extract da polizze e contratti",
-          "Dettatura vocale su Ask",
-          "UI e assistente condividono una lingua: italiano, tedesco o inglese"
+          "Modalità Libretto: domande in linguaggio naturale su eventi, costi, profilo e aggregati",
+          "Modalità Documenti: Q&A sul vault veicolo — le risposte citano titolo e pagina quando disponibili",
+          "Voce opzionale nel composer — invii tu; niente invio automatico",
+          "Stesso pool di crediti IA mensili; a credito esaurito Ask si disabilita con percorso upgrade",
+          "UI e assistente: italiano, tedesco o inglese"
+        ]
+      },
+      {
+        "id": "documents",
+        "label": "Documenti",
+        "title": "Vault documenti del veicolo",
+        "bullets": [
+          "Slot guidati: libretto, polizza corrente, contratto d'acquisto, manuale — più altri file",
+          "La polizza vive nel vault — non via Insert → Assicurazione (quel percorso è per i pagamenti)",
+          "Scansione libretto per precompilare il veicolo; extract polizza e acquisto in hub modificabili",
+          "Ask su questo documento quando l'indicizzazione è pronta",
+          "Free: upload/indicizzazione delle categorie vault diverse dal libretto è off; Basic e Advanced sbloccano document AI"
         ]
       },
       {
         "id": "insights",
         "label": "Timeline e stats",
-        "title": "Capisci dove vanno i soldi",
+        "title": "Storico e spese di cui ti fidi",
         "bullets": [
-          "Timeline per anno con ricerca full-text",
-          "Statistiche per categoria, veicolo e trend",
-          "Multi-valuta automatica: paghi all'estero, totali in valuta garage",
-          "Advanced: export di un anno Timeline in CSV o PDF"
+          "Timeline raggruppata per anno con controllo anno condiviso e ricerca full-text",
+          "Statistiche per categoria, veicolo e trend nella valuta del garage",
+          "FX automatico: paghi all'estero, i totali convertono al cambio del giorno",
+          "Advanced: export di un anno Timeline in CSV o PDF brandizzato (visibile ma bloccato su Free/Basic)"
         ]
       },
       {
         "id": "garage",
-        "label": "Garage e piani",
-        "title": "Spazi che crescono con te",
+        "label": "Garage condivisi",
+        "title": "Workspace che crescono con te",
         "bullets": [
-          "Più garage con ruoli co-owner, admin o logger",
-          "Free e Basic: 1 garage di proprietà · Advanced: fino a 3",
-          "Condivisione su Basic e Advanced (non sul Free)",
-          "Abbonati e gestisci i piani nell'app — vedi Piani sotto"
+          "Un garage attivo delimita Home, Timeline, Stats, Insert e Ask",
+          "Invita co-owner, admin o logger — nessun ruolo Viewer in v1",
+          "Nelle timeline condivise vedi chi ha registrato e chi ha aggiornato",
+          "L'uso dei crediti IA conta sul piano del Primary Owner"
+        ]
+      },
+      {
+        "id": "plans",
+        "label": "Piani",
+        "title": "Free, Basic, Advanced — acquisto in-app",
+        "bullets": [
+          "Free: 1 garage, 1 veicolo, 10 crediti IA/mese dopo il primo veicolo",
+          "Basic: 1 garage, 5 veicoli, sharing fino a 5 membri, 100 crediti",
+          "Advanced: 3 garage, 10 veicoli, 10 membri, 300 crediti, export annuale, allegati OCR permanenti",
+          "Abbonati via App Store / Google Play — questo sito non processa pagamenti"
         ],
         "cta": {
           "href": "#plans",
