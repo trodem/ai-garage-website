@@ -1,77 +1,45 @@
 import { getTranslations } from "next-intl/server";
-import HeroAskScanFlip from "@/components/HeroAskScanFlip";
+import HeroDualMockups from "@/components/HeroDualMockups";
 import MagneticButton from "@/components/MagneticButton";
-
-async function VehicleTypeChips() {
-  const t = await getTranslations("vehicleTypes");
-  const items = t.raw("items") as string[];
-  return (
-    <ul className="mt-5 flex flex-wrap gap-2" aria-label={t("label")}>
-      {items.map((item) => (
-        <li
-          key={item}
-          className="rounded-full border border-slate-200 bg-white/80 px-3 py-1 text-xs font-medium text-slate-600 dark:border-slate-700 dark:bg-slate-900/80 dark:text-slate-300"
-        >
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 export default async function Hero() {
   const t = await getTranslations("hero");
 
-  const stats = [
-    { title: t("stat1Title"), copy: t("stat1Copy") },
-    { title: t("stat2Title"), copy: t("stat2Copy") },
-    { title: t("stat3Title"), copy: t("stat3Copy") },
-  ];
-
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-7xl gap-16 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
-        <div className="max-w-2xl">
+      <div className="mx-auto max-w-7xl px-4 pb-10 pt-16 sm:px-6 lg:px-8 lg:pb-14 lg:pt-24">
+        <div className="mx-auto max-w-5xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary-100 bg-primary-50 px-3 py-1 text-sm font-medium text-primary-700 dark:border-primary-500/20 dark:bg-primary-500/10 dark:text-primary-100">
             <span className="h-2 w-2 rounded-full bg-emerald-500" />
             {t("badge")}
           </div>
-          <h1 className="mt-6 text-4xl font-semibold tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl">
+
+          <h1 className="mt-8 text-5xl font-semibold tracking-tight text-slate-950 dark:text-white sm:text-6xl lg:text-7xl lg:leading-[1.05]">
             <span className="text-gradient">{t("title")}</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-            {t("subtitle")}
+
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300 sm:text-xl sm:leading-9">
+            {t("subtitleShort")}
           </p>
-          <VehicleTypeChips />
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <MagneticButton
               href="#download"
-              className="btn-shine inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+              className="btn-shine inline-flex min-w-[11rem] items-center justify-center rounded-full bg-slate-900 px-8 py-3.5 text-base font-semibold text-white hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
             >
               {t("ctaPrimary")}
             </MagneticButton>
             <a
               href="#how"
-              className="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-950 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:text-white"
+              className="inline-flex min-w-[11rem] items-center justify-center rounded-full border border-slate-300 px-8 py-3.5 text-base font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-950 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:text-white"
             >
               {t("ctaSecondary")}
             </a>
           </div>
-          <dl className="mt-10 grid grid-cols-1 gap-4 text-sm text-slate-600 dark:text-slate-300 sm:grid-cols-3">
-            {stats.map((stat) => (
-              <div
-                key={stat.title}
-                className="rounded-2xl border border-slate-200/80 bg-white/70 p-4 backdrop-blur dark:border-slate-800 dark:bg-slate-900/70"
-              >
-                <dt className="font-semibold text-slate-950 dark:text-white">{stat.title}</dt>
-                <dd className="mt-1">{stat.copy}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
 
-        <div className="flex items-center justify-center py-8 lg:py-0">
-          <HeroAskScanFlip />
+        <div className="mt-14 lg:mt-20">
+          <HeroDualMockups />
         </div>
       </div>
 

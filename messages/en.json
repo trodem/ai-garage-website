@@ -33,7 +33,8 @@
     "stat2Copy": "Natural-language answers from your events and uploaded manuals.",
     "stat3Title": "Your garages",
     "stat3Copy": "Separate spaces for daily driver, family, or hobby vehicles.",
-    "imageAlt": "GarIQ app showing home, vehicles, timeline, and insert flow"
+    "imageAlt": "GarIQ app showing home, vehicles, timeline, and insert flow",
+    "subtitleShort": "Scan a photo or PDF — AI drafts the entry, you confirm. Then ask your logbook anything about spend and history."
   },
   "vehicleTypes": {
     "label": "For every vehicle",

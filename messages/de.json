@@ -33,7 +33,8 @@
     "stat2Copy": "Antworten in natürlicher Sprache aus Events und Handbüchern.",
     "stat3Title": "Deine Garagen",
     "stat3Copy": "Getrennte Bereiche für Alltagsauto, Familie oder Hobbyfahrzeuge.",
-    "imageAlt": "GarIQ-App mit Home, Fahrzeugen, Timeline und Erfassungsflow"
+    "imageAlt": "GarIQ-App mit Home, Fahrzeugen, Timeline und Erfassungsflow",
+    "subtitleShort": "Foto oder PDF scannen — die KI erstellt den Entwurf, du bestätigst. Dann frag dein Fahrtenbuch alles zu Ausgaben und Historie."
   },
   "vehicleTypes": {
     "label": "Für jedes Fahrzeug",

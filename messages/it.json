@@ -33,7 +33,8 @@
     "stat2Copy": "Risposte in linguaggio naturale da eventi e manuali caricati.",
     "stat3Title": "I tuoi garage",
     "stat3Copy": "Spazi separati per auto quotidiana, famiglia o hobby.",
-    "imageAlt": "App GarIQ con home, veicoli, timeline e inserimento eventi"
+    "imageAlt": "App GarIQ con home, veicoli, timeline e inserimento eventi",
+    "subtitleShort": "Scansiona foto o PDF — l'IA prepara la bozza, tu confermi. Poi chiedi allo storico qualsiasi cosa su spese e storia."
   },
   "vehicleTypes": {
     "label": "Per ogni veicolo",
