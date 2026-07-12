@@ -4,19 +4,19 @@ import { getTranslations } from "next-intl/server";
 
 type Step = { title: string; copy: string; alt: string };
 
-export default async function WalkthroughSection() {
-  const t = await getTranslations("walkthrough");
+export default async function ProductStorySection() {
+  const t = await getTranslations("productStory");
   const steps = t.raw("steps") as Step[];
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+    <section id="how" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <div className="max-w-2xl">
         <span className="section-label">{t("label")}</span>
         <h2 className="section-title">{t("title")}</h2>
       </div>
 
       <div className="mt-14 flex flex-col gap-16 lg:gap-24">
-        {steps.map((step, i) => {
+        {steps.slice(0, 4).map((step, i) => {
           const reversed = i % 2 === 1;
           return (
             <Reveal
@@ -35,7 +35,6 @@ export default async function WalkthroughSection() {
                   {step.copy}
                 </p>
               </div>
-
               <div className={reversed ? "lg:order-1" : ""} role="img" aria-label={step.alt}>
                 <WalkthroughMockup index={i} />
               </div>

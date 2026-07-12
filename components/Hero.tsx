@@ -2,6 +2,23 @@ import { getTranslations } from "next-intl/server";
 import AppPreview from "@/components/AppPreview";
 import MagneticButton from "@/components/MagneticButton";
 
+async function VehicleTypeChips() {
+  const t = await getTranslations("vehicleTypes");
+  const items = t.raw("items") as string[];
+  return (
+    <ul className="mt-5 flex flex-wrap gap-2" aria-label={t("label")}>
+      {items.map((item) => (
+        <li
+          key={item}
+          className="rounded-full border border-slate-200 bg-white/80 px-3 py-1 text-xs font-medium text-slate-600 dark:border-slate-700 dark:bg-slate-900/80 dark:text-slate-300"
+        >
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default async function Hero() {
   const t = await getTranslations("hero");
 
@@ -25,6 +42,7 @@ export default async function Hero() {
           <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
             {t("subtitle")}
           </p>
+          <VehicleTypeChips />
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <MagneticButton
               href="#download"
@@ -33,7 +51,7 @@ export default async function Hero() {
               {t("ctaPrimary")}
             </MagneticButton>
             <a
-              href="#how-it-works"
+              href="#how"
               className="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-950 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:text-white"
             >
               {t("ctaSecondary")}

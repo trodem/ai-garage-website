@@ -12,15 +12,13 @@
   "header": {
     "homeAria": "GarIQ Startseite",
     "navFeatures": "Funktionen",
-    "navAi": "KI",
-    "navStats": "Statistik",
-    "navScenarios": "Beispiele",
+    "navHow": "So funktioniert's",
     "navPlans": "Tarife",
     "navDownload": "Download",
     "navFaq": "FAQ",
-    "toggleThemeAria": "Dunkelmodus ein- oder ausschalten",
+    "toggleThemeAria": "Dunkelmodus umschalten",
     "openMenuAria": "Menü öffnen",
-    "themeButton": "Design",
+    "themeButton": "Thema",
     "ctaDownload": "App holen"
   },
   "hero": {
@@ -267,19 +265,15 @@
     "cards": [
       {
         "title": "Beleg- & PDF-OCR",
-        "copy": "Beträge, Daten und Tankdetails aus Bildern und Dokumenten."
+        "copy": "Beträge, Daten und Tankdetails aus Bildern und Dokumenten extrahieren."
       },
       {
-        "title": "Chat collect",
-        "copy": "Wartung oder Kosten in Alltagssprache beschreiben; Entwurf wenn fertig."
+        "title": "Chat-Collect",
+        "copy": "Wartung oder Ausgaben in Alltagssprache beschreiben; Entwurf fertigstellen, wenn du bereit bist."
       },
       {
         "title": "Ask mit Zitaten",
         "copy": "Antworten zu Ausgaben, Historie und Dokumenten — aus deinen Daten, mit Quellenangabe."
-      },
-      {
-        "title": "In deiner Sprache",
-        "copy": "Der Assistent antwortet auf Italienisch, Deutsch, Englisch, Französisch oder Spanisch."
       }
     ],
     "preview": {
@@ -474,7 +468,7 @@
     "items": [
       {
         "q": "Was kann ich erfassen?",
-        "a": "Tanken, Laden, Werkstatt, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten (Route, Fahrer und Kilometerstand — kein Ausgabeneintrag) — pro Fahrzeug. Versicherungspolicen und Kaufverträge gehören in die Dokumentenablage."
+        "a": "Tanken, Laden, Werkstatt, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten — pro Fahrzeug. Versicherungspolicen und Kaufverträge gehören in die Dokumentenablage."
       },
       {
         "q": "Speichert die KI automatisch?",
@@ -482,39 +476,27 @@
       },
       {
         "q": "Mehrere Garagen?",
-        "a": "Ja. Getrennte Garagen und Einladungen mit Co-Owner-, Admin- oder Logger-Rollen."
+        "a": "Free und Basic umfassen 1 eigene Garage. Advanced bis zu 3. Bei Basic und Advanced kannst du Co-Owner, Admins oder Logger einladen; Free hat keine Freigabe."
       },
       {
         "q": "Welche Dokumente?",
-        "a": "Handbücher, Policen und PDFs im Dokumententresor; Ask durchsucht sie mit Zitaten."
+        "a": "Lade Handbücher, Policen und PDFs in die Fahrzeug-Dokumentenablage; Ask kann sie mit Zitaten durchsuchen."
       },
       {
-        "q": "Push-Erinnerungen für Fristen?",
-        "a": "Nicht in v1. Versicherungsende und Notiz-Follow-ups sind in der App sichtbar — noch keine Push-Benachrichtigungen."
-      },
-      {
-        "q": "Welche Sprache hat die App?",
-        "a": "Die GarIQ-App-Oberfläche gibt es auf Englisch, Deutsch und Italienisch — dieselben Sprachen wie diese Website."
-      },
-      {
-        "q": "Sind meine Daten privat?",
-        "a": "Supabase mit Row-Level Security — du siehst nur deine Garagen und Fahrzeuge."
+        "q": "Welche Sprachen unterstützt GarIQ?",
+        "a": "App-Oberfläche und Assistent: Englisch, Deutsch und Italienisch — eine bevorzugte Sprache in den Einstellungen für beides."
       },
       {
         "q": "In welchen Währungen kann ich Ausgaben erfassen?",
-        "a": "Du kannst in einer anderen Währung als der Garagenwährung zahlen: GarIQ holt den Tageskurs und rechnet automatisch um, ohne manuelle Anpassung."
-      },
-      {
-        "q": "In welcher Sprache antwortet die KI?",
-        "a": "Wähle die Assistenzsprache in den Einstellungen: Italienisch, Deutsch, Englisch, Französisch oder Spanisch."
+        "a": "Du kannst in einer anderen Währung als der Garagenwährung zahlen: GarIQ holt den Tageskurs und rechnet automatisch um."
       },
       {
         "q": "Kann ich meine Daten exportieren?",
-        "a": "Ja. Mit Advanced exportierst du ein Timeline-Kalenderjahr als CSV oder PDF aus dem Timeline-Tab. Ein Voll-Konto-Export aus den Einstellungen ist in v1 noch nicht verfügbar — deine Daten bleiben deins."
+        "a": "Ja. Mit Advanced exportierst du ein Timeline-Kalenderjahr als CSV oder PDF. Ein Voll-Konto-Export aus den Einstellungen ist in v1 noch nicht verfügbar."
       },
       {
         "q": "Wie funktionieren Tarife und KI?",
-        "a": "Basic oder Advanced abonnierst und verwaltest du in der GarIQ-App (keine Zahlung auf dieser Seite). Jeder Tarif enthält monatliche KI-Credits — Details in den Einstellungen. Beim Free beginnt die monatliche Credit-Periode mit dem ersten Fahrzeug; der Schein-Scan davor verbraucht keine Credits, und manuelle Einträge bleiben möglich, wenn du das Limit erreichst."
+        "a": "Basic oder Advanced abonnierst und verwaltest du in der GarIQ-App (keine Zahlung auf dieser Seite). Jeder Tarif enthält monatliche KI-Credits. Beim Free beginnt die Credit-Periode mit dem ersten Fahrzeug; manuelle Einträge bleiben möglich."
       }
     ]
   },
@@ -685,5 +667,139 @@
       "active": "Aktiv",
       "progress": "Fortschritt"
     }
+  },
+  "whyGarIq": {
+    "label": "Warum GarIQ",
+    "title": "Eine Ausgaben-App liefert Zahlen. GarIQ liefert die ganze Garagen-Geschichte.",
+    "copy": "Belege, Policen und Kilometer-Notizen verstreuen sich. GarIQ hält Events, Dokumente und KI-Antworten an einem Ort — und du bestätigst jedes Speichern.",
+    "points": [
+      {
+        "title": "Du behältst die Kontrolle",
+        "copy": "KI erstellt Entwürfe aus Foto, PDF oder Chat. Du prüfst das Formular und speicherst. Kein Autosave."
+      },
+      {
+        "title": "Struktur fürs echte Leben",
+        "copy": "Garagen, Fahrzeuge, Timeline und Statistik — Fokus wechseln, ohne Historie zu verlieren."
+      },
+      {
+        "title": "Frag deine eigenen Daten",
+        "copy": "Fragen zu Ausgaben und hochgeladenen Handbüchern — Antworten aus deinen Dateien."
+      },
+      {
+        "title": "Mehrere Währungen ohne Tabelle",
+        "copy": "Im Ausland zahlen: GarIQ rechnet zum Tageskurs in die Garagenwährung um."
+      }
+    ]
+  },
+  "productStory": {
+    "label": "So funktioniert's",
+    "title": "Vom Fahrzeugschein zur klugen Antwort in vier Schritten.",
+    "steps": [
+      {
+        "title": "Fahrzeug anlegen",
+        "copy": "Schein scannen oder Marke und Modell tippen. Deine Garage startet hier.",
+        "alt": "GarIQ-Screen: Fahrzeugschein-Foto wird zum vorausgefüllten Formular."
+      },
+      {
+        "title": "Erfassen wie du willst",
+        "copy": "Eventtyp wählen, dann Formular, Foto, PDF oder Chat. KI bereitet den Entwurf vor — du bestätigst.",
+        "alt": "GarIQ-Screen: Tankbeleg wird zum bearbeitbaren Entwurf."
+      },
+      {
+        "title": "Timeline sehen",
+        "copy": "Jedes bestätigte Event landet in der jahrweise gruppierten Historie.",
+        "alt": "GarIQ-Screen: nach Jahren gruppierte Event-Timeline."
+      },
+      {
+        "title": "Alles fragen",
+        "copy": "Handbücher oder Policen hochladen, dann in deiner Sprache fragen — Antworten zitieren deine Daten.",
+        "alt": "GarIQ-Screen: Ask-Chat mit zitierter Antwort aus einem PDF."
+      }
+    ]
+  },
+  "capabilities": {
+    "label": "Funktionen",
+    "title": "Alles, was GarIQ kann — so organisiert, wie du es nutzt.",
+    "copy": "Wechsle die Tabs, um das ganze Produkt zu sehen. Nichts Wichtiges fehlt — es ist nur gruppiert.",
+    "tabs": [
+      {
+        "id": "logbook",
+        "label": "Fahrtenbuch",
+        "title": "Ein vollständiges Fahrzeug-Logbuch",
+        "bullets": [
+          "Tanken, Laden, Werkstatt, Steuer, Prüfung, Ausgaben, Notizen und Fahrten erfassen",
+          "Versicherungspolicen und Kaufverträge liegen in der Dokumentenablage",
+          "Fahrzeuge inaktiv setzen — aus Home, Timeline und Stats ausgeblendet, Historie bleibt",
+          "Privacy by design: du siehst nur Garagen, zu denen du gehörst"
+        ]
+      },
+      {
+        "id": "insert",
+        "label": "So erfassest du",
+        "title": "Einmal erfassen, einmal bestätigen",
+        "bullets": [
+          "Capture-Sheet: Formular, Foto, PDF oder Chat",
+          "OCR macht aus Belegen und Rechnungen einen bearbeitbaren Entwurf",
+          "Du prüfst und bestätigst immer vor dem Speichern",
+          "Ein sanfter Hinweis warnt bei möglichen Doppel-Einträgen"
+        ]
+      },
+      {
+        "id": "ask",
+        "label": "Ask & Dokumente",
+        "title": "Frag deine Daten und Dateien",
+        "bullets": [
+          "Ask zu Ausgaben, Historie und Dokumenten — mit Zitaten",
+          "Geführte Slots: Schein, Handbuch, Police, Kaufvertrag",
+          "Schein scannen; Daten aus Police und Kaufvertrag extrahieren",
+          "Ask-Fragen diktieren (On-Device-Sprache)",
+          "UI und Assistent teilen eine Sprache: Italienisch, Deutsch oder Englisch"
+        ]
+      },
+      {
+        "id": "insights",
+        "label": "Timeline & Stats",
+        "title": "Sieh, wohin das Geld geht",
+        "bullets": [
+          "Jahrweise Timeline mit Volltextsuche",
+          "Statistik nach Kategorie, Fahrzeug und Trend",
+          "Automatische Mehrwährung: auswärts zahlen, Totals in Garagenwährung",
+          "Advanced: Timeline-Kalenderjahr als CSV oder PDF exportieren"
+        ]
+      },
+      {
+        "id": "garage",
+        "label": "Garagen & Tarife",
+        "title": "Räume, die mitwachsen",
+        "bullets": [
+          "Mehrere Garagen mit Co-Owner-, Admin- oder Logger-Rollen",
+          "Free und Basic: 1 eigene Garage · Advanced: bis zu 3",
+          "Freigabe bei Basic und Advanced (nicht bei Free)",
+          "Tarife in der App abonnieren und verwalten — siehe Tarife unten"
+        ],
+        "cta": {
+          "href": "#plans",
+          "label": "Tarife ansehen"
+        }
+      }
+    ]
+  },
+  "audiences": {
+    "label": "Für wen",
+    "title": "Gebaut fürs echte Teilen und Fahren.",
+    "items": [
+      {
+        "title": "Familien",
+        "copy": "Eine geteilte Garage, wer loggt wechselt, eine verlässliche Timeline fürs Familienauto."
+      },
+      {
+        "title": "Mehrere Fahrzeuge",
+        "copy": "Alltagsauto, Wochenendbike oder Klassiker in eigenen Garagen — vergleichen, wenn nötig."
+      },
+      {
+        "title": "EV & Fahrten",
+        "copy": "Lade-Events, Routen mit Kilometerstand und Ask, wenn du schnell eine Zahl brauchst."
+      }
+    ]
   }
 }

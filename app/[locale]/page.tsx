@@ -2,17 +2,11 @@ import { setRequestLocale } from "next-intl/server";
 import ScrollProgress from "@/components/ScrollProgress";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import VehicleTypesBar from "@/components/VehicleTypesBar";
-import ProblemSection from "@/components/ProblemSection";
-import NotJustTracker from "@/components/NotJustTracker";
-import SolutionSection from "@/components/SolutionSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import HowItWorks from "@/components/HowItWorks";
-import WalkthroughSection from "@/components/WalkthroughSection";
+import WhyGarIqSection from "@/components/WhyGarIqSection";
+import ProductStorySection from "@/components/ProductStorySection";
+import CapabilitiesSection from "@/components/CapabilitiesSection";
 import AiSection from "@/components/AiSection";
-import StatsSection from "@/components/StatsSection";
-import UseCases from "@/components/UseCases";
-import ScenarioStories from "@/components/ScenarioStories";
+import AudiencesSection from "@/components/AudiencesSection";
 import PlansExplainer from "@/components/PlansExplainer";
 import DownloadSection from "@/components/DownloadSection";
 import Faq from "@/components/Faq";
@@ -46,17 +40,11 @@ export default async function HomePage({ params }: PageProps) {
 
       <main id="main-content">
         <Hero />
-        <VehicleTypesBar />
-        <ProblemSection />
-        <NotJustTracker />
-        <SolutionSection />
-        <FeaturesSection />
-        <HowItWorks />
-        <WalkthroughSection />
+        <WhyGarIqSection />
+        <ProductStorySection />
+        <CapabilitiesSection />
         <AiSection />
-        <StatsSection />
-        <UseCases />
-        <ScenarioStories />
+        <AudiencesSection />
         <PlansExplainer />
         <DownloadSection />
         <Faq />

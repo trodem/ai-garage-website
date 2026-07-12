@@ -6,10 +6,8 @@ import LogoIcon from "@/components/LogoIcon";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const NAV_KEYS = [
-  { href: "#features", key: "navFeatures" as const },
-  { href: "#ai", key: "navAi" as const },
-  { href: "#stats", key: "navStats" as const },
-  { href: "#scenarios", key: "navScenarios" as const },
+  { href: "#capabilities", key: "navFeatures" as const },
+  { href: "#how", key: "navHow" as const },
   { href: "#plans", key: "navPlans" as const },
   { href: "#download", key: "navDownload" as const },
   { href: "#faq", key: "navFaq" as const },

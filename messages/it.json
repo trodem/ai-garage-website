@@ -12,13 +12,11 @@
   "header": {
     "homeAria": "Home GarIQ",
     "navFeatures": "Funzioni",
-    "navAi": "IA",
-    "navStats": "Statistiche",
-    "navScenarios": "Esempi",
+    "navHow": "Come funziona",
     "navPlans": "Piani",
     "navDownload": "Download",
     "navFaq": "FAQ",
-    "toggleThemeAria": "Attiva o disattiva tema scuro",
+    "toggleThemeAria": "Attiva o disattiva il tema scuro",
     "openMenuAria": "Apri menu",
     "themeButton": "Tema",
     "ctaDownload": "Scarica l'app"
@@ -266,20 +264,16 @@
     "copy": "OCR visione, raccolta conversazionale e Ask con strumenti. Ogni percorso IA finisce in una bozza modificabile; gli eventi confermati alimentano statistiche e risposte.",
     "cards": [
       {
-        "title": "OCR scontrini e PDF",
-        "copy": "Importi, date e dettagli carburante da immagini e documenti."
+        "title": "OCR foto e PDF",
+        "copy": "Estrae importi, date e dettagli carburante da immagini e documenti."
       },
       {
         "title": "Chat collect",
-        "copy": "Descrivi manutenzione o spese a parole; bozza quando è pronta."
+        "copy": "Descrivi manutenzione o spese in linguaggio naturale; completa la bozza quando sei pronto."
       },
       {
         "title": "Ask con citazioni",
-        "copy": "Risposte su spese, cronologia e documenti — dai tuoi dati, con citazione dal file."
-      },
-      {
-        "title": "Nella tua lingua",
-        "copy": "L'assistente risponde in italiano, tedesco, inglese, francese o spagnolo."
+        "copy": "Risposte su spese, storico e documenti — dai tuoi dati, citando il file."
       }
     ],
     "preview": {
@@ -474,7 +468,7 @@
     "items": [
       {
         "q": "Cosa posso registrare?",
-        "a": "Carburante, ricariche, officina, tasse, revisioni, spese generiche, note e viaggi (percorso, conducente e chilometraggio — non una spesa) — tutti legati a un veicolo. Polizze assicurative e contratti d'acquisto vanno nel vault documenti."
+        "a": "Carburante, ricariche, officina, tasse, revisioni, spese, note e viaggi — tutti legati a un veicolo. Polizze e contratti d'acquisto vanno nel vault documenti."
       },
       {
         "q": "L'IA salva da sola?",
@@ -482,39 +476,27 @@
       },
       {
         "q": "Più garage?",
-        "a": "Sì. Garage separati e inviti con ruoli co-proprietario, admin o logger."
+        "a": "Free e Basic includono 1 garage di proprietà. Advanced fino a 3. Su Basic e Advanced puoi invitare co-owner, admin o logger; sul Free non c'è condivisione."
       },
       {
         "q": "Quali documenti?",
-        "a": "Manuali, polizze e PDF in archivio; Ask li cerca con citazioni."
+        "a": "Carichi manuali, polizze e PDF nel vault del veicolo; Ask può cercarli con citazioni."
       },
       {
-        "q": "Promemoria push per scadenze?",
-        "a": "Non in v1. Scadenza assicurazione e date note sono visibili in app — ancora niente notifiche push."
-      },
-      {
-        "q": "In che lingua è l'app?",
-        "a": "L'interfaccia di GarIQ è disponibile in inglese, tedesco e italiano — le stesse lingue di questo sito."
-      },
-      {
-        "q": "I miei dati sono privati?",
-        "a": "Supabase con row-level security — accedi solo ai garage e veicoli tuoi."
+        "q": "Quali lingue supporta GarIQ?",
+        "a": "Interfaccia e assistente: inglese, tedesco e italiano — una sola lingua preferita nelle Impostazioni."
       },
       {
         "q": "In che valute posso registrare le spese?",
-        "a": "Puoi pagare in valuta diversa da quella del garage: l'app prende il cambio del giorno e converte automaticamente, senza override manuale."
-      },
-      {
-        "q": "In che lingua risponde l'IA?",
-        "a": "Scegli la lingua dell'assistente nelle Impostazioni: italiano, tedesco, inglese, francese o spagnolo."
+        "a": "Puoi pagare in una valuta diversa da quella del garage: GarIQ prende il cambio del giorno e converte in automatico."
       },
       {
         "q": "Posso esportare i miei dati?",
-        "a": "Sì. Con Advanced puoi esportare un anno di Timeline in CSV o PDF dalla scheda Timeline. L'export completo account dalle Impostazioni non è ancora in v1 — i tuoi dati restano tuoi."
+        "a": "Sì. Con Advanced esporti un anno di Timeline in CSV o PDF. L'export completo account dalle Impostazioni non è ancora in v1."
       },
       {
         "q": "Come funzionano piani e IA?",
-        "a": "Abbonati e gestisci Basic o Advanced nell'app GarIQ (nessun pagamento su questa pagina). Ogni piano include crediti IA mensili — dettagli nelle Impostazioni. Sul Free il periodo mensile parte dal primo veicolo; la scansione libretto prima di allora non consuma crediti e puoi registrare eventi a mano se raggiungi il limite."
+        "a": "Abbonati e gestisci Basic o Advanced nell'app GarIQ (nessun pagamento su questa pagina). Ogni piano include crediti IA mensili. Sul Free il periodo parte dal primo veicolo; puoi comunque registrare a mano se raggiungi il limite."
       }
     ]
   },
@@ -685,5 +667,139 @@
       "active": "In corso",
       "progress": "Progresso"
     }
+  },
+  "whyGarIq": {
+    "label": "Perché GarIQ",
+    "title": "Un'app spese ti dà i numeri. GarIQ ti dà la storia del garage.",
+    "copy": "Scontrini, polizze e note chilometriche si disperdono. GarIQ tiene eventi, documenti e risposte IA in un posto — e confermi ogni salvataggio.",
+    "points": [
+      {
+        "title": "Restituisci il controllo",
+        "copy": "L'IA propone da foto, PDF o chat. Tu revisioni il modulo e salvi. Niente autosave."
+      },
+      {
+        "title": "Struttura per la vita reale",
+        "copy": "Garage, veicoli, timeline e statistiche — cambi focus senza perdere lo storico."
+      },
+      {
+        "title": "Chiedi ai tuoi dati",
+        "copy": "Domande su spese e manuali caricati: risposte ancorate ai tuoi file."
+      },
+      {
+        "title": "Più valute, senza fogli",
+        "copy": "Paghi all'estero: GarIQ converte al cambio del giorno nella valuta del garage."
+      }
+    ]
+  },
+  "productStory": {
+    "label": "Come funziona",
+    "title": "Dal libretto a una risposta smart in quattro passi.",
+    "steps": [
+      {
+        "title": "Aggiungi un veicolo",
+        "copy": "Scatta il libretto o inserisci marca e modello. Il garage parte da qui.",
+        "alt": "Schermata GarIQ: foto del libretto trasformata in form nuovo veicolo precompilato."
+      },
+      {
+        "title": "Registra come vuoi",
+        "copy": "Scegli il tipo di evento, poi form, foto, PDF o chat. L'IA prepara la bozza — tu confermi.",
+        "alt": "Schermata GarIQ: scontrino carburante trasformato in bozza modificabile."
+      },
+      {
+        "title": "Vedi la timeline",
+        "copy": "Ogni evento confermato entra nello storico per anno con tipo, costo e data.",
+        "alt": "Schermata GarIQ: timeline eventi raggruppata per anno."
+      },
+      {
+        "title": "Chiedi qualsiasi cosa",
+        "copy": "Carica manuali o polizze, poi chiedi nella tua lingua — le risposte citano i tuoi dati.",
+        "alt": "Schermata GarIQ: chat Ask con risposta citata da un PDF."
+      }
+    ]
+  },
+  "capabilities": {
+    "label": "Funzioni",
+    "title": "Tutto ciò che fa GarIQ — organizzato come lo usi.",
+    "copy": "Cambia tab per esplorare il prodotto completo. Niente di importante è nascosto: è solo raggruppato.",
+    "tabs": [
+      {
+        "id": "logbook",
+        "label": "Libretto",
+        "title": "Un libretto veicolo completo",
+        "bullets": [
+          "Registra rifornimento, ricarica, officina, tasse, revisione, spese, note e viaggi",
+          "Polizze e contratti d'acquisto stanno nel vault documenti",
+          "Veicoli inattivi nascosti da Home, Timeline e Stats — lo storico resta",
+          "Privacy by design: vedi solo i garage a cui appartieni"
+        ]
+      },
+      {
+        "id": "insert",
+        "label": "Come registri",
+        "title": "Cattura una volta, conferma una volta",
+        "bullets": [
+          "Foglio di cattura: Form, Foto, PDF o Chat",
+          "OCR trasforma scontrini e fatture in bozza modificabile",
+          "Revisioni e confermi sempre prima di salvare",
+          "Un banner soft avvisa se potrebbe esistere una voce simile"
+        ]
+      },
+      {
+        "id": "ask",
+        "label": "Ask e documenti",
+        "title": "Chiedi ai dati e ai file",
+        "bullets": [
+          "Ask su spese, storico e documenti caricati — con citazioni",
+          "Slot guidati: libretto, manuale, polizza, contratto d'acquisto",
+          "Scansione libretto e extract da polizze e contratti",
+          "Dettatura vocale su Ask",
+          "UI e assistente condividono una lingua: italiano, tedesco o inglese"
+        ]
+      },
+      {
+        "id": "insights",
+        "label": "Timeline e stats",
+        "title": "Capisci dove vanno i soldi",
+        "bullets": [
+          "Timeline per anno con ricerca full-text",
+          "Statistiche per categoria, veicolo e trend",
+          "Multi-valuta automatica: paghi all'estero, totali in valuta garage",
+          "Advanced: export di un anno Timeline in CSV o PDF"
+        ]
+      },
+      {
+        "id": "garage",
+        "label": "Garage e piani",
+        "title": "Spazi che crescono con te",
+        "bullets": [
+          "Più garage con ruoli co-owner, admin o logger",
+          "Free e Basic: 1 garage di proprietà · Advanced: fino a 3",
+          "Condivisione su Basic e Advanced (non sul Free)",
+          "Abbonati e gestisci i piani nell'app — vedi Piani sotto"
+        ],
+        "cta": {
+          "href": "#plans",
+          "label": "Vedi i piani"
+        }
+      }
+    ]
+  },
+  "audiences": {
+    "label": "Per chi",
+    "title": "Pensato per come si guida e si condivide davvero.",
+    "items": [
+      {
+        "title": "Famiglie",
+        "copy": "Un garage condiviso, chi registra si alterna, una sola timeline fidata per l'auto di casa."
+      },
+      {
+        "title": "Più veicoli",
+        "copy": "Quotidiana, moto del weekend o classica in garage separati — confronti quando serve."
+      },
+      {
+        "title": "EV e viaggi",
+        "copy": "Ricariche, viaggi con odometro e Ask quando ti serve un numero subito."
+      }
+    ]
   }
 }

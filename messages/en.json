@@ -12,9 +12,7 @@
   "header": {
     "homeAria": "GarIQ home",
     "navFeatures": "Features",
-    "navAi": "AI",
-    "navStats": "Statistics",
-    "navScenarios": "Examples",
+    "navHow": "How it works",
     "navPlans": "Plans",
     "navDownload": "Download",
     "navFaq": "FAQ",
@@ -276,10 +274,6 @@
       {
         "title": "Cited Ask",
         "copy": "Answers on spend, history, and documents — from your data, citing the source file."
-      },
-      {
-        "title": "In your language",
-        "copy": "The assistant replies in Italian, German, English, French, or Spanish."
       }
     ],
     "preview": {
@@ -474,7 +468,7 @@
     "items": [
       {
         "q": "What can I track?",
-        "a": "Fuel, charging, workshop, taxes, inspections, general expenses, diary notes, and trips (route, driver, and odometer — not a spend entry) — all tied to a vehicle. Insurance policies and purchase contracts go in the document vault."
+        "a": "Fuel, charging, workshop, taxes, inspections, general expenses, diary notes, and trips — all tied to a vehicle. Insurance policies and purchase contracts go in the document vault."
       },
       {
         "q": "Does AI save automatically?",
@@ -482,39 +476,27 @@
       },
       {
         "q": "Can I use multiple garages?",
-        "a": "Yes. Create separate garages and invite others with co-owner, admin, or logger roles."
+        "a": "Free and Basic include 1 owned garage. Advanced can own up to 3. On Basic and Advanced you can invite co-owners, admins, or loggers; Free has no sharing."
       },
       {
         "q": "What about documents?",
         "a": "Upload owner manuals, policies, and related PDFs to the vehicle document vault; Ask can search them with citations."
       },
       {
-        "q": "Will I get push reminders for deadlines?",
-        "a": "Not in v1. Insurance expiry and note follow-up dates are visible in the app — there are no push notifications yet."
-      },
-      {
-        "q": "What language is the app?",
-        "a": "The GarIQ app UI is available in English, German, and Italian — same languages as this marketing site."
-      },
-      {
-        "q": "Is my data private?",
-        "a": "GarIQ uses Supabase with row-level security so you only access garages and vehicles you belong to."
+        "q": "What languages does GarIQ support?",
+        "a": "App UI and assistant: English, German, and Italian — one preferred language in Settings for both."
       },
       {
         "q": "Which currencies can I log expenses in?",
         "a": "You can pay in a currency other than your garage's: GarIQ fetches the day's rate and converts automatically, with no manual override."
       },
       {
-        "q": "What language does the AI answer in?",
-        "a": "Choose the assistant language in Settings: Italian, German, English, French, or Spanish."
-      },
-      {
         "q": "Can I export my data?",
-        "a": "Yes. On Advanced, export a Timeline calendar year as CSV or PDF from the Timeline tab. Full-account export from Settings is not in v1 yet — your data stays yours."
+        "a": "Yes. On Advanced, export a Timeline calendar year as CSV or PDF from the Timeline tab. Full-account export from Settings is not in v1 yet."
       },
       {
         "q": "How do plans and AI work?",
-        "a": "Subscribe and manage Basic or Advanced in the GarIQ app (this page does not process payments). Each plan includes monthly AI credits — details appear in Settings. On Free, the monthly credit period starts with your first vehicle; registration scan before that does not use credits, and you can still log events manually if you hit the limit."
+        "a": "Subscribe and manage Basic or Advanced in the GarIQ app (this page does not process payments). Each plan includes monthly AI credits. On Free, the credit period starts with your first vehicle; you can still log manually if you hit the limit."
       }
     ]
   },
@@ -685,5 +667,139 @@
       "active": "In progress",
       "progress": "Progress"
     }
+  },
+  "whyGarIq": {
+    "label": "Why GarIQ",
+    "title": "An expense app gives you numbers. GarIQ gives you the whole garage story.",
+    "copy": "Receipts, policies, and mileage notes scatter across wallets and inboxes. GarIQ keeps events, documents, and AI answers in one place — and you confirm every save.",
+    "points": [
+      {
+        "title": "You stay in control",
+        "copy": "AI drafts from photo, PDF, or chat. You review the form, then save. No autosave."
+      },
+      {
+        "title": "Structure that matches real life",
+        "copy": "Garages, vehicles, timeline, and stats — switch focus without losing history."
+      },
+      {
+        "title": "Ask your own data",
+        "copy": "Questions about spend and uploaded manuals get answers grounded in your files."
+      },
+      {
+        "title": "Built for more than one currency",
+        "copy": "Pay abroad: GarIQ converts at the day's rate into your garage currency."
+      }
+    ]
+  },
+  "productStory": {
+    "label": "How it works",
+    "title": "From registration to a smart answer in four steps.",
+    "steps": [
+      {
+        "title": "Add a vehicle",
+        "copy": "Snap the registration or type make and model. Your garage starts here.",
+        "alt": "GarIQ screen: registration photo turned into a prefilled new-vehicle form."
+      },
+      {
+        "title": "Log your way",
+        "copy": "Pick the event type, then form, photo, PDF, or chat. AI prepares a draft — you confirm.",
+        "alt": "GarIQ screen: fuel receipt turned into an editable draft with Confirm."
+      },
+      {
+        "title": "See the timeline",
+        "copy": "Every confirmed event lands in year-grouped history with type, cost, and date.",
+        "alt": "GarIQ screen: year-grouped event timeline with icons and costs."
+      },
+      {
+        "title": "Ask anything",
+        "copy": "Upload manuals or policies, then ask in your language — answers cite your data.",
+        "alt": "GarIQ screen: Ask chat with a cited answer from a PDF manual."
+      }
+    ]
+  },
+  "capabilities": {
+    "label": "Features",
+    "title": "Everything GarIQ does — organized how you use it.",
+    "copy": "Switch tabs to explore the full product. Nothing important is hidden; it is just grouped.",
+    "tabs": [
+      {
+        "id": "logbook",
+        "label": "Logbook",
+        "title": "A complete vehicle logbook",
+        "bullets": [
+          "Log refuel, charge, workshop, tax, inspection, expense, notes, and trips",
+          "Insurance policies and purchase contracts live in the document vault",
+          "Set vehicles inactive to hide them from Home, Timeline, and Stats — history stays",
+          "Privacy by design: row-level security so you only see garages you belong to"
+        ]
+      },
+      {
+        "id": "insert",
+        "label": "Log your way",
+        "title": "Capture once, confirm once",
+        "bullets": [
+          "Insert capture sheet: Form, Photo, PDF, or conversational Chat",
+          "OCR turns receipts and invoices into an editable draft",
+          "You always review and confirm before anything is saved",
+          "A soft banner warns when a similar entry may already exist"
+        ]
+      },
+      {
+        "id": "ask",
+        "label": "Ask & documents",
+        "title": "Ask your data and your files",
+        "bullets": [
+          "Ask AI about spend, history, and uploaded documents — with citations",
+          "Guided vault slots: registration, owner manual, insurance policy, purchase contract",
+          "Scan registration to prefill a vehicle; extract insurance and purchase data",
+          "Dictate Ask questions with on-device voice",
+          "App UI and assistant share one language: Italian, German, or English"
+        ]
+      },
+      {
+        "id": "insights",
+        "label": "Timeline & stats",
+        "title": "See where the money goes",
+        "bullets": [
+          "Year-grouped timeline with full-text search",
+          "Statistics by category, vehicle, and trend",
+          "Automatic multi-currency: pay abroad, totals in garage currency",
+          "Advanced: export a Timeline calendar year as CSV or PDF"
+        ]
+      },
+      {
+        "id": "garage",
+        "label": "Garages & plans",
+        "title": "Spaces that scale with you",
+        "bullets": [
+          "Multiple garages with co-owner, admin, or logger roles",
+          "Free and Basic: 1 owned garage · Advanced: up to 3",
+          "Garage sharing on Basic and Advanced (not on Free)",
+          "Subscribe and manage plans in the app — see Plans below"
+        ],
+        "cta": {
+          "href": "#plans",
+          "label": "View plans"
+        }
+      }
+    ]
+  },
+  "audiences": {
+    "label": "For whom",
+    "title": "Built for how people actually share and drive.",
+    "items": [
+      {
+        "title": "Families",
+        "copy": "Share one garage, split who logs, keep a single trusted timeline for the household car."
+      },
+      {
+        "title": "Multi-vehicle owners",
+        "copy": "Separate daily driver, weekend bike, or classic into garages — compare spend when you need to."
+      },
+      {
+        "title": "EV & trips",
+        "copy": "Charge events, trip routes with odometer, and Ask answers when you need a quick number."
+      }
+    ]
   }
 }
