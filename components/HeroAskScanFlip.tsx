@@ -2,16 +2,15 @@
 
 import { useEffect, useId, useState } from "react";
 import { useTranslations } from "next-intl";
-import AiPreview from "@/components/AiPreview";
 import AskLogbookPreview from "@/components/AskLogbookPreview";
+import ScanOcrPreview from "@/components/ScanOcrPreview";
 
 type FrameId = "scan" | "ask";
 
-const FLIP_MS = 4800;
+const FLIP_MS = 5200;
 
 export default function HeroAskScanFlip() {
   const tFlip = useTranslations("mockups.heroFlip");
-  const tAi = useTranslations("ai.preview");
   const baseId = useId();
   const [frame, setFrame] = useState<FrameId>("scan");
   const [paused, setPaused] = useState(false);
@@ -80,17 +79,7 @@ export default function HeroAskScanFlip() {
         aria-labelledby={`${baseId}-tab-scan`}
         hidden={frame !== "scan"}
       >
-        {frame === "scan" ? (
-          <AiPreview
-            assistant={tAi("assistant")}
-            userMessage={tAi("userMessage")}
-            answerIntro={tAi("answerIntro")}
-            eventTitle={tAi("eventTitle")}
-            fields={tAi.raw("fields")}
-            values={tAi.raw("values")}
-            confirm={tAi("confirm")}
-          />
-        ) : null}
+        {frame === "scan" ? <ScanOcrPreview active /> : null}
       </div>
 
       <div

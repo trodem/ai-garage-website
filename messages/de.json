@@ -670,6 +670,31 @@
         "detail1": "48 Tankungen · Ø €26,76",
         "detail2": "Zuletzt: Zürich · 12. Jun",
         "footnote": "Antwort aus deinen Fahrtenbuch-Events — nicht aus dem Web."
+      },
+      "scan": {
+        "title": "Beleg scannen",
+        "photoBadge": "Foto",
+        "pdfBadge": "PDF",
+        "analyzing": "Dokument wird gelesen…",
+        "draftIntro": "Entwurf bereit — prüfen und bestätigen",
+        "eventTitle": "Tanken",
+        "confirm": "Bestätigen und speichern",
+        "fields": {
+          "date": "Datum",
+          "location": "Station",
+          "total": "Summe",
+          "pricePerLiter": "€/L",
+          "odometer": "Km",
+          "liters": "Liter"
+        },
+        "values": {
+          "date": "12. Jun 2025",
+          "location": "Zürich",
+          "total": "€ 82,50",
+          "pricePerLiter": "1,72",
+          "odometer": "55.250",
+          "liters": "48,0"
+        }
       }
     }
   },

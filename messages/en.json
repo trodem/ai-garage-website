@@ -670,6 +670,31 @@
         "detail1": "48 fill-ups · avg €26.76",
         "detail2": "Last: Zurich · 12 Jun",
         "footnote": "Answer from your logbook events — not the web."
+      },
+      "scan": {
+        "title": "Scan receipt",
+        "photoBadge": "Photo",
+        "pdfBadge": "PDF",
+        "analyzing": "Reading document…",
+        "draftIntro": "Draft ready — review and confirm",
+        "eventTitle": "Refueling",
+        "confirm": "Confirm and save",
+        "fields": {
+          "date": "Date",
+          "location": "Station",
+          "total": "Total",
+          "pricePerLiter": "€/L",
+          "odometer": "Km",
+          "liters": "Liters"
+        },
+        "values": {
+          "date": "12 Jun 2025",
+          "location": "Zurich",
+          "total": "€ 82.50",
+          "pricePerLiter": "1.72",
+          "odometer": "55,250",
+          "liters": "48.0"
+        }
       }
     }
   },

@@ -670,6 +670,31 @@
         "detail1": "48 rifornimenti · media €26,76",
         "detail2": "Ultimo: Zurigo · 12 giu",
         "footnote": "Risposta dai tuoi eventi del libretto — non dal web."
+      },
+      "scan": {
+        "title": "Scansiona scontrino",
+        "photoBadge": "Foto",
+        "pdfBadge": "PDF",
+        "analyzing": "Lettura documento…",
+        "draftIntro": "Bozza pronta — revisiona e conferma",
+        "eventTitle": "Rifornimento",
+        "confirm": "Conferma e salva",
+        "fields": {
+          "date": "Data",
+          "location": "Stazione",
+          "total": "Totale",
+          "pricePerLiter": "€/L",
+          "odometer": "Km",
+          "liters": "Litri"
+        },
+        "values": {
+          "date": "12 giu 2025",
+          "location": "Zurigo",
+          "total": "€ 82,50",
+          "pricePerLiter": "1,72",
+          "odometer": "55.250",
+          "liters": "48,0"
+        }
       }
     }
   },
