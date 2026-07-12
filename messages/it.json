@@ -22,7 +22,7 @@
     "ctaDownload": "Scarica l'app"
   },
   "hero": {
-    "badge": "Libretto + IA sotto il tuo controllo",
+    "badge": "Scansiona scontrini. Chiedi allo storico.",
     "title": "Molto più di un registro spese: il cervello del tuo garage.",
     "subtitle": "Foto, PDF o chat → l'IA prepara la voce e tu confermi, sempre. Poi chiedi qualsiasi cosa ai tuoi veicoli e ai tuoi documenti — nella tua lingua. Rifornimenti, tagliandi, tasse, revisioni, ricariche EV, spese e viaggi in timeline e statistiche — più le polizze assicurative nel vault documenti — anche in più valute.",
     "ctaPrimary": "Scarica GarIQ",
@@ -582,15 +582,6 @@
     }
   },
   "mockups": {
-    "appPreview": {
-      "totalSpend": "Spesa totale",
-      "yearlyTrend": "Trend annuale",
-      "byVehicle": "Per veicolo",
-      "refueling": "Rifornimento",
-      "workshop": "Officina",
-      "other": "Altro",
-      "kmTracked": "km tracciati"
-    },
     "featuresPreview": {
       "newEvent": "Nuovo evento",
       "aiDraft": "Bozza IA",
@@ -666,6 +657,20 @@
       "timeline": "Timeline e stats",
       "active": "In corso",
       "progress": "Progresso"
+    },
+    "heroFlip": {
+      "scanLabel": "Scan",
+      "askLabel": "Ask",
+      "ariaLabel": "Anteprima prodotto: Scan e Ask",
+      "ask": {
+        "title": "Ask AI",
+        "question": "Quanto ho speso di carburante quest'anno?",
+        "answer": "Sui veicoli attivi, il carburante di quest'anno ammonta a:",
+        "total": "€ 1.284,60",
+        "detail1": "48 rifornimenti · media €26,76",
+        "detail2": "Ultimo: Zurigo · 12 giu",
+        "footnote": "Risposta dai tuoi eventi del libretto — non dal web."
+      }
     }
   },
   "whyGarIq": {

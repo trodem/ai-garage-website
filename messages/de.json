@@ -22,7 +22,7 @@
     "ctaDownload": "App holen"
   },
   "hero": {
-    "badge": "Logbuch + KI unter deiner Kontrolle",
+    "badge": "Belege scannen. Historie fragen.",
     "title": "Viel mehr als ein Ausgaben-Tracker — das Gehirn deiner Garage.",
     "subtitle": "Foto, PDF oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann frag alles zu deinen Fahrzeugen und Dokumenten — in deiner Sprache. Tanken, Wartung, Steuern, Prüfungen, E-Laden, Ausgaben und Fahrten in Timeline und Statistik — plus Versicherungspolicen in der Dokumentenablage — auch über mehrere Währungen.",
     "ctaPrimary": "GarIQ laden",
@@ -582,15 +582,6 @@
     }
   },
   "mockups": {
-    "appPreview": {
-      "totalSpend": "Gesamtausgaben",
-      "yearlyTrend": "Jahrestrend",
-      "byVehicle": "Nach Fahrzeug",
-      "refueling": "Tanken",
-      "workshop": "Werkstatt",
-      "other": "Sonstiges",
-      "kmTracked": "km erfasst"
-    },
     "featuresPreview": {
       "newEvent": "Neues Event",
       "aiDraft": "KI-Entwurf",
@@ -666,6 +657,20 @@
       "timeline": "Timeline & Stats",
       "active": "Aktiv",
       "progress": "Fortschritt"
+    },
+    "heroFlip": {
+      "scanLabel": "Scan",
+      "askLabel": "Ask",
+      "ariaLabel": "Produktvorschau: Scan und Ask",
+      "ask": {
+        "title": "Ask AI",
+        "question": "Wie viel habe ich dieses Jahr für Treibstoff ausgegeben?",
+        "answer": "Über deine aktiven Fahrzeuge summiert sich Treibstoff dieses Jahr auf:",
+        "total": "€ 1.284,60",
+        "detail1": "48 Tankungen · Ø €26,76",
+        "detail2": "Zuletzt: Zürich · 12. Jun",
+        "footnote": "Antwort aus deinen Fahrtenbuch-Events — nicht aus dem Web."
+      }
     }
   },
   "whyGarIq": {

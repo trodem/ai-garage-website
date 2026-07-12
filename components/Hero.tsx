@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import AppPreview from "@/components/AppPreview";
+import HeroAskScanFlip from "@/components/HeroAskScanFlip";
 import MagneticButton from "@/components/MagneticButton";
 
 async function VehicleTypeChips() {
@@ -71,7 +71,7 @@ export default async function Hero() {
         </div>
 
         <div className="flex items-center justify-center py-8 lg:py-0">
-          <AppPreview />
+          <HeroAskScanFlip />
         </div>
       </div>
 

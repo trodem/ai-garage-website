@@ -22,7 +22,7 @@
     "ctaDownload": "Get the app"
   },
   "hero": {
-    "badge": "Logbook + AI you control",
+    "badge": "Scan receipts. Ask your history.",
     "title": "Much more than an expense tracker — the brain of your garage.",
     "subtitle": "Photo, PDF, or chat → AI drafts the entry and you confirm, every time. Then ask anything about your vehicles and documents — in your language. Fuel, service, taxes, inspections, EV charging, expenses, and trips on a timeline and in statistics — plus insurance policies in your document vault — even across currencies.",
     "ctaPrimary": "Download GarIQ",
@@ -582,15 +582,6 @@
     }
   },
   "mockups": {
-    "appPreview": {
-      "totalSpend": "Total spend",
-      "yearlyTrend": "Yearly trend",
-      "byVehicle": "By vehicle",
-      "refueling": "Refueling",
-      "workshop": "Workshop",
-      "other": "Other",
-      "kmTracked": "km tracked"
-    },
     "featuresPreview": {
       "newEvent": "New event",
       "aiDraft": "AI draft",
@@ -666,6 +657,20 @@
       "timeline": "Timeline & stats",
       "active": "In progress",
       "progress": "Progress"
+    },
+    "heroFlip": {
+      "scanLabel": "Scan",
+      "askLabel": "Ask",
+      "ariaLabel": "Product preview: Scan and Ask",
+      "ask": {
+        "title": "Ask AI",
+        "question": "How much did I spend on fuel this year?",
+        "answer": "Across your active vehicles, fuel this year totals:",
+        "total": "€ 1,284.60",
+        "detail1": "48 fill-ups · avg €26.76",
+        "detail2": "Last: Zurich · 12 Jun",
+        "footnote": "Answer from your logbook events — not the web."
+      }
     }
   },
   "whyGarIq": {
