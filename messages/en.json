@@ -452,7 +452,7 @@
           "Garage sharing (up to 10 members)",
           "~2M server AI tokens / month",
           "Same AI features, higher monthly cap",
-          "Keep and re-open scanned event receipts"
+          "Save the original photo/PDF on the event and open it later"
         ]
       },
       {
@@ -467,7 +467,7 @@
           "Sharing with unlimited members",
           "Highest monthly server AI cap",
           "All AI features included",
-          "Keep and re-open scanned event receipts"
+          "Save the original photo/PDF on the event and open it later"
         ]
       }
     ]
@@ -578,7 +578,23 @@
     "recovery": {
       "title": "Password reset link confirmed",
       "body": "This link was opened in the browser. To set a new password, open GarIQ on the phone where you requested the reset and follow the in-app steps.",
-      "footerHint": "You can close this page."
+      "footerHint": "You can close this page.",
+      "loadingTitle": "Confirming reset link",
+      "loadingBody": "Please wait while we verify your password reset link.",
+      "formTitle": "Choose a new password",
+      "formSubtitle": "At least 8 characters. Then open GarIQ and sign in with your new password.",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "updatePassword": "Update password",
+      "updating": "Updating…",
+      "passwordTooShort": "Password must be at least 8 characters.",
+      "passwordMismatch": "Passwords do not match.",
+      "updateFailed": "Could not update password. Try again or request a new reset email in the app.",
+      "sessionMissing": "This reset link is missing session data. Request a new reset email from the GarIQ app.",
+      "sessionFailed": "This reset link is invalid or has expired. Request a new reset email from the GarIQ app.",
+      "errorTitle": "Reset link could not be completed",
+      "successTitle": "Password updated",
+      "successBody": "Your password was changed. Open GarIQ on your phone and sign in with your new password."
     },
     "invite": {
       "title": "Garage invitation",

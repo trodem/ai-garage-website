@@ -19,7 +19,7 @@ Separate git repo from the mobile app (`031_ai_garage_app`).
 | `/de` | German |
 | `/it` | Italian |
 
-Signup email confirmation uses `https://gariq.app/auth/callback` (`AUTH_SIGNUP_EMAIL_REDIRECT_TO` in the app; see **ADR-047**). **Protected surfaces:** `/auth/callback` (middleware + client gate in `lib/authCallbackAccess.ts`) and `/[locale]/welcome` (middleware redirect to locale home). No buttons/links on callback pages — informational copy only after a valid Supabase redirect.
+Signup and password-recovery emails use `https://gariq.app/auth/callback` (app `AUTH_SIGNUP_EMAIL_REDIRECT_TO` / `AUTH_RECOVERY_EMAIL_REDIRECT_TO`; **ADR-047** / **ADR-053**). **Protected surfaces:** `/auth/callback` (middleware + client gate in `lib/authCallbackAccess.ts`) and `/[locale]/welcome` (middleware redirect to locale home). Callback pages are informational only **except** password recovery, which shows a new-password form then success copy (no store/download CTAs).
 
 ## Environment
 
@@ -27,6 +27,7 @@ Copy `.env.example` to `.env.local`:
 
 - `NEXT_PUBLIC_SITE_URL` — production origin for Open Graph and canonical URLs
 - `NEXT_PUBLIC_PLAY_STORE_URL` / `NEXT_PUBLIC_APP_STORE_URL` — when empty, the download section shows **Coming soon**
+- `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` — required for `/auth/callback` recovery password form (same Supabase project as the app)
 
 ## Develop
 
@@ -59,6 +60,8 @@ Internal API for the mobile app Edge function **`garage-invite-notify`** (**ADR-
 | `GARAGE_INVITE_INTERNAL_SECRET` | Bearer token; same value as Supabase Edge secret |
 
 Templates: `emails/GarageInvitationEmail.tsx`, `emails/GarageSharingRevokedEmail.tsx` (German). Routes: `POST /api/internal/send-garage-invitation`, `POST /api/internal/send-garage-sharing-revoked`.
+
+**Auth reset email styling** (Supabase Dashboard, not Resend): see [`docs/supabase-auth-email-templates.md`](./docs/supabase-auth-email-templates.md) and `emails/AuthPasswordRecoveryEmail.tsx`.
 
 Local test (replace secret and recipient):
 

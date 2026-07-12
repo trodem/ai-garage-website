@@ -452,7 +452,7 @@
           "Condivisione (fino a 10 membri)",
           "~2M token IA server / mese",
           "Stesse funzioni IA, tetto mensile più alto",
-          "Conserva e riapri gli scontrini scansionati degli eventi"
+          "Salva la foto/PDF originale sull’evento e aprila quando vuoi"
         ]
       },
       {
@@ -467,7 +467,7 @@
           "Condivisione con membri illimitati",
           "Massima quota IA server / mese",
           "Tutte le funzioni IA incluse",
-          "Conserva e riapri gli scontrini scansionati degli eventi"
+          "Salva la foto/PDF originale sull’evento e aprila quando vuoi"
         ]
       }
     ]
@@ -578,7 +578,23 @@
     "recovery": {
       "title": "Link di reimpostazione password confermato",
       "body": "Questo link è stato aperto nel browser. Per impostare una nuova password, apri GarIQ sul telefono da cui hai richiesto la reimpostazione e segui i passaggi nell'app.",
-      "footerHint": "Puoi chiudere questa pagina."
+      "footerHint": "Puoi chiudere questa pagina.",
+      "loadingTitle": "Conferma del link in corso",
+      "loadingBody": "Attendi mentre verifichiamo il link di reimpostazione password.",
+      "formTitle": "Scegli una nuova password",
+      "formSubtitle": "Almeno 8 caratteri. Poi apri GarIQ e accedi con la nuova password.",
+      "newPassword": "Nuova password",
+      "confirmPassword": "Conferma password",
+      "updatePassword": "Aggiorna password",
+      "updating": "Aggiornamento…",
+      "passwordTooShort": "La password deve avere almeno 8 caratteri.",
+      "passwordMismatch": "Le password non coincidono.",
+      "updateFailed": "Impossibile aggiornare la password. Riprova o richiedi una nuova email dall'app.",
+      "sessionMissing": "A questo link mancano i dati di sessione. Richiedi una nuova email di reset dall'app GarIQ.",
+      "sessionFailed": "Questo link non è valido o è scaduto. Richiedi una nuova email di reset dall'app GarIQ.",
+      "errorTitle": "Impossibile completare il link di reset",
+      "successTitle": "Password aggiornata",
+      "successBody": "La password è stata modificata. Apri GarIQ sul telefono e accedi con la nuova password."
     },
     "invite": {
       "title": "Invito al garage",

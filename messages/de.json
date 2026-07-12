@@ -452,7 +452,7 @@
           "Freigabe (bis zu 10 Mitglieder)",
           "~2M Server-KI-Tokens / Monat",
           "Gleiche KI-Features, höheres Monatslimit",
-          "Gescannte Belege der Ereignisse speichern und erneut öffnen"
+          "Originalfoto/-PDF am Ereignis speichern und später öffnen"
         ]
       },
       {
@@ -467,7 +467,7 @@
           "Freigabe mit unbegrenzt vielen Mitgliedern",
           "Höchstes monatliches Server-KI-Limit",
           "Alle KI-Funktionen inklusive",
-          "Gescannte Belege der Ereignisse speichern und erneut öffnen"
+          "Originalfoto/-PDF am Ereignis speichern und später öffnen"
         ]
       }
     ]
@@ -578,7 +578,23 @@
     "recovery": {
       "title": "Link zum Zurücksetzen des Passworts bestätigt",
       "body": "Dieser Link wurde im Browser geöffnet. Um ein neues Passwort festzulegen, öffne GarIQ auf dem Telefon, mit dem du das Zurücksetzen angefordert hast, und folge den Schritten in der App.",
-      "footerHint": "Du kannst diese Seite schließen."
+      "footerHint": "Du kannst diese Seite schließen.",
+      "loadingTitle": "Reset-Link wird bestätigt",
+      "loadingBody": "Bitte warte, während wir deinen Link zum Zurücksetzen prüfen.",
+      "formTitle": "Neues Passwort wählen",
+      "formSubtitle": "Mindestens 8 Zeichen. Öffne danach GarIQ und melde dich mit dem neuen Passwort an.",
+      "newPassword": "Neues Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "updatePassword": "Passwort aktualisieren",
+      "updating": "Wird aktualisiert…",
+      "passwordTooShort": "Das Passwort muss mindestens 8 Zeichen haben.",
+      "passwordMismatch": "Die Passwörter stimmen nicht überein.",
+      "updateFailed": "Passwort konnte nicht aktualisiert werden. Versuche es erneut oder fordere in der App eine neue E-Mail an.",
+      "sessionMissing": "Diesem Reset-Link fehlen Sitzungsdaten. Fordere in der GarIQ-App eine neue E-Mail an.",
+      "sessionFailed": "Dieser Reset-Link ist ungültig oder abgelaufen. Fordere in der GarIQ-App eine neue E-Mail an.",
+      "errorTitle": "Reset-Link konnte nicht abgeschlossen werden",
+      "successTitle": "Passwort aktualisiert",
+      "successBody": "Dein Passwort wurde geändert. Öffne GarIQ auf dem Telefon und melde dich mit dem neuen Passwort an."
     },
     "invite": {
       "title": "Garagen-Einladung",
