@@ -451,7 +451,8 @@
           "Bis zu 30 Fahrzeuge pro Garage",
           "Freigabe (bis zu 10 Mitglieder)",
           "~2M Server-KI-Tokens / Monat",
-          "Gleiche KI-Features, höheres Monatslimit"
+          "Gleiche KI-Features, höheres Monatslimit",
+          "Gescannte Belege der Ereignisse speichern und erneut öffnen"
         ]
       },
       {
@@ -465,7 +466,8 @@
           "Bis zu 100 Fahrzeuge pro Garage",
           "Freigabe mit unbegrenzt vielen Mitgliedern",
           "Höchstes monatliches Server-KI-Limit",
-          "Alle KI-Funktionen inklusive"
+          "Alle KI-Funktionen inklusive",
+          "Gescannte Belege der Ereignisse speichern und erneut öffnen"
         ]
       }
     ]

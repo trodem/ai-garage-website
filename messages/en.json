@@ -451,7 +451,8 @@
           "Up to 30 vehicles per garage",
           "Garage sharing (up to 10 members)",
           "~2M server AI tokens / month",
-          "Same AI features, higher monthly cap"
+          "Same AI features, higher monthly cap",
+          "Keep and re-open scanned event receipts"
         ]
       },
       {
@@ -465,7 +466,8 @@
           "Up to 100 vehicles per garage",
           "Sharing with unlimited members",
           "Highest monthly server AI cap",
-          "All AI features included"
+          "All AI features included",
+          "Keep and re-open scanned event receipts"
         ]
       }
     ]

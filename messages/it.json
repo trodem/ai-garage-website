@@ -451,7 +451,8 @@
           "Fino a 30 veicoli per garage",
           "Condivisione (fino a 10 membri)",
           "~2M token IA server / mese",
-          "Stesse funzioni IA, tetto mensile più alto"
+          "Stesse funzioni IA, tetto mensile più alto",
+          "Conserva e riapri gli scontrini scansionati degli eventi"
         ]
       },
       {
@@ -465,7 +466,8 @@
           "Fino a 100 veicoli per garage",
           "Condivisione con membri illimitati",
           "Massima quota IA server / mese",
-          "Tutte le funzioni IA incluse"
+          "Tutte le funzioni IA incluse",
+          "Conserva e riapri gli scontrini scansionati degli eventi"
         ]
       }
     ]
