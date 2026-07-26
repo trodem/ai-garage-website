@@ -405,8 +405,8 @@
   "plans": {
     "label": "Piani e IA",
     "title": "Tre piani account. Stessa app — cresce con il tuo garage.",
-    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione e crediti IA mensili). Abbonati e gestisci il piano nell'app GarIQ via App Store o Google Play — questo sito non processa pagamenti. Sul Free, il periodo mensile di crediti IA inizia quando aggiungi il primo veicolo.",
-    "footnote": "I crediti IA mensili coprono OCR, insert chat, Ask (libretto e documenti) e le azioni IA fatturate. Sul Free, la scansione del libretto prima del primo veicolo non consuma i crediti mensili; document AI per categorie vault diverse dal libretto è off. Il Form manuale resta sempre disponibile se raggiungi il limite. Confermi sempre prima di salvare un evento.",
+    "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione e crediti IA mensili). I prezzi in elenco sono in CHF (mercato primario: Svizzera); su App Store e Google Play in DE/AT paghi nella valuta locale. Abbonati e gestisci il piano nell'app GarIQ — questo sito non processa pagamenti. Sul Free, il periodo mensile di crediti IA inizia quando aggiungi il primo veicolo.",
+    "footnote": "I crediti IA mensili coprono OCR, insert chat, Ask (libretto e documenti) e le azioni IA fatturate. Sul Free, la scansione del libretto prima del primo veicolo non consuma i crediti mensili; document AI per categorie vault diverse dal libretto è off. Il Form manuale resta sempre disponibile se raggiungi il limite. Confermi sempre prima di salvare un evento. L'importo addebitato dall'abbonamento arriva dallo store del tuo Paese — non da questa pagina.",
     "popularBadge": "Più flessibile",
     "cta": "Scarica GarIQ",
     "tiers": [
@@ -431,8 +431,8 @@
       {
         "id": "basic",
         "name": "Basic",
-        "price": "In-app",
-        "description": "Più veicoli e invita la famiglia in un garage.",
+        "price": "CHF 9.90 / mese",
+        "description": "Più veicoli e invita la famiglia in un garage. Annuale CHF 89 in-app. Su store DE/AT vedi l'EUR locale.",
         "featured": false,
         "highlights": [
           "1 garage di proprietà",
@@ -447,8 +447,8 @@
       {
         "id": "advanced",
         "name": "Advanced",
-        "price": "In-app",
-        "description": "Più garage e più crediti IA per chi registra spesso.",
+        "price": "CHF 19.90 / mese",
+        "description": "Più garage e più crediti IA per chi registra spesso. Annuale CHF 179 in-app. Su store DE/AT vedi l'EUR locale.",
         "featured": true,
         "highlights": [
           "3 garage di proprietà",

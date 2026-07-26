@@ -405,8 +405,8 @@
   "plans": {
     "label": "Plans & AI",
     "title": "Three account tiers. Same app — scales with your garage.",
-    "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly AI credits). Subscribe and manage your plan in the GarIQ app via App Store or Google Play — this website does not process payments. On Free, your monthly AI credit period starts when you add your first vehicle.",
-    "footnote": "Monthly AI credits cover OCR, chat insert, Ask (logbook and documents), and related billed AI actions. On Free, scanning your registration before your first vehicle does not use monthly credits; document AI for vault categories other than registration is off. Manual Form insert always stays available if you reach the credit limit. You always confirm before an event is saved.",
+    "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly AI credits). List prices are shown in CHF (primary market: Switzerland); App Store and Google Play charge the local currency in DE/AT. Subscribe and manage your plan in the GarIQ app — this website does not process payments. On Free, your monthly AI credit period starts when you add your first vehicle.",
+    "footnote": "Monthly AI credits cover OCR, chat insert, Ask (logbook and documents), and related billed AI actions. On Free, scanning your registration before your first vehicle does not use monthly credits; document AI for vault categories other than registration is off. Manual Form insert always stays available if you reach the credit limit. You always confirm before an event is saved. Charged subscription amounts come from the store for your country — not from this page.",
     "popularBadge": "Most flexible",
     "cta": "Download GarIQ",
     "tiers": [
@@ -431,8 +431,8 @@
       {
         "id": "basic",
         "name": "Basic",
-        "price": "In-app",
-        "description": "More vehicles and invite family to share one garage.",
+        "price": "CHF 9.90 / mo",
+        "description": "More vehicles and invite family to share one garage. Annual CHF 89 in-app. DE/AT stores show local EUR.",
         "featured": false,
         "highlights": [
           "1 owned garage",
@@ -447,8 +447,8 @@
       {
         "id": "advanced",
         "name": "Advanced",
-        "price": "In-app",
-        "description": "Multiple garages and higher AI headroom for active loggers.",
+        "price": "CHF 19.90 / mo",
+        "description": "Multiple garages and higher AI headroom for active loggers. Annual CHF 179 in-app. DE/AT stores show local EUR.",
         "featured": true,
         "highlights": [
           "3 owned garages",

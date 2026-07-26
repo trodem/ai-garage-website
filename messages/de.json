@@ -405,8 +405,8 @@
   "plans": {
     "label": "Tarife & KI",
     "title": "Drei Kontotarife. Eine App — wächst mit deiner Garage.",
-    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe und monatliche KI-Credits). Abo und Tarifverwaltung in der GarIQ-App über App Store oder Google Play — diese Website verarbeitet keine Zahlungen. Beim Free-Tarif beginnt die monatliche KI-Credit-Periode mit deinem ersten Fahrzeug.",
-    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert, Ask (Logbuch und Dokumente) und verwandte abgerechnete KI-Aktionen ab. Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Document-AI für Vault-Kategorien außer Schein ist aus. Das manuelle Formular bleibt immer verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern.",
+    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe und monatliche KI-Credits). Listenpreise in CHF (Primärmarkt: Schweiz); App Store und Google Play in DE/AT belasten die lokale Währung. Abo und Tarifverwaltung in der GarIQ-App — diese Website verarbeitet keine Zahlungen. Beim Free-Tarif beginnt die monatliche KI-Credit-Periode mit deinem ersten Fahrzeug.",
+    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert, Ask (Logbuch und Dokumente) und verwandte abgerechnete KI-Aktionen ab. Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Document-AI für Vault-Kategorien außer Schein ist aus. Das manuelle Formular bleibt immer verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern. Der abgebuchte Abopreis kommt vom Store deines Landes — nicht von dieser Seite.",
     "popularBadge": "Am flexibelsten",
     "cta": "GarIQ laden",
     "tiers": [
@@ -431,8 +431,8 @@
       {
         "id": "basic",
         "name": "Basic",
-        "price": "In-App",
-        "description": "Mehr Fahrzeuge und Familie in einer Garage einladen.",
+        "price": "CHF 9.90 / Monat",
+        "description": "Mehr Fahrzeuge und Familie in einer Garage einladen. Jährlich CHF 89 in-App. In DE/AT zeigt der Store lokales EUR.",
         "featured": false,
         "highlights": [
           "1 eigene Garage",
@@ -447,8 +447,8 @@
       {
         "id": "advanced",
         "name": "Advanced",
-        "price": "In-App",
-        "description": "Mehrere Garagen und höheres KI-Kontingent für aktive Nutzer.",
+        "price": "CHF 19.90 / Monat",
+        "description": "Mehrere Garagen und höheres KI-Kontingent für aktive Nutzer. Jährlich CHF 179 in-App. In DE/AT zeigt der Store lokales EUR.",
         "featured": true,
         "highlights": [
           "3 eigene Garagen",
