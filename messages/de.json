@@ -454,7 +454,7 @@
           "3 eigene Garagen",
           "Bis zu 10 Fahrzeuge pro Garage",
           "Freigabe (bis zu 10 Mitglieder)",
-          "300 KI-Credits / Monat",
+          "500 KI-Credits / Monat",
           "Timeline-Jahrexport (CSV und gebrandetes PDF)",
           "Originalfoto/-PDF am Ereignis behalten und später öffnen"
         ]
@@ -842,7 +842,7 @@
         "bullets": [
           "Free: 1 Garage, 1 Fahrzeug, 10 KI-Credits/Monat nach dem ersten Fahrzeug",
           "Basic: 1 Garage, 5 Fahrzeuge, Freigabe bis 5 Mitglieder, 100 Credits",
-          "Advanced: 3 Garagen, 10 Fahrzeuge, 10 Mitglieder, 300 Credits, Jahres-Export, OCR-Anhänge behalten",
+          "Advanced: 3 Garagen, 10 Fahrzeuge, 10 Mitglieder, 500 Credits, Jahres-Export, OCR-Anhänge behalten",
           "Abo über App Store / Google Play — diese Website verarbeitet keine Zahlungen"
         ],
         "cta": {

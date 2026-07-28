@@ -454,7 +454,7 @@
           "3 owned garages",
           "Up to 10 vehicles per garage",
           "Garage sharing (up to 10 members)",
-          "300 AI credits / month",
+          "500 AI credits / month",
           "Timeline year export (CSV and branded PDF)",
           "Keep the original photo/PDF on the event and open it later"
         ]
@@ -842,7 +842,7 @@
         "bullets": [
           "Free: 1 garage, 1 vehicle, 10 AI credits/month after first vehicle",
           "Basic: 1 garage, 5 vehicles, sharing up to 5 members, 100 credits",
-          "Advanced: 3 garages, 10 vehicles, 10 members, 300 credits, year export, keep OCR attachments",
+          "Advanced: 3 garages, 10 vehicles, 10 members, 500 credits, year export, keep OCR attachments",
           "Subscribe via App Store / Google Play — this website does not process payments"
         ],
         "cta": {

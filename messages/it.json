@@ -454,7 +454,7 @@
           "3 garage di proprietà",
           "Fino a 10 veicoli per garage",
           "Condivisione (fino a 10 membri)",
-          "300 crediti IA / mese",
+          "500 crediti IA / mese",
           "Export timeline per anno (CSV e PDF brandizzato)",
           "Conserva la foto/PDF originale sull'evento e aprila quando vuoi"
         ]
@@ -842,7 +842,7 @@
         "bullets": [
           "Free: 1 garage, 1 veicolo, 10 crediti IA/mese dopo il primo veicolo",
           "Basic: 1 garage, 5 veicoli, sharing fino a 5 membri, 100 crediti",
-          "Advanced: 3 garage, 10 veicoli, 10 membri, 300 crediti, export annuale, allegati OCR permanenti",
+          "Advanced: 3 garage, 10 veicoli, 10 membri, 500 crediti, export annuale, allegati OCR permanenti",
           "Abbonati via App Store / Google Play — questo sito non processa pagamenti"
         ],
         "cta": {
