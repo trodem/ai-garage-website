@@ -7,7 +7,7 @@ import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const NAV_KEYS = [
   { href: "#capabilities", key: "navFeatures" as const },
-  { href: "#how", key: "navHow" as const },
+  { href: "#solution", key: "navHow" as const },
   { href: "#plans", key: "navPlans" as const },
   { href: "#download", key: "navDownload" as const },
   { href: "#faq", key: "navFaq" as const },
@@ -56,7 +56,7 @@ export default function Header() {
         <a href="#top" className="flex items-center gap-3" aria-label={t("homeAria")}>
           <LogoIcon className="logo-hover h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24" />
           <div className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-            <span className="text-[#1F1BE8] dark:text-[#00A7E5]">Gar</span><span className="text-[#F2137B]">IQ</span>
+            <span className="text-[#211EE5] dark:text-[#08A7DE]">Gar</span><span className="text-[#ED177B]">IQ</span>
           </div>
         </a>
 

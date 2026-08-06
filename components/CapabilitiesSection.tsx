@@ -38,11 +38,11 @@ export default function CapabilitiesSection() {
 
   return (
     <section id="capabilities" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <div className="max-w-2xl">
+      <Reveal className="max-w-2xl">
         <span className="section-label">{t("label")}</span>
         <h2 className="section-title">{t("title")}</h2>
         <p className="section-copy mt-4">{t("copy")}</p>
-      </div>
+      </Reveal>
 
       <div
         role="tablist"

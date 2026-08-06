@@ -9,10 +9,10 @@ export default async function Faq() {
 
   return (
     <section id="faq" className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
-      <div className="max-w-2xl">
+      <Reveal className="max-w-2xl">
         <span className="section-label">{t("label")}</span>
         <h2 className="section-title">{t("title")}</h2>
-      </div>
+      </Reveal>
       <div className="mt-12 space-y-4">
         {items.map((faq) => (
           <Reveal as="details" key={faq.q} className="faq-item">

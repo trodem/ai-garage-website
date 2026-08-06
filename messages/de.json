@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "GarIQ — KI-Fahrtenbuch mit Scan & Ask",
-    "description": "Belege scannen (Foto, PDF, Smart Scan) und Logbuch oder Dokumente fragen — KI entwirft, du bestätigst immer. Timeline, Stats, geteilte Garagen. Italienisch, Deutsch, Englisch.",
-    "keywords": "Fahrtenbuch,Beleg OCR,Smart Scan,Ask KI,Autopflege,Spritkosten,Fahrzeugdokumente,Garagenfreigabe,Multi-Währung"
+    "title": "GarIQ — Snap it. Scan it. Ask GarIQ.",
+    "description": "Das intelligente Fahrtenbuch. Kosten und Arbeitsgedächtnis — wann war der letzte Service, bei welchem Km. KI entwirft; du bestätigst. Dann fragst du dein Fahrtenbuch. Italienisch, Deutsch, Englisch.",
+    "keywords": "Fahrtenbuch,Beleg OCR,Smart Scan,Smart Insert,Ask KI,Fahrzeugpflege,Spritkosten,Fahrzeugdokumente,Garagenfreigabe,Multi-Währung"
   },
   "common": {
     "skipToContent": "Zum Inhalt springen",
@@ -22,29 +22,32 @@
     "ctaDownload": "App holen"
   },
   "hero": {
-    "badge": "Scan + Ask — du bestätigst jedes Speichern",
-    "title": "Viel mehr als ein Ausgaben-Tracker — das Gehirn deiner Garage.",
-    "subtitle": "Foto, PDF, Smart Scan oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann Ask im Logbuch oder in der Dokumentenablage — auf Italienisch, Deutsch oder Englisch. Tanken, Wartung, Steuern, Prüfungen, E-Laden, Ausgaben und Fahrten in Timeline und Statistik — plus Policen im Vault — auch über mehrere Währungen.",
+    "badge": "Das intelligente Fahrtenbuch",
+    "title": "Snap it. Scan it.",
+    "titleAsk": "Ask",
+    "subtitle": "Foto, PDF, Smart Scan oder Chat → die KI erstellt den Eintrag und du bestätigst, immer. Dann Ask im Fahrtenbuch oder in der Dokumentenablage — auf Italienisch, Deutsch oder Englisch. Tanken, Wartung, Steuern, Prüfungen, E-Laden, Ausgaben und Fahrten in Timeline und Statistik — plus Policen im Vault — auch über mehrere Währungen.",
     "ctaPrimary": "GarIQ laden",
     "ctaSecondary": "So funktioniert's",
     "stat1Title": "Dein Weg",
     "stat1Copy": "Formular, Foto, PDF, Chat oder Smart Scan — immer mit Prüfschritt.",
     "stat2Title": "Frag deine Daten",
-    "stat2Copy": "Logbuch-Modus für Events und Ausgaben; Dokumente-Modus für Vault-Q&A mit Zitaten.",
+    "stat2Copy": "Fahrtenbuch-Modus für Events und Ausgaben; Dokumente-Modus für Vault-Q&A mit Zitaten.",
     "stat3Title": "Deine Garagen",
     "stat3Copy": "Getrennte Bereiche für Alltagsauto, Familie oder Hobbyfahrzeuge.",
     "imageAlt": "GarIQ-App mit Home, Fahrzeugen, Timeline und Erfassungsflow",
-    "subtitleShort": "Foto oder PDF scannen — oder Smart Scan ohne Typwahl. KI entwirft; du bestätigst. Dann Ask an Logbuch oder Dokumente."
+    "subtitleShort": "Kosten und Service an einem Ort — eine Historie mit Antworten."
   },
   "vehicleTypes": {
     "label": "Für jedes Fahrzeug",
     "items": [
-      "Autos & SUVs",
-      "Motorräder & Roller",
-      "Transporter, Lkw & Wohnmobile",
-      "E-Bikes & Anhänger",
-      "Klassiker & Wochenende",
-      "Familienflotte"
+      "Autos",
+      "Traktoren",
+      "Motorräder",
+      "Vespa",
+      "Transporter",
+      "Lkw",
+      "Wohnmobile",
+      "Anhänger"
     ]
   },
   "notJustTracker": {
@@ -73,31 +76,39 @@
     ]
   },
   "problem": {
-    "label": "Das Problem",
-    "title": "Die Fahrzeughistorie zerfasert, wenn Belege überall liegen.",
-    "copy": "Quittungen in der Tasche, Versicherungs-PDFs in der Mail, Kilometerstände in Chats — Zeit, Geld und Ruhe gehen verloren, wenn Fristen anstehen oder du Zahlen für Steuern brauchst.",
+    "label": "Kommt dir bekannt vor?",
+    "title": "Genau das Chaos deiner Fahrzeuge.",
+    "copy": "Belege, PDFs, Km-Notizen und geteilte Schlüssel — nichts liegt an einem Ort, den du fragen kannst.",
     "cards": [
       {
-        "title": "Verstreute Belege",
-        "copy": "Tank- und Werkstattbelege verschwinden, bevor du sie erfasst."
+        "title": "Gespeichert — aber nicht gefunden.",
+        "copy": "Belege und PDFs landen in Fotos und Ordnern — nie als durchsuchbare Fahrzeughistorie."
       },
       {
-        "title": "Dokumente versteckt",
-        "copy": "Policen und Handbücher liegen in Ordnern mit sinnlosen Dateinamen."
+        "title": "Was kostet mich dieses Fahrzeug pro Km?",
+        "copy": "Werkstatt, Tanken, Steuern, Versicherung — ohne verlässliche Kosten pro Kilometer fliegst du auf Sicht."
       },
       {
-        "title": "Ausgaben raten",
-        "copy": "„Wie viel habe ich letztes Jahr ausgegeben?“ soll kein Excel-Marathon sein."
+        "title": "Wann war der letzte Service — und bei welchem Km?",
+        "copy": "Daten und Kilometerstände sitzen im Kopf, in einem Chat oder nirgends."
       },
       {
-        "title": "Gemeinsames Auto, kein Log",
-        "copy": "Partner und Familie teilen sich kein verlässliches Fahrtenbuch."
+        "title": "Dokumente, die nicht antworten",
+        "copy": "Police und Handbuch liegen in E-Mails. Du suchst; sie antworten nie."
+      },
+      {
+        "title": "Geteiltes Fahrzeug, keine gemeinsame Wahrheit",
+        "copy": "Partner und Familie haben keine vertrauenswürdige Timeline für dasselbe Fahrzeug."
+      },
+      {
+        "title": "Was verbraucht er wirklich?",
+        "copy": "Tankung für Tankung, Km für Km — ohne verlässlichen Schnitt rätst du vom Display, nicht aus deiner Historie."
       }
     ]
   },
   "solution": {
     "label": "Die Lösung",
-    "title": "Ein Logbuch pro Fahrzeug — strukturiert, durchsuchbar, deins.",
+    "title": "Ein Fahrtenbuch pro Fahrzeug — strukturiert, durchsuchbar, deins.",
     "copy": "GarIQ bündelt Events, Anhänge und Dokumente unter deinem Konto. Lade Mitbesitzer ein, wenn ihr gemeinsam loggt — ohne Enterprise-Software.",
     "cards": [
       {
@@ -273,12 +284,12 @@
         "copy": "Wartung oder Ausgaben in Alltagssprache beschreiben; Entwurf jederzeit prüfen; speichern erst wenn bereit."
       },
       {
-        "title": "Ask · Logbuch",
+        "title": "Ask · Fahrtenbuch",
         "copy": "Antworten in natürlicher Sprache zu Ausgaben, Historie und Aggregaten — aus deinen Events unter RLS."
       },
       {
         "title": "Ask · Dokumente",
-        "copy": "Q&A über deine Ablage mit Zitaten zu Titel und Seite — derselbe KI-Credit-Pool wie Logbuch-Ask."
+        "copy": "Q&A über deine Ablage mit Zitaten zu Titel und Seite — derselbe KI-Credit-Pool wie Fahrtenbuch-Ask."
       }
     ],
     "preview": {
@@ -406,7 +417,7 @@
     "label": "Tarife & KI",
     "title": "Drei Kontotarife. Eine App — wächst mit deiner Garage.",
     "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe und monatliche KI-Credits). Listenpreise in CHF (Primärmarkt: Schweiz); App Store und Google Play in DE/AT belasten die lokale Währung. Abo und Tarifverwaltung in der GarIQ-App — diese Website verarbeitet keine Zahlungen. Beim Free-Tarif beginnt die monatliche KI-Credit-Periode mit deinem ersten Fahrzeug.",
-    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert, Ask (Logbuch und Dokumente) und verwandte abgerechnete KI-Aktionen ab. Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Document-AI für Vault-Kategorien außer Schein ist aus. Das manuelle Formular bleibt immer verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern. Der abgebuchte Abopreis kommt vom Store deines Landes — nicht von dieser Seite.",
+    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert, Ask (Fahrtenbuch und Dokumente) und verwandte abgerechnete KI-Aktionen ab. Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Document-AI für Vault-Kategorien außer Schein ist aus. Das manuelle Formular bleibt immer verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern. Der abgebuchte Abopreis kommt vom Store deines Landes — nicht von dieser Seite.",
     "popularBadge": "Am flexibelsten",
     "cta": "GarIQ laden",
     "tiers": [
@@ -417,46 +428,45 @@
         "description": "Einstieg mit Formularen und Server-KI ab dem ersten Fahrzeug.",
         "featured": false,
         "highlights": [
-          "1 eigene Garage",
-          "1 Fahrzeug pro Garage",
+          "1 Garage · 1 Fahrzeug",
           "Volles Fahrtenbuch & Statistik",
-          "10 KI-Credits / Monat ab dem ersten Fahrzeug",
-          "Fahrzeugschein-Scan vor dem ersten Fahrzeug ohne monatliche Credits",
-          "OCR für Tanken & Laden; Chat für Notizen, Tanken & Laden",
-          "Document-AI für Vault-Kategorien außer Schein: aus",
-          "Keine Garagen-Freigabe",
-          "Manuelles Formular immer verfügbar bei leeren Credits"
+          "10 KI-Credits / Monat",
+          "OCR für Tanken & Laden",
+          "Chat für Notizen, Tanken & Laden",
+          "Ask im Fahrtenbuch innerhalb der Credits",
+          "Manuelles Formular immer verfügbar"
         ]
       },
       {
         "id": "basic",
         "name": "Basic",
-        "price": "CHF 9.90 / Monat",
-        "description": "Mehr Fahrzeuge und Familie in einer Garage einladen. Jährlich CHF 89 in-App. In DE/AT zeigt der Store lokales EUR.",
+        "price": "CHF 4.90 / Monat",
+        "description": "Mehr Fahrzeuge, Freigabe, Smart Scan & Smart Insert. Basic kostenlos testen mit dem Store-Einführungsangebot (~30 Tage) — jährlich CHF 49 in-App. In DE/AT zeigt der Store lokales EUR.",
         "featured": false,
         "highlights": [
-          "1 eigene Garage",
-          "Bis zu 5 Fahrzeuge pro Garage",
-          "Freigabe (bis zu 5 Mitglieder)",
+          "Alles aus Free",
+          "Bis zu 5 Fahrzeuge",
+          "Freigabe für bis zu 5 Mitglieder",
           "100 KI-Credits / Monat",
-          "Foto/PDF und Chat-Insert für alle Ereignistypen",
-          "Document-AI für Fahrzeug-Vault-Kategorien an",
-          "Timeline-Jahrexport gesperrt (sichtbar + Upgrade)"
+          "Foto, PDF & Chat für alle Ereignistypen",
+          "Smart Scan & Smart Insert",
+          "Document-AI für den Fahrzeug-Vault"
         ]
       },
       {
         "id": "advanced",
         "name": "Advanced",
-        "price": "CHF 19.90 / Monat",
-        "description": "Mehrere Garagen und höheres KI-Kontingent für aktive Nutzer. Jährlich CHF 179 in-App. In DE/AT zeigt der Store lokales EUR.",
+        "price": "CHF 14.90 / Monat",
+        "description": "Mehrere Garagen und höheres KI-Kontingent für aktive Nutzer. Jährlich CHF 149 in-App. In DE/AT zeigt der Store lokales EUR.",
         "featured": true,
         "highlights": [
+          "Alles aus Basic",
           "3 eigene Garagen",
           "Bis zu 10 Fahrzeuge pro Garage",
-          "Freigabe (bis zu 10 Mitglieder)",
+          "Freigabe für bis zu 10 Mitglieder",
           "500 KI-Credits / Monat",
-          "Timeline-Jahrexport (CSV und gebrandetes PDF)",
-          "Originalfoto/-PDF am Ereignis behalten und später öffnen"
+          "Timeline-Jahrexport (CSV & PDF)",
+          "Originalfoto/-PDF an Events behalten"
         ]
       }
     ]
@@ -464,11 +474,14 @@
   "download": {
     "label": "Download",
     "title": "GarIQ aufs Smartphone",
-    "copy": "Für Android und iOS. Installieren, anmelden, erstes Fahrzeug in Minuten anlegen.",
+    "copy": "Aus dem Store installieren, anmelden, erstes Fahrzeug in Minuten anlegen.",
     "playStore": "Google Play",
     "appStore": "App Store",
-    "comingSoon": "Demnächst",
-    "comingSoonHint": "Store-Links erscheinen hier, sobald GarIQ veröffentlicht ist."
+    "waitlistCopy": "GarIQ ist im Soft Launch. Zugang anfordern — wir senden dir den Installationslink für dein Gerät.",
+    "waitlistCta": "Zugang anfordern",
+    "waitlistHint": "Nenne die Plattform (iOS oder Android) in der E-Mail — keine Fake-Store-Badges, keine Sackgassen.",
+    "brandLine": "Snap it. Scan it. Ask GarIQ.",
+    "microTrust": "Kostenlos starten · Kein Speichern ohne dich · IT / DE / EN"
   },
   "faq": {
     "label": "FAQ",
@@ -479,16 +492,28 @@
         "a": "Tanken, Laden, Werkstatt, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten — pro Fahrzeug. Versicherungszahlungen kannst du als Events loggen; aktuelle Policen und Kaufverträge liegen in der Dokumentenablage (nicht über Insert → Versicherung für die Police selbst)."
       },
       {
+        "q": "Was ist im Free-Tarif enthalten?",
+        "a": "1 eigene Garage, 1 Fahrzeug, 10 KI-Credits/Monat ab dem ersten Fahrzeug. OCR für Tanken und Laden; Chat für Notizen, Tanken und Laden. Document-AI aus (außer Schein-Scan). Kein Smart Scan, Smart Insert oder Freigabe. Formular immer verfügbar. Ask innerhalb der Credits."
+      },
+      {
         "q": "Speichert die KI automatisch?",
-        "a": "Nein. KI erstellt einen Entwurf aus OCR, Smart Scan oder Chat; du bearbeitest und bestätigst auf dem Entwurfsbildschirm."
+        "a": "Nein. KI erstellt einen Entwurf aus OCR, Smart Scan, Smart Insert oder Chat; du bearbeitest und bestätigst auf dem Entwurfsbildschirm."
       },
       {
         "q": "Was ist Smart Scan?",
-        "a": "Eine Home-Aktion: Foto oder PDF ohne vorherige Eventtyp-Wahl. OCR erkennt den Typ unter dokumentähnlichen Events; danach prüfst du denselben Entwurf und bestätigst."
+        "a": "Eine Home-Aktion: Foto oder PDF ohne vorherige Eventtyp-Wahl — verfügbar ab Basic. OCR erkennt den Typ unter dokumentähnlichen Events; danach prüfst du denselben Entwurf und bestätigst. Auf Free loggst du mit dem Formular oder mit typisiertem OCR/Chat für Tanken und Laden."
+      },
+      {
+        "q": "Was ist Smart Insert?",
+        "a": "Das Chat-Gegenstück zu Smart Scan (Basic+): beschreibe, was passiert ist, ohne vorher den Eventtyp zu wählen — GarIQ erkennt ihn und erstellt denselben Entwurf zur Bestätigung."
+      },
+      {
+        "q": "Gibt es eine Gratis-Testphase für Basic?",
+        "a": "Basic kann eine kostenlose Testphase (Ziel: ~30 Tage) als Store-Einführungsangebot auf iOS und Android enthalten — prüfe das aktuelle Angebot in der App vor dem Abo. Die Website übernimmt weder die Testphase noch die Bezahlung."
       },
       {
         "q": "Was sind die zwei Ask-Modi?",
-        "a": "Logbuch-Ask beantwortet Fragen zu Events, Kosten und Aggregaten. Dokumente-Ask beantwortet Fragen zur Fahrzeugablage und kann Titel und Seite zitieren. Beide nutzen denselben monatlichen KI-Credit-Pool."
+        "a": "Fahrtenbuch-Ask beantwortet Fragen zu Events, Kosten und Aggregaten. Dokumente-Ask beantwortet Fragen zur Fahrzeugablage und kann Titel und Seite zitieren. Beide nutzen denselben monatlichen KI-Credit-Pool. Ask sucht nicht im Web — nur deine Events und Dateien."
       },
       {
         "q": "Was passiert bei leeren KI-Credits?",
@@ -499,8 +524,12 @@
         "a": "Free und Basic umfassen 1 eigene Garage. Advanced bis zu 3. Bei Basic und Advanced kannst du Co-Owner, Admins oder Logger einladen (keine Viewer-Rolle in v1); Free hat keine Freigabe."
       },
       {
+        "q": "Was passiert mit meinen Daten bei Downgrade oder Kündigung?",
+        "a": "Nichts wird gelöscht. Ressourcen über den Grenzen des neuen Tarifs werden eingefroren — sichtbar mit Upgrade-Pfad — bis du upgradest oder sie selbst entfernst."
+      },
+      {
         "q": "Police vs. Versicherungszahlung?",
-        "a": "Aktuelle Police-PDFs und Deckungsdaten liegen unter Dokumente / Police-Hub. Eine Versicherungszahlung ist ein separates Logbuch-Event. Nutze Insert → Versicherung nicht, um eine Police anzulegen."
+        "a": "Aktuelle Police-PDFs und Deckungsdaten liegen unter Dokumente / Police-Hub. Eine Versicherungszahlung ist ein separates Fahrtenbuch-Event. Nutze Insert → Versicherung nicht, um eine Police anzulegen."
       },
       {
         "q": "Welche Sprachen unterstützt GarIQ?",
@@ -517,19 +546,16 @@
       {
         "q": "Kann ich auf dieser Website abonnieren?",
         "a": "Nein. Basic und Advanced kaufst du in der GarIQ-App über App Store oder Google Play (RevenueCat). Diese Marketing-Website verarbeitet keine Zahlungen und ist kein Checkout."
-      },
-      {
-        "q": "Wie funktionieren die Free-Limits?",
-        "a": "1 eigene Garage, 1 Fahrzeug, 10 KI-Credits/Monat ab dem ersten Fahrzeug. OCR nur für Tanken und Laden; Chat-Insert für Notizen, Tanken und Laden. Document-AI für Vault-Kategorien außer Schein ist aus. Der Schein-Scan vor dem ersten Fahrzeug verbraucht keine monatlichen Credits."
       }
     ]
   },
   "finalCta": {
-    "badge": "Bereit, wenn du es bist",
-    "title": "Schluss mit verlorenen Belegen. Ein Logbuch, dem du vertraust.",
-    "copy": "GarIQ laden, Fahrzeug anlegen und den nächsten Tank oder die nächste Wartung erfassen — mit KI-Hilfe und menschlicher Bestätigung.",
+    "badge": "Snap it. Scan it. Ask GarIQ.",
+    "title": "Bereit, wenn du es bist.",
+    "copy": "Kostenlos starten mit dem ersten Fahrzeug. KI entwirft — du bestätigst jedes Speichern.",
+    "microTrust": "IT / DE / EN · Checkout nur in der App · Kein KI-Autosave",
     "ctaPrimary": "GarIQ laden",
-    "ctaSecondary": "Tarife & KI"
+    "ctaSecondary": "Tarife ansehen"
   },
   "footer": {
     "copyright": "© {year} GarIQ. Alle Rechte vorbehalten.",
@@ -724,8 +750,8 @@
   },
   "whyGarIq": {
     "label": "Warum GarIQ",
-    "title": "Eine Ausgaben-App liefert Zahlen. GarIQ liefert Scan, Ask und Kontrolle.",
-    "copy": "Herzstück: Belege und Dokumente scannen, dann die eigene Historie fragen — mit KI, die nie ohne deine Bestätigung schreibt.",
+    "title": "Viel mehr als ein Ausgaben-Tracker — das Gehirn deiner Garage.",
+    "copy": "Ausgaben-Apps stoppen bei dem, was du gezahlt hast. GarIQ verbindet Kosten, Arbeitsgedächtnis (wann / Km), Dokumente und Ask — mit KI, die nie ohne dich schreibt.",
     "points": [
       {
         "title": "Du bestätigst jedes Speichern",
@@ -736,7 +762,7 @@
         "copy": "Garagen, Fahrzeuge, Timeline und Statistik — Fokus wechseln, ohne Historie zu verlieren."
       },
       {
-        "title": "Ask Logbuch oder Dokumente",
+        "title": "Ask Fahrtenbuch oder Dokumente",
         "copy": "Zwei Ask-Modi: Events und Ausgaben, oder Vault-Q&A mit Zitaten — derselbe Credit-Pool."
       },
       {
@@ -756,7 +782,7 @@
       },
       {
         "title": "Erfassen wie du willst",
-        "copy": "Eventtyp wählen, dann Formular, Foto, PDF oder Chat — oder Smart Scan ohne Typwahl. KI bereitet den Entwurf vor; du bestätigst.",
+        "copy": "Ereignistyp wählen, dann Formular, Foto, PDF oder Chat — oder Smart Scan / Smart Insert (Basic+) ohne Typwahl. KI erstellt den Entwurf; du bestätigst.",
         "alt": "GarIQ-Screen: Tankbeleg wird zum bearbeitbaren Entwurf."
       },
       {
@@ -766,7 +792,7 @@
       },
       {
         "title": "Alles fragen",
-        "copy": "Ask-Logbuch für Ausgaben und Historie, oder Dokumente für Vault-Dateien — Antworten zitieren deine Daten.",
+        "copy": "Ask-Fahrtenbuch für Ausgaben und Historie, oder Dokumente für Vault-Dateien — Antworten zitieren deine Daten.",
         "alt": "GarIQ-Screen: Ask-Chat mit zitierter Antwort aus einem PDF."
       }
     ]
@@ -781,11 +807,12 @@
         "label": "Capture",
         "title": "Vier Insert-Methoden — plus Smart Scan",
         "bullets": [
-          "Formular, Foto, PDF oder Chat für einen festgelegten Eventtyp",
-          "Smart Scan: Foto oder PDF ohne Typwahl — OCR erkennt den Typ, dann derselbe Entwurf",
-          "OCR macht aus Belegen und Rechnungen einen bearbeitbaren Entwurf mit Konfidenz-Hinweisen",
-          "Du prüfst und tippst Speichern — KI speichert nie automatisch",
-          "Das manuelle Formular bleibt verfügbar, wenn KI-Credits leer sind",
+          "Formular, Foto, PDF oder Chat für einen festen Ereignistyp",
+          "Smart Scan (Basic+): Foto oder PDF ohne Typwahl — OCR erkennt den Typ, dann derselbe Entwurf",
+          "Smart Insert (Basic+): beschreibe das Ereignis im Chat ohne Typwahl — derselbe Prüf-Entwurf",
+          "OCR macht aus Belegen und Rechnungen einen editierbaren Entwurf mit Konfidenzhinweisen",
+          "Du prüfst und tippst Speichern — die KI speichert nie automatisch",
+          "Manuelles Formular bleibt bei leeren Credits verfügbar",
           "Tanken, Laden, Werkstatt, Steuer, Prüfung, Ausgaben, Notizen und Fahrten erfassen"
         ]
       },
@@ -794,7 +821,7 @@
         "label": "Ask",
         "title": "Zwei Ask-Modi auf deinen Daten",
         "bullets": [
-          "Logbuch-Modus: Fragen in natürlicher Sprache zu Events, Kosten, Profil und Aggregaten",
+          "Fahrtenbuch-Modus: Fragen in natürlicher Sprache zu Events, Kosten, Profil und Aggregaten",
           "Dokumente-Modus: Q&A über die Fahrzeugablage — Antworten zitieren Titel und Seite, wenn verfügbar",
           "Optionale Spracheingabe in den Composer — du sendest; kein Autosend",
           "Derselbe monatliche KI-Credit-Pool; bei leeren Credits ist Ask gesperrt mit Upgrade-Pfad",
@@ -867,6 +894,131 @@
       {
         "title": "EV & Fahrten",
         "copy": "Lade-Events, Routen mit Kilometerstand und Ask, wenn du schnell eine Zahl brauchst."
+      }
+    ]
+  },
+  "solutionStrip": {
+    "label": "Die Idee",
+    "title": "Scannen. Bestätigen. Fragen.",
+    "copy": "Fahrzeug anlegen, in Sekunden erfassen, jedes Speichern bestätigen — dann die Historie fragen.",
+    "verbs": [
+      {
+        "kicker": "Scan",
+        "title": "In Sekunden erfassen",
+        "copy": "Foto, PDF, Smart Log oder Smart Scan — die KI erstellt einen Entwurf aus dem, was du erfasst."
+      },
+      {
+        "kicker": "Confirm",
+        "title": "Du behältst die Kontrolle",
+        "copy": "Prüfe jedes Feld. Nichts wird gespeichert, bis du auf Speichern tippst — kein KI-Autosave."
+      },
+      {
+        "kicker": "Ask",
+        "title": "Deine Historie abfragen",
+        "copy": "Frag nach Kosten, Km und Service in der Timeline — oder deine Dokumente nach Deckung und Handbuch."
+      }
+    ],
+    "receipt": {
+      "title": "Bon-Scan",
+      "merchant": "Tankstelle",
+      "fuel": "Liter",
+      "total": "Summe",
+      "scanning": "Scannen…"
+    },
+    "draft": {
+      "title": "Entwurf bestätigen",
+      "badge": "Prüfen",
+      "type": "Typ",
+      "amount": "Betrag",
+      "liters": "Liter",
+      "odometer": "Km-Stand",
+      "confirm": "Bestätigen & speichern"
+    },
+    "chat": {
+      "title": "Fahrtenbuch fragen",
+      "badge": "Ask",
+      "user": "Wie viele Liter habe ich beim letzten Tanken getankt?",
+      "assistant": "45,20 L Diesel — Summe CHF 84,50 bei 128.450 km.",
+      "typing": "Schreibt…"
+    }
+  },
+  "exclusive": {
+    "label": "Nur bei GarIQ",
+    "title": "Drei Dinge, die kaum eine Fahrzeug-App kann.",
+    "copy": "Tempo ohne Kontrollverlust — erfassen, bestätigen, fragen — über deine Fahrzeughistorie.",
+    "items": [
+      {
+        "title": "Du bestätigst jedes Mal",
+        "copy": "Die KI schreibt nie allein. Jeder Entwurf wartet auf deinen Tipp auf Speichern."
+      },
+      {
+        "title": "Doppeltes Ask: Fahrtenbuch + Dokumente",
+        "copy": "Ein Assistent für Kosten und Km — und für Policen und Handbuch, mit Zitaten."
+      },
+      {
+        "title": "Geteilte Garage mit echten Rollen",
+        "copy": "Lade Co-Owner, Admins oder Logger ein. Eine Timeline, sichtbar wer was geloggt hat."
+      }
+    ]
+  },
+  "imagine": {
+    "label": "Stell dir vor…",
+    "title": "Alltägliche Momente, für die GarIQ gebaut ist.",
+    "items": [
+      {
+        "title": "…an der Tankstelle im Regen.",
+        "copy": "Du willst nicht tippen. Beleg fotografieren, Entwurf prüfen, speichern — und weiterfahren, weil es erledigt ist."
+      },
+      {
+        "title": "…beim Verlassen der Werkstatt.",
+        "copy": "Diktiere einen Satz mit den Zahlen im Kopf. Monate später fragst du, wann dieser Service war und bei welchem Kilometerstand."
+      },
+      {
+        "title": "…vor einer langen Fahrt.",
+        "copy": "Frag \"Wann war meine letzte Ölkontrolle?\" und sieh Datum und Kilometerstand — Sicherheit aus deinem Fahrtenbuch, nicht aus dem Gedächtnis."
+      },
+      {
+        "title": "…wenn du ein Policendetail brauchst.",
+        "copy": "Es liegt im Vault. Frag das Dokument, statt in E-Mails zu suchen."
+      },
+      {
+        "title": "…wenn ihr euch die Schlüssel teilt.",
+        "copy": "Du und dein Partner fahrt dasselbe Fahrzeug. Eine Garage, eine Timeline — weniger \"ich dachte, du hättest es gemacht\"."
+      }
+    ]
+  },
+  "comparison": {
+    "label": "Im Vergleich zu dem, was du heute nutzt",
+    "title": "Keine erfundenen Konkurrenten — nur die Kategorien, die man wirklich zuerst probiert.",
+    "copy": "GarIQ ist nicht \"eine Funktion mehr\" als eine Tabelle. Es ist eine andere Kategorie: erfassen, bestätigen, fragen — über die eigene Fahrzeughistorie.",
+    "colApproach": "Ansatz",
+    "colBreaks": "Was meist scheitert",
+    "colWhy": "Warum GarIQ",
+    "rows": [
+      {
+        "approach": "Fotos & Ordner",
+        "breaks": "Nicht durchsuchbar, keine Summen, keine geteilte Wahrheit",
+        "why": "Strukturierte Events, Ask und geteilte Garage"
+      },
+      {
+        "approach": "Tabellen",
+        "breaks": "Nach wenigen Wochen aufgegeben; mühsam an der Tankstelle",
+        "why": "Sekunden zum Erfassen, prüfen, später fragen"
+      },
+      {
+        "approach": "Familien-Chats",
+        "breaks": "Lärm, kein Aufzeichnungssystem",
+        "why": "Eine Garage, echte Rollen, sichtbar wer was geloggt hat"
+      },
+      {
+        "approach": "Reine Tank-Apps",
+        "breaks": "Ignorieren E-Laden, Steuern, Prüfungen und Dokumente",
+        "why": "Die volle Ownership-Story plus Dokumentenablage"
+      },
+      {
+        "approach": "Generische KI-Chatbots",
+        "breaks": "Kennen deine Garage nicht; können Fakten erfinden",
+        "why": "Antworten auf Basis deiner eigenen Events und Dateien"
       }
     ]
   }

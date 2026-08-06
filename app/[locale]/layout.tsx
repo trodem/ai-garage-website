@@ -128,7 +128,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-white font-sans text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+      <body className="bg-[#FAF9FC] font-sans text-[#0B1F4A] antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

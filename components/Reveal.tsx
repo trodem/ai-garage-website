@@ -36,7 +36,7 @@ export default function Reveal({
     const element = ref.current;
     if (!element) return;
 
-    const stagger = Math.min((revealIndex++ % 8) * 22, 160);
+    const stagger = Math.min((revealIndex++ % 8) * 70, 420);
     element.style.transitionDelay = `${stagger}ms`;
 
     if (!("IntersectionObserver" in window)) {
@@ -49,11 +49,12 @@ export default function Reveal({
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
+          } else {
+            entry.target.classList.remove("is-visible");
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.14, rootMargin: "0px 0px -10% 0px" }
     );
 
     observer.observe(element);

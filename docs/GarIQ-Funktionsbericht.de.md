@@ -67,7 +67,7 @@ Fahrzeugtyp, Hubraum (cc), Farbe, Leistung (kW), Erstzulassungsdatum,
 Zulassungs-Bemerkungen, Tankvolumen (L), Batteriekapazität (kWh).
 
 **Fahrzeugtypen:** `car`, `suv`, `van`, `truck`, `motorcycle`, `scooter`, `camper`,
-`trailer`, `ebike`, `other`.
+`trailer`, `other`.
 
 **Kraftstofftypen:** Benzin, Diesel, Elektro, Hybrid-Benzin, Hybrid-Diesel, LPG.
 

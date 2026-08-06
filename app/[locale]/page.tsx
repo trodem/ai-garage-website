@@ -1,16 +1,14 @@
 import { setRequestLocale } from "next-intl/server";
 import ScrollProgress from "@/components/ScrollProgress";
 import Header from "@/components/Header";
+import StickyDownloadCta from "@/components/StickyDownloadCta";
 import Hero from "@/components/Hero";
-import WhyGarIqSection from "@/components/WhyGarIqSection";
-import ProductStorySection from "@/components/ProductStorySection";
+import ProblemSection from "@/components/ProblemSection";
+import SolutionStrip from "@/components/SolutionStrip";
 import CapabilitiesSection from "@/components/CapabilitiesSection";
-import AiSection from "@/components/AiSection";
-import AudiencesSection from "@/components/AudiencesSection";
 import PlansExplainer from "@/components/PlansExplainer";
 import DownloadSection from "@/components/DownloadSection";
 import Faq from "@/components/Faq";
-import FinalCta from "@/components/FinalCta";
 import Footer from "@/components/Footer";
 import SkipLink from "@/components/SkipLink";
 import { routing } from "@/i18n/routing";
@@ -37,21 +35,20 @@ export default async function HomePage({ params }: PageProps) {
       <div className="noise-overlay" aria-hidden="true" />
 
       <Header />
+      <StickyDownloadCta />
 
       <main id="main-content">
         <Hero />
-        <WhyGarIqSection />
-        <ProductStorySection />
+        <ProblemSection />
+        <SolutionStrip />
         <CapabilitiesSection />
-        <AiSection />
-        <AudiencesSection />
         <PlansExplainer />
         <DownloadSection />
         <Faq />
-        <FinalCta />
       </main>
 
       <Footer />
+      <div className="h-20 md:hidden" aria-hidden="true" />
     </>
   );
 }

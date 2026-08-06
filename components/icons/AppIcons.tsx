@@ -57,6 +57,32 @@ export function VanIcon(props: IconProps) {
   );
 }
 
+export function TrailerIcon(props: IconProps) {
+  return (
+    <Base {...props}>
+      <path d="M2 15h2" />
+      <path d="M4 12h11a1 1 0 0 1 1 1v4H4v-5z" />
+      <path d="M7 12V9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v3" />
+      <circle cx="8" cy="17.5" r="1.6" />
+      <circle cx="14" cy="17.5" r="1.6" />
+      <path d="M16 14h3l3 2v1.5h-2" />
+    </Base>
+  );
+}
+
+export function ClassicCarIcon(props: IconProps) {
+  return (
+    <Base {...props}>
+      <path d="M4 15h16" />
+      <path d="M5 15 6.5 10.5A1.5 1.5 0 0 1 7.9 9.5h8.2a1.5 1.5 0 0 1 1.4 1L19 15" />
+      <path d="M8 9.5 9 7h6l1 2.5" />
+      <circle cx="7.5" cy="16.5" r="1.7" />
+      <circle cx="16.5" cy="16.5" r="1.7" />
+      <path d="M9.2 16.5h5.6" />
+    </Base>
+  );
+}
+
 export function BoltIcon(props: IconProps) {
   return (
     <Base {...props}>

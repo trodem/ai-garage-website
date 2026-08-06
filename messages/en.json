@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "GarIQ — AI vehicle logbook with Scan & Ask",
-    "description": "Scan receipts (photo, PDF, Smart Scan) and Ask your logbook or documents — AI drafts, you always confirm. Timeline, stats, shared garages. Italian, German, English.",
-    "keywords": "vehicle logbook,OCR receipt,Smart Scan,Ask AI,car maintenance,fuel tracker,vehicle documents,garage sharing,multi currency"
+    "title": "GarIQ — Snap it. Scan it. Ask GarIQ.",
+    "description": "The intelligent vehicle logbook. Capture costs and work history — when a job was done, at which km. AI drafts; you confirm. Then ask your own logbook. Italian, German, English.",
+    "keywords": "vehicle logbook,OCR receipt,Smart Scan,Smart Insert,Ask AI,vehicle maintenance,fuel tracker,vehicle documents,garage sharing,multi currency"
   },
   "common": {
     "skipToContent": "Skip to content",
@@ -22,8 +22,9 @@
     "ctaDownload": "Get the app"
   },
   "hero": {
-    "badge": "Scan + Ask — you confirm every save",
-    "title": "Much more than an expense tracker — the brain of your garage.",
+    "badge": "The intelligent vehicle logbook",
+    "title": "Snap it. Scan it.",
+    "titleAsk": "Ask",
     "subtitle": "Photo, PDF, Smart Scan, or chat → AI drafts the entry and you confirm, every time. Then Ask your logbook or your document vault — in Italian, German, or English. Fuel, service, taxes, inspections, EV charging, expenses, and trips on a timeline and in statistics — plus insurance policies in the vault — even across currencies.",
     "ctaPrimary": "Download GarIQ",
     "ctaSecondary": "See how it works",
@@ -34,17 +35,19 @@
     "stat3Title": "Your garages",
     "stat3Copy": "Separate spaces for daily driver, family, or hobby vehicles.",
     "imageAlt": "GarIQ app showing home, vehicles, timeline, and insert flow",
-    "subtitleShort": "Scan a photo or PDF — or Smart Scan without picking a type. AI drafts; you confirm. Then Ask your logbook or documents."
+    "subtitleShort": "Costs and service in one place — a history with answers."
   },
   "vehicleTypes": {
     "label": "For every vehicle",
     "items": [
-      "Cars & SUVs",
-      "Motorcycles & scooters",
-      "Vans, trucks & campers",
-      "E-bikes & trailers",
-      "Classic & weekend",
-      "Family fleet"
+      "Cars",
+      "Tractors",
+      "Motorcycles",
+      "Vespa",
+      "Vans",
+      "Trucks",
+      "Campers",
+      "Trailers"
     ]
   },
   "notJustTracker": {
@@ -73,25 +76,33 @@
     ]
   },
   "problem": {
-    "label": "The problem",
-    "title": "Vehicle history falls apart when records live in five different places.",
-    "copy": "Receipts in your wallet, insurance PDFs in email, odometer notes in messages — you lose time, money, and peace of mind when something is due or you need a number for taxes.",
+    "label": "Sound familiar?",
+    "title": "This is exactly the chaos of your vehicles.",
+    "copy": "Receipts, PDFs, odometer notes, and shared keys — none of it lives in one place you can ask.",
     "cards": [
       {
-        "title": "Scattered receipts",
-        "copy": "Fuel and maintenance slips disappear before you log them."
+        "title": "Camera roll ≠ logbook",
+        "copy": "Receipts and PDFs pile up in photos and folders — never as a searchable vehicle history."
       },
       {
-        "title": "Hard-to-find documents",
-        "copy": "Policies and manuals are buried in folders with useless file names."
+        "title": "What does this vehicle cost per km?",
+        "copy": "Workshop, fuel, tax, insurance — without a trusted cost per kilometer you're flying blind."
       },
       {
-        "title": "Guesswork on spend",
-        "copy": "“How much did I spend last year?” should not require a spreadsheet marathon."
+        "title": "When was the last service — and at which km?",
+        "copy": "Dates and odometer readings live in your head, a chat thread, or nowhere."
       },
       {
-        "title": "Shared vehicles, no shared log",
-        "copy": "Partners and family members lack one trusted history for the same car."
+        "title": "Documents that don't answer",
+        "copy": "Policy and manual sit in email. You dig; they never reply."
+      },
+      {
+        "title": "Shared vehicle, no single truth",
+        "copy": "Partners and family lack one trusted timeline for the same vehicle."
+      },
+      {
+        "title": "What's my real consumption?",
+        "copy": "Fill-up after fill-up, km after km — without a trusted average you're guessing from the dash, not from your history."
       }
     ]
   },
@@ -417,46 +428,45 @@
         "description": "Start with forms and server AI after you add your first vehicle.",
         "featured": false,
         "highlights": [
-          "1 owned garage",
-          "1 vehicle per garage",
-          "Full event logbook & statistics",
-          "10 AI credits / month from your first vehicle",
-          "Registration scan before your first vehicle does not use monthly credits",
-          "OCR for fuel & charge; chat for notes, fuel & charge",
-          "Document AI for non-registration vault categories: off",
-          "Garage sharing not included",
-          "Manual Form always available when AI credits run out"
+          "1 garage · 1 vehicle",
+          "Full logbook & statistics",
+          "10 AI credits / month",
+          "OCR for fuel & charge",
+          "Chat for notes, fuel & charge",
+          "Ask your logbook within credits",
+          "Manual form always available"
         ]
       },
       {
         "id": "basic",
         "name": "Basic",
-        "price": "CHF 9.90 / mo",
-        "description": "More vehicles and invite family to share one garage. Annual CHF 89 in-app. DE/AT stores show local EUR.",
+        "price": "CHF 4.90 / mo",
+        "description": "More vehicles, sharing, Smart Scan & Smart Insert. Try Basic free via the store intro offer (~30 days) — annual CHF 49 in-app. DE/AT stores show local EUR.",
         "featured": false,
         "highlights": [
-          "1 owned garage",
-          "Up to 5 vehicles per garage",
-          "Garage sharing (up to 5 members)",
+          "Everything in Free",
+          "Up to 5 vehicles",
+          "Sharing for up to 5 members",
           "100 AI credits / month",
-          "Photo/PDF and chat insert for all event types",
-          "Document AI for vehicle vault categories on",
-          "Timeline year export locked (visible + upgrade)"
+          "Photo, PDF & chat for all event types",
+          "Smart Scan & Smart Insert",
+          "Document AI for the vehicle vault"
         ]
       },
       {
         "id": "advanced",
         "name": "Advanced",
-        "price": "CHF 19.90 / mo",
-        "description": "Multiple garages and higher AI headroom for active loggers. Annual CHF 179 in-app. DE/AT stores show local EUR.",
+        "price": "CHF 14.90 / mo",
+        "description": "Multiple garages and higher AI headroom for active loggers. Annual CHF 149 in-app. DE/AT stores show local EUR.",
         "featured": true,
         "highlights": [
+          "Everything in Basic",
           "3 owned garages",
           "Up to 10 vehicles per garage",
-          "Garage sharing (up to 10 members)",
+          "Sharing for up to 10 members",
           "500 AI credits / month",
-          "Timeline year export (CSV and branded PDF)",
-          "Keep the original photo/PDF on the event and open it later"
+          "Timeline year export (CSV & PDF)",
+          "Keep original photo/PDF on events"
         ]
       }
     ]
@@ -464,11 +474,14 @@
   "download": {
     "label": "Download",
     "title": "Get GarIQ on your phone",
-    "copy": "Available on Android and iOS. Install, sign in, and add your first vehicle in minutes.",
+    "copy": "Install from the store, sign in, and add your first vehicle in minutes.",
     "playStore": "Google Play",
     "appStore": "App Store",
-    "comingSoon": "Coming soon",
-    "comingSoonHint": "Store links will appear here as soon as GarIQ is published."
+    "waitlistCopy": "GarIQ is in soft launch. Request access and we'll send you the install link for your device.",
+    "waitlistCta": "Request access",
+    "waitlistHint": "Tell us your platform (iOS or Android) in the email — no fake store badges, no dead ends.",
+    "brandLine": "Snap it. Scan it. Ask GarIQ.",
+    "microTrust": "Free to start · AI never saves without you · IT / DE / EN"
   },
   "faq": {
     "label": "FAQ",
@@ -479,16 +492,28 @@
         "a": "Fuel, charging, workshop, taxes, inspections, general expenses, diary notes, and trips — all tied to a vehicle. Insurance payment events can be logged; current insurance policies and purchase contracts live in the document vault (not via Insert → Insurance for the policy itself)."
       },
       {
+        "q": "What's included in the Free plan?",
+        "a": "1 owned garage, 1 vehicle, 10 AI credits/month after the first vehicle. OCR for fuel and charge; chat for notes, fuel and charge. Document AI off (except registration scan). No Smart Scan, Smart Insert, or sharing. Manual Form always available. Ask within credits."
+      },
+      {
         "q": "Does AI save automatically?",
-        "a": "No. AI proposes a draft from OCR, Smart Scan, or chat; you edit and confirm on the draft screen before anything is stored."
+        "a": "No. AI proposes a draft from OCR, Smart Scan, Smart Insert, or chat; you edit and confirm on the draft screen before anything is stored."
       },
       {
         "q": "What is Smart Scan?",
-        "a": "A Home hub action: take a photo or pick a PDF without choosing the event type first. OCR infers the type among document-like events, then you review the same draft and confirm."
+        "a": "A Home hub action: take a photo or pick a PDF without choosing the event type first — available from the Basic plan. OCR infers the type among document-like events, then you review the same draft and confirm. On Free, log with the form or typed OCR/chat for fuel and charge."
+      },
+      {
+        "q": "What is Smart Insert?",
+        "a": "The chat twin of Smart Scan (Basic+): describe what happened without picking the event type first — GarIQ infers it and prepares the same review draft you confirm."
+      },
+      {
+        "q": "Is there a free trial for Basic?",
+        "a": "Basic can include a free trial (target ~30 days) as a store intro offer on iOS and Android — check the current offer in the app before you subscribe. The website does not run the trial or the checkout."
       },
       {
         "q": "What are the two Ask modes?",
-        "a": "Logbook Ask answers questions over events, costs, and aggregates. Documents Ask answers over the vehicle vault and can cite document title and page. Both use the same monthly AI credit pool."
+        "a": "Logbook Ask answers questions over events, costs, and aggregates. Documents Ask answers over the vehicle vault and can cite document title and page. Both use the same monthly AI credit pool. Ask does not search the web — only your events and files."
       },
       {
         "q": "What happens when AI credits run out?",
@@ -497,6 +522,10 @@
       {
         "q": "Can I use multiple garages?",
         "a": "Free and Basic include 1 owned garage. Advanced can own up to 3. On Basic and Advanced you can invite co-owners, admins, or loggers (no Viewer role in v1); Free has no sharing."
+      },
+      {
+        "q": "What happens to my data if I downgrade or cancel?",
+        "a": "Nothing is deleted. Resources over your new plan's limits are marked frozen — visible with an upgrade path — until you upgrade or remove them yourself."
       },
       {
         "q": "Insurance policy vs insurance payment?",
@@ -517,19 +546,16 @@
       {
         "q": "Can I subscribe on this website?",
         "a": "No. Basic and Advanced are purchased in the GarIQ app via the App Store or Google Play (RevenueCat). This marketing site does not process payments or act as checkout."
-      },
-      {
-        "q": "How do Free plan limits work?",
-        "a": "1 owned garage, 1 vehicle, 10 AI credits/month after the first vehicle. OCR is limited to fuel and charge; chat insert to notes, fuel, and charge. Document AI for vault categories other than registration is off. Registration scan before the first vehicle does not use monthly credits."
       }
     ]
   },
   "finalCta": {
-    "badge": "Ready when you are",
-    "title": "Stop losing receipts. Start a logbook you'll actually trust.",
-    "copy": "Download GarIQ, add your vehicle, and log your next tank of fuel or service visit — with AI help and human confirmation.",
+    "badge": "Snap it. Scan it. Ask GarIQ.",
+    "title": "Ready when you are.",
+    "copy": "Start free on your first vehicle. AI drafts — you confirm every save.",
+    "microTrust": "IT / DE / EN · Checkout only in the app · No AI autosave",
     "ctaPrimary": "Download GarIQ",
-    "ctaSecondary": "View plans & AI"
+    "ctaSecondary": "View plans"
   },
   "footer": {
     "copyright": "© {year} GarIQ. All rights reserved.",
@@ -724,8 +750,8 @@
   },
   "whyGarIq": {
     "label": "Why GarIQ",
-    "title": "An expense app gives you numbers. GarIQ gives you Scan, Ask, and control.",
-    "copy": "Heart of the product: scan receipts and documents, then ask your own history — with AI that never writes without your confirmation.",
+    "title": "Much more than an expense tracker — the brain of your garage.",
+    "copy": "Expense apps stop at what you paid. GarIQ connects spend, work memory (when / km), documents, and Ask — with AI that never writes without you.",
     "points": [
       {
         "title": "You confirm every save",
@@ -756,7 +782,7 @@
       },
       {
         "title": "Capture your way",
-        "copy": "Pick the event type, then form, photo, PDF, or chat — or use Smart Scan without picking a type. AI prepares a draft; you confirm.",
+        "copy": "Pick the event type, then form, photo, PDF, or chat — or use Smart Scan / Smart Insert (Basic+) without picking a type. AI prepares a draft; you confirm.",
         "alt": "GarIQ screen: fuel receipt turned into an editable draft with Confirm."
       },
       {
@@ -782,7 +808,8 @@
         "title": "Four insert methods — plus Smart Scan",
         "bullets": [
           "Form, Photo, PDF, or conversational Chat for a locked event type",
-          "Smart Scan: photo or PDF without picking the type first — OCR infers it, then the same draft",
+          "Smart Scan (Basic+): photo or PDF without picking the type first — OCR infers it, then the same draft",
+          "Smart Insert (Basic+): describe what happened in chat without picking the type first — same review draft",
           "OCR turns receipts and invoices into an editable draft with confidence hints",
           "You always review and tap Save before anything is stored — AI never autosaves",
           "Manual Form stays available when AI credits run out",
@@ -867,6 +894,131 @@
       {
         "title": "EV & trips",
         "copy": "Charge events, trip routes with odometer, and Ask answers when you need a quick number."
+      }
+    ]
+  },
+  "solutionStrip": {
+    "label": "The idea",
+    "title": "Scan. Confirm. Ask.",
+    "copy": "Add a vehicle, capture in seconds, confirm every save — then ask your history.",
+    "verbs": [
+      {
+        "kicker": "Scan",
+        "title": "Capture in seconds",
+        "copy": "Photo, PDF, Smart Log, or Smart Scan — AI prepares a draft from what you capture."
+      },
+      {
+        "kicker": "Confirm",
+        "title": "You stay in control",
+        "copy": "Review every field. Nothing is saved until you tap Save — no AI autosave."
+      },
+      {
+        "kicker": "Ask",
+        "title": "Query your own history",
+        "copy": "Ask costs, km, and service on the timeline — or ask your documents for coverage and manuals."
+      }
+    ],
+    "receipt": {
+      "title": "Receipt scan",
+      "merchant": "Fuel stop",
+      "fuel": "Volume",
+      "total": "Total",
+      "scanning": "Scanning…"
+    },
+    "draft": {
+      "title": "Confirm draft",
+      "badge": "Review",
+      "type": "Type",
+      "amount": "Amount",
+      "liters": "Liters",
+      "odometer": "Odometer",
+      "confirm": "Confirm & save"
+    },
+    "chat": {
+      "title": "Ask your logbook",
+      "badge": "Ask",
+      "user": "How many liters did I put in on the last fill-up?",
+      "assistant": "45,20 L of diesel — total CHF 84,50 at 128.450 km.",
+      "typing": "Typing…"
+    }
+  },
+  "exclusive": {
+    "label": "Only with GarIQ",
+    "title": "Three things most vehicle apps miss.",
+    "copy": "Speed without losing control — capture, confirm, and ask on your own vehicle history.",
+    "items": [
+      {
+        "title": "Confirm before every save",
+        "copy": "AI never writes your history alone. Every draft waits for your tap on Save."
+      },
+      {
+        "title": "Dual Ask: logbook + documents",
+        "copy": "One assistant for spend and km — and for policies and manuals, with citations."
+      },
+      {
+        "title": "Shared garage with real roles",
+        "copy": "Invite co-owners, admins, or loggers. One timeline, visible who logged what."
+      }
+    ]
+  },
+  "imagine": {
+    "label": "Imagine…",
+    "title": "Everyday moments GarIQ was built for.",
+    "items": [
+      {
+        "title": "…at the pump in the rain.",
+        "copy": "You don't want to type. Snap the receipt, check the draft, save — and drive off knowing it's done."
+      },
+      {
+        "title": "…leaving the workshop.",
+        "copy": "Dictate a sentence with the numbers in your head. Months later, ask when that service was and at which km."
+      },
+      {
+        "title": "…before a long trip.",
+        "copy": "Ask \"When was my last oil check?\" and see the date and the km — peace of mind from your logbook, not your memory."
+      },
+      {
+        "title": "…needing a policy detail.",
+        "copy": "It's in the vault. Ask the document instead of digging through email."
+      },
+      {
+        "title": "…sharing the keys.",
+        "copy": "You and your partner drive the same vehicle. One garage, one timeline — fewer \"I thought you did it.\""
+      }
+    ]
+  },
+  "comparison": {
+    "label": "Compared to what you use today",
+    "title": "No invented competitors — just the categories people actually try first.",
+    "copy": "GarIQ isn't a feature more than a spreadsheet. It's a different category: capture, confirm, and ask — on your own vehicle history.",
+    "colApproach": "Approach",
+    "colBreaks": "What usually breaks",
+    "colWhy": "Why GarIQ",
+    "rows": [
+      {
+        "approach": "Camera roll & folders",
+        "breaks": "Unsearchable, no totals, no shared truth",
+        "why": "Structured events, Ask, and a shared garage"
+      },
+      {
+        "approach": "Spreadsheets",
+        "breaks": "Abandoned after a few weeks; painful to update at the pump",
+        "why": "Seconds to capture, review, and ask later"
+      },
+      {
+        "approach": "Family chat threads",
+        "breaks": "Noise, not a system of record",
+        "why": "One garage, real roles, visible who logged what"
+      },
+      {
+        "approach": "Fuel-only apps",
+        "breaks": "Ignore EV charging, tax, inspections, and documents",
+        "why": "The full ownership story plus a document vault"
+      },
+      {
+        "approach": "Generic AI chatbots",
+        "breaks": "Don't know your garage; can invent facts",
+        "why": "Answers grounded in your own events and files"
       }
     ]
   }
