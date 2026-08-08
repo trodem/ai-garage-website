@@ -18,6 +18,12 @@ export default async function Footer() {
           <a href="#" className="hover:text-slate-900 dark:hover:text-white">
             {t("contact")}
           </a>
+          <a
+            href="https://logo.dev"
+            className="hover:text-slate-900 dark:hover:text-white"
+          >
+            {t("logoAttribution")}
+          </a>
         </div>
       </div>
     </footer>

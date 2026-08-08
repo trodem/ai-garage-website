@@ -561,7 +561,8 @@
     "copyright": "© {year} GarIQ. All rights reserved.",
     "privacy": "Privacy",
     "terms": "Terms",
-    "contact": "Contact"
+    "contact": "Contact",
+    "logoAttribution": "Logos provided by Logo.dev"
   },
   "welcome": {
     "metaTitle": "Email confirmed — GarIQ",
