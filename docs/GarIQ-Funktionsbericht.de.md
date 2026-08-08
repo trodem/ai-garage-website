@@ -232,7 +232,7 @@ Ein **Dokumententresor pro Fahrzeug** für Referenzdateien.
     gesetzt.
   - **Kaufvertrag (ADR-052):** gleicher Hub; Speichern erfordert bestätigtes Kaufdatum →
     `vehicle_purchase_contracts`.
-- **Limits:** max. 5 Dokumente/Fahrzeug, 50 MB/Datei; nur PDF und Bilder.
+- **Limits:** max. 4 aktive Dokumente/Fahrzeug, 100 MB/Datei; nur PDF und Bilder.
 
 ---
 
