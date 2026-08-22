@@ -2473,17 +2473,87 @@ summary:focus-visible {
   font-size: calc(var(--phone-width) * 0.02);
   color: var(--pm-text);
   line-height: 1;
+  opacity: 0;
+  animation: none;
+}
+
+.pm-chart.is-inview .pm-chart-value:not(.pm-chart-value--empty) {
+  animation: pmBarValueIn 0.55s ease-out both;
+  animation-delay: calc(var(--bar-i, 0) * 75ms + 0.35s);
 }
 
 .pm-chart-value--empty {
   visibility: hidden;
+  animation: none;
 }
 
 .pm-chart-bar {
-  width: 70%;
-  border-radius: 0.15rem 0.15rem 0 0;
-  background: var(--pm-cyan);
+  --pm-bar-glow: var(--pm-cyan);
+  width: 72%;
+  border-radius: 0.22rem 0.22rem 0.08rem 0.08rem;
+  background: linear-gradient(180deg, #5ee1ff 0%, var(--pm-cyan) 100%);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--pm-bar-glow) 45%, transparent);
   min-height: 3px;
+  transform-origin: center bottom;
+  transform: scaleY(0);
+  opacity: 0.25;
+  animation: none;
+}
+
+.pm-chart.is-inview .pm-chart-bar:not(.is-empty) {
+  animation:
+    pmBarGrow 0.85s cubic-bezier(0.22, 1.2, 0.36, 1) both,
+    pmBarGlow 2.4s ease-in-out infinite;
+  animation-delay: calc(var(--bar-i, 0) * 75ms), calc(0.9s + var(--bar-i, 0) * 80ms);
+}
+
+.pm-chart-bar.is-empty {
+  width: 55%;
+  opacity: 0.28;
+  box-shadow: none;
+  background: #2a3348;
+  transform: none;
+  animation: none;
+}
+
+.pm-chart-col.is-active .pm-chart-bar:not(.is-empty) {
+  --pm-bar-glow: var(--pm-pink);
+  background: linear-gradient(180deg, #ff7eb3 0%, var(--pm-pink) 100%);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--pm-pink) 50%, transparent);
+}
+
+@keyframes pmBarGrow {
+  from {
+    transform: scaleY(0);
+    opacity: 0.25;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pmBarGlow {
+  0%,
+  100% {
+    filter: brightness(1);
+    box-shadow: 0 0 8px color-mix(in srgb, var(--pm-bar-glow) 40%, transparent);
+  }
+  50% {
+    filter: brightness(1.28);
+    box-shadow: 0 0 16px color-mix(in srgb, var(--pm-bar-glow) 75%, transparent);
+  }
+}
+
+@keyframes pmBarValueIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .pm-chart-label {
@@ -2735,6 +2805,7 @@ summary:focus-visible {
 
 .pm-cat-badge.pm-kind-insurance { background: var(--pm-insurance); }
 .pm-cat-badge.pm-kind-refuel { background: var(--pm-refuel); }
+.pm-cat-badge.pm-kind-maintenance { background: var(--pm-maintenance); }
 .pm-cat-badge.pm-kind-tax { background: var(--pm-tax); }
 .pm-cat-badge.pm-kind-expense { background: var(--pm-expense); }
 .pm-cat-badge.pm-kind-note { background: var(--pm-note); }
@@ -2748,17 +2819,37 @@ summary:focus-visible {
 
 .pm-cat-bar {
   display: block;
-  height: 3px;
-  margin-top: 0.25rem;
+  height: 5px;
+  margin-top: 0.28rem;
   border-radius: 99px;
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: none;
+}
+
+.pm-cats.is-inview .pm-cat-bar {
+  animation: pmCatGrow 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--cat-i, 0) * 80ms);
 }
 
 .pm-cat-bar.pm-kind-insurance { background: var(--pm-insurance); }
 .pm-cat-bar.pm-kind-refuel { background: var(--pm-refuel); }
+.pm-cat-bar.pm-kind-maintenance { background: var(--pm-maintenance); }
 .pm-cat-bar.pm-kind-tax { background: var(--pm-tax); }
 .pm-cat-bar.pm-kind-expense { background: var(--pm-expense); }
 .pm-cat-bar.pm-kind-note { background: var(--pm-note); }
 .pm-cat-bar.pm-kind-trip { background: var(--pm-trip); }
+
+@keyframes pmCatGrow {
+  from {
+    transform: scaleX(0);
+    opacity: 0.3;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
 
 .pm-kv {
   display: grid;
@@ -2959,7 +3050,13 @@ summary:focus-visible {
 .phone-mockup:hover .phone-mockup-floater,
 .phone-mockup:focus-within .phone-mockup-floater,
 .phone-mockup:hover .phone-mockup-scroll,
-.phone-mockup:focus-within .phone-mockup-scroll {
+.phone-mockup:focus-within .phone-mockup-scroll,
+.phone-mockup:hover .pm-chart-bar,
+.phone-mockup:focus-within .pm-chart-bar,
+.phone-mockup:hover .pm-chart-value,
+.phone-mockup:focus-within .pm-chart-value,
+.phone-mockup:hover .pm-cat-bar,
+.phone-mockup:focus-within .pm-cat-bar {
   animation-play-state: paused;
 }
 
@@ -3005,6 +3102,16 @@ summary:focus-visible {
 
   [data-spotlight]::before {
     display: none;
+  }
+
+  .pm-chart-bar:not(.is-empty),
+  .pm-cat-bar {
+    transform: none;
+    opacity: 1;
+  }
+
+  .pm-chart-value {
+    opacity: 1;
   }
 
   *,

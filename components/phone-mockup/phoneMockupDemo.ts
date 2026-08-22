@@ -28,48 +28,56 @@ export type MockupVehicleCard = {
 };
 
 export const MOCKUP_VEHICLE = {
-  make: "DUCATI",
-  model: "Multistrada 1260 S",
-  plate: "TG 21962",
-  odometer: 54372,
-  year: 2019,
-  vin: "ZDM12BWW000123456",
-  displacement: "1'262",
-  power: "116",
-  tank: "20",
-  logs: 21,
+  make: "HONDA",
+  model: "Africa Twin",
+  plate: "ZH 48291",
+  odometer: 28460,
+  year: 2022,
+  vin: "JH2SC75A0NK204817",
+  displacement: "1'084",
+  power: "75",
+  tank: "24.8",
+  logs: 28,
   docsReady: 3,
   docsMax: 4,
-  insurer: "Baloise Versicherung AG",
-  policyNumber: "40/6.972.037",
-  policyEnd: "2027-04-22",
-  premium: 1341.3,
-  manualName: "Manuale_Multistrada_1260",
-  manualUpdated: "2026-06-02",
-  manualPages: 357,
-  manualSize: "9.2 MB",
-  firstRegistration: "2019-03-14",
-  spendTotal: 2954.98,
-  spendEvents: 17,
-  spendVsLast: 84,
-  trackedKm: 2150,
-  costPerKm: 1.37,
-  tyresDays: 408,
-  tyresKm: 8372,
-  oilDays: 46,
-  oilKm: 10058,
+  insurer: "Alpenblick Versicherung AG",
+  policyNumber: "18/4.220.661",
+  policyEnd: "2027-06-30",
+  premium: 890,
+  manualName: "AfricaTwin_Owners_Manual",
+  manualUpdated: "2026-03-18",
+  manualPages: 412,
+  manualSize: "11.4 MB",
+  firstRegistration: "2022-04-08",
+  spendTotal: 4510.4,
+  spendEvents: 24,
+  spendVsLast: 31,
+  trackedKm: 4820,
+  costPerKm: 0.94,
+  tyresDays: 94,
+  tyresKm: 4120,
+  oilDays: 21,
+  oilKm: 1860,
 } as const;
 
 export const MOCKUP_FOCUS_YEAR = 2026;
-export const MOCKUP_SIDE_YEAR = 2025;
+export const MOCKUP_PREV_YEAR = 2025;
+export const MOCKUP_NEXT_YEAR = 2027;
+
+export const MOCKUP_FIXED_TOTAL = 572;
+export const MOCKUP_FIXED_EVENTS = 8;
+export const MOCKUP_FIXED_VS_LAST = 4;
+export const MOCKUP_INSURANCE_TOTAL = 3140;
+export const MOCKUP_INSURANCE_PAYMENTS = 2;
+export const MOCKUP_INSURANCE_AVG = 730;
 
 export const MOCKUP_HOME_ACTIVITIES: MockupActivity[] = [
-  { kind: "refuel", title: "Egnach", date: "2026-07-11", cost: 35.25, kmSince: 341, odometer: 54372 },
-  { kind: "maintenance", title: "Service, catena, freni, tes…", date: "2025-07-10", cost: 1235.95, odometer: 46000 },
-  { kind: "insurance", title: "Baloise Versicherung AG", date: "2026-05-08", cost: 1286.5 },
-  { kind: "expense", title: "highway vignette", date: "2026-05-05", cost: 40, odometer: 52222 },
-  { kind: "trip", title: "Arbon → Zurigo", date: "2026-06-19", kmSince: 1800, odometer: 55944 },
-  { kind: "tax", title: "Bollo / tassa di circolazione", date: "2026-04-10", cost: 43.75 },
+  { kind: "refuel", title: "Avia Chur", date: "2026-08-18", cost: 54.2, kmSince: 312, odometer: 28460 },
+  { kind: "expense", title: "Parkhaus Interlaken", date: "2026-08-02", cost: 18 },
+  { kind: "trip", title: "Luzern → Interlaken", date: "2026-07-28", kmSince: 186, odometer: 28148 },
+  { kind: "refuel", title: "Gotthard Nord", date: "2026-07-11", cost: 61.4, kmSince: 298, odometer: 27962 },
+  { kind: "insurance", title: "Alpenblick Versicherung AG", date: "2026-05-15", cost: 890 },
+  { kind: "maintenance", title: "Annual service, oil, pads", date: "2026-03-12", cost: 420, odometer: 24610 },
 ];
 
 export const MOCKUP_TIMELINE_MONTHS: {
@@ -78,43 +86,94 @@ export const MOCKUP_TIMELINE_MONTHS: {
 }[] = [
   {
     month: 0,
-    events: [{ kind: "insurance", title: "Baloise Versicherung AG", date: "2026-01-12", cost: 1276.9 }],
+    events: [
+      { kind: "insurance", title: "Alpenblick Versicherung AG", date: "2026-01-14", cost: 890 },
+      { kind: "refuel", title: "Shell Luzern", date: "2026-01-22", cost: 41, kmSince: 240, odometer: 23880 },
+    ],
+  },
+  {
+    month: 1,
+    events: [
+      { kind: "refuel", title: "Coop Pronto Emmen", date: "2026-02-09", cost: 48, kmSince: 255, odometer: 24135 },
+      { kind: "expense", title: "Parkhaus KKL", date: "2026-02-16", cost: 22 },
+    ],
+  },
+  {
+    month: 2,
+    events: [
+      { kind: "maintenance", title: "Annual service, oil, pads", date: "2026-03-12", cost: 420, odometer: 24610 },
+      { kind: "refuel", title: "Agrola Sursee", date: "2026-03-21", cost: 51, kmSince: 268, odometer: 24878 },
+    ],
   },
   {
     month: 3,
-    events: [{ kind: "tax", title: "Bollo / tassa di circolazione", date: "2026-04-10", cost: 43.75 }],
+    events: [
+      { kind: "tax", title: "Road tax 2026", date: "2026-04-08", cost: 186 },
+      { kind: "refuel", title: "Avia Sarnen", date: "2026-04-19", cost: 44, kmSince: 230, odometer: 25108 },
+    ],
   },
   {
     month: 4,
     events: [
-      { kind: "expense", title: "highway vignette", date: "2026-05-05", cost: 40, odometer: 52222 },
-      { kind: "insurance", title: "Baloise Versicherung AG", date: "2026-05-08", cost: 1286.5 },
-      { kind: "refuel", title: "Migrol, Salmsach", date: "2026-05-22", cost: 38.4, kmSince: 312, odometer: 52680 },
+      { kind: "insurance", title: "Alpenblick Versicherung AG", date: "2026-05-15", cost: 890 },
+      { kind: "expense", title: "Alpine vignette", date: "2026-05-16", cost: 40, odometer: 25440 },
+      { kind: "refuel", title: "Gotthard Nord", date: "2026-05-24", cost: 58, kmSince: 290, odometer: 25730 },
     ],
   },
   {
     month: 5,
     events: [
-      { kind: "refuel", title: "Milano", date: "2026-06-15", cost: 34.55, fxFrom: "€37.49", kmSince: 319, odometer: 52688 },
-      { kind: "refuel", title: "Varazze", date: "2026-06-16", cost: 41.2, fxFrom: "€44.80", kmSince: 286, odometer: 52974 },
-      { kind: "refuel", title: "Nice", date: "2026-06-17", cost: 39.1, fxFrom: "€42.50", kmSince: 274, odometer: 53248 },
-      { kind: "trip", title: "Valensole", date: "2026-06-18", kmSince: 412, odometer: 53660 },
-      { kind: "refuel", title: "Embrun", date: "2026-06-18", cost: 36.8, fxFrom: "€40.00", kmSince: 198, odometer: 53858 },
-      { kind: "refuel", title: "Chivasso", date: "2026-06-19", cost: 33.9, kmSince: 265, odometer: 54123 },
-      { kind: "trip", title: "Arbon → Zurigo", date: "2026-06-19", kmSince: 1800, odometer: 55944 },
-      { kind: "refuel", title: "San Bernardino", date: "2026-06-20", cost: 28.15, kmSince: 210, odometer: 54333 },
+      { kind: "refuel", title: "Como", date: "2026-06-12", cost: 44.15, fxFrom: "€48.00", kmSince: 274, odometer: 26004 },
+      { kind: "refuel", title: "Eni Bellinzona", date: "2026-06-13", cost: 52, kmSince: 188, odometer: 26192 },
+      { kind: "trip", title: "Airolo → Andermatt", date: "2026-06-14", kmSince: 42, odometer: 26234 },
+      { kind: "refuel", title: "Tankstelle Andermatt", date: "2026-06-14", cost: 47, kmSince: 156, odometer: 26390 },
+      { kind: "refuel", title: "Agip Lugano", date: "2026-06-20", cost: 71, kmSince: 310, odometer: 26700 },
     ],
   },
   {
     month: 6,
-    events: [{ kind: "refuel", title: "Egnach", date: "2026-07-11", cost: 35.25, kmSince: 341, odometer: 54372 }],
+    events: [
+      { kind: "refuel", title: "Gotthard Nord", date: "2026-07-11", cost: 61.4, kmSince: 298, odometer: 27962 },
+      { kind: "trip", title: "Luzern → Interlaken", date: "2026-07-28", kmSince: 186, odometer: 28148 },
+      { kind: "expense", title: "Parkhaus Interlaken", date: "2026-07-28", cost: 19 },
+    ],
+  },
+  {
+    month: 7,
+    events: [
+      { kind: "expense", title: "Parkhaus Interlaken", date: "2026-08-02", cost: 18 },
+      { kind: "refuel", title: "Avia Chur", date: "2026-08-18", cost: 54.2, kmSince: 312, odometer: 28460 },
+    ],
+  },
+  {
+    month: 8,
+    events: [{ kind: "refuel", title: "Shell Luzern", date: "2026-09-09", cost: 49, kmSince: 248, odometer: 28708 }],
+  },
+  {
+    month: 9,
+    events: [
+      { kind: "expense", title: "Winter kit", date: "2026-10-06", cost: 55, odometer: 28940 },
+      { kind: "tax", title: "Parking permit", date: "2026-10-07", cost: 55 },
+      { kind: "refuel", title: "Coop Pronto Emmen", date: "2026-10-22", cost: 52, kmSince: 261, odometer: 29201 },
+    ],
+  },
+  {
+    month: 10,
+    events: [{ kind: "refuel", title: "Avia Sarnen", date: "2026-11-14", cost: 46, kmSince: 238, odometer: 29439 }],
+  },
+  {
+    month: 11,
+    events: [
+      { kind: "refuel", title: "Shell Luzern", date: "2026-12-08", cost: 88, kmSince: 305, odometer: 29744 },
+      { kind: "expense", title: "Car wash & wax", date: "2026-12-09", cost: 25 },
+    ],
   },
 ];
 
-export const MOCKUP_SPEND_BARS = [1277, 0, 0, 43.8, 1282, 217, 35.3, 0, 0, 0, 0, 0];
-export const MOCKUP_FIXED_BARS = [0, 0, 0, 43.8, 0, 0, 0, 0, 0, 0, 0, 0];
-export const MOCKUP_INSURANCE_BARS = [1277, 0, 0, 0, 1267, 0, 0, 0, 0, 0, 0, 0];
-export const MOCKUP_HOME_SPEND_BARS = [1277, 12, 8, 43.8, 1282, 217, 35.3, 18, 22, 15, 11, 14];
+export const MOCKUP_SPEND_BARS = [640, 210, 420, 310, 780, 520, 340, 290, 230, 320, 190, 260];
+export const MOCKUP_FIXED_BARS = [28, 32, 30, 186, 28, 34, 28, 30, 28, 78, 28, 42];
+export const MOCKUP_INSURANCE_BARS = [720, 180, 150, 165, 740, 190, 140, 155, 170, 185, 145, 200];
+export const MOCKUP_HOME_SPEND_BARS = MOCKUP_SPEND_BARS;
 
 export const MOCKUP_SPEND_CATEGORIES: {
   kind: MockupEventKind;
@@ -124,27 +183,27 @@ export const MOCKUP_SPEND_CATEGORIES: {
   vsLast?: number;
   share: number;
 }[] = [
-  { kind: "insurance", total: 2563.4, events: 2, avg: 1281.7, share: 87 },
-  { kind: "refuel", total: 307.83, events: 11, avg: 27.98, share: 10 },
-  { kind: "tax", total: 43.75, events: 1, avg: 43.75, vsLast: 2, share: 2 },
-  { kind: "expense", total: 40, events: 1, avg: 40, vsLast: -88, share: 1 },
-  { kind: "note", total: 0, events: 1, avg: 0, share: 0 },
-  { kind: "trip", total: 0, events: 1, avg: 0, share: 0 },
+  { kind: "insurance", total: 1780, events: 2, avg: 890, vsLast: 6, share: 48 },
+  { kind: "refuel", total: 1124, events: 14, avg: 80.29, vsLast: 12, share: 26 },
+  { kind: "maintenance", total: 420, events: 1, avg: 420, vsLast: -8, share: 12 },
+  { kind: "tax", total: 241, events: 2, avg: 120.5, vsLast: 4, share: 8 },
+  { kind: "expense", total: 268, events: 5, avg: 53.6, vsLast: 18, share: 7 },
+  { kind: "trip", total: 96, events: 2, avg: 48, share: 5 },
 ];
 
 export const MOCKUP_FLEET: MockupVehicleCard[] = [
-  { id: "vespa", skin: "vespa", make: "PIAGGIO", model: "Vespa GTS 300 HPE", plate: "TG 31099", odometer: 11202 },
-  { id: "sf", skin: "streetfighter", make: "DUCATI", model: "Streetfighter 848", plate: "TG 21962", odometer: 24285 },
-  { id: "fiat", skin: "fiat", make: "FIAT", model: "FIAT 500", plate: "B-659KE", odometer: 138025 },
-  { id: "primavera", skin: "primavera", make: "PIAGGIO", model: "V. Primavera 125", plate: "TG 29275", odometer: 4557 },
-  { id: "santafe", skin: "santafe", make: "HYUNDAI", model: "Santa Fe 2.2 CRDI", plate: "TG 108800", odometer: 151030 },
+  { id: "pcx", skin: "vespa", make: "HONDA", model: "PCX 125", plate: "BE 11034", odometer: 6840 },
+  { id: "rs", skin: "streetfighter", make: "APRILIA", model: "RS 660", plate: "LU 77320", odometer: 15420 },
+  { id: "captur", skin: "fiat", make: "RENAULT", model: "Captur", plate: "VS 55108", odometer: 41200 },
+  { id: "nmax", skin: "primavera", make: "YAMAHA", model: "NMAX 125", plate: "TI 22917", odometer: 3910 },
+  { id: "xc60", skin: "santafe", make: "VOLVO", model: "XC60", plate: "GR 66401", odometer: 62880 },
   {
-    id: "multi",
+    id: "africa",
     skin: "ducati",
-    make: "DUCATI",
-    model: "Multistrada 1260 S",
-    plate: "TG 21962",
-    odometer: 54372,
+    make: "HONDA",
+    model: "Africa Twin",
+    plate: "ZH 48291",
+    odometer: 28460,
     selected: true,
   },
 ];

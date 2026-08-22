@@ -28,16 +28,23 @@ import {
   IconWallet,
 } from "@tabler/icons-react";
 import { useFormatter, useTranslations } from "next-intl";
-import type { ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import type { PhoneMockupTabId } from "@/components/phone-mockup/PhoneMockupChrome";
 import {
   MOCKUP_FIXED_BARS,
+  MOCKUP_FIXED_EVENTS,
+  MOCKUP_FIXED_TOTAL,
+  MOCKUP_FIXED_VS_LAST,
   MOCKUP_FLEET,
   MOCKUP_FOCUS_YEAR,
   MOCKUP_HOME_ACTIVITIES,
   MOCKUP_HOME_SPEND_BARS,
+  MOCKUP_INSURANCE_AVG,
   MOCKUP_INSURANCE_BARS,
-  MOCKUP_SIDE_YEAR,
+  MOCKUP_INSURANCE_PAYMENTS,
+  MOCKUP_INSURANCE_TOTAL,
+  MOCKUP_NEXT_YEAR,
+  MOCKUP_PREV_YEAR,
   MOCKUP_SPEND_BARS,
   MOCKUP_SPEND_CATEGORIES,
   MOCKUP_TIMELINE_MONTHS,
@@ -101,6 +108,62 @@ function activityMeta(
   return when;
 }
 
+function prefersReducedMotion(): boolean {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function isVisibleInPhone(el: HTMLElement, phone: DOMRect): boolean {
+  const box = el.getBoundingClientRect();
+  const visible = Math.min(box.bottom, phone.bottom) - Math.max(box.top, phone.top);
+  if (visible <= 0) return false;
+  const need = Math.min(box.height * 0.35, phone.height * 0.16);
+  return visible >= Math.max(need, 16);
+}
+
+function useWhenVisibleInPhone() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (prefersReducedMotion()) {
+      setActive(true);
+      return;
+    }
+    const phone = el.closest(".phone-mockup-body");
+    if (!(phone instanceof HTMLElement)) return;
+
+    let frame = 0;
+    const tick = () => {
+      if (isVisibleInPhone(el, phone.getBoundingClientRect())) {
+        setActive(true);
+        return;
+      }
+      frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, []);
+
+  return { ref, active };
+}
+
+function InPhoneView({
+  className,
+  children,
+}: {
+  className: string;
+  children: ReactNode;
+}) {
+  const { ref, active } = useWhenVisibleInPhone();
+  return (
+    <div ref={ref} className={active ? `${className} is-inview` : className}>
+      {children}
+    </div>
+  );
+}
+
 function MonthChart({
   values,
   highlight,
@@ -111,17 +174,27 @@ function MonthChart({
   labels: string[];
 }) {
   const peak = Math.max(...values, 1);
+  const { ref, active } = useWhenVisibleInPhone();
   return (
-    <div className="pm-chart">
+    <div ref={ref} className={active ? "pm-chart is-inview" : "pm-chart"}>
       {values.map((value, index) => (
         <div
           key={labels[index]}
           className={index === highlight ? "pm-chart-col is-active" : "pm-chart-col"}
         >
-          {value > 0 ? <span className="pm-chart-value">{Math.round(value)}</span> : <span className="pm-chart-value pm-chart-value--empty" />}
+          {value > 0 ? (
+            <span className="pm-chart-value" style={{ ["--bar-i" as string]: index }}>
+              {Math.round(value)}
+            </span>
+          ) : (
+            <span className="pm-chart-value pm-chart-value--empty" />
+          )}
           <span
-            className="pm-chart-bar"
-            style={{ height: `${Math.max(4, (value / peak) * 100)}%` }}
+            className={value <= 0 ? "pm-chart-bar is-empty" : "pm-chart-bar"}
+            style={{
+              height: value <= 0 ? "4px" : `${Math.max(16, Math.sqrt(value / peak) * 100)}%`,
+              ["--bar-i" as string]: index,
+            }}
           />
           <span className="pm-chart-label">{labels[index]}</span>
         </div>
@@ -133,9 +206,9 @@ function MonthChart({
 function YearPager() {
   return (
     <div className="pm-year-pager">
-      <span>{MOCKUP_SIDE_YEAR}</span>
+      <span>{MOCKUP_PREV_YEAR}</span>
       <strong>{MOCKUP_FOCUS_YEAR}</strong>
-      <span>{MOCKUP_SIDE_YEAR}</span>
+      <span>{MOCKUP_NEXT_YEAR}</span>
     </div>
   );
 }
@@ -441,8 +514,9 @@ function StatsScreen({
           <span><IconGauge className="pm-mini-icon" />{km(MOCKUP_VEHICLE.trackedKm)}</span>
           <span><IconWallet className="pm-mini-icon" />{t("perKm", { amount: chf(MOCKUP_VEHICLE.costPerKm) })}</span>
         </div>
-        {MOCKUP_SPEND_CATEGORIES.map((row) => (
-          <div key={row.kind} className="pm-cat">
+        <InPhoneView className="pm-cats">
+        {MOCKUP_SPEND_CATEGORIES.map((row, index) => (
+          <div key={row.kind} className="pm-cat" style={{ ["--cat-i" as string]: index }}>
             <div className="pm-cat-row">
               <span className={`pm-cat-badge pm-kind-${row.kind}`}>{typeLabel(t, row.kind)}</span>
               <strong>
@@ -457,9 +531,10 @@ function StatsScreen({
                 ? t("rowMetaAvg", { countLabel: t("eventCount", { count: row.events }), avg: chf(row.avg) })
                 : t("eventCount", { count: row.events })}
             </p>
-            <span className={`pm-cat-bar pm-kind-${row.kind}`} style={{ width: `${Math.max(4, row.share)}%` }} />
+            <span className={`pm-cat-bar pm-kind-${row.kind}`} style={{ width: `${Math.max(8, row.share)}%` }} />
           </div>
         ))}
+        </InPhoneView>
         <p className="pm-chart-caption">{t("monthlyTrend")}</p>
         <MonthChart values={[...MOCKUP_SPEND_BARS]} highlight={7} labels={monthLabels} />
       </div>
@@ -467,26 +542,26 @@ function StatsScreen({
       <p className="pm-section">{t("fixedCosts")}</p>
       <div className="pm-spend-card">
         <div className="pm-spend-head">
-          <strong>{chf(43.75)}</strong>
-          <span>{t("vsLastYear", { percent: 2 })}</span>
+          <strong>{chf(MOCKUP_FIXED_TOTAL)}</strong>
+          <span>{t("vsLastYear", { percent: MOCKUP_FIXED_VS_LAST })}</span>
         </div>
-        <p className="pm-cat-meta">{t("eventsInPeriod", { count: 1 })}</p>
+        <p className="pm-cat-meta">{t("eventsInPeriod", { count: MOCKUP_FIXED_EVENTS })}</p>
         <p className="pm-chart-caption">{t("fixedTrend")}</p>
         <MonthChart values={[...MOCKUP_FIXED_BARS]} labels={monthLabels} />
       </div>
 
       <p className="pm-section">{t("premiumSection")}</p>
       <div className="pm-spend-card">
-        <strong className="pm-block-total">{chf(2563.4)}</strong>
+        <strong className="pm-block-total">{chf(MOCKUP_INSURANCE_TOTAL)}</strong>
         <div className="pm-kv">
-          <span>{t("paymentsTotal")}</span><strong>{chf(2563.4)}</strong>
-          <span>{t("payments")}</span><strong>{t("eventCount", { count: 2 })}</strong>
-          <span>{t("avgPayment")}</span><strong>{chf(1281.7)}</strong>
+          <span>{t("paymentsTotal")}</span><strong>{chf(MOCKUP_INSURANCE_TOTAL)}</strong>
+          <span>{t("payments")}</span><strong>{t("eventCount", { count: MOCKUP_INSURANCE_PAYMENTS })}</strong>
+          <span>{t("avgPayment")}</span><strong>{chf(MOCKUP_INSURANCE_AVG)}</strong>
         </div>
         <p className="pm-chart-caption">{t("byInsurer")}</p>
         <p className="pm-insurer-row">
           <strong>{MOCKUP_VEHICLE.insurer}</strong>
-          <em>{chf(2563.4)} · {t("eventCount", { count: 2 })}</em>
+          <em>{chf(MOCKUP_INSURANCE_TOTAL)} · {t("eventCount", { count: MOCKUP_INSURANCE_PAYMENTS })}</em>
         </p>
         <p className="pm-chart-caption">{t("insuranceTrend")}</p>
         <MonthChart values={[...MOCKUP_INSURANCE_BARS]} labels={monthLabels} />
