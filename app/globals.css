@@ -2258,6 +2258,10 @@ summary:focus-visible {
   animation: none;
 }
 
+.pm-home-swipe {
+  animation: pmHomeFade 0.65s ease both;
+}
+
 .phone-mockup-scroll.is-chat-scrolling {
   animation: phoneChatScroll 5.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) 1 forwards;
 }
@@ -3625,6 +3629,15 @@ summary:focus-visible {
   }
 }
 
+@keyframes pmHomeFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes phoneAutoScroll {
   0%,
   10% {
@@ -3732,7 +3745,8 @@ summary:focus-visible {
   .gradient-border::before,
   .scroll-cue::after,
   .phone-mockup-floater,
-  .phone-mockup-scroll {
+  .phone-mockup-scroll,
+  .pm-home-swipe {
     animation: none !important;
   }
 

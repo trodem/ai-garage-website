@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useCallback, useEffect, useRef, useState, type AnimationEvent, type TransitionEvent } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, type AnimationEvent, type TransitionEvent } from "react";
 import {
   isPhoneMockupChatScene,
   PhoneMockupFooter,
@@ -48,7 +48,10 @@ export default function PhoneMockup({
   const dwellTimerRef = useRef<number>(0);
   const fadeKindRef = useRef<"tab" | "to-chat" | "to-next">("tab");
   const hubTapLockRef = useRef(false);
+  const skipHomeSwipeRef = useRef(true);
   const [hubReplayToken, setHubReplayToken] = useState(0);
+  const [homeFade, setHomeFade] = useState(false);
+  const [homeSwipeNonce, setHomeSwipeNonce] = useState(0);
   const dest = scenes[sceneIndex] ?? scenes[0];
   const showingChat = tour === "chat" && !fromHome;
   const scene: PhoneMockupSceneId = showingChat ? dest : tour === "chat" ? "home" : dest;
@@ -87,6 +90,22 @@ export default function PhoneMockup({
   useEffect(() => {
     onSceneChange?.(tour === "chat" ? dest : scene);
   }, [tour, dest, scene, onSceneChange]);
+
+  useLayoutEffect(() => {
+    if (tour !== "chat") {
+      skipHomeSwipeRef.current = true;
+      setHomeFade(false);
+      return;
+    }
+    if (!fromHome) return;
+    if (skipHomeSwipeRef.current) {
+      skipHomeSwipeRef.current = false;
+      setHomeFade(false);
+      return;
+    }
+    setHomeFade(true);
+    setHomeSwipeNonce((nonce) => nonce + 1);
+  }, [tour, dest, fromHome, hubReplayToken]);
 
   const beginFade = useCallback((kind: "tab" | "to-chat" | "to-next") => {
     fadeKindRef.current = kind;
@@ -191,6 +210,10 @@ export default function PhoneMockup({
                 onTransitionEnd={onFadeEnd}
               >
                 <div
+                  key={homeSwipeNonce}
+                  className={fromHome && homeFade ? "pm-home-swipe" : undefined}
+                >
+                <div
                   ref={scrollRef}
                   key={
                     tour === "chat"
@@ -215,6 +238,7 @@ export default function PhoneMockup({
                     }
                     onChatTourComplete={onChatTourComplete}
                   />
+                </div>
                 </div>
               </div>
               {isPhoneMockupChatScene(scene) ? null : (
