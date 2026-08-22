@@ -47,7 +47,8 @@
       "Transporter",
       "Lkw",
       "Wohnmobile",
-      "Anhänger"
+      "Anhänger",
+      "Fahrräder & E-Bikes"
     ]
   },
   "notJustTracker": {
@@ -417,7 +418,7 @@
     "label": "Tarife & KI",
     "title": "Drei Kontotarife. Eine App — wächst mit deiner Garage.",
     "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe und monatliche KI-Credits). Listenpreise in CHF (Primärmarkt: Schweiz); App Store und Google Play in DE/AT belasten die lokale Währung. Abo und Tarifverwaltung in der GarIQ-App — diese Website verarbeitet keine Zahlungen. Beim Free-Tarif beginnt die monatliche KI-Credit-Periode mit deinem ersten Fahrzeug.",
-    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert, Ask (Fahrtenbuch und Dokumente) und verwandte abgerechnete KI-Aktionen ab. Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Document-AI für Vault-Kategorien außer Schein ist aus. Das manuelle Formular bleibt immer verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern. Der abgebuchte Abopreis kommt vom Store deines Landes — nicht von dieser Seite.",
+    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert, Ask (Fahrtenbuch und Dokumente) und verwandte abgerechnete KI-Aktionen ab. Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Document-AI für Vault-Kategorien außer Schein ist aus. Das manuelle Formular bleibt immer verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern. Der abgebuchte Abopreis kommt vom Store deines Landes — nicht von dieser Seite. Auf Basic und Advanced kannst du zusätzlich KI-Credit-Pakete in der App kaufen; sie verfallen nie und kommen zum Monats-Pool dazu.",
     "popularBadge": "Am flexibelsten",
     "cta": "GarIQ laden",
     "tiers": [
@@ -445,7 +446,7 @@
         "featured": false,
         "highlights": [
           "Alles aus Free",
-          "Bis zu 5 Fahrzeuge",
+          "Bis zu 5 aktive Fahrzeuge",
           "Freigabe für bis zu 5 Mitglieder",
           "100 KI-Credits / Monat",
           "Foto, PDF & Chat für alle Ereignistypen",
@@ -462,7 +463,7 @@
         "highlights": [
           "Alles aus Basic",
           "3 eigene Garagen",
-          "Bis zu 10 Fahrzeuge pro Garage",
+          "Bis zu 10 aktive Fahrzeuge pro Garage",
           "Freigabe für bis zu 10 Mitglieder",
           "500 KI-Credits / Monat",
           "Timeline-Jahrexport (CSV & PDF)",
@@ -517,7 +518,7 @@
       },
       {
         "q": "Was passiert bei leeren KI-Credits?",
-        "a": "KI-Methoden (OCR, Chat-Insert, Ask) sind deaktiviert bis Credits zurückgesetzt werden oder du upgradest. Das manuelle Formular bleibt immer verfügbar."
+        "a": "KI-Methoden (OCR, Chat-Insert, Ask) sind deaktiviert bis Credits zurückgesetzt werden oder du upgradest. Auf Basic und Advanced kann der Rechnungsinhaber zusätzlich ein Credit-Paket in der App kaufen — Top-Up Mini 20, Standard 50 oder Pro 150 Credits (CHF 2.90 / 5.90 / 14.90) — sie verfallen nie und kommen zum Monats-Pool dazu. Beim Free upgradest du zuerst. Das manuelle Formular bleibt immer verfügbar."
       },
       {
         "q": "Mehrere Garagen?",
@@ -529,7 +530,7 @@
       },
       {
         "q": "Police vs. Versicherungszahlung?",
-        "a": "Aktuelle Police-PDFs und Deckungsdaten liegen unter Dokumente / Police-Hub. Eine Versicherungszahlung ist ein separates Fahrtenbuch-Event. Nutze Insert → Versicherung nicht, um eine Police anzulegen."
+        "a": "Aktuelle Police-PDFs und Deckungsdaten liegen in den Fahrzeug-Details → Police-Hub. Eine Versicherungszahlung ist ein separates Fahrtenbuch-Event. Nutze Insert → Versicherung nicht, um eine Police anzulegen."
       },
       {
         "q": "Welche Sprachen unterstützt GarIQ?",
@@ -542,6 +543,10 @@
       {
         "q": "Kann ich meine Daten exportieren?",
         "a": "Mit Advanced exportierst du ein Timeline-Kalenderjahr als CSV oder gebrandetes PDF (Steuerelemente bei Free/Basic sichtbar aber gesperrt). Ein Voll-Konto-Export aus den Einstellungen ist in v1 noch nicht verfügbar."
+      },
+      {
+        "q": "Kann ich ein Fahrzeug beim Verkauf übergeben?",
+        "a": "Ja. Der Primary Owner der Garage kann das Fahrtenbuch eines Fahrzeugs an ein anderes GarIQ-Konto übertragen: Der Käufer erhält eine E-Mail-Einladung und akzeptiert in der App. Er braucht einen bezahlten Tarif und einen freien Fahrzeug-Slot. Kopiert wird nur ein Teil der Historie — Wartung, Prüfungen sowie Reifen- und Tuning-Ausgaben — nicht Kraftstoff, Versicherung, Steuern, Fahrten, Notizen oder Vault-Dokumente. Deine Kopie bleibt als schreibgeschütztes Verkaufsarchiv. Die Übertragung ist unwiderruflich und kann nicht auf dieser Website akzeptiert werden."
       },
       {
         "q": "Kann ich auf dieser Website abonnieren?",
@@ -825,7 +830,7 @@
           "Fahrtenbuch-Modus: Fragen in natürlicher Sprache zu Events, Kosten, Profil und Aggregaten",
           "Dokumente-Modus: Q&A über die Fahrzeugablage — Antworten zitieren Titel und Seite, wenn verfügbar",
           "Optionale Spracheingabe in den Composer — du sendest; kein Autosend",
-          "Derselbe monatliche KI-Credit-Pool; bei leeren Credits ist Ask gesperrt mit Upgrade-Pfad",
+          "Derselbe monatliche KI-Credit-Pool; bei leeren Credits ist Ask gesperrt mit Upgrade-Pfad — auf bezahlten Tarifen kannst du zusätzlich Credits in der App kaufen",
           "UI und Assistent: Italienisch, Deutsch oder Englisch"
         ]
       },
@@ -834,10 +839,10 @@
         "label": "Dokumente",
         "title": "Fahrzeug-Dokumentenablage",
         "bullets": [
-          "Geführte Slots: Schein, aktuelle Police, Kaufvertrag, Handbuch — plus weitere Dateien",
+          "Vier geführte Slots in den Fahrzeug-Details: Schein, aktuelle Police, Kaufvertrag, Handbuch — keine weiteren Uploads",
           "Die Police liegt im Vault-Hub — nicht über Insert → Versicherung (das ist für Zahlungs-Events)",
           "Schein scannen zum Vorausfüllen; Police und Kauf in bearbeitbare Hubs extrahieren",
-          "Ask zu diesem Dokument, wenn die Indexierung bereit ist",
+          "Ask Dokumente ist ungefiltert: Du fragst den ganzen Fahrzeug-Vault aus Home oder Ask ab — es gibt keinen Ask-Button pro Datei",
           "Free: Upload/Indexierung anderer Vault-Kategorien außer Schein ist aus; Basic und Advanced schalten Document-AI frei"
         ]
       },
@@ -869,8 +874,8 @@
         "title": "Free, Basic, Advanced — Kauf in der App",
         "bullets": [
           "Free: 1 Garage, 1 Fahrzeug, 10 KI-Credits/Monat nach dem ersten Fahrzeug",
-          "Basic: 1 Garage, 5 Fahrzeuge, Freigabe bis 5 Mitglieder, 100 Credits",
-          "Advanced: 3 Garagen, 10 Fahrzeuge, 10 Mitglieder, 500 Credits, Jahres-Export, OCR-Anhänge behalten",
+          "Basic: 1 Garage, 5 aktive Fahrzeuge, Freigabe bis 5 Mitglieder, 100 Credits",
+          "Advanced: 3 Garagen, 10 aktive Fahrzeuge, 10 Mitglieder, 500 Credits, Jahres-Export, OCR-Anhänge behalten",
           "Abo über App Store / Google Play — diese Website verarbeitet keine Zahlungen"
         ],
         "cta": {
@@ -906,7 +911,7 @@
       {
         "kicker": "Scan",
         "title": "In Sekunden erfassen",
-        "copy": "Foto, PDF, Smart Log oder Smart Scan — die KI erstellt einen Entwurf aus dem, was du erfasst."
+        "copy": "Foto, PDF, Smart Insert oder Smart Scan — die KI erstellt einen Entwurf aus dem, was du erfasst."
       },
       {
         "kicker": "Confirm",

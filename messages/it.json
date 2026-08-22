@@ -47,7 +47,8 @@
       "Furgoni",
       "Camion",
       "Camper",
-      "Rimorchi"
+      "Rimorchi",
+      "Bici & e-bike"
     ]
   },
   "notJustTracker": {
@@ -417,7 +418,7 @@
     "label": "Piani e IA",
     "title": "Tre piani account. Stessa app — cresce con il tuo garage.",
     "copy": "I limiti riflettono il prodotto (garage, veicoli, condivisione e crediti IA mensili). I prezzi in elenco sono in CHF (mercato primario: Svizzera); su App Store e Google Play in DE/AT paghi nella valuta locale. Abbonati e gestisci il piano nell'app GarIQ — questo sito non processa pagamenti. Sul Free, il periodo mensile di crediti IA inizia quando aggiungi il primo veicolo.",
-    "footnote": "I crediti IA mensili coprono OCR, insert chat, Ask (libretto e documenti) e le azioni IA fatturate. Sul Free, la scansione del libretto prima del primo veicolo non consuma i crediti mensili; document AI per categorie vault diverse dal libretto è off. Il Form manuale resta sempre disponibile se raggiungi il limite. Confermi sempre prima di salvare un evento. L'importo addebitato dall'abbonamento arriva dallo store del tuo Paese — non da questa pagina.",
+    "footnote": "I crediti IA mensili coprono OCR, insert chat, Ask (libretto e documenti) e le azioni IA fatturate. Sul Free, la scansione del libretto prima del primo veicolo non consuma i crediti mensili; document AI per categorie vault diverse dal libretto è off. Il Form manuale resta sempre disponibile se raggiungi il limite. Confermi sempre prima di salvare un evento. L'importo addebitato dall'abbonamento arriva dallo store del tuo Paese — non da questa pagina. Su Basic e Advanced puoi anche acquistare pacchetti di crediti IA nell'app; non scadono e si sommano al pool mensile.",
     "popularBadge": "Più flessibile",
     "cta": "Scarica GarIQ",
     "tiers": [
@@ -445,7 +446,7 @@
         "featured": false,
         "highlights": [
           "Tutto del Free",
-          "Fino a 5 veicoli",
+          "Fino a 5 veicoli attivi",
           "Condivisione fino a 5 membri",
           "100 crediti IA / mese",
           "Foto, PDF e chat per tutti i tipi di evento",
@@ -462,7 +463,7 @@
         "highlights": [
           "Tutto del Basic",
           "3 garage di proprietà",
-          "Fino a 10 veicoli per garage",
+          "Fino a 10 veicoli attivi per garage",
           "Condivisione fino a 10 membri",
           "500 crediti IA / mese",
           "Export timeline annuale (CSV e PDF)",
@@ -517,7 +518,7 @@
       },
       {
         "q": "Cosa succede a crediti IA esauriti?",
-        "a": "I metodi IA (OCR, chat insert, Ask) si disabilitano fino al reset crediti o all'upgrade. Il Form manuale resta sempre disponibile per continuare a registrare."
+        "a": "I metodi IA (OCR, chat insert, Ask) si disabilitano fino al reset crediti o all'upgrade. Su Basic e Advanced il titolare della fatturazione può anche acquistare un pacchetto crediti nell'app — Top-Up Mini 20, Standard 50 o Pro 150 crediti (CHF 2.90 / 5.90 / 14.90) — non scadono e si sommano al pool mensile. Sul Free si passa prima a un piano superiore. Il Form manuale resta sempre disponibile per continuare a registrare."
       },
       {
         "q": "Più garage?",
@@ -529,7 +530,7 @@
       },
       {
         "q": "Polizza vs pagamento assicurazione?",
-        "a": "PDF di polizza e date di copertura stanno sotto Documenti / hub Polizza. Registrare un pagamento assicurativo è un evento di libretto separato. Non usare Insert → Assicurazione per aggiungere la polizza."
+        "a": "PDF di polizza e date di copertura stanno nel Dettaglio veicolo → hub Polizza. Registrare un pagamento assicurativo è un evento di libretto separato. Non usare Insert → Assicurazione per aggiungere la polizza."
       },
       {
         "q": "Quali lingue supporta GarIQ?",
@@ -542,6 +543,10 @@
       {
         "q": "Posso esportare i miei dati?",
         "a": "Con Advanced esporti un anno di Timeline in CSV o PDF brandizzato (controlli visibili ma bloccati su Free/Basic). L'export completo account dalle Impostazioni non è ancora in v1."
+      },
+      {
+        "q": "Posso cedere un veicolo quando lo vendo?",
+        "a": "Sì. Il Primary Owner del garage può trasferire il libretto di un veicolo a un altro account GarIQ: l'acquirente riceve un invito via email e accetta nell'app. Servono un piano a pagamento e uno slot veicolo libero. Viene copiata solo una parte della storia — manutenzioni, revisioni e spese di gomme o tuning — non carburante, assicurazione, tasse, viaggi, note o documenti del vault. La tua copia resta come archivio di vendita in sola lettura. Il trasferimento è irreversibile e non si accetta da questo sito."
       },
       {
         "q": "Posso abbonarmi su questo sito?",
@@ -825,7 +830,7 @@
           "Modalità Libretto: domande in linguaggio naturale su eventi, costi, profilo e aggregati",
           "Modalità Documenti: Q&A sul vault veicolo — le risposte citano titolo e pagina quando disponibili",
           "Voce opzionale nel composer — invii tu; niente invio automatico",
-          "Stesso pool di crediti IA mensili; a credito esaurito Ask si disabilita con percorso upgrade",
+          "Stesso pool di crediti IA mensili; a credito esaurito Ask si disabilita con percorso upgrade — sui piani a pagamento puoi anche acquistare altri crediti nell'app",
           "UI e assistente: italiano, tedesco o inglese"
         ]
       },
@@ -834,10 +839,10 @@
         "label": "Documenti",
         "title": "Vault documenti del veicolo",
         "bullets": [
-          "Slot guidati: libretto, polizza corrente, contratto d'acquisto, manuale — più altri file",
+          "Quattro slot guidati nel Dettaglio veicolo: libretto, polizza corrente, contratto d'acquisto, manuale — nessun altro caricamento",
           "La polizza vive nel vault — non via Insert → Assicurazione (quel percorso è per i pagamenti)",
           "Scansione libretto per precompilare il veicolo; extract polizza e acquisto in hub modificabili",
-          "Ask su questo documento quando l'indicizzazione è pronta",
+          "Ask documenti non è filtrato: interroghi tutto il vault del veicolo da Home o Ask — non esiste un pulsante Ask per singolo file",
           "Free: upload/indicizzazione delle categorie vault diverse dal libretto è off; Basic e Advanced sbloccano document AI"
         ]
       },
@@ -869,8 +874,8 @@
         "title": "Free, Basic, Advanced — acquisto in-app",
         "bullets": [
           "Free: 1 garage, 1 veicolo, 10 crediti IA/mese dopo il primo veicolo",
-          "Basic: 1 garage, 5 veicoli, sharing fino a 5 membri, 100 crediti",
-          "Advanced: 3 garage, 10 veicoli, 10 membri, 500 crediti, export annuale, allegati OCR permanenti",
+          "Basic: 1 garage, 5 veicoli attivi, sharing fino a 5 membri, 100 crediti",
+          "Advanced: 3 garage, 10 veicoli attivi, 10 membri, 500 crediti, export annuale, allegati OCR permanenti",
           "Abbonati via App Store / Google Play — questo sito non processa pagamenti"
         ],
         "cta": {
@@ -906,7 +911,7 @@
       {
         "kicker": "Scan",
         "title": "Catturi in secondi",
-        "copy": "Foto, PDF, Smart Log o Smart Scan — l'IA prepara una bozza da ciò che catturi."
+        "copy": "Foto, PDF, Smart Insert o Smart Scan — l'IA prepara una bozza da ciò che catturi."
       },
       {
         "kicker": "Confirm",

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Icon as TablerIcon } from "@tabler/icons-react";
 import {
+  IconBike,
   IconCamper,
   IconCar,
   IconCaravan,
@@ -22,6 +23,7 @@ const VEHICLE_ICONS: TablerIcon[] = [
   IconTruck,
   IconCamper,
   IconCaravan,
+  IconBike,
 ];
 
 const INTERVAL_MS = 2400;

@@ -47,7 +47,8 @@
       "Vans",
       "Trucks",
       "Campers",
-      "Trailers"
+      "Trailers",
+      "Bicycles & e-bikes"
     ]
   },
   "notJustTracker": {
@@ -417,7 +418,7 @@
     "label": "Plans & AI",
     "title": "Three account tiers. Same app — scales with your garage.",
     "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly AI credits). List prices are shown in CHF (primary market: Switzerland); App Store and Google Play charge the local currency in DE/AT. Subscribe and manage your plan in the GarIQ app — this website does not process payments. On Free, your monthly AI credit period starts when you add your first vehicle.",
-    "footnote": "Monthly AI credits cover OCR, chat insert, Ask (logbook and documents), and related billed AI actions. On Free, scanning your registration before your first vehicle does not use monthly credits; document AI for vault categories other than registration is off. Manual Form insert always stays available if you reach the credit limit. You always confirm before an event is saved. Charged subscription amounts come from the store for your country — not from this page.",
+    "footnote": "Monthly AI credits cover OCR, chat insert, Ask (logbook and documents), and related billed AI actions. On Free, scanning your registration before your first vehicle does not use monthly credits; document AI for vault categories other than registration is off. Manual Form insert always stays available if you reach the credit limit. You always confirm before an event is saved. Charged subscription amounts come from the store for your country — not from this page. On Basic and Advanced you can also buy AI credit packs in the app; they never expire and stack on your monthly pool.",
     "popularBadge": "Most flexible",
     "cta": "Download GarIQ",
     "tiers": [
@@ -445,7 +446,7 @@
         "featured": false,
         "highlights": [
           "Everything in Free",
-          "Up to 5 vehicles",
+          "Up to 5 active vehicles",
           "Sharing for up to 5 members",
           "100 AI credits / month",
           "Photo, PDF & chat for all event types",
@@ -462,7 +463,7 @@
         "highlights": [
           "Everything in Basic",
           "3 owned garages",
-          "Up to 10 vehicles per garage",
+          "Up to 10 active vehicles per garage",
           "Sharing for up to 10 members",
           "500 AI credits / month",
           "Timeline year export (CSV & PDF)",
@@ -517,7 +518,7 @@
       },
       {
         "q": "What happens when AI credits run out?",
-        "a": "AI methods (OCR, chat insert, Ask) are disabled until credits reset or you upgrade. Manual Form insert always remains available so you can keep logging."
+        "a": "AI methods (OCR, chat insert, Ask) are disabled until credits reset or you upgrade. On Basic and Advanced the billing owner can also buy a credit pack in the app — Top-Up Mini 20, Standard 50, or Pro 150 credits (CHF 2.90 / 5.90 / 14.90) — never expiring and stacked on the monthly pool. On Free you upgrade first. Manual Form insert always remains available so you can keep logging."
       },
       {
         "q": "Can I use multiple garages?",
@@ -529,7 +530,7 @@
       },
       {
         "q": "Insurance policy vs insurance payment?",
-        "a": "Current policy PDFs and coverage dates live under Documents / Insurance policy hub. Logging an insurance payment is a separate logbook event. Do not use Insert → Insurance as the way to add a policy."
+        "a": "Current policy PDFs and coverage dates live on vehicle Details → Insurance policy hub. Logging an insurance payment is a separate logbook event. Do not use Insert → Insurance as the way to add a policy."
       },
       {
         "q": "What languages does GarIQ support?",
@@ -542,6 +543,10 @@
       {
         "q": "Can I export my data?",
         "a": "On Advanced, export a Timeline calendar year as CSV or branded PDF from the Timeline tab (controls are visible but locked on Free/Basic). Full-account export from Settings is not in v1 yet."
+      },
+      {
+        "q": "Can I hand over a vehicle when I sell it?",
+        "a": "Yes. The garage Primary Owner can transfer one vehicle's logbook to another GarIQ account: the buyer gets an email invite and accepts in the app. The buyer needs a paid plan and a free vehicle slot. Only part of the history is copied — maintenance, inspections, and tyre or tuning expenses — not fuel, insurance, taxes, trips, notes, or vault documents. Your copy stays as a read-only sale archive. The transfer is irreversible and cannot be accepted on this website."
       },
       {
         "q": "Can I subscribe on this website?",
@@ -825,7 +830,7 @@
           "Logbook mode: natural-language Q&A over events, costs, profile, and aggregates",
           "Documents mode: Q&A over the vehicle vault — answers cite document title and page when available",
           "Optional voice into the composer — you send; no autosend",
-          "Uses the same monthly AI credit pool; exhausted credits disable Ask input with an upgrade path",
+          "Uses the same monthly AI credit pool; exhausted credits disable Ask input with an upgrade path — paid owners can also buy more credits in the app",
           "App UI and assistant: Italian, German, or English"
         ]
       },
@@ -834,10 +839,10 @@
         "label": "Documents",
         "title": "Vehicle document vault",
         "bullets": [
-          "Guided slots: registration, current insurance policy, purchase contract, owner manual — plus other files",
+          "Four guided slots on vehicle Details: registration, current insurance policy, purchase contract, owner manual — no other uploads",
           "Insurance policy lives in the vault hub — not via Insert → Insurance (that path is for payment events)",
           "Scan registration to prefill a vehicle; extract insurance and purchase into editable hubs",
-          "Ask on this document when indexing is ready",
+          "Ask documents is unscoped: ask the whole vehicle vault from Home or Ask — there is no per-file Ask button",
           "Free: indexing/upload for vault categories other than registration is off; Basic and Advanced unlock document AI"
         ]
       },
@@ -869,8 +874,8 @@
         "title": "Free, Basic, Advanced — buy in the app",
         "bullets": [
           "Free: 1 garage, 1 vehicle, 10 AI credits/month after first vehicle",
-          "Basic: 1 garage, 5 vehicles, sharing up to 5 members, 100 credits",
-          "Advanced: 3 garages, 10 vehicles, 10 members, 500 credits, year export, keep OCR attachments",
+          "Basic: 1 garage, 5 active vehicles, sharing up to 5 members, 100 credits",
+          "Advanced: 3 garages, 10 active vehicles, 10 members, 500 credits, year export, keep OCR attachments",
           "Subscribe via App Store / Google Play — this website does not process payments"
         ],
         "cta": {
@@ -906,7 +911,7 @@
       {
         "kicker": "Scan",
         "title": "Capture in seconds",
-        "copy": "Photo, PDF, Smart Log, or Smart Scan — AI prepares a draft from what you capture."
+        "copy": "Photo, PDF, Smart Insert, or Smart Scan — AI prepares a draft from what you capture."
       },
       {
         "kicker": "Confirm",
