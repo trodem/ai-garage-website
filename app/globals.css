@@ -827,77 +827,96 @@ summary:focus-visible {
   outline-offset: 3px;
 }
 
-/* ── Hero circular vehicle carousel ──────────────────────────── */
+/* ── Hero vehicle carousel (row, center featured) ────────────── */
+@property --ring {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --zoom {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1;
+}
+
 .vehicle-orbit {
   margin-top: 2rem;
-  perspective: 1600px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .vehicle-orbit-stage {
   position: relative;
-  height: 14rem;
+  height: 11.5rem;
+  width: 100%;
   margin-inline: auto;
-  max-width: 56rem;
-  transform-style: preserve-3d;
+  container-type: inline-size;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
 }
 
 .vehicle-orbit-card {
   position: absolute;
   left: 50%;
-  top: 52%;
+  top: 42%;
   display: flex;
-  width: 5.6rem;
+  width: 5.4rem;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
   padding: 0;
   border: 0;
   background: transparent;
   cursor: pointer;
-  transform-style: preserve-3d;
+  --vehicle-slot: calc((100cqi - 6rem) / 8);
+  --zoom: 1;
   transform: translate(-50%, -50%)
-    rotateY(calc(var(--ring) * 38deg))
-    translateZ(calc(296px - var(--abs) * 36px))
-    scale(calc(1 - var(--abs) * 0.12));
-  opacity: calc(1 - var(--abs) * 0.18);
-  z-index: calc(20 - var(--abs) * 2);
+    translateX(calc(var(--ring) * var(--vehicle-slot)))
+    scale(var(--zoom));
+  opacity: 1;
+  z-index: 10;
   transition:
-    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.45s ease;
+    --ring 0.42s cubic-bezier(0.45, 0, 0.55, 1),
+    --zoom 0.42s cubic-bezier(0.45, 0, 0.55, 1),
+    transform 0.42s cubic-bezier(0.45, 0, 0.55, 1);
   pointer-events: auto;
 }
 
-.vehicle-orbit-card.is-back {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.vehicle-orbit-stage.is-instant .vehicle-orbit-card {
+  transition: none;
 }
 
-.vehicle-orbit-card.is-side {
-  z-index: 22;
-  opacity: 0.95;
-  transform: translate(-50%, -50%)
-    rotateY(calc(var(--ring) * 48deg))
-    translateZ(330px)
-    scale(1.1);
-}
-
-.vehicle-orbit-card.is-front {
+.vehicle-orbit-card.is-front,
+.vehicle-orbit-card:focus-visible {
+  --zoom: 1.22;
   z-index: 30;
   opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, -50%)
-    rotateY(0deg)
-    translateZ(380px)
-    scale(1.28);
+}
+
+.vehicle-orbit-card:focus-visible {
+  z-index: 40;
+  outline: none;
 }
 
 .vehicle-orbit-chip {
   display: grid;
   place-items: center;
-  width: 3.65rem;
-  height: 3.65rem;
-  border-radius: 1.15rem;
+  width: 3.35rem;
+  height: 3.35rem;
+  border-radius: 1.05rem;
   border: 1px solid rgba(33, 30, 229, 0.12);
   background: linear-gradient(
     145deg,
@@ -911,24 +930,20 @@ summary:focus-visible {
   color: #211ee5;
   animation: vehicleIconHue 7s ease-in-out infinite;
   animation-delay: calc(var(--vehicle-i, 0) * 0.35s);
+  transition:
+    width 0.42s cubic-bezier(0.45, 0, 0.55, 1),
+    height 0.42s cubic-bezier(0.45, 0, 0.55, 1),
+    box-shadow 0.35s ease;
 }
 
-.vehicle-orbit-card.is-front .vehicle-orbit-chip {
+.vehicle-orbit-card.is-front .vehicle-orbit-chip,
+.vehicle-orbit-card:focus-visible .vehicle-orbit-chip {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 1.35rem;
   box-shadow:
     0 18px 40px rgba(33, 30, 229, 0.22),
     0 4px 14px rgba(15, 23, 42, 0.08);
-}
-
-.vehicle-orbit-card.is-side .vehicle-orbit-chip {
-  width: 4.05rem;
-  height: 4.05rem;
-  border-radius: 1.25rem;
-  box-shadow:
-    0 14px 32px rgba(33, 30, 229, 0.16),
-    0 3px 10px rgba(15, 23, 42, 0.07);
 }
 
 .dark .vehicle-orbit-chip {
@@ -950,29 +965,97 @@ summary:focus-visible {
 }
 
 .vehicle-orbit-label {
-  max-width: 6rem;
+  max-width: 7.5rem;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
   text-align: center;
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.82rem;
+  font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: #211ee5;
   animation: vehicleIconHue 7s ease-in-out infinite;
   animation-delay: calc(var(--vehicle-i, 0) * 0.35s);
+  transition:
+    opacity 0.22s ease,
+    height 0.28s ease;
 }
 
-.vehicle-orbit-card.is-front .vehicle-orbit-label {
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
-.vehicle-orbit-card.is-side .vehicle-orbit-label {
-  font-size: 0.76rem;
-  font-weight: 600;
+.vehicle-orbit-card.is-front .vehicle-orbit-label,
+.vehicle-orbit-card:focus-visible .vehicle-orbit-label {
+  height: 2.2rem;
+  opacity: 1;
 }
 
 .dark .vehicle-orbit-label {
   animation-name: vehicleIconHueDark;
+}
+
+@media (hover: hover) {
+  .vehicle-orbit-card:hover {
+    --zoom: 1.22;
+    z-index: 40;
+  }
+
+  .vehicle-orbit-card:hover .vehicle-orbit-chip {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1.35rem;
+    box-shadow:
+      0 18px 40px rgba(33, 30, 229, 0.22),
+      0 4px 14px rgba(15, 23, 42, 0.08);
+  }
+
+  .vehicle-orbit-card:hover .vehicle-orbit-label {
+    height: 2.2rem;
+    opacity: 1;
+  }
+
+  .vehicle-orbit-stage:has(.vehicle-orbit-card:hover:not(.is-front)) .vehicle-orbit-card.is-front {
+    --zoom: 1;
+    z-index: 10;
+  }
+
+  .vehicle-orbit-stage:has(.vehicle-orbit-card:hover:not(.is-front)) .vehicle-orbit-card.is-front .vehicle-orbit-chip {
+    width: 3.35rem;
+    height: 3.35rem;
+    border-radius: 1.05rem;
+    box-shadow:
+      0 10px 28px rgba(33, 30, 229, 0.14),
+      0 2px 8px rgba(15, 23, 42, 0.06);
+  }
+
+  .vehicle-orbit-stage:has(.vehicle-orbit-card:hover:not(.is-front)) .vehicle-orbit-card.is-front .vehicle-orbit-label {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.vehicle-orbit-stage:has(.vehicle-orbit-card:focus-visible:not(.is-front)) .vehicle-orbit-card.is-front {
+  --zoom: 1;
+  z-index: 10;
+}
+
+.vehicle-orbit-stage:has(.vehicle-orbit-card:focus-visible:not(.is-front)) .vehicle-orbit-card.is-front .vehicle-orbit-chip {
+  width: 3.35rem;
+  height: 3.35rem;
+  border-radius: 1.05rem;
+  box-shadow:
+    0 10px 28px rgba(33, 30, 229, 0.14),
+    0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.vehicle-orbit-stage:has(.vehicle-orbit-card:focus-visible:not(.is-front)) .vehicle-orbit-card.is-front .vehicle-orbit-label {
+  height: 0;
+  opacity: 0;
+}
+
+.dark .vehicle-orbit-stage:has(.vehicle-orbit-card:hover:not(.is-front)) .vehicle-orbit-card.is-front .vehicle-orbit-chip,
+.dark .vehicle-orbit-stage:has(.vehicle-orbit-card:focus-visible:not(.is-front)) .vehicle-orbit-card.is-front .vehicle-orbit-chip {
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 @keyframes vehicleIconHue {
@@ -1003,41 +1086,45 @@ summary:focus-visible {
 
 @media (max-width: 640px) {
   .vehicle-orbit-stage {
-    height: 12rem;
+    height: 10.5rem;
     max-width: 100%;
   }
 
   .vehicle-orbit-card {
-    width: 4.8rem;
-  }
-
-  .vehicle-orbit-card.is-side {
-    transform: translate(-50%, -50%)
-      rotateY(calc(var(--ring) * 42deg))
-      translateZ(250px)
-      scale(1.08);
-  }
-
-  .vehicle-orbit-card.is-front {
-    transform: translate(-50%, -50%)
-      rotateY(0deg)
-      translateZ(300px)
-      scale(1.22);
+    width: 3.6rem;
+    --vehicle-slot: calc((100cqi - 4.2rem) / 8);
   }
 
   .vehicle-orbit-chip {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 0.85rem;
   }
 
-  .vehicle-orbit-card.is-front .vehicle-orbit-chip {
-    width: 4rem;
-    height: 4rem;
+  .vehicle-orbit-card.is-front .vehicle-orbit-chip,
+  .vehicle-orbit-card:focus-visible .vehicle-orbit-chip {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 1.1rem;
   }
 
-  .vehicle-orbit-card.is-side .vehicle-orbit-chip {
-    width: 3.55rem;
-    height: 3.55rem;
+  .vehicle-orbit-label {
+    font-size: 0.72rem;
+    max-width: 6.2rem;
+  }
+}
+
+@media (hover: hover) and (max-width: 640px) {
+  .vehicle-orbit-card:hover .vehicle-orbit-chip {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 1.1rem;
+  }
+
+  .vehicle-orbit-stage:has(.vehicle-orbit-card:hover:not(.is-front)) .vehicle-orbit-card.is-front .vehicle-orbit-chip {
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 0.85rem;
   }
 }
 

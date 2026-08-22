@@ -27,6 +27,7 @@ const VEHICLE_ICONS: TablerIcon[] = [
 ];
 
 const INTERVAL_MS = 2400;
+const COPIES = 3;
 
 type Props = {
   label: string;
@@ -35,19 +36,50 @@ type Props = {
 
 export default function VehicleCarousel({ label, vehicles }: Props) {
   const count = Math.min(vehicles.length, VEHICLE_ICONS.length);
-  const [active, setActive] = useState(0);
+  const items = vehicles.slice(0, count);
+  const [offset, setOffset] = useState(count * 2);
   const [paused, setPaused] = useState(false);
+  const [instant, setInstant] = useState(false);
+  const [reduceMotion, setReduceMotion] = useState(false);
 
   useEffect(() => {
-    if (paused || count < 2) return;
+    setReduceMotion(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }, []);
+
+  useEffect(() => {
+    if (reduceMotion || paused || count < 2) return;
     const id = window.setInterval(() => {
-      setActive((i) => (i + 1) % count);
+      setOffset((current) => current - 1);
     }, INTERVAL_MS);
     return () => window.clearInterval(id);
-  }, [paused, count]);
+  }, [reduceMotion, paused, count]);
+
+  useEffect(() => {
+    if (count < 2) return;
+    if (offset >= count && offset <= count * 2) return;
+
+    const id = window.setTimeout(() => {
+      setInstant(true);
+      setOffset((current) => {
+        if (current < count) return current + count;
+        if (current > count * 2) return current - count;
+        return current;
+      });
+    }, 440);
+
+    return () => window.clearTimeout(id);
+  }, [offset, count]);
+
+  useEffect(() => {
+    if (!instant) return;
+    const id = window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => setInstant(false));
+    });
+    return () => window.cancelAnimationFrame(id);
+  }, [instant]);
 
   return (
-    <div className="mx-auto mt-16 max-w-5xl">
+    <div className="mx-auto mt-16 w-full">
       <p className="text-center text-xs font-bold uppercase tracking-[0.18em] text-slate-400 dark:text-slate-500">
         {label}
       </p>
@@ -59,36 +91,41 @@ export default function VehicleCarousel({ label, vehicles }: Props) {
         onFocusCapture={() => setPaused(true)}
         onBlurCapture={() => setPaused(false)}
       >
-        <div className="vehicle-orbit-stage" aria-live="polite">
-          {vehicles.slice(0, count).map((item, index) => {
+        <div
+          className={instant ? "vehicle-orbit-stage is-instant" : "vehicle-orbit-stage"}
+          aria-live="polite"
+        >
+          {Array.from({ length: count * COPIES }, (_, global) => {
+            const index = global % count;
+            const item = items[index];
+            if (!item) return null;
             const Icon = VEHICLE_ICONS[index] ?? IconCar;
-            const offset = ((index - active + count) % count);
-            // Map ring index so 0 = front, then left/right pairs
-            const ring = offset > count / 2 ? offset - count : offset;
+            const ring = global - offset;
             const abs = Math.abs(ring);
             const isFront = ring === 0;
-            const isSide = abs === 1;
-            const isBack = abs > 1;
+            const offstage = abs > 5;
 
             return (
               <button
-                key={item}
+                key={`${global}-${item}`}
                 type="button"
-                className={`vehicle-orbit-card${isFront ? " is-front" : ""}${isSide ? " is-side" : ""}${isBack ? " is-back" : ""}`}
+                className={["vehicle-orbit-card", isFront ? "is-front" : ""]
+                  .filter(Boolean)
+                  .join(" ")}
                 style={{
                   ["--ring" as string]: ring,
-                  ["--abs" as string]: abs,
                   ["--vehicle-i" as string]: index,
                 }}
+                tabIndex={offstage ? -1 : 0}
+                aria-hidden={offstage ? true : undefined}
                 aria-current={isFront ? "true" : undefined}
                 aria-label={item}
-                tabIndex={isFront || isSide ? 0 : -1}
-                onClick={() => setActive(index)}
+                onClick={() => setOffset(global)}
               >
                 <span className="vehicle-orbit-chip" aria-hidden>
                   <Icon
                     className="vehicle-orbit-icon"
-                    size={isFront ? 36 : isSide ? 30 : 24}
+                    size={isFront ? 36 : 26}
                     stroke={1.6}
                   />
                 </span>
