@@ -118,6 +118,39 @@
       "active": "Aktiv",
       "inactive": "Inaktiv",
       "tapToSelect": "Tippen zum Auswählen",
+      "chat": {
+        "askTitlePrefix": "",
+        "askTitleSuffix": " fragen",
+        "logTitlePrefix": "Mit ",
+        "logTitleSuffix": " erfassen",
+        "vehicleLine": "{make} {model} ({year})",
+        "askLogEmptyTitle": "Frag dein Logbook",
+        "askLogEmptyBody": "Hallo, ich bin GarIQ, dein persönlicher Agent! Hier kannst du alles fragen, was du im Logbook dieses Fahrzeugs gespeichert hast: Tanken, Werkstatt, Versicherung, Steuern, Prüfungen, Ausgaben, Fahrten und Notizen.",
+        "pills": {
+          "kmLastMonth": "Wie viele km bin ich letzten Monat insgesamt gefahren?",
+          "litersPer100Km": "Wie hoch ist der Verbrauch dieses Fahrzeugs in Litern/100 km?",
+          "lastInspection": "Was wurde bei meiner letzten Inspektion beanstandet?",
+          "lastOil": "Wann wurde das Öl zuletzt geprüft?",
+          "lastWorkshop": "Welche Arbeiten wurden beim letzten Werkstattbesuch durchgeführt?"
+        },
+        "composerAskLog": "Frag etwas zum Logbook…",
+        "composerAskDocs": "Frag etwas zu den Dokumenten…",
+        "composerSmartLog": "Beschreibe das Ereignis…",
+        "copy": "Kopieren",
+        "askLogUser": "Wie hoch ist der Verbrauch dieses Fahrzeugs in Litern/100 km?",
+        "askLogAnswer": "Der Durchschnittsverbrauch beträgt **5,36 L/100 km** im erfassten Zeitraum.\n\nMonat für Monat:\n• **Juni 2026:** 5,40 L/100 km\n• **Juli 2026:** 5,01 L/100 km\n\nDie **durchschnittlichen Kraftstoffkosten** liegen bei **3,68 CHF/100 km**, berechnet nach der Volltank-Methode.",
+        "askDocsUser": "Kannst du erklären, was diese Warnleuchte ist?",
+        "askDocsAnswer": "Diese gelbe Motorkontrollleuchte ist die **MIL** (Malfunction Indicator Lamp) deiner Honda Africa Twin.\n\nDas Handbuch behandelt sie auf den Seiten 28, 196 und 201:\n• Motorfehler im Steuergerät gespeichert\n• Risiko von Notlauf oder Startverweigerung\n• Auch der Seitenständerschalter kann sie auslösen\n\nSoll ich im Logbook nach aktuellen Werkstattnotizen zu Motor oder Sensoren suchen?",
+        "askDocsCalloutTitle": "Was tun:",
+        "askDocsCallout": "Lass das Fahrzeug von einem Honda-Vertragshändler prüfen. Eine dauerhaft leuchtende MIL nicht ignorieren.",
+        "askDocsSource1": "AfricaTwin_Owners_Manual · S. 28",
+        "askDocsSource2": "AfricaTwin_Owners_Manual · S. 196",
+        "askDocsSource3": "AfricaTwin_Owners_Manual · S. 201",
+        "smartLogUser1": "Heute habe ich getankt",
+        "smartLogAnswer1": "Super! Zum Speichern der Tankung brauche ich noch:\n• Gesamtkosten (CHF)\n• Getankte Liter\n\nHast du auch den Literpreis oder weitere Details (Kraftstoffsorte, Kilometerstand, vollgetankt)?",
+        "smartLogUser2": "Ja, ich habe 25 Franken für 7 l ausgegeben",
+        "smartLogAnswer2": "Die Pflichtfelder zum Speichern sind vollständig. Optional kannst du noch ergänzen:\n• Kilometerstand\n• Vollgetankt\n• Kraftstoffsorte\n• Ort\n• Notizen\n\nAntworte mit diesen Daten in einer Nachricht, oder sag Bescheid, um zum Formular zu wechseln."
+      },
       "tiles": {
         "refuel": "Tanken",
         "maintenance": "Werkstatt",
@@ -1048,6 +1081,29 @@
       "user": "Wie viele Liter habe ich beim letzten Tanken getankt?",
       "assistant": "45,20 L Diesel — Summe CHF 84,50 bei 128.450 km.",
       "typing": "Schreibt…"
+    }
+  },
+  "askWalkthrough": {
+    "label": "Fragen & erfassen",
+    "title": "Sprich mit deinem Logbook — und erfasse ohne Formular.",
+    "lead": "Jeder Chat startet auf Home: tippe den passenden Button, dann fragen oder erfassen.",
+    "imageAlt": "GarIQ Ask-Logbook, Ask-Docs und Smart Log auf einem Smartphone",
+    "slides": {
+      "askLog": {
+        "kicker": "Ask logbook",
+        "title": "Auf Home: Ask logbook antippen.",
+        "body": "Dann frag nach Tanken, Werkstatt, Versicherung, Kilometer — Antworten aus den Events dieses Fahrzeugs, nicht aus dem Web."
+      },
+      "askDocs": {
+        "kicker": "Ask docs",
+        "title": "Auf Home: Ask docs antippen.",
+        "body": "Fotografiere eine Warnleuchte oder frag den Vault. GarIQ zitiert dein Handbuch — Seiten, die du öffnen kannst."
+      },
+      "smartLog": {
+        "kicker": "Smart Log",
+        "title": "Auf Home: Smart Log antippen.",
+        "body": "Beschreibe das Ereignis im Chat. Die KI erstellt den Entwurf — ins Fahrtenbuch schreibt sie erst, wenn du auf Speichern tippst."
+      }
     }
   },
   "exclusive": {

@@ -118,6 +118,39 @@
       "active": "Active",
       "inactive": "Inactive",
       "tapToSelect": "Tap to select",
+      "chat": {
+        "askTitlePrefix": "Ask ",
+        "askTitleSuffix": "",
+        "logTitlePrefix": "Log with ",
+        "logTitleSuffix": "",
+        "vehicleLine": "{make} {model} ({year})",
+        "askLogEmptyTitle": "Ask your logbook",
+        "askLogEmptyBody": "Hi, I’m GarIQ, your personal agent! Ask anything you’ve saved in this vehicle’s logbook: fuel, workshop, insurance, taxes, inspections, expenses, trips, and notes.",
+        "pills": {
+          "kmLastMonth": "How many km did I drive in total last month?",
+          "litersPer100Km": "What’s this vehicle’s fuel consumption in liters/100 km?",
+          "lastInspection": "What did they note at my last inspection?",
+          "lastOil": "When was the oil last checked?",
+          "lastWorkshop": "What work was done at the last workshop visit?"
+        },
+        "composerAskLog": "Ask something about the logbook…",
+        "composerAskDocs": "Ask something about the documents…",
+        "composerSmartLog": "Describe the event to log…",
+        "copy": "Copy",
+        "askLogUser": "What’s this vehicle’s fuel consumption in liters/100 km?",
+        "askLogAnswer": "Average consumption is **5.36 L/100 km** over the recorded period.\n\nMonth by month:\n• **June 2026:** 5.40 L/100 km\n• **July 2026:** 5.01 L/100 km\n\nAverage fuel cost is **3.68 CHF/100 km**, using the full-tank method.",
+        "askDocsUser": "Can you explain what this warning light is?",
+        "askDocsAnswer": "That amber engine light is the **MIL** (Malfunction Indicator Lamp) on your Honda Africa Twin.\n\nThe owner’s manual covers it on pages 28, 196 and 201:\n• Engine fault stored in the ECU\n• Risk of limp mode or a no-start\n• Side-stand / inhibit sensor issues can also trigger it\n\nWant me to check this vehicle’s logbook for recent workshop notes related to the engine or sensors?",
+        "askDocsCalloutTitle": "What to do:",
+        "askDocsCallout": "Have the vehicle inspected by an authorized Honda dealer. Do not ignore a steady MIL.",
+        "askDocsSource1": "AfricaTwin_Owners_Manual · p. 28",
+        "askDocsSource2": "AfricaTwin_Owners_Manual · p. 196",
+        "askDocsSource3": "AfricaTwin_Owners_Manual · p. 201",
+        "smartLogUser1": "Today I refueled",
+        "smartLogAnswer1": "Great! To log the refuel I still need:\n• Total cost (CHF)\n• Liters dispensed\n\nDo you also have the price per liter or other details (fuel grade, odometer, full tank)?",
+        "smartLogUser2": "Yes, I spent 25 francs for 7 l",
+        "smartLogAnswer2": "The required fields to save are complete. You can also add:\n• Odometer\n• Full tank\n• Fuel grade\n• Place\n• Notes\n\nReply with those in one message, or say to continue to the form."
+      },
       "tiles": {
         "refuel": "Fueling",
         "maintenance": "Service",
@@ -1048,6 +1081,29 @@
       "user": "How many liters did I put in on the last fill-up?",
       "assistant": "45,20 L of diesel — total CHF 84,50 at 128.450 km.",
       "typing": "Typing…"
+    }
+  },
+  "askWalkthrough": {
+    "label": "Ask & log",
+    "title": "Talk to your logbook — and log without a form.",
+    "lead": "Each chat starts on Home: tap the matching button, then ask or log.",
+    "imageAlt": "GarIQ Ask logbook, Ask docs, and Smart Log on a phone",
+    "slides": {
+      "askLog": {
+        "kicker": "Ask logbook",
+        "title": "Tap Ask logbook on Home.",
+        "body": "Then ask fuel, workshop, insurance, km — answers come from this vehicle’s events, not the open web."
+      },
+      "askDocs": {
+        "kicker": "Ask docs",
+        "title": "Tap Ask docs on Home.",
+        "body": "Snap a warning light or ask the vault. GarIQ quotes your owner’s manual — pages you can open."
+      },
+      "smartLog": {
+        "kicker": "Smart Log",
+        "title": "Tap Smart Log on Home.",
+        "body": "Describe the event in chat. AI prepares a draft — it never writes the logbook until you tap Save."
+      }
     }
   },
   "exclusive": {

@@ -118,6 +118,39 @@
       "active": "Attivi",
       "inactive": "Inattivi",
       "tapToSelect": "Tocca per selezionare",
+      "chat": {
+        "askTitlePrefix": "Chiedi a ",
+        "askTitleSuffix": "",
+        "logTitlePrefix": "Registra con ",
+        "logTitleSuffix": "",
+        "vehicleLine": "{make} {model} ({year})",
+        "askLogEmptyTitle": "Chiedi al logbook",
+        "askLogEmptyBody": "Ciao, sono GarIQ, il tuo agente personale! Qui puoi chiedere tutto ciò che hai salvato nel logbook di questo veicolo: rifornimenti, officina, assicurazione, tasse, revisioni, spese, viaggi e note.",
+        "pills": {
+          "kmLastMonth": "Quanti km ho percorso in totale il mese scorso?",
+          "litersPer100Km": "Qual è il consumo in litri/100 km di questo veicolo?",
+          "lastInspection": "Cosa mi hanno segnalato all’ultima revisione?",
+          "lastOil": "Quando è stato controllato l’olio l’ultima volta?",
+          "lastWorkshop": "Quali lavori sono stati fatti all’ultima visita in officina?"
+        },
+        "composerAskLog": "Chiedi qualcosa sul logbook…",
+        "composerAskDocs": "Chiedi qualcosa sui documenti…",
+        "composerSmartLog": "Descrivi l’evento da registrare…",
+        "copy": "Copia",
+        "askLogUser": "Qual è il consumo in litri/100 km di questo veicolo?",
+        "askLogAnswer": "Il consumo medio del veicolo è di **5,36 L/100 km** nel periodo rilevato.\n\nDettaglio mese per mese:\n• **Giugno 2026:** 5,40 L/100 km\n• **Luglio 2026:** 5,01 L/100 km\n\nIl **costo carburante medio** è di **3,68 CHF/100 km**, calcolato con il metodo dei pieni completi.",
+        "askDocsUser": "Mi spieghi che cos’è questa spia?",
+        "askDocsAnswer": "Quella spia ambra è la **MIL** (Malfunction Indicator Lamp) della tua Honda Africa Twin.\n\nIl manuale la tratta alle pagine 28, 196 e 201:\n• Anomalia motore memorizzata in ECU\n• Rischio di modalità protetta o mancato avvio\n• Anche il sensore del cavalletto laterale può accenderla\n\nVuoi che controlli il logbook di questo veicolo per note d’officina recenti su motore o sensori?",
+        "askDocsCalloutTitle": "Cosa fare:",
+        "askDocsCallout": "Fai ispezionare il veicolo da un concessionario Honda autorizzato. Non ignorare una MIL fissa.",
+        "askDocsSource1": "AfricaTwin_Owners_Manual · p. 28",
+        "askDocsSource2": "AfricaTwin_Owners_Manual · p. 196",
+        "askDocsSource3": "AfricaTwin_Owners_Manual · p. 201",
+        "smartLogUser1": "Oggi ho fatto rifornimento",
+        "smartLogAnswer1": "Ottimo! Per registrare il rifornimento ho bisogno di alcuni dati:\n• Costo totale (in CHF)\n• Litri erogati\n\nHai anche il prezzo al litro o altri dettagli (tipo carburante, chilometraggio, pieno completo)?",
+        "smartLogUser2": "Sì, ho speso 25 franchi per 7 l",
+        "smartLogAnswer2": "I campi obbligatori per salvare sono completi. Se vuoi, puoi anche aggiungere:\n• Chilometraggio\n• Pieno\n• Fuel grade\n• Luogo\n• Note\n\nRispondi con questi dati in un solo messaggio, oppure dire di continuare al modulo."
+      },
       "tiles": {
         "refuel": "Riforn.",
         "maintenance": "Service",
@@ -1048,6 +1081,29 @@
       "user": "Quanti litri ho messo nell’ultimo rifornimento?",
       "assistant": "45,20 L di diesel — totale CHF 84,50 a 128.450 km.",
       "typing": "Sta scrivendo…"
+    }
+  },
+  "askWalkthrough": {
+    "label": "Chiedi e registra",
+    "title": "Parla col logbook — e registra senza modulo.",
+    "lead": "Ogni chat parte dalla Home: tap sul pulsante giusto, poi chiedi o registri.",
+    "imageAlt": "Ask logbook, Ask docs e Smart Log di GarIQ su uno smartphone",
+    "slides": {
+      "askLog": {
+        "kicker": "Ask logbook",
+        "title": "In Home, tap su Ask logbook.",
+        "body": "Poi chiedi rifornimenti, officina, assicurazione, km — le risposte escono dagli eventi di questo veicolo, non dal web."
+      },
+      "askDocs": {
+        "kicker": "Ask docs",
+        "title": "In Home, tap su Ask docs.",
+        "body": "Scatti una spia o chiedi al vault. GarIQ cita il tuo manuale — pagine che puoi aprire."
+      },
+      "smartLog": {
+        "kicker": "Smart Log",
+        "title": "In Home, tap su Smart Log.",
+        "body": "Descrivi l’evento in chat. L’IA prepara la bozza — non scrive nel logbook finché non tocchi Salva."
+      }
     }
   },
   "exclusive": {

@@ -11,7 +11,29 @@ import LogoIcon from "@/components/LogoIcon";
 
 export type PhoneMockupTabId = "home" | "details" | "timeline" | "stats" | "garage";
 
+export type PhoneMockupChatId = "ask-log" | "ask-docs" | "smart-log";
+
+export type PhoneMockupSceneId = PhoneMockupTabId | PhoneMockupChatId;
+
 export type PhoneMockupTabLabels = Record<PhoneMockupTabId, string>;
+
+export const PHONE_MOCKUP_TAB_TOUR: PhoneMockupTabId[] = [
+  "home",
+  "details",
+  "timeline",
+  "stats",
+  "garage",
+];
+
+export const PHONE_MOCKUP_CHAT_TOUR: PhoneMockupChatId[] = [
+  "ask-log",
+  "ask-docs",
+  "smart-log",
+];
+
+export function isPhoneMockupChatScene(scene: PhoneMockupSceneId): scene is PhoneMockupChatId {
+  return scene === "ask-log" || scene === "ask-docs" || scene === "smart-log";
+}
 
 const TABS: {
   id: PhoneMockupTabId;

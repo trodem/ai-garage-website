@@ -28,8 +28,14 @@ import {
   IconWallet,
 } from "@tabler/icons-react";
 import { useFormatter, useTranslations } from "next-intl";
+import Image from "next/image";
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import type { PhoneMockupTabId } from "@/components/phone-mockup/PhoneMockupChrome";
+import { PhoneMockupChatScreen, useMockupDelayedFlag } from "@/components/phone-mockup/PhoneMockupChatScreens";
+import {
+  isPhoneMockupChatScene,
+  type PhoneMockupChatId,
+  type PhoneMockupSceneId,
+} from "@/components/phone-mockup/PhoneMockupChrome";
 import {
   MOCKUP_FIXED_BARS,
   MOCKUP_FIXED_EVENTS,
@@ -54,6 +60,12 @@ import {
 } from "@/components/phone-mockup/phoneMockupDemo";
 
 type ScreenCopy = ReturnType<typeof useTranslations>;
+
+/** Bundled placeholders are 883×269 banners; letterbox like the app (`contain`). */
+const PLACEHOLDER_PHOTO_STYLE = {
+  objectFit: "contain",
+  objectPosition: "center",
+} as const;
 
 function chf(value: number): string {
   return `CHF ${value.toLocaleString("de-CH", {
@@ -277,10 +289,16 @@ function HomeScreen({
   t,
   formatter,
   monthLabels,
+  hubTapTarget,
+  motionPaused,
+  onHubTapComplete,
 }: {
   t: ScreenCopy;
   formatter: ReturnType<typeof useFormatter>;
   monthLabels: string[];
+  hubTapTarget?: PhoneMockupChatId;
+  motionPaused?: boolean;
+  onHubTapComplete?: () => void;
 }) {
   const tiles: { kind: MockupEventKind | "inspection"; icon: ReactNode }[] = [
     { kind: "refuel", icon: <IconGasStation className="pm-tile-icon" /> },
@@ -292,10 +310,31 @@ function HomeScreen({
     { kind: "note", icon: <IconNotes className="pm-tile-icon" /> },
     { kind: "trip", icon: <IconRoute className="pm-tile-icon" /> },
   ];
+  const paused = Boolean(motionPaused);
+  const holdDone = useMockupDelayedFlag(hubTapTarget ? 1100 : 0, paused, Boolean(hubTapTarget));
+  const pills: {
+    id: PhoneMockupChatId | "smart-scan";
+    tone: "pink" | "cyan";
+    icon: ReactNode;
+    label: string;
+  }[] = [
+    { id: "smart-scan", tone: "pink", icon: <IconQrcode className="pm-pill-icon" />, label: t("smartScan") },
+    { id: "smart-log", tone: "pink", icon: <IconPencil className="pm-pill-icon" />, label: t("smartLog") },
+    { id: "ask-log", tone: "cyan", icon: <IconMessageChatbot className="pm-pill-icon" />, label: t("askLogbook") },
+    { id: "ask-docs", tone: "cyan", icon: <IconFileText className="pm-pill-icon" />, label: t("askDocs") },
+  ];
 
   return (
     <>
-      <div className="pm-hero pm-skin-ducati">
+      <div className="pm-hero">
+        <Image
+          src={MOCKUP_VEHICLE.photo}
+          alt=""
+          fill
+          sizes="324px"
+          style={PLACEHOLDER_PHOTO_STYLE}
+          className="pm-hero-photo"
+        />
         <p className="pm-hero-name">
           {MOCKUP_VEHICLE.make} {MOCKUP_VEHICLE.model}
         </p>
@@ -308,11 +347,33 @@ function HomeScreen({
       </div>
 
       <div className="pm-pad">
-        <div className="pm-pills">
-          <span className="pm-pill pm-pill-pink"><IconQrcode className="pm-pill-icon" />{t("smartScan")}</span>
-          <span className="pm-pill pm-pill-pink"><IconPencil className="pm-pill-icon" />{t("smartLog")}</span>
-          <span className="pm-pill pm-pill-cyan"><IconMessageChatbot className="pm-pill-icon" />{t("askLogbook")}</span>
-          <span className="pm-pill pm-pill-cyan"><IconFileText className="pm-pill-icon" />{t("askDocs")}</span>
+        <div className={holdDone ? "pm-pills is-tapping" : "pm-pills"}>
+          {pills.map((pill) => {
+            const isTarget = hubTapTarget != null && pill.id === hubTapTarget;
+            return (
+              <span
+                key={pill.id}
+                className={[
+                  "pm-pill",
+                  pill.tone === "pink" ? "pm-pill-pink" : "pm-pill-cyan",
+                  isTarget ? "is-target" : "",
+                  isTarget && holdDone ? "is-tapping is-picked" : "",
+                ].filter(Boolean).join(" ")}
+              >
+                {isTarget && holdDone ? (
+                  <span
+                    className="pm-chat-tap"
+                    aria-hidden
+                    onAnimationEnd={(event) => {
+                      if (event.animationName === "pmChatTap") onHubTapComplete?.();
+                    }}
+                  />
+                ) : null}
+                {pill.icon}
+                {pill.label}
+              </span>
+            );
+          })}
         </div>
 
         <p className="pm-section">{t("insertEvent")}</p>
@@ -583,8 +644,16 @@ function GarageScreen({ t }: { t: ScreenCopy }) {
         {MOCKUP_FLEET.map((vehicle) => (
           <div
             key={vehicle.id}
-            className={vehicle.selected ? `pm-fleet-card is-selected pm-skin-${vehicle.skin}` : `pm-fleet-card pm-skin-${vehicle.skin}`}
+            className={vehicle.selected ? "pm-fleet-card is-selected" : "pm-fleet-card"}
           >
+            <Image
+              src={vehicle.photo}
+              alt=""
+              fill
+              sizes="324px"
+              style={PLACEHOLDER_PHOTO_STYLE}
+              className="pm-fleet-photo"
+            />
             <div className="pm-fleet-top">
               <span className="pm-fleet-trash"><IconTrash className="pm-mini-icon" /></span>
               <em>{t("tapToSelect")}</em>
@@ -609,16 +678,47 @@ function GarageScreen({ t }: { t: ScreenCopy }) {
   );
 }
 
-export function PhoneMockupScreen({ scene }: { scene: PhoneMockupTabId }) {
+export function PhoneMockupScreen({
+  scene,
+  motionPaused = false,
+  hubTapTarget,
+  onHubTapComplete,
+  onChatTourComplete,
+}: {
+  scene: PhoneMockupSceneId;
+  motionPaused?: boolean;
+  hubTapTarget?: PhoneMockupChatId;
+  onHubTapComplete?: () => void;
+  onChatTourComplete?: () => void;
+}) {
   const t = useTranslations("hero.mockup");
   const formatter = useFormatter();
   const monthLabels = Array.from({ length: 12 }, (_, index) =>
     formatter.dateTime(new Date(MOCKUP_FOCUS_YEAR, index, 1), { month: "short" }),
   );
 
+  if (isPhoneMockupChatScene(scene)) {
+    return (
+      <PhoneMockupChatScreen
+        scene={scene}
+        motionPaused={motionPaused}
+        onComplete={onChatTourComplete ?? (() => undefined)}
+      />
+    );
+  }
+
   return (
     <div className={`pm-screen pm-screen-${scene}`}>
-      {scene === "home" ? <HomeScreen t={t} formatter={formatter} monthLabels={monthLabels} /> : null}
+      {scene === "home" ? (
+        <HomeScreen
+          t={t}
+          formatter={formatter}
+          monthLabels={monthLabels}
+          hubTapTarget={hubTapTarget}
+          motionPaused={motionPaused}
+          onHubTapComplete={onHubTapComplete}
+        />
+      ) : null}
       {scene === "details" ? <DetailsScreen t={t} formatter={formatter} /> : null}
       {scene === "timeline" ? <TimelineScreen t={t} formatter={formatter} /> : null}
       {scene === "stats" ? <StatsScreen t={t} monthLabels={monthLabels} /> : null}

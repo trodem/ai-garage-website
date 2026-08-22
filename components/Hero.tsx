@@ -25,7 +25,7 @@ export default async function Hero() {
           </div>
 
           <div className="hero-grid-phone">
-            <PhoneMockup />
+            <PhoneMockup tour="tabs" />
           </div>
 
           <div className="hero-grid-cta flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">

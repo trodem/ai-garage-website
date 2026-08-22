@@ -19,7 +19,7 @@ export type MockupActivity = {
 
 export type MockupVehicleCard = {
   id: string;
-  skin: string;
+  photo: string;
   make: string;
   model: string;
   plate: string;
@@ -31,6 +31,7 @@ export const MOCKUP_VEHICLE = {
   make: "HONDA",
   model: "Africa Twin",
   plate: "ZH 48291",
+  photo: "/images/placeholders/motorcycle.png",
   odometer: 28460,
   year: 2022,
   vin: "JH2SC75A0NK204817",
@@ -192,14 +193,14 @@ export const MOCKUP_SPEND_CATEGORIES: {
 ];
 
 export const MOCKUP_FLEET: MockupVehicleCard[] = [
-  { id: "pcx", skin: "vespa", make: "HONDA", model: "PCX 125", plate: "BE 11034", odometer: 6840 },
-  { id: "rs", skin: "streetfighter", make: "APRILIA", model: "RS 660", plate: "LU 77320", odometer: 15420 },
-  { id: "captur", skin: "fiat", make: "RENAULT", model: "Captur", plate: "VS 55108", odometer: 41200 },
-  { id: "nmax", skin: "primavera", make: "YAMAHA", model: "NMAX 125", plate: "TI 22917", odometer: 3910 },
-  { id: "xc60", skin: "santafe", make: "VOLVO", model: "XC60", plate: "GR 66401", odometer: 62880 },
+  { id: "pcx", photo: "/images/placeholders/scooter.png", make: "HONDA", model: "PCX 125", plate: "BE 11034", odometer: 6840 },
+  { id: "rs", photo: "/images/placeholders/motorcycle.png", make: "APRILIA", model: "RS 660", plate: "LU 77320", odometer: 15420 },
+  { id: "captur", photo: "/images/placeholders/car.png", make: "RENAULT", model: "Captur", plate: "VS 55108", odometer: 41200 },
+  { id: "transit", photo: "/images/placeholders/van.png", make: "FORD", model: "Transit", plate: "SG 44120", odometer: 87340 },
+  { id: "hymer", photo: "/images/placeholders/camper.png", make: "HYMER", model: "Free 600", plate: "GR 66401", odometer: 22180 },
   {
     id: "africa",
-    skin: "ducati",
+    photo: "/images/placeholders/motorcycle.png",
     make: "HONDA",
     model: "Africa Twin",
     plate: "ZH 48291",

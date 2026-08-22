@@ -5,6 +5,7 @@ import StickyDownloadCta from "@/components/StickyDownloadCta";
 import Hero from "@/components/Hero";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionStrip from "@/components/SolutionStrip";
+import AskWalkthroughSection from "@/components/AskWalkthroughSection";
 import CapabilitiesSection from "@/components/CapabilitiesSection";
 import PlansExplainer from "@/components/PlansExplainer";
 import DownloadSection from "@/components/DownloadSection";
@@ -41,6 +42,7 @@ export default async function HomePage({ params }: PageProps) {
         <Hero />
         <ProblemSection />
         <SolutionStrip />
+        <AskWalkthroughSection />
         <CapabilitiesSection />
         <PlansExplainer />
         <DownloadSection />
