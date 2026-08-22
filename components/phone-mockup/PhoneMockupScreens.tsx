@@ -292,6 +292,7 @@ function HomeScreen({
   hubTapTarget,
   motionPaused,
   onHubTapComplete,
+  onHubPillSelect,
 }: {
   t: ScreenCopy;
   formatter: ReturnType<typeof useFormatter>;
@@ -299,6 +300,7 @@ function HomeScreen({
   hubTapTarget?: PhoneMockupChatId;
   motionPaused?: boolean;
   onHubTapComplete?: () => void;
+  onHubPillSelect?: (id: PhoneMockupChatId) => void;
 }) {
   const tiles: { kind: MockupEventKind | "inspection"; icon: ReactNode }[] = [
     { kind: "refuel", icon: <IconGasStation className="pm-tile-icon" /> },
@@ -358,7 +360,12 @@ function HomeScreen({
                   pill.tone === "pink" ? "pm-pill-pink" : "pm-pill-cyan",
                   isTarget ? "is-target" : "",
                   isTarget && holdDone ? "is-tapping is-picked" : "",
+                  onHubPillSelect && pill.id !== "smart-scan" ? "is-selectable" : "",
                 ].filter(Boolean).join(" ")}
+                onClick={() => {
+                  if (pill.id === "smart-scan") return;
+                  onHubPillSelect?.(pill.id);
+                }}
               >
                 {isTarget && holdDone ? (
                   <span
@@ -683,12 +690,14 @@ export function PhoneMockupScreen({
   motionPaused = false,
   hubTapTarget,
   onHubTapComplete,
+  onHubPillSelect,
   onChatTourComplete,
 }: {
   scene: PhoneMockupSceneId;
   motionPaused?: boolean;
   hubTapTarget?: PhoneMockupChatId;
   onHubTapComplete?: () => void;
+  onHubPillSelect?: (id: PhoneMockupChatId) => void;
   onChatTourComplete?: () => void;
 }) {
   const t = useTranslations("hero.mockup");
@@ -717,6 +726,7 @@ export function PhoneMockupScreen({
           hubTapTarget={hubTapTarget}
           motionPaused={motionPaused}
           onHubTapComplete={onHubTapComplete}
+          onHubPillSelect={onHubPillSelect}
         />
       ) : null}
       {scene === "details" ? <DetailsScreen t={t} formatter={formatter} /> : null}

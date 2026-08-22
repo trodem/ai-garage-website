@@ -1850,29 +1850,68 @@ summary:focus-visible {
 }
 
 .ask-walk-steps li {
-  border: 1px solid color-mix(in srgb, var(--color-brand-cyan) 28%, transparent);
+  margin: 0;
+}
+
+.ask-walk-steps button {
+  --pill: var(--color-brand-cyan);
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid color-mix(in srgb, var(--pill) 28%, transparent);
   border-radius: 999px;
+  background: color-mix(in srgb, var(--pill) 8%, transparent);
   padding: 0.35rem 0.85rem;
-  color: rgb(100 116 139);
+  color: color-mix(in srgb, var(--pill) 62%, rgb(51 65 85));
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  transition:
+    background-color 0.7s ease,
+    color 0.7s ease,
+    border-color 0.7s ease,
+    box-shadow 0.7s ease;
 }
 
-.dark .ask-walk-steps li {
-  color: rgb(148 163 184);
+.ask-walk-steps button[data-pill="ask-log"] {
+  --pill: var(--color-brand-cyan);
 }
 
-.ask-walk-steps li.is-current {
-  border-color: transparent;
-  background: rgb(15 23 42);
+.ask-walk-steps button[data-pill="ask-docs"] {
+  --pill: var(--color-primary-500);
+}
+
+.ask-walk-steps button[data-pill="smart-log"] {
+  --pill: var(--color-brand-pink);
+}
+
+.ask-walk-steps button:hover {
+  border-color: color-mix(in srgb, var(--pill) 62%, transparent);
+  background: color-mix(in srgb, var(--pill) 16%, transparent);
+  color: var(--pill);
+}
+
+.dark .ask-walk-steps button {
+  color: color-mix(in srgb, var(--pill) 72%, white);
+  background: color-mix(in srgb, var(--pill) 12%, transparent);
+}
+
+.dark .ask-walk-steps button:hover {
   color: white;
+  background: color-mix(in srgb, var(--pill) 22%, transparent);
 }
 
-.dark .ask-walk-steps li.is-current {
-  background: white;
-  color: rgb(2 6 23);
+.ask-walk-steps button.is-current,
+.dark .ask-walk-steps button.is-current {
+  border-color: transparent;
+  background: var(--pill);
+  color: white;
+  box-shadow: 0 8px 18px color-mix(in srgb, var(--pill) 28%, transparent);
+}
+
+.ask-walk-steps button:focus-visible {
+  outline: 2px solid var(--pill);
+  outline-offset: 2px;
 }
 
 .ask-walk-slide {
@@ -1920,18 +1959,16 @@ summary:focus-visible {
 
 @media (prefers-reduced-motion: no-preference) {
   .ask-walk-slide {
-    animation: askWalkIn 0.4s ease;
+    animation: askWalkIn 0.75s ease;
   }
 }
 
 @keyframes askWalkIn {
   from {
-    opacity: 0;
-    transform: translateY(8px);
+    opacity: 0.2;
   }
   to {
     opacity: 1;
-    transform: none;
   }
 }
 
@@ -2363,8 +2400,8 @@ summary:focus-visible {
 }
 
 .pm-pills.is-tapping .pm-pill:not(.is-target) {
-  opacity: 0.4;
-  transition: opacity 0.25s ease;
+  opacity: 0.55;
+  transition: opacity 0.55s ease;
 }
 
 .pm-pill.is-tapping {
@@ -2377,6 +2414,11 @@ summary:focus-visible {
 
 .pm-pill-pink.is-picked {
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--pm-pink) 80%, white);
+}
+
+.ask-walk-phone .pm-pill.is-selectable {
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .pm-pill-icon {
@@ -2392,8 +2434,8 @@ summary:focus-visible {
 }
 
 .pm-pill-pink {
-  color: var(--pm-pink);
-  border: 1px solid color-mix(in srgb, var(--pm-pink) 70%, transparent);
+  color: #1a0810;
+  background: var(--pm-pink);
 }
 
 .pm-pill-cyan {
@@ -3395,11 +3437,22 @@ summary:focus-visible {
 }
 
 .pm-chat-photo {
-  display: block;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
   width: 100%;
-  height: auto;
+  aspect-ratio: 338 / 220;
   margin-bottom: 0.35rem;
   border-radius: 0.55rem;
+  background: #000;
+}
+
+.pm-chat-photo-img {
+  display: block;
+  width: 58%;
+  height: auto;
+  object-fit: contain;
+  background: #000;
 }
 
 .pm-bubble-ai {

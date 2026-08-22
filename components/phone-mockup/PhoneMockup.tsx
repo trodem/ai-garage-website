@@ -8,6 +8,7 @@ import {
   PhoneMockupHeader,
   PHONE_MOCKUP_CHAT_TOUR,
   PHONE_MOCKUP_TAB_TOUR,
+  type PhoneMockupChatId,
   type PhoneMockupSceneId,
 } from "@/components/phone-mockup/PhoneMockupChrome";
 import { PhoneMockupScreen } from "@/components/phone-mockup/PhoneMockupScreens";
@@ -19,6 +20,9 @@ type PhoneMockupProps = {
   /** Tab hub screens (Hero) or Ask / Smart Log conversation screens. */
   tour?: "tabs" | "chat";
   label?: string;
+  /** Chat-tour only: jump to this destination (Home tap, then that screen). */
+  jumpTo?: PhoneMockupChatId;
+  jumpNonce?: number;
   onSceneChange?: (scene: PhoneMockupSceneId) => void;
 };
 
@@ -26,6 +30,8 @@ export default function PhoneMockup({
   className,
   tour = "tabs",
   label,
+  jumpTo,
+  jumpNonce = 0,
   onSceneChange,
 }: PhoneMockupProps) {
   const t = useTranslations("hero");
@@ -42,11 +48,26 @@ export default function PhoneMockup({
   const dwellTimerRef = useRef<number>(0);
   const fadeKindRef = useRef<"tab" | "to-chat" | "to-next">("tab");
   const hubTapLockRef = useRef(false);
+  const [hubReplayToken, setHubReplayToken] = useState(0);
   const dest = scenes[sceneIndex] ?? scenes[0];
   const showingChat = tour === "chat" && !fromHome;
   const scene: PhoneMockupSceneId = showingChat ? dest : tour === "chat" ? "home" : dest;
   const chatScene = showingChat;
   const tourLength = scenes.length;
+
+  const jumpToDest = useCallback((id: PhoneMockupChatId, openChat: boolean) => {
+    const index = PHONE_MOCKUP_CHAT_TOUR.indexOf(id);
+    if (index < 0) return;
+    window.clearTimeout(dwellTimerRef.current);
+    chatAdvanceRef.current = false;
+    hubTapLockRef.current = openChat;
+    fadeKindRef.current = "tab";
+    setChatScrolling(false);
+    setFading(false);
+    setSceneIndex(index);
+    setFromHome(!openChat);
+    setHubReplayToken((token) => token + 1);
+  }, []);
 
   useEffect(() => {
     setSceneIndex(0);
@@ -57,6 +78,11 @@ export default function PhoneMockup({
     fadeKindRef.current = "tab";
     hubTapLockRef.current = false;
   }, [tour]);
+
+  useEffect(() => {
+    if (tour !== "chat" || jumpNonce <= 0) return;
+    jumpToDest(jumpTo ?? "ask-log", false);
+  }, [tour, jumpTo, jumpNonce, jumpToDest]);
 
   useEffect(() => {
     onSceneChange?.(tour === "chat" ? dest : scene);
@@ -166,7 +192,11 @@ export default function PhoneMockup({
               >
                 <div
                   ref={scrollRef}
-                  key={tour === "chat" ? `${dest}-${fromHome ? "home" : "open"}` : scene}
+                  key={
+                    tour === "chat"
+                      ? `${dest}-${fromHome ? "home" : "open"}-${hubReplayToken}`
+                      : scene
+                  }
                   className={[
                     "phone-mockup-scroll",
                     chatScene ? "is-chat" : "",
@@ -180,6 +210,9 @@ export default function PhoneMockup({
                     motionPaused={motionPaused}
                     hubTapTarget={fromHome && isPhoneMockupChatScene(dest) ? dest : undefined}
                     onHubTapComplete={onHubTapComplete}
+                    onHubPillSelect={
+                      tour === "chat" ? (id) => jumpToDest(id, true) : undefined
+                    }
                     onChatTourComplete={onChatTourComplete}
                   />
                 </div>

@@ -20,6 +20,8 @@ const SLIDE_KEY: Record<PhoneMockupChatId, "askLog" | "askDocs" | "smartLog"> = 
 export default function AskWalkthroughSection() {
   const t = useTranslations("askWalkthrough");
   const [scene, setScene] = useState<PhoneMockupChatId>("ask-log");
+  const [jumpTo, setJumpTo] = useState<PhoneMockupChatId>("ask-log");
+  const [jumpNonce, setJumpNonce] = useState(0);
 
   const onSceneChange = useCallback((next: PhoneMockupSceneId) => {
     if (isPhoneMockupChatScene(next)) setScene(next);
@@ -41,12 +43,20 @@ export default function AskWalkthroughSection() {
                 const key = SLIDE_KEY[id];
                 const current = id === scene;
                 return (
-                  <li
-                    key={id}
-                    className={current ? "is-current" : undefined}
-                    aria-current={current ? "step" : undefined}
-                  >
-                    {t(`slides.${key}.kicker`)}
+                  <li key={id}>
+                    <button
+                      type="button"
+                      data-pill={id}
+                      className={current ? "is-current" : undefined}
+                      aria-pressed={current}
+                      onClick={() => {
+                        setScene(id);
+                        setJumpTo(id);
+                        setJumpNonce((value) => value + 1);
+                      }}
+                    >
+                      {t(`slides.${key}.kicker`)}
+                    </button>
                   </li>
                 );
               })}
@@ -63,6 +73,8 @@ export default function AskWalkthroughSection() {
             <PhoneMockup
               tour="chat"
               label={t("imageAlt")}
+              jumpTo={jumpTo}
+              jumpNonce={jumpNonce}
               onSceneChange={onSceneChange}
             />
           </div>

@@ -8,6 +8,7 @@ import {
   IconMessagePlus,
   IconMicrophone,
 } from "@tabler/icons-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import LogoIcon from "@/components/LogoIcon";
@@ -112,27 +113,15 @@ function ChatComposer({
 
 function MockupMilPhoto() {
   return (
-    <svg className="pm-chat-photo" viewBox="0 0 320 168" aria-hidden>
-      <rect width="320" height="168" rx="10" fill="#12141c" />
-      <rect x="18" y="22" width="284" height="124" rx="12" fill="#07080d" />
-      <circle cx="88" cy="84" r="46" fill="none" stroke="#2a3144" strokeWidth="8" />
-      <circle cx="88" cy="84" r="34" fill="none" stroke="#1b2230" strokeWidth="4" />
-      <text x="88" y="92" textAnchor="middle" fill="#5b6578" fontSize="18" fontWeight="700">
-        0
-      </text>
-      <rect x="148" y="40" width="132" height="88" rx="8" fill="#0c1018" />
-      <rect x="164" y="54" width="44" height="28" rx="6" fill="#1a1208" stroke="#f5c518" strokeWidth="2" />
-      <path
-        d="M178 72h6l3-6h8l3 6h6v4h-3l-2 8h-16l-2-8h-3z"
-        fill="#f5c518"
+    <span className="pm-chat-photo">
+      <Image
+        src="/images/mockups/check-engine.png"
+        alt=""
+        width={338}
+        height={220}
+        className="pm-chat-photo-img"
       />
-      <text x="230" y="72" fill="#f5c518" fontSize="11" fontWeight="800">
-        MIL
-      </text>
-      <text x="230" y="90" fill="#8b93a6" fontSize="9">
-        CHECK
-      </text>
-    </svg>
+    </span>
   );
 }
 
