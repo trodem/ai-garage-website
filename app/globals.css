@@ -2793,8 +2793,9 @@ summary:focus-visible {
 
 .pm-split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.4rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.7rem;
 }
 
 .pm-status,
@@ -2809,6 +2810,7 @@ summary:focus-visible {
 }
 
 .pm-status {
+  min-width: 0;
   padding: 0.35rem 0.45rem 0.5rem;
 }
 
@@ -2818,6 +2820,7 @@ summary:focus-visible {
 
 .pm-status strong {
   display: flex;
+  min-width: 0;
   align-items: center;
   gap: 0.28rem;
   font-size: calc(var(--phone-width) * 0.038);
@@ -3945,6 +3948,18 @@ summary:focus-visible {
   min-height: 0;
 }
 
+.pm-chat-stage .pm-chat-thread {
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.pm-chat-stage .pm-chat-thread::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 .pm-scan-camera {
   z-index: 1;
   display: flex;
@@ -4386,7 +4401,7 @@ summary:focus-visible {
   display: flex;
   flex-shrink: 0;
   gap: 0.45rem;
-  padding: 0.35rem 0.55rem 0.7rem;
+  padding: 0.35rem 0.55rem calc(20px + 0.55rem);
 }
 
 .pm-scan-btn-cancel,

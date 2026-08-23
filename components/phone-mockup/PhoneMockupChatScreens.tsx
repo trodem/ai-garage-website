@@ -10,7 +10,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import LogoIcon from "@/components/LogoIcon";
 import type { PhoneMockupChatId } from "@/components/phone-mockup/PhoneMockupChrome";
 import PhoneMockupInsertDraftForm from "@/components/phone-mockup/PhoneMockupInsertDraftForm";
@@ -266,12 +266,28 @@ function ChatTurns({
 }) {
   const [revealed, setRevealed] = useState(0);
   const finishedRef = useRef(false);
+  const threadRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (finishedRef.current || revealed < turns.length) return;
     finishedRef.current = true;
     onDone();
   }, [onDone, revealed, turns.length]);
+
+  useLayoutEffect(() => {
+    const thread = threadRef.current;
+    if (!thread) return;
+    const stickToEnd = () => {
+      thread.scrollTop = thread.scrollHeight;
+    };
+    stickToEnd();
+    const observer = new ResizeObserver(stickToEnd);
+    observer.observe(thread);
+    for (const child of Array.from(thread.children)) {
+      observer.observe(child);
+    }
+    return () => observer.disconnect();
+  }, [revealed]);
 
   const current = turns[revealed];
   const waitingOnUser = current?.role === "user";
@@ -284,7 +300,7 @@ function ChatTurns({
   }, [waitingOnUser, paused, instant, revealed]);
 
   return (
-    <div className="pm-chat-thread is-enter">
+    <div ref={threadRef} className="pm-chat-thread is-enter">
       {turns.slice(0, Math.min(revealed + 1, turns.length)).map((turn, index) => {
         if (turn.role === "user") {
           return <UserBubble key={`u-${index}`} text={turn.text} photo={turn.photo} />;
@@ -365,15 +381,23 @@ export function PhoneMockupChatScreen({
   const holdDone = useMockupDelayedFlag(showEmpty ? 1500 : 0, paused, showEmpty);
   const [leaving, setLeaving] = useState(false);
   const [chatReady, setChatReady] = useState(!showEmpty);
+  const [chatFinished, setChatFinished] = useState(false);
   const [showDraft, setShowDraft] = useState(false);
 
   useEffect(() => {
     setLeaving(false);
     setChatReady(!showEmpty);
+    setChatFinished(false);
     setShowDraft(instant && scene === "smart-log");
   }, [scene, showEmpty, instant]);
   const isLog = scene === "smart-log";
+  const formRevealHold = useMockupDelayedFlag(2400, paused, isLog && chatFinished && !instant);
   const draftHold = useMockupDelayedFlag(3200, paused, isLog && showDraft && !instant);
+
+  useEffect(() => {
+    if (!isLog || instant || !chatFinished || !formRevealHold) return;
+    setShowDraft(true);
+  }, [isLog, instant, chatFinished, formRevealHold]);
 
   useEffect(() => {
     if (!isLog || instant || !showDraft || !draftHold) return;
@@ -392,7 +416,7 @@ export function PhoneMockupChatScreen({
       return;
     }
     if (instant) return;
-    setShowDraft(true);
+    setChatFinished(true);
   };
 
   const chatBody = (
