@@ -61,6 +61,30 @@ export const MOCKUP_VEHICLE = {
   oilKm: 1860,
 } as const;
 
+export const MOCKUP_SCAN_RECEIPT = {
+  station: "Avia Chur",
+  date: "2026-08-18",
+  liters: 30.28,
+  pricePerLiter: 1.79,
+  recentAvgPricePerLiter: 1.84,
+  total: 54.2,
+  odometer: 28460,
+  kmSincePrevious: 312,
+  location: "Chur",
+  fullTank: true,
+} as const;
+
+/** Smart Log chat: "oggi" + CHF 25 for 7 L — date matches the demo calendar day. */
+export const MOCKUP_SMART_LOG_REFUEL = {
+  date: "2026-08-23",
+  total: 25,
+  liters: 7,
+  pricePerLiter: 3.57,
+  odometer: null,
+  location: null,
+  fullTank: false,
+} as const;
+
 export const MOCKUP_FOCUS_YEAR = 2026;
 export const MOCKUP_PREV_YEAR = 2025;
 export const MOCKUP_NEXT_YEAR = 2027;

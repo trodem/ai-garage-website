@@ -3,14 +3,15 @@
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type AnimationEvent, type TransitionEvent } from "react";
 import {
-  isPhoneMockupChatScene,
+  isPhoneMockupFlowScene,
   PhoneMockupFooter,
   PhoneMockupHeader,
-  PHONE_MOCKUP_CHAT_TOUR,
+  PHONE_MOCKUP_ASK_TOUR,
   PHONE_MOCKUP_TAB_TOUR,
-  type PhoneMockupChatId,
   type PhoneMockupSceneId,
+  type PhoneMockupTourId,
 } from "@/components/phone-mockup/PhoneMockupChrome";
+import { prefersReducedMotion } from "@/components/phone-mockup/phoneMockupMotion";
 import { PhoneMockupScreen } from "@/components/phone-mockup/PhoneMockupScreens";
 
 const CHAT_DWELL_MS = 1400;
@@ -20,8 +21,8 @@ type PhoneMockupProps = {
   /** Tab hub screens (Hero) or Ask / Smart Log conversation screens. */
   tour?: "tabs" | "chat";
   label?: string;
-  /** Chat-tour only: jump to this destination (Home tap, then that screen). */
-  jumpTo?: PhoneMockupChatId;
+  /** Ask-tour only: jump to this destination (Home tap, then that screen). */
+  jumpTo?: PhoneMockupTourId;
   jumpNonce?: number;
   onSceneChange?: (scene: PhoneMockupSceneId) => void;
 };
@@ -36,7 +37,7 @@ export default function PhoneMockup({
 }: PhoneMockupProps) {
   const t = useTranslations("hero");
   const scenes: PhoneMockupSceneId[] =
-    tour === "chat" ? PHONE_MOCKUP_CHAT_TOUR : PHONE_MOCKUP_TAB_TOUR;
+    tour === "chat" ? PHONE_MOCKUP_ASK_TOUR : PHONE_MOCKUP_TAB_TOUR;
   const [sceneIndex, setSceneIndex] = useState(0);
   const [fromHome, setFromHome] = useState(tour === "chat");
   const [fading, setFading] = useState(false);
@@ -53,13 +54,13 @@ export default function PhoneMockup({
   const [homeFade, setHomeFade] = useState(false);
   const [homeSwipeNonce, setHomeSwipeNonce] = useState(0);
   const dest = scenes[sceneIndex] ?? scenes[0];
-  const showingChat = tour === "chat" && !fromHome;
-  const scene: PhoneMockupSceneId = showingChat ? dest : tour === "chat" ? "home" : dest;
-  const chatScene = showingChat;
+  const showingFlow = tour === "chat" && !fromHome;
+  const scene: PhoneMockupSceneId = showingFlow ? dest : tour === "chat" ? "home" : dest;
+  const flowScene = showingFlow;
   const tourLength = scenes.length;
 
-  const jumpToDest = useCallback((id: PhoneMockupChatId, openChat: boolean) => {
-    const index = PHONE_MOCKUP_CHAT_TOUR.indexOf(id);
+  const jumpToDest = useCallback((id: PhoneMockupTourId, openChat: boolean) => {
+    const index = PHONE_MOCKUP_ASK_TOUR.indexOf(id);
     if (index < 0) return;
     window.clearTimeout(dwellTimerRef.current);
     chatAdvanceRef.current = false;
@@ -84,7 +85,7 @@ export default function PhoneMockup({
 
   useEffect(() => {
     if (tour !== "chat" || jumpNonce <= 0) return;
-    jumpToDest(jumpTo ?? "ask-log", false);
+    jumpToDest(jumpTo ?? "ask-log", prefersReducedMotion());
   }, [tour, jumpTo, jumpNonce, jumpToDest]);
 
   useEffect(() => {
@@ -155,7 +156,7 @@ export default function PhoneMockup({
     beginFade("to-chat");
   }, [beginFade]);
 
-  const onChatTourComplete = useCallback(() => {
+  const onSceneTourComplete = useCallback(() => {
     if (chatAdvanceRef.current) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       chatAdvanceRef.current = true;
@@ -199,13 +200,13 @@ export default function PhoneMockup({
                 <span className="phone-mockup-lens" />
               </div>
               <div className="phone-mockup-glass" aria-hidden />
-              {chatScene ? null : <PhoneMockupHeader />}
+              {flowScene ? null : <PhoneMockupHeader />}
               <div
                 ref={bodyRef}
                 className={[
                   "phone-mockup-body",
                   fading ? "is-fading" : "",
-                  chatScene ? "is-chat" : "",
+                  flowScene ? "is-chat" : "",
                 ].filter(Boolean).join(" ")}
                 onTransitionEnd={onFadeEnd}
               >
@@ -222,7 +223,7 @@ export default function PhoneMockup({
                   }
                   className={[
                     "phone-mockup-scroll",
-                    chatScene ? "is-chat" : "",
+                    flowScene ? "is-chat" : "",
                     fromHome ? "is-frozen" : "",
                     chatScrolling ? "is-chat-scrolling" : "",
                   ].filter(Boolean).join(" ")}
@@ -231,17 +232,17 @@ export default function PhoneMockup({
                   <PhoneMockupScreen
                     scene={scene}
                     motionPaused={motionPaused}
-                    hubTapTarget={fromHome && isPhoneMockupChatScene(dest) ? dest : undefined}
+                    hubTapTarget={fromHome && isPhoneMockupFlowScene(dest) ? dest : undefined}
                     onHubTapComplete={onHubTapComplete}
                     onHubPillSelect={
                       tour === "chat" ? (id) => jumpToDest(id, true) : undefined
                     }
-                    onChatTourComplete={onChatTourComplete}
+                    onSceneTourComplete={onSceneTourComplete}
                   />
                 </div>
                 </div>
               </div>
-              {isPhoneMockupChatScene(scene) ? null : (
+              {isPhoneMockupFlowScene(scene) ? null : (
                 <PhoneMockupFooter
                   activeTab={scene}
                   labels={{

@@ -30,7 +30,7 @@ export function useMockupTypewriter(text: string, options: TypewriterOptions): s
     }
     if (instant || paused) return;
     const char = text[count] ?? "";
-    const delay = char === "\n" ? 220 : 13;
+    const delay = char === "\n" ? 60 : 6;
     const id = window.setTimeout(() => setCount((current) => current + 1), delay);
     return () => window.clearTimeout(id);
   }, [enabled, paused, instant, text, count]);

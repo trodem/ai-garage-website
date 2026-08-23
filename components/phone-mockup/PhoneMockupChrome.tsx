@@ -13,7 +13,11 @@ export type PhoneMockupTabId = "home" | "details" | "timeline" | "stats" | "gara
 
 export type PhoneMockupChatId = "ask-log" | "ask-docs" | "smart-log";
 
-export type PhoneMockupSceneId = PhoneMockupTabId | PhoneMockupChatId;
+export type PhoneMockupFlowId = "smart-scan";
+
+export type PhoneMockupTourId = PhoneMockupChatId | PhoneMockupFlowId;
+
+export type PhoneMockupSceneId = PhoneMockupTabId | PhoneMockupTourId;
 
 export type PhoneMockupTabLabels = Record<PhoneMockupTabId, string>;
 
@@ -25,14 +29,27 @@ export const PHONE_MOCKUP_TAB_TOUR: PhoneMockupTabId[] = [
   "garage",
 ];
 
-export const PHONE_MOCKUP_CHAT_TOUR: PhoneMockupChatId[] = [
+export const PHONE_MOCKUP_ASK_TOUR: PhoneMockupTourId[] = [
   "ask-log",
   "ask-docs",
+  "smart-scan",
   "smart-log",
 ];
 
 export function isPhoneMockupChatScene(scene: PhoneMockupSceneId): scene is PhoneMockupChatId {
   return scene === "ask-log" || scene === "ask-docs" || scene === "smart-log";
+}
+
+export function isPhoneMockupSmartScanScene(
+  scene: PhoneMockupSceneId,
+): scene is PhoneMockupFlowId {
+  return scene === "smart-scan";
+}
+
+export function isPhoneMockupFlowScene(
+  scene: PhoneMockupSceneId,
+): scene is PhoneMockupTourId {
+  return isPhoneMockupChatScene(scene) || isPhoneMockupSmartScanScene(scene);
 }
 
 const TABS: {

@@ -30,12 +30,18 @@ import {
 import { useFormatter, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { PhoneMockupChatScreen, useMockupDelayedFlag } from "@/components/phone-mockup/PhoneMockupChatScreens";
+import { PhoneMockupChatScreen } from "@/components/phone-mockup/PhoneMockupChatScreens";
 import {
   isPhoneMockupChatScene,
-  type PhoneMockupChatId,
+  isPhoneMockupSmartScanScene,
   type PhoneMockupSceneId,
+  type PhoneMockupTourId,
 } from "@/components/phone-mockup/PhoneMockupChrome";
+import PhoneMockupSmartScanScreen from "@/components/phone-mockup/PhoneMockupSmartScanScreen";
+import {
+  prefersReducedMotion,
+  useMockupDelayedFlag,
+} from "@/components/phone-mockup/phoneMockupMotion";
 import {
   MOCKUP_FIXED_BARS,
   MOCKUP_FIXED_EVENTS,
@@ -118,10 +124,6 @@ function activityMeta(
   });
   if (item.kmSince) return `${when} · ${km(item.kmSince)}`;
   return when;
-}
-
-function prefersReducedMotion(): boolean {
-  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
 function isVisibleInPhone(el: HTMLElement, phone: DOMRect): boolean {
@@ -297,10 +299,10 @@ function HomeScreen({
   t: ScreenCopy;
   formatter: ReturnType<typeof useFormatter>;
   monthLabels: string[];
-  hubTapTarget?: PhoneMockupChatId;
+  hubTapTarget?: PhoneMockupTourId;
   motionPaused?: boolean;
   onHubTapComplete?: () => void;
-  onHubPillSelect?: (id: PhoneMockupChatId) => void;
+  onHubPillSelect?: (id: PhoneMockupTourId) => void;
 }) {
   const tiles: { kind: MockupEventKind | "inspection"; icon: ReactNode }[] = [
     { kind: "refuel", icon: <IconGasStation className="pm-tile-icon" /> },
@@ -315,7 +317,7 @@ function HomeScreen({
   const paused = Boolean(motionPaused);
   const holdDone = useMockupDelayedFlag(hubTapTarget ? 1100 : 0, paused, Boolean(hubTapTarget));
   const pills: {
-    id: PhoneMockupChatId | "smart-scan";
+    id: PhoneMockupTourId;
     tone: "pink" | "cyan";
     icon: ReactNode;
     label: string;
@@ -360,10 +362,9 @@ function HomeScreen({
                   pill.tone === "pink" ? "pm-pill-pink" : "pm-pill-cyan",
                   isTarget ? "is-target" : "",
                   isTarget && holdDone ? "is-tapping is-picked" : "",
-                  onHubPillSelect && pill.id !== "smart-scan" ? "is-selectable" : "",
+                  onHubPillSelect ? "is-selectable" : "",
                 ].filter(Boolean).join(" ")}
                 onClick={() => {
-                  if (pill.id === "smart-scan") return;
                   onHubPillSelect?.(pill.id);
                 }}
               >
@@ -691,14 +692,14 @@ export function PhoneMockupScreen({
   hubTapTarget,
   onHubTapComplete,
   onHubPillSelect,
-  onChatTourComplete,
+  onSceneTourComplete,
 }: {
   scene: PhoneMockupSceneId;
   motionPaused?: boolean;
-  hubTapTarget?: PhoneMockupChatId;
+  hubTapTarget?: PhoneMockupTourId;
   onHubTapComplete?: () => void;
-  onHubPillSelect?: (id: PhoneMockupChatId) => void;
-  onChatTourComplete?: () => void;
+  onHubPillSelect?: (id: PhoneMockupTourId) => void;
+  onSceneTourComplete?: () => void;
 }) {
   const t = useTranslations("hero.mockup");
   const formatter = useFormatter();
@@ -706,12 +707,21 @@ export function PhoneMockupScreen({
     formatter.dateTime(new Date(MOCKUP_FOCUS_YEAR, index, 1), { month: "short" }),
   );
 
+  if (isPhoneMockupSmartScanScene(scene)) {
+    return (
+      <PhoneMockupSmartScanScreen
+        motionPaused={motionPaused}
+        onComplete={onSceneTourComplete ?? (() => undefined)}
+      />
+    );
+  }
+
   if (isPhoneMockupChatScene(scene)) {
     return (
       <PhoneMockupChatScreen
         scene={scene}
         motionPaused={motionPaused}
-        onComplete={onChatTourComplete ?? (() => undefined)}
+        onComplete={onSceneTourComplete ?? (() => undefined)}
       />
     );
   }

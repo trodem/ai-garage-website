@@ -155,6 +155,44 @@
         "smartLogUser2": "Yes, I spent 25 francs for 7 l",
         "smartLogAnswer2": "The required fields to save are complete. You can also add:\n• Odometer\n• Full tank\n• Fuel grade\n• Place\n• Notes\n\nReply with those in one message, or say to continue to the form."
       },
+      "scan": {
+        "hints": {
+          "0": "Reading receipt details…",
+          "1": "Detecting date and amount…",
+          "2": "Matching your vehicle log…"
+        },
+        "stepUpload": "Upload document",
+        "stepAnalyze": "Analyze document",
+        "cancel": "Cancel",
+        "save": "Save",
+        "receipt": {
+          "kicker": "Receipt",
+          "thanks": "Thank you, drive safely"
+        },
+        "fields": {
+          "date": "Date",
+          "total": "Total cost",
+          "liters": "Liters",
+          "odometer": "Odometer",
+          "pricePerLiter": "Price per liter",
+          "fullTank": "Full tank",
+          "fullTankYes": "Yes",
+          "fullTankNo": "No",
+          "location": "Location",
+          "paymentCurrency": "Payment currency",
+          "fuelGrade": "Fuel grade",
+          "notes": "Notes",
+          "notesPlaceholder": "Receipt details, payment method, etc.",
+          "odometerPlaceholder": "Enter km",
+          "locationPlaceholder": "City or station",
+          "notSet": "Not set",
+          "currencyChf": "CHF — Swiss franc",
+          "suffixChf": "CHF",
+          "suffixL": "L",
+          "suffixKm": "km",
+          "suffixChfL": "CHF/L"
+        }
+      },
       "tiles": {
         "refuel": "Fueling",
         "maintenance": "Service",
@@ -1090,8 +1128,8 @@
   "askWalkthrough": {
     "label": "Ask & log",
     "title": "Talk to your logbook — and log without a form.",
-    "lead": "Each chat starts on Home: tap the matching button, then ask or log.",
-    "imageAlt": "GarIQ Ask logbook, Ask docs, and Smart Log on a phone",
+    "lead": "Each flow starts on Home: tap the matching button, then ask or log.",
+    "imageAlt": "GarIQ Ask logbook, Ask docs, Smart Scan, and Smart Log on a phone",
     "slides": {
       "askLog": {
         "kicker": "Ask logbook",
@@ -1102,6 +1140,11 @@
         "kicker": "Ask docs",
         "title": "Tap Ask docs on Home.",
         "body": "Snap a warning light or ask the vault. GarIQ quotes your owner’s manual — pages you can open."
+      },
+      "smartScan": {
+        "kicker": "Smart Scan",
+        "title": "Tap Smart Scan on Home.",
+        "body": "GarIQ reads the date, liters and amount from the receipt and prepares the draft. It reaches the logbook only when you tap Save."
       },
       "smartLog": {
         "kicker": "Smart Log",

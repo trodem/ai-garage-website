@@ -4,27 +4,28 @@ import { useCallback, useState } from "react";
 import { useTranslations } from "next-intl";
 import PhoneMockup from "@/components/phone-mockup/PhoneMockup";
 import {
-  isPhoneMockupChatScene,
-  PHONE_MOCKUP_CHAT_TOUR,
-  type PhoneMockupChatId,
+  isPhoneMockupFlowScene,
+  PHONE_MOCKUP_ASK_TOUR,
   type PhoneMockupSceneId,
+  type PhoneMockupTourId,
 } from "@/components/phone-mockup/PhoneMockupChrome";
 import Reveal from "@/components/Reveal";
 
-const SLIDE_KEY: Record<PhoneMockupChatId, "askLog" | "askDocs" | "smartLog"> = {
+const SLIDE_KEY: Record<PhoneMockupTourId, "askLog" | "askDocs" | "smartScan" | "smartLog"> = {
   "ask-log": "askLog",
   "ask-docs": "askDocs",
+  "smart-scan": "smartScan",
   "smart-log": "smartLog",
 };
 
 export default function AskWalkthroughSection() {
   const t = useTranslations("askWalkthrough");
-  const [scene, setScene] = useState<PhoneMockupChatId>("ask-log");
-  const [jumpTo, setJumpTo] = useState<PhoneMockupChatId>("ask-log");
+  const [scene, setScene] = useState<PhoneMockupTourId>("ask-log");
+  const [jumpTo, setJumpTo] = useState<PhoneMockupTourId>("ask-log");
   const [jumpNonce, setJumpNonce] = useState(0);
 
   const onSceneChange = useCallback((next: PhoneMockupSceneId) => {
-    if (isPhoneMockupChatScene(next)) setScene(next);
+    if (isPhoneMockupFlowScene(next)) setScene(next);
   }, []);
 
   const slide = SLIDE_KEY[scene];
@@ -39,7 +40,7 @@ export default function AskWalkthroughSection() {
             <p className="section-copy max-w-xl text-left">{t("lead")}</p>
 
             <ol className="ask-walk-steps" aria-label={t("label")}>
-              {PHONE_MOCKUP_CHAT_TOUR.map((id) => {
+              {PHONE_MOCKUP_ASK_TOUR.map((id) => {
                 const key = SLIDE_KEY[id];
                 const current = id === scene;
                 return (

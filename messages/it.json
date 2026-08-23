@@ -155,6 +155,44 @@
         "smartLogUser2": "Sì, ho speso 25 franchi per 7 l",
         "smartLogAnswer2": "I campi obbligatori per salvare sono completi. Se vuoi, puoi anche aggiungere:\n• Chilometraggio\n• Pieno\n• Fuel grade\n• Luogo\n• Note\n\nRispondi con questi dati in un solo messaggio, oppure dire di continuare al modulo."
       },
+      "scan": {
+        "hints": {
+          "0": "Lettura dettagli ricevuta…",
+          "1": "Rilevamento data e importo…",
+          "2": "Abbinamento al registro veicolo…"
+        },
+        "stepUpload": "Carica documento",
+        "stepAnalyze": "Analizza documento",
+        "cancel": "Annulla",
+        "save": "Salva",
+        "receipt": {
+          "kicker": "Scontrino",
+          "thanks": "Grazie e arrivederci"
+        },
+        "fields": {
+          "date": "Data",
+          "total": "Costo totale",
+          "liters": "Litri",
+          "odometer": "Chilometraggio",
+          "pricePerLiter": "Prezzo al litro",
+          "fullTank": "Pieno",
+          "fullTankYes": "Sì",
+          "fullTankNo": "No",
+          "location": "Luogo",
+          "paymentCurrency": "Valuta di pagamento",
+          "fuelGrade": "Fuel grade",
+          "notes": "Note",
+          "notesPlaceholder": "Dettagli scontrino, metodo di pagamento, ecc.",
+          "odometerPlaceholder": "Inserisci km",
+          "locationPlaceholder": "Città o stazione",
+          "notSet": "Non impostato",
+          "currencyChf": "CHF — Swiss franc",
+          "suffixChf": "CHF",
+          "suffixL": "L",
+          "suffixKm": "km",
+          "suffixChfL": "CHF/L"
+        }
+      },
       "tiles": {
         "refuel": "Riforn.",
         "maintenance": "Service",
@@ -1090,8 +1128,8 @@
   "askWalkthrough": {
     "label": "Chiedi e registra",
     "title": "Parla col logbook — e registra senza modulo.",
-    "lead": "Ogni chat parte dalla Home: tap sul pulsante giusto, poi chiedi o registri.",
-    "imageAlt": "Ask logbook, Ask docs e Smart Log di GarIQ su uno smartphone",
+    "lead": "Ogni flusso parte dalla Home: tap sul pulsante giusto, poi chiedi o registri.",
+    "imageAlt": "Ask logbook, Ask docs, Smart Scan e Smart Log di GarIQ su uno smartphone",
     "slides": {
       "askLog": {
         "kicker": "Ask logbook",
@@ -1102,6 +1140,11 @@
         "kicker": "Ask docs",
         "title": "In Home, tap su Ask docs.",
         "body": "Scatti una spia o chiedi al vault. GarIQ cita il tuo manuale — pagine che puoi aprire."
+      },
+      "smartScan": {
+        "kicker": "Smart Scan",
+        "title": "In Home, tap su Smart Scan.",
+        "body": "GarIQ legge data, litri e importo dallo scontrino e prepara la bozza. Entra nel logbook solo quando tocchi Salva."
       },
       "smartLog": {
         "kicker": "Smart Log",

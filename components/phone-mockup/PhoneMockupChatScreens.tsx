@@ -13,7 +13,12 @@ import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import LogoIcon from "@/components/LogoIcon";
 import type { PhoneMockupChatId } from "@/components/phone-mockup/PhoneMockupChrome";
-import { MOCKUP_VEHICLE } from "@/components/phone-mockup/phoneMockupDemo";
+import PhoneMockupInsertDraftForm from "@/components/phone-mockup/PhoneMockupInsertDraftForm";
+import { MOCKUP_SMART_LOG_REFUEL, MOCKUP_VEHICLE } from "@/components/phone-mockup/phoneMockupDemo";
+import {
+  prefersReducedMotion,
+  useMockupDelayedFlag,
+} from "@/components/phone-mockup/phoneMockupMotion";
 import {
   renderMarkedPartial,
   useMockupTypewriter,
@@ -29,33 +34,6 @@ type ChatTurn = {
   calloutBody?: string;
   sources?: string[];
 };
-
-function prefersReducedMotion(): boolean {
-  if (typeof window === "undefined") return false;
-  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-}
-
-export function useMockupDelayedFlag(delayMs: number, paused: boolean, enabled: boolean): boolean {
-  const [ready, setReady] = useState(!enabled || delayMs <= 0);
-  const remainingRef = useRef(delayMs);
-
-  useEffect(() => {
-    remainingRef.current = delayMs;
-    setReady(!enabled || delayMs <= 0);
-  }, [delayMs, enabled]);
-
-  useEffect(() => {
-    if (!enabled || ready || paused) return;
-    const started = Date.now();
-    const id = window.setTimeout(() => setReady(true), remainingRef.current);
-    return () => {
-      remainingRef.current -= Date.now() - started;
-      window.clearTimeout(id);
-    };
-  }, [enabled, paused, ready]);
-
-  return ready;
-}
 
 function GarIqMark() {
   return (
@@ -301,7 +279,7 @@ function ChatTurns({
   useEffect(() => {
     if (!waitingOnUser) return;
     if (paused && !instant) return;
-    const id = window.setTimeout(() => setRevealed((value) => value + 1), instant ? 0 : 380);
+    const id = window.setTimeout(() => setRevealed((value) => value + 1), instant ? 0 : 180);
     return () => window.clearTimeout(id);
   }, [waitingOnUser, paused, instant, revealed]);
 
@@ -387,21 +365,37 @@ export function PhoneMockupChatScreen({
   const holdDone = useMockupDelayedFlag(showEmpty ? 1500 : 0, paused, showEmpty);
   const [leaving, setLeaving] = useState(false);
   const [chatReady, setChatReady] = useState(!showEmpty);
+  const [showDraft, setShowDraft] = useState(false);
 
   useEffect(() => {
     setLeaving(false);
     setChatReady(!showEmpty);
-  }, [scene, showEmpty]);
+    setShowDraft(instant && scene === "smart-log");
+  }, [scene, showEmpty, instant]);
+  const isLog = scene === "smart-log";
+  const draftHold = useMockupDelayedFlag(3200, paused, isLog && showDraft && !instant);
+
+  useEffect(() => {
+    if (!isLog || instant || !showDraft || !draftHold) return;
+    onComplete();
+  }, [isLog, instant, showDraft, draftHold, onComplete]);
   const vehicleLine = t("chat.vehicleLine", {
     make: MOCKUP_VEHICLE.make,
     model: MOCKUP_VEHICLE.model,
     year: MOCKUP_VEHICLE.year,
   });
   const turns = useMemo(() => buildTurns(scene, t), [scene, t]);
-  const isLog = scene === "smart-log";
 
-  return (
-    <div className="pm-screen pm-screen-chat">
+  const onChatDone = () => {
+    if (!isLog) {
+      onComplete();
+      return;
+    }
+    if (instant) return;
+    setShowDraft(true);
+  };
+
+  const chatBody = (
       <div className="pm-chat">
         <ChatHeader
           titlePrefix={isLog ? t("chat.logTitlePrefix") : t("chat.askTitlePrefix")}
@@ -415,7 +409,7 @@ export function PhoneMockupChatScreen({
             paused={paused}
             instant={instant}
             copyLabel={t("chat.copy")}
-            onDone={onComplete}
+            onDone={onChatDone}
           />
         ) : (
           <EmptyAskLog
@@ -436,6 +430,18 @@ export function PhoneMockupChatScreen({
           }
           camera={scene === "ask-docs"}
         />
+      </div>
+  );
+
+  if (!isLog) {
+    return <div className="pm-screen pm-screen-chat">{chatBody}</div>;
+  }
+
+  return (
+    <div className="pm-screen pm-screen-chat pm-scan">
+      <div className={showDraft ? "pm-chat-stage is-faded" : "pm-chat-stage"}>{chatBody}</div>
+      <div className={showDraft ? "pm-scan-draft is-visible" : "pm-scan-draft"}>
+        <PhoneMockupInsertDraftForm draft={MOCKUP_SMART_LOG_REFUEL} />
       </div>
     </div>
   );
