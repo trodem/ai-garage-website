@@ -33,7 +33,7 @@ export default function GarIqWordmark({
       className={`inline-block font-extrabold tracking-tight ${sizeClass} ${className}`.trim()}
       aria-label="GarIQ"
     >
-      <span className="text-primary-500">Gar</span>
+      <span className="text-primary-500 dark:text-brand-cyan">Gar</span>
       <span className="text-brand-pink">IQ</span>
     </span>
   );
