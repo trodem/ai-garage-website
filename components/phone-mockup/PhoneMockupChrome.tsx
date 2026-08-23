@@ -30,10 +30,10 @@ export const PHONE_MOCKUP_TAB_TOUR: PhoneMockupTabId[] = [
 ];
 
 export const PHONE_MOCKUP_ASK_TOUR: PhoneMockupTourId[] = [
+  "smart-log",
+  "smart-scan",
   "ask-log",
   "ask-docs",
-  "smart-scan",
-  "smart-log",
 ];
 
 export function isPhoneMockupChatScene(scene: PhoneMockupSceneId): scene is PhoneMockupChatId {

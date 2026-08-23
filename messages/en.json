@@ -11,7 +11,6 @@
   },
   "header": {
     "homeAria": "GarIQ home",
-    "navFeatures": "Features",
     "navHow": "How it works",
     "navPlans": "Plans",
     "navDownload": "Download",
@@ -1001,50 +1000,6 @@
       }
     ]
   },
-  "capabilities": {
-    "label": "Features",
-    "title": "Two moves. One logbook.",
-    "copy": "Give GarIQ the facts. Then ask it anything about the vehicle.",
-    "insert": {
-      "heading": "Give GarIQ the facts",
-      "promise": "You don’t have to fill everything in by hand.",
-      "examples": [
-        "Photo of an invoice",
-        "Upload a policy",
-        "Photo of a spare part",
-        "Log the hours you worked",
-        "Speak a fact"
-      ],
-      "steps": [
-        {
-          "label": "Capture",
-          "copy": "Photo, file, or voice — you choose how."
-        },
-        {
-          "label": "Draft",
-          "copy": "GarIQ prepares a draft from the facts you gave."
-        },
-        {
-          "label": "Confirm and save",
-          "copy": "You review and save. AI never saves on its own."
-        }
-      ]
-    },
-    "bridge": "First give it the facts. Then ask it anything.",
-    "ask": {
-      "heading": "Ask GarIQ",
-      "pairs": [
-        {
-          "q": "How much have I spent on this vehicle this year?",
-          "a": "This year you spent CHF 4'510.40 on the vehicle — maintenance, parts, insurance, and other."
-        },
-        {
-          "q": "How many hours have I worked on the vehicle this year?",
-          "a": "37 hours this year."
-        }
-      ]
-    }
-  },
   "audiences": {
     "label": "For whom",
     "title": "Built for how people actually share and drive.",
@@ -1065,29 +1020,28 @@
   },
   "askWalkthrough": {
     "label": "Ask & log",
-    "title": "Talk to your logbook — and log without a form.",
-    "lead": "Each flow starts on Home: tap the matching button, then ask or log.",
+    "title": "Bring your vehicle into the AI age.",
     "imageAlt": "GarIQ Ask logbook, Ask docs, Smart Scan, and Smart Log on a phone",
     "slides": {
       "askLog": {
         "kicker": "Ask logbook",
-        "title": "Tap Ask logbook on Home.",
-        "body": "Then ask fuel, workshop, insurance, km — answers come from this vehicle’s events, not the open web."
+        "subtitle": "You forget. <brand></brand> doesn’t. Ask it.",
+        "description": "GarIQ is your vehicle’s memory. Premium up this year? Last inspection passed? More kilometres on which fuel? What consumption? Workshop spend this year? This isn’t a random chat: it’s Ask on the logbook, on events already confirmed. One question, and that memory answers — without reopening the year, hunting the receipt, or going to the web."
       },
       "askDocs": {
         "kicker": "Ask docs",
-        "title": "Tap Ask docs on Home.",
-        "body": "Snap a warning light or ask the vault. GarIQ quotes your owner’s manual — pages you can open."
+        "subtitle": "A warning light flashing? What’s covered? <brand></brand> knows.",
+        "description": "Which oil does the manufacturer recommend? What tyre pressure? Windscreen cracked: does insurance cover it? Warning light on: what does it mean? Photograph the light: GarIQ says what it means. Photograph the oil bottle: it says whether it’s the right product. The photo is checked against the uploaded manual and policy, not the web. Upload the owner’s manual and the vehicle policy. No flipping three hundred pages for one line. One question, and the answer comes from the file."
       },
       "smartScan": {
         "kicker": "Smart Scan",
-        "title": "Tap Smart Scan on Home.",
-        "body": "GarIQ reads the date, liters and amount from the receipt and prepares the draft. It reaches the logbook only when you tap Save."
+        "subtitle": "Photo or PDF: <brand></brand> reads and gets it.",
+        "description": "Not sure what type of event it is? Photograph the receipt or upload the PDF. GarIQ reads the document and works it out — a fill-up, a workshop bill, an invoice. Date, amounts, litres or km land in the draft. You check, edit if needed, confirm. What goes in the logbook is your call."
       },
       "smartLog": {
         "kicker": "Smart Log",
-        "title": "Tap Smart Log on Home.",
-        "body": "Describe the event in chat. AI prepares a draft — it never writes the logbook until you tap Save."
+        "subtitle": "No photo? No file? Tell <brand></brand>.",
+        "description": "Tell the event in your own words — a fill-up, a service, tyres, a shop job. GarIQ works out the event type and asks when something is missing (date, km, amount, parts). Then you get a filled-in draft: check it, edit if needed, confirm. What goes in the logbook is your call."
       }
     }
   },

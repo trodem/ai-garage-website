@@ -11,7 +11,6 @@
   },
   "header": {
     "homeAria": "Home GarIQ",
-    "navFeatures": "Funzioni",
     "navHow": "Come funziona",
     "navPlans": "Piani",
     "navDownload": "Download",
@@ -1001,50 +1000,6 @@
       }
     ]
   },
-  "capabilities": {
-    "label": "Funzioni",
-    "title": "Due gesti. Un logbook.",
-    "copy": "Dai i fatti a GarIQ. Poi chiedigli qualsiasi cosa sul veicolo.",
-    "insert": {
-      "heading": "Dai informazioni a GarIQ",
-      "promise": "Non devi compilare tutto a mano.",
-      "examples": [
-        "Foto di una fattura",
-        "Carica una polizza",
-        "Foto di un ricambio",
-        "Registra le ore di lavoro",
-        "Dì un fatto a voce"
-      ],
-      "steps": [
-        {
-          "label": "Cattura",
-          "copy": "Foto, file o voce — tu scegli come."
-        },
-        {
-          "label": "Bozza",
-          "copy": "GarIQ prepara una bozza dai fatti che hai dato."
-        },
-        {
-          "label": "Conferma e salva",
-          "copy": "Controlli tu e salvi. L’IA non salva da sola."
-        }
-      ]
-    },
-    "bridge": "Prima dagli le informazioni. Poi chiedigli qualsiasi cosa.",
-    "ask": {
-      "heading": "Chiedi a GarIQ",
-      "pairs": [
-        {
-          "q": "Quanto ho speso quest’anno su questo veicolo?",
-          "a": "Quest’anno sul veicolo hai speso CHF 4'510.40 tra manutenzione, ricambi, assicurazione e altro."
-        },
-        {
-          "q": "Quante ore ho lavorato sul veicolo quest’anno?",
-          "a": "37 ore quest’anno."
-        }
-      ]
-    }
-  },
   "audiences": {
     "label": "Per chi",
     "title": "Pensato per come si guida e si condivide davvero.",
@@ -1065,29 +1020,28 @@
   },
   "askWalkthrough": {
     "label": "Chiedi e registra",
-    "title": "Parla col logbook — e registra senza modulo.",
-    "lead": "Ogni flusso parte dalla Home: tap sul pulsante giusto, poi chiedi o registri.",
+    "title": "Porta il tuo veicolo nell'età dell'IA.",
     "imageAlt": "Ask logbook, Ask docs, Smart Scan e Smart Log di GarIQ su uno smartphone",
     "slides": {
       "askLog": {
         "kicker": "Ask logbook",
-        "title": "In Home, tap su Ask logbook.",
-        "body": "Poi chiedi rifornimenti, officina, assicurazione, km — le risposte escono dagli eventi di questo veicolo, non dal web."
+        "subtitle": "Tu dimentichi. <brand></brand> no. Domandagli.",
+        "description": "GarIQ è la memoria del tuo veicolo. Premio aumentato quest’anno? Ultima ispezione superata? Più chilometri con quale carburante? Che consumo? Quanto in officina quest’anno? Non è una chat qualsiasi: è Ask sul logbook, sugli eventi già confermati. Una domanda, e quella memoria risponde — senza riaprire l’anno, senza cacciare lo scontrino, senza andare sul web."
       },
       "askDocs": {
         "kicker": "Ask docs",
-        "title": "In Home, tap su Ask docs.",
-        "body": "Scatti una spia o chiedi al vault. GarIQ cita il tuo manuale — pagine che puoi aprire."
+        "subtitle": "Una spia lampeggia? Cosa copre la polizza? <brand></brand> lo sa.",
+        "description": "Quale olio consiglia il produttore? Che pressione i pneumatici? Parabrezza rotto: copre l’assicurazione? Spia accesa: che significa? Si fotografa la spia: GarIQ dice che significa. Si fotografa il flacone dell’olio: dice se è il prodotto giusto. La foto si confronta con il manuale e la polizza caricati, non con il web. Carica il manuale d’uso e la polizza del veicolo. Senza sfogliare trecento pagine per una riga. Una domanda, e la risposta esce dal file."
       },
       "smartScan": {
         "kicker": "Smart Scan",
-        "title": "In Home, tap su Smart Scan.",
-        "body": "GarIQ legge data, litri e importo dallo scontrino e prepara la bozza. Entra nel logbook solo quando tocchi Salva."
+        "subtitle": "Foto o PDF: <brand></brand> legge e capisce.",
+        "description": "Non sai di che tipo di evento si tratta? Fotografa lo scontrino o carica il PDF. GarIQ legge il documento e lo capisce — un rifornimento, un’officina, una fattura. Compila data, importi, litri o km nella bozza. Tu controlli, correggi se serve, e confermi. Cosa finisce nel logbook lo decidi tu."
       },
       "smartLog": {
         "kicker": "Smart Log",
-        "title": "In Home, tap su Smart Log.",
-        "body": "Descrivi l’evento in chat. L’IA prepara la bozza — non scrive nel logbook finché non tocchi Salva."
+        "subtitle": "Non hai una foto? Non hai un file? Dillo a <brand></brand>.",
+        "description": "Racconta l’evento a parole tue — un rifornimento, un tagliando, le gomme, un lavoro in garage. GarIQ capisce di che tipo di evento si tratta e, se manca qualcosa (data, km, importo, pezzi), te lo chiede. Poi ti mostra la bozza già compilata: controlli, correggi se serve, e confermi. Cosa finisce nel logbook lo decidi tu."
       }
     }
   },

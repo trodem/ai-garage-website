@@ -347,6 +347,15 @@ body {
   color: rgb(148 163 184);
 }
 
+.section-copy strong {
+  font-weight: 700;
+  color: #0b1f4a;
+}
+
+.dark .section-copy strong {
+  color: #f8fafc;
+}
+
 .feature-card,
 .step-card,
 .ai-card,
@@ -1538,211 +1547,6 @@ summary:focus-visible {
   }
 }
 
-/* ── Capabilities: Insert then Ask ─────────────────────────── */
-.cap-insert,
-.cap-ask {
-  margin-top: 2.5rem;
-}
-
-.cap-block-title {
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  color: #0b1f4a;
-}
-
-.dark .cap-block-title {
-  color: #f8fafc;
-}
-
-.cap-insert-promise {
-  margin-top: 0.65rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: rgb(71 85 105);
-}
-
-.dark .cap-insert-promise {
-  color: rgb(148 163 184);
-}
-
-.cap-insert-examples {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.25rem;
-  list-style: none;
-  padding: 0;
-}
-
-.cap-insert-examples li {
-  border-radius: 9999px;
-  border: 1px solid rgba(33, 30, 229, 0.16);
-  background: rgba(31, 27, 232, 0.05);
-  padding: 0.4rem 0.85rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #1916cc;
-}
-
-.dark .cap-insert-examples li {
-  border-color: rgba(0, 167, 229, 0.28);
-  background: rgba(0, 167, 229, 0.1);
-  color: #7dd3fc;
-}
-
-.cap-insert-steps {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  list-style: none;
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  .cap-insert-steps {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-.cap-insert-steps li {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.55rem;
-  padding: 1.25rem 1.25rem 1.35rem;
-  border: 1px solid rgba(33, 30, 229, 0.12);
-  border-radius: 1.35rem;
-  background: linear-gradient(
-    160deg,
-    rgba(255, 255, 255, 0.96),
-    rgba(248, 249, 252, 0.94)
-  );
-}
-
-.dark .cap-insert-steps li {
-  border-color: rgba(51, 65, 85, 0.75);
-  background: linear-gradient(
-    160deg,
-    rgba(15, 23, 42, 0.92),
-    rgba(15, 23, 42, 0.78)
-  );
-}
-
-.cap-insert-step-index {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 9999px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #fff;
-  background: linear-gradient(135deg, #211ee5, #08a7de);
-}
-
-.cap-insert-step-label {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  color: #0b1f4a;
-}
-
-.dark .cap-insert-step-label {
-  color: #f8fafc;
-}
-
-.cap-insert-step-copy {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.65;
-  color: rgb(71 85 105);
-}
-
-.dark .cap-insert-step-copy {
-  color: rgb(148 163 184);
-}
-
-.cap-bridge {
-  margin: 2.75rem auto 0;
-  max-width: 38rem;
-  text-align: center;
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  line-height: 1.4;
-  background-image: linear-gradient(110deg, #211ee5 0%, #08a7de 45%, #ed177b 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.cap-ask-qa {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1.35rem;
-}
-
-@media (min-width: 768px) {
-  .cap-ask-qa {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.cap-ask-pair {
-  margin: 0;
-  padding: 1.25rem 1.35rem 1.4rem;
-  border: 1px solid rgba(33, 30, 229, 0.12);
-  border-radius: 1.35rem;
-  background: linear-gradient(
-    160deg,
-    rgba(255, 255, 255, 0.96),
-    rgba(248, 249, 252, 0.94)
-  );
-}
-
-.dark .cap-ask-pair {
-  border-color: rgba(51, 65, 85, 0.75);
-  background: linear-gradient(
-    160deg,
-    rgba(15, 23, 42, 0.92),
-    rgba(15, 23, 42, 0.78)
-  );
-}
-
-.cap-ask-pair dt {
-  font-size: 0.95rem;
-  font-weight: 600;
-  line-height: 1.5;
-  color: #1916cc;
-}
-
-.dark .cap-ask-pair dt {
-  color: #7dd3fc;
-}
-
-.cap-ask-pair dd {
-  margin: 0.85rem 0 0;
-}
-
-.cap-ask-pair blockquote {
-  margin: 0;
-  padding: 0.85rem 1rem;
-  border-radius: 0.85rem;
-  border-left: 3px solid #ed177b;
-  background: rgba(31, 27, 232, 0.04);
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: rgb(51 65 85);
-}
-
-.dark .cap-ask-pair blockquote {
-  background: rgba(0, 167, 229, 0.08);
-  color: rgb(203 213 225);
-}
-
 .ask-walk-grid {
   display: grid;
   grid-template-areas:
@@ -1758,6 +1562,20 @@ summary:focus-visible {
   justify-self: center;
 }
 
+.ask-walk-mantra {
+  margin-top: 1.15rem;
+  max-width: 36rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.35;
+  color: #0b1f4a;
+}
+
+.dark .ask-walk-mantra {
+  color: #f8fafc;
+}
+
 @media (min-width: 1024px) {
   .ask-walk-grid {
     grid-template-columns: minmax(0, 1fr) auto;
@@ -1768,11 +1586,29 @@ summary:focus-visible {
   .ask-walk-phone { justify-self: end; }
 }
 
+.ask-walk-subtitle {
+  margin: 0;
+  color: rgb(2 6 23);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
+.dark .ask-walk-subtitle {
+  color: white;
+}
+
+.ask-walk-subtitle .ask-walk-brand {
+  white-space: nowrap;
+  vertical-align: -0.08em;
+}
+
 .ask-walk-steps {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 1.5rem 0 0;
+  margin: 1.35rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -1846,6 +1682,11 @@ summary:focus-visible {
   outline-offset: 2px;
 }
 
+.ask-walk-lead {
+  min-height: 6.5rem;
+  margin-top: 1.35rem;
+}
+
 .ask-walk-slide {
   min-height: 11rem;
   margin-top: 1.5rem;
@@ -1890,6 +1731,7 @@ summary:focus-visible {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .ask-walk-lead,
   .ask-walk-slide {
     animation: askWalkIn 0.75s ease;
   }

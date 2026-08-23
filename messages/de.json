@@ -11,7 +11,6 @@
   },
   "header": {
     "homeAria": "GarIQ Startseite",
-    "navFeatures": "Funktionen",
     "navHow": "So funktioniert's",
     "navPlans": "Tarife",
     "navDownload": "Download",
@@ -1001,50 +1000,6 @@
       }
     ]
   },
-  "capabilities": {
-    "label": "Funktionen",
-    "title": "Zwei Gesten. Ein Fahrtenbuch.",
-    "copy": "Gib GarIQ die Infos. Dann frag einfach alles zum Fahrzeug.",
-    "insert": {
-      "heading": "Gib GarIQ die Infos",
-      "promise": "Du musst nicht alles von Hand ausfüllen.",
-      "examples": [
-        "Foto einer Rechnung",
-        "Police hochladen",
-        "Foto eines Ersatzteils",
-        "Arbeitsstunden erfassen",
-        "Eine Tatsache sagen"
-      ],
-      "steps": [
-        {
-          "label": "Erfassen",
-          "copy": "Foto, Datei oder Stimme — du wählst wie."
-        },
-        {
-          "label": "Entwurf",
-          "copy": "GarIQ bereitet aus deinen Infos einen Entwurf vor."
-        },
-        {
-          "label": "Bestätigen und speichern",
-          "copy": "Du prüfst und speicherst. Die KI speichert nie von selbst."
-        }
-      ]
-    },
-    "bridge": "Erst die Infos geben. Dann einfach fragen.",
-    "ask": {
-      "heading": "Frag GarIQ",
-      "pairs": [
-        {
-          "q": "Was habe ich dieses Jahr für das Fahrzeug ausgegeben?",
-          "a": "Dieses Jahr hast du CHF 4'510.40 für das Fahrzeug ausgegeben — Wartung, Teile, Versicherung und Sonstiges."
-        },
-        {
-          "q": "Wie viele Stunden habe ich dieses Jahr am Fahrzeug gearbeitet?",
-          "a": "37 Stunden in diesem Jahr."
-        }
-      ]
-    }
-  },
   "audiences": {
     "label": "Für wen",
     "title": "Gebaut fürs echte Teilen und Fahren.",
@@ -1065,29 +1020,28 @@
   },
   "askWalkthrough": {
     "label": "Fragen & erfassen",
-    "title": "Sprich mit deinem Logbook — und erfasse ohne Formular.",
-    "lead": "Jeder Ablauf startet auf Home: tippe den passenden Button, dann fragen oder erfassen.",
+    "title": "Bring dein Fahrzeug ins KI-Zeitalter.",
     "imageAlt": "GarIQ Ask-Logbook, Ask-Docs, Smart Scan und Smart Log auf einem Smartphone",
     "slides": {
       "askLog": {
         "kicker": "Ask logbook",
-        "title": "Auf Home: Ask logbook antippen.",
-        "body": "Dann frag nach Tanken, Werkstatt, Versicherung, Kilometer — Antworten aus den Events dieses Fahrzeugs, nicht aus dem Web."
+        "subtitle": "Du vergisst. <brand></brand> nicht. Frag nach.",
+        "description": "GarIQ ist das Gedächtnis deines Fahrzeugs. Prämie dieses Jahr gestiegen? Letzter TÜV bestanden? Mehr Kilometer mit welchem Kraftstoff? Welcher Verbrauch? Was hat die Werkstatt dieses Jahr gekostet? Das ist kein beliebiger Chat: das ist Ask auf dem Fahrtenbuch, auf bereits bestätigten Events. Eine Frage, und dieses Gedächtnis antwortet — ohne das Jahr aufzuklappen, ohne den Beleg zu suchen, ohne ins Web zu gehen."
       },
       "askDocs": {
         "kicker": "Ask docs",
-        "title": "Auf Home: Ask docs antippen.",
-        "body": "Fotografiere eine Warnleuchte oder frag den Vault. GarIQ zitiert dein Handbuch — Seiten, die du öffnen kannst."
+        "subtitle": "Eine Warnlampe blinkt? Was deckt die Police? <brand></brand> weiss es.",
+        "description": "Welches Öl empfiehlt der Hersteller? Welcher Reifendruck? Windschutzscheibe kaputt: zahlt die Versicherung? Warnlampe an: was heisst das? Foto von der Warnlampe: GarIQ sagt, was sie bedeutet. Foto von der Ölflasche: sagt, ob es das richtige Produkt ist. Das Foto wird mit dem geladenen Handbuch und der Police verglichen, nicht mit dem Web. Lade das Handbuch und die Police des Fahrzeugs. Ohne dreihundert Seiten für eine Zeile umzublättern. Eine Frage, und die Antwort kommt aus der Datei."
       },
       "smartScan": {
         "kicker": "Smart Scan",
-        "title": "Auf Home: Smart Scan antippen.",
-        "body": "GarIQ liest Datum, Liter und Betrag vom Beleg und erstellt den Entwurf. Ins Logbook kommt er erst, wenn du auf Speichern tippst."
+        "subtitle": "Foto oder PDF: <brand></brand> liest und versteht.",
+        "description": "Du weisst nicht, welcher Event-Typ es ist? Fotografiere den Beleg oder lade ein PDF hoch. GarIQ liest das Dokument und erkennt es — Tanken, Werkstatt, Rechnung. Datum, Beträge, Liter oder Km stehen schon im Entwurf. Du prüfst, änderst bei Bedarf, bestätigst. Was ins Fahrtenbuch kommt, entscheidest du."
       },
       "smartLog": {
         "kicker": "Smart Log",
-        "title": "Auf Home: Smart Log antippen.",
-        "body": "Beschreibe das Ereignis im Chat. Die KI erstellt den Entwurf — ins Fahrtenbuch schreibt sie erst, wenn du auf Speichern tippst."
+        "subtitle": "Kein Foto? Kein File? Sag’s <brand></brand>.",
+        "description": "Erzähl das Event in deinen Worten — Tanken, Service, Reifen, eine Arbeit in der Werkstatt. GarIQ erkennt den Event-Typ und fragt nach, wenn etwas fehlt (Datum, Km, Betrag, Teile). Dann siehst du den Entwurf, bereits ausgefüllt: prüfen, bei Bedarf ändern, bestätigen. Was ins Fahrtenbuch kommt, entscheidest du."
       }
     }
   },
