@@ -79,7 +79,7 @@ export default function VehicleCarousel({ label, vehicles }: Props) {
   }, [instant]);
 
   return (
-    <div className="mx-auto mt-16 w-full">
+    <div className="mx-auto mt-16 w-full min-w-0">
       <p className="text-center text-xs font-bold uppercase tracking-[0.18em] text-slate-400 dark:text-slate-500">
         {label}
       </p>
@@ -125,7 +125,7 @@ export default function VehicleCarousel({ label, vehicles }: Props) {
                 <span className="vehicle-orbit-chip" aria-hidden>
                   <Icon
                     className="vehicle-orbit-icon"
-                    size={isFront ? 36 : 26}
+                    size={28}
                     stroke={1.6}
                   />
                 </span>
