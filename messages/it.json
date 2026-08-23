@@ -26,9 +26,9 @@
     "title": "Il tuo veicolo ha una storia.",
     "titleAfter": "la conosce.",
     "support": "Aggiungi le informazioni del tuo veicolo in modo semplice e veloce: basta una foto, una scansione, un file o la tua voce.",
-    "supportDocs": "Manuali, polizze, fatture, ricevute e qualsiasi altro documento utile. GarIQ raccoglie e organizza tutto in un unico posto.",
-    "supportHook": "Grazie all'intelligenza artificiale, GarIQ comprende le informazioni che hai inserito e ti permette di fare domande sul tuo veicolo, trovando rapidamente le risposte nei tuoi dati.",
-    "supportInvite": "Scarica GarIQ e porta il tuo veicolo nell'era dell'intelligenza artificiale.",
+    "supportDocs": "Manuali, polizze, fatture, ricevute, ricambi, accessori e spese. GarIQ raccoglie e organizza tutto in un unico posto.",
+    "supportWork": "Stai lavorando sul tuo veicolo? Registra le ore di lavoro, annota gli interventi, le modifiche e i componenti utilizzati. Scopri quanto hai speso e quanto tempo hai dedicato al tuo veicolo.",
+    "supportHook": "Grazie all'intelligenza artificiale, GarIQ comprende tutte le informazioni che hai inserito e ti permette di chiedere qualsiasi cosa sul tuo veicolo, trovando rapidamente le risposte nei tuoi dati.",
     "slogan": "Snap it. Scan it. Ask GarIQ.",
     "subtitle": "Foto, PDF, Smart Scan o chat → l'IA prepara la voce e tu confermi, sempre. Poi Ask sul libretto o sul vault documenti — in italiano, tedesco o inglese. Rifornimenti, tagliandi, tasse, revisioni, ricariche EV, spese e viaggi in timeline e statistiche — più le polizze nel vault — anche in più valute.",
     "ctaPrimary": "Scarica GarIQ",
@@ -100,7 +100,7 @@
       "open": "Apri",
       "rescan": "Rescan",
       "edit": "Modifica",
-      "scan": "Scan",
+      "scanAction": "Scan",
       "fill": "Compila",
       "contractEmpty": "Scansiona o inserisci i dati del contratto",
       "soldTitle": "Auto venduta",
@@ -254,33 +254,54 @@
     ]
   },
   "problem": {
-    "label": "Ti suona familiare?",
-    "title": "È esattamente il caos dei tuoi veicoli.",
-    "copy": "Scontrini, PDF, note sul km e chiavi condivise — niente sta in un posto a cui puoi chiedere.",
+    "label": "Tutto in un posto",
+    "title": "Tutto sul tuo veicolo. Finalmente in un solo posto.",
+    "copy": "Documenti, costi, lavori, componenti e storia del veicolo — GarIQ li organizza e li rende interrogabili con l’IA.",
     "cards": [
       {
-        "title": "La fotocamera non è un libretto",
-        "copy": "Scontrini e PDF si accumulano nelle foto e nelle cartelle — mai come storia veicolo ricercabile."
+        "title": "Dove sono tutti i documenti del veicolo?",
+        "copy": "Fatture, scontrini, manuali, polizze e PDF finiscono tra foto, email e cartelle. Con GarIQ diventano parte della storia del tuo veicolo."
       },
       {
-        "title": "Quanto mi costa questo veicolo al km?",
-        "copy": "Officina, carburante, tasse, assicurazione — senza un costo al chilometro affidabile voli a occhio."
+        "title": "Quanto mi è costato davvero questo veicolo?",
+        "copy": "Officina, ricambi, accessori, assicurazione, tasse e altre spese — tutto in un posto. Confronta le tue spese da un anno all’altro.",
+        "examples": [
+          "«Quanto ho pagato di assicurazione in più quest’anno?»",
+          "«Quanto era il bollo l’anno scorso?»",
+          "«Quanto ho speso in totale per questo veicolo?»"
+        ]
       },
       {
-        "title": "Quand'è l'ultimo servizio — e a che km?",
-        "copy": "Date e km stanno in testa, in una chat, o da nessuna parte."
+        "title": "Cosa è stato fatto — e quando?",
+        "copy": "Riparazioni, manutenzione, modifiche e lavori tuoi, con data, km e dettagli. Tutta la storia del veicolo, sempre a portata di mano.",
+        "examples": [
+          "«Quando ho cambiato i freni?»",
+          "«Cosa è stato fatto durante l’ultimo intervento?»"
+        ]
       },
       {
-        "title": "Documenti che non rispondono",
-        "copy": "Polizza e manuale stanno nell'email. Tu scavi; loro non rispondono."
+        "title": "Quante ore ci ho lavorato?",
+        "copy": "Registra il tempo dedicato a riparazioni, modifiche e lavori in proprio. Tieni sotto controllo le ore e il tempo investito.",
+        "examples": [
+          "«Quante ore ho lavorato sul veicolo quest’anno?»",
+          "«Quanto tempo ho messo in questo intervento?»"
+        ]
       },
       {
-        "title": "Veicolo condiviso, nessuna verità unica",
-        "copy": "Partner e famiglia non hanno una timeline unica di fiducia per lo stesso veicolo."
+        "title": "Cosa ho montato — e quanto è costato?",
+        "copy": "Ricambi, accessori, componenti e modifiche, ciascuno con la sua spesa.",
+        "examples": [
+          "«Quando ho comprato questo componente?»",
+          "«Quanto ho speso per le modifiche?»"
+        ]
       },
       {
-        "title": "Quanto consuma davvero?",
-        "copy": "Pieno dopo pieno, km dopo km — senza una media affidabile resti al tachimetro, non alla tua storia."
+        "title": "E se potessi semplicemente chiedere a GarIQ?",
+        "copy": "GarIQ risponde usando i tuoi dati, anche quando le informazioni sono distribuite su più anni: costi, lavori, componenti, documenti e km.",
+        "examples": [
+          "«Quanto ho speso in più quest’anno rispetto all’anno scorso?»",
+          "«Quante ore ho lavorato sul veicolo?»"
+        ]
       }
     ]
   },
@@ -313,7 +334,7 @@
   },
   "features": {
     "label": "Funzioni",
-    "title": "Per chi vuole precisione senza cartaio.",
+    "title": "Per chi vuole precisione senza scartoffie.",
     "items": [
       {
         "title": "Registro eventi",
@@ -329,7 +350,7 @@
       },
       {
         "title": "OCR da foto e PDF",
-        "copy": "Scontrino o fattura in bozza modificabile in pochi secondi, con indicatori di affidabilità sui campi compilati dall'AI."
+        "copy": "Scontrino o fattura in bozza modificabile in pochi secondi, con indicatori di affidabilità sui campi compilati dall'IA."
       },
       {
         "title": "Cerca nella timeline",
@@ -982,85 +1003,47 @@
   },
   "capabilities": {
     "label": "Funzioni",
-    "title": "Scan, Ask e tutto intorno al garage — in pilastri chiari.",
-    "copy": "Cambia tab per esplorare Capture, Ask, Documenti, Timeline e Stats, Garage condivisi e Piani. Niente di importante è nascosto.",
-    "tabs": [
-      {
-        "id": "capture",
-        "label": "Capture",
-        "title": "Quattro metodi di insert — più Smart Scan",
-        "bullets": [
-          "Form, Foto, PDF o Chat conversazionale per un tipo evento bloccato",
-          "Smart Scan (Basic+): foto o PDF senza scegliere prima il tipo — l'OCR lo deduce, poi la stessa bozza",
-          "Smart Insert (Basic+): racconta cosa è successo in chat senza scegliere prima il tipo — stessa bozza di revisione",
-          "L'OCR trasforma scontrini e fatture in una bozza modificabile con hint di confidenza",
-          "Revisioni e tocchi Salva prima di ogni archiviazione — l'IA non autosave mai",
-          "Il Form manuale resta disponibile a crediti esauriti",
-          "Registra rifornimento, ricarica, officina, tasse, revisione, spese, note e viaggi"
-        ]
-      },
-      {
-        "id": "ask",
-        "label": "Ask",
-        "title": "Due modalità Ask sui tuoi dati",
-        "bullets": [
-          "Modalità Libretto: domande in linguaggio naturale su eventi, costi, profilo e aggregati",
-          "Modalità Documenti: Q&A sul vault veicolo — le risposte citano titolo e pagina quando disponibili",
-          "Voce opzionale nel composer — invii tu; niente invio automatico",
-          "Stesso pool di crediti IA mensili; a credito esaurito Ask si disabilita con percorso upgrade — sui piani a pagamento puoi anche acquistare altri crediti nell'app",
-          "UI e assistente: italiano, tedesco o inglese"
-        ]
-      },
-      {
-        "id": "documents",
-        "label": "Documenti",
-        "title": "Vault documenti del veicolo",
-        "bullets": [
-          "Quattro slot guidati nel Dettaglio veicolo: libretto, polizza corrente, contratto d'acquisto, manuale — nessun altro caricamento",
-          "La polizza vive nel vault — non via Insert → Assicurazione (quel percorso è per i pagamenti)",
-          "Scansione libretto per precompilare il veicolo; extract polizza e acquisto in hub modificabili",
-          "Ask documenti non è filtrato: interroghi tutto il vault del veicolo da Home o Ask — non esiste un pulsante Ask per singolo file",
-          "Free: upload/indicizzazione delle categorie vault diverse dal libretto è off; Basic e Advanced sbloccano document AI"
-        ]
-      },
-      {
-        "id": "insights",
-        "label": "Timeline e stats",
-        "title": "Storico e spese di cui ti fidi",
-        "bullets": [
-          "Timeline raggruppata per anno con controllo anno condiviso e ricerca full-text",
-          "Statistiche per categoria, veicolo e trend nella valuta del garage",
-          "FX automatico: paghi all'estero, i totali convertono al cambio del giorno",
-          "Advanced: export di un anno Timeline in CSV o PDF brandizzato (visibile ma bloccato su Free/Basic)"
-        ]
-      },
-      {
-        "id": "garage",
-        "label": "Garage condivisi",
-        "title": "Workspace che crescono con te",
-        "bullets": [
-          "Un garage attivo delimita Home, Timeline, Stats, Insert e Ask",
-          "Invita co-owner, admin o logger — nessun ruolo Viewer in v1",
-          "Nelle timeline condivise vedi chi ha registrato e chi ha aggiornato",
-          "L'uso dei crediti IA conta sul piano del Primary Owner"
-        ]
-      },
-      {
-        "id": "plans",
-        "label": "Piani",
-        "title": "Free, Basic, Advanced — acquisto in-app",
-        "bullets": [
-          "Free: 1 garage, 1 veicolo, 10 crediti IA/mese dopo il primo veicolo",
-          "Basic: 1 garage, 5 veicoli attivi, sharing fino a 5 membri, 100 crediti",
-          "Advanced: 3 garage, 10 veicoli attivi, 10 membri, 500 crediti, export annuale, allegati OCR permanenti",
-          "Abbonati via App Store / Google Play — questo sito non processa pagamenti"
-        ],
-        "cta": {
-          "href": "#plans",
-          "label": "Vedi i piani"
+    "title": "Due gesti. Un logbook.",
+    "copy": "Dai i fatti a GarIQ. Poi chiedigli qualsiasi cosa sul veicolo.",
+    "insert": {
+      "heading": "Dai informazioni a GarIQ",
+      "promise": "Non devi compilare tutto a mano.",
+      "examples": [
+        "Foto di una fattura",
+        "Carica una polizza",
+        "Foto di un ricambio",
+        "Registra le ore di lavoro",
+        "Dì un fatto a voce"
+      ],
+      "steps": [
+        {
+          "label": "Cattura",
+          "copy": "Foto, file o voce — tu scegli come."
+        },
+        {
+          "label": "Bozza",
+          "copy": "GarIQ prepara una bozza dai fatti che hai dato."
+        },
+        {
+          "label": "Conferma e salva",
+          "copy": "Controlli tu e salvi. L’IA non salva da sola."
         }
-      }
-    ]
+      ]
+    },
+    "bridge": "Prima dagli le informazioni. Poi chiedigli qualsiasi cosa.",
+    "ask": {
+      "heading": "Chiedi a GarIQ",
+      "pairs": [
+        {
+          "q": "Quanto ho speso quest’anno su questo veicolo?",
+          "a": "Quest’anno sul veicolo hai speso CHF 4'510.40 tra manutenzione, ricambi, assicurazione e altro."
+        },
+        {
+          "q": "Quante ore ho lavorato sul veicolo quest’anno?",
+          "a": "37 ore quest’anno."
+        }
+      ]
+    }
   },
   "audiences": {
     "label": "Per chi",
@@ -1079,51 +1062,6 @@
         "copy": "Ricariche, viaggi con odometro e Ask quando ti serve un numero subito."
       }
     ]
-  },
-  "solutionStrip": {
-    "label": "L'idea",
-    "title": "Scansiona. Conferma. Chiedi.",
-    "copy": "Aggiungi un veicolo, catturi in secondi, confermi ogni salvataggio — poi chiedi alla tua storia.",
-    "verbs": [
-      {
-        "kicker": "Scan",
-        "title": "Catturi in secondi",
-        "copy": "Foto, PDF, Smart Insert o Smart Scan — l'IA prepara una bozza da ciò che catturi."
-      },
-      {
-        "kicker": "Confirm",
-        "title": "Restano le tue decisioni",
-        "copy": "Controlli ogni campo. Nulla si salva finché non tocchi Salva — nessun autosave IA."
-      },
-      {
-        "kicker": "Ask",
-        "title": "Interroga la tua storia",
-        "copy": "Chiedi costi, km e servizi sulla timeline — o ai documenti copertura e manuale."
-      }
-    ],
-    "receipt": {
-      "title": "Scan scontrino",
-      "merchant": "Stazione",
-      "fuel": "Litri",
-      "total": "Totale",
-      "scanning": "Scansione…"
-    },
-    "draft": {
-      "title": "Conferma bozza",
-      "badge": "Revisione",
-      "type": "Tipo",
-      "amount": "Importo",
-      "liters": "Litri",
-      "odometer": "Km",
-      "confirm": "Conferma e salva"
-    },
-    "chat": {
-      "title": "Chiedi al logbook",
-      "badge": "Ask",
-      "user": "Quanti litri ho messo nell’ultimo rifornimento?",
-      "assistant": "45,20 L di diesel — totale CHF 84,50 a 128.450 km.",
-      "typing": "Sta scrivendo…"
-    }
   },
   "askWalkthrough": {
     "label": "Chiedi e registra",

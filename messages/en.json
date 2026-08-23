@@ -26,9 +26,9 @@
     "title": "Your vehicle has a story.",
     "titleAfter": "knows it.",
     "support": "Add your vehicle information simply and quickly: just a photo, a scan, a file, or your voice.",
-    "supportDocs": "Manuals, insurance policies, invoices, receipts, and any other useful document. GarIQ collects and organizes everything in one place.",
-    "supportHook": "Thanks to artificial intelligence, GarIQ understands the information you've added and lets you ask questions about your vehicle, finding answers in your data, fast.",
-    "supportInvite": "Download GarIQ and bring your vehicle into the age of artificial intelligence.",
+    "supportDocs": "Manuals, insurance policies, invoices, receipts, spare parts, accessories, and expenses. GarIQ collects and organizes everything in one place.",
+    "supportWork": "Working on your vehicle? Log the hours, note the jobs, the modifications, and the parts you used. See how much you spent and how much time you dedicated to your vehicle.",
+    "supportHook": "Thanks to artificial intelligence, GarIQ understands all the information you've added and lets you ask anything about your vehicle, finding answers in your data, fast.",
     "slogan": "Snap it. Scan it. Ask GarIQ.",
     "subtitle": "Photo, PDF, Smart Scan, or chat → AI drafts the entry and you confirm, every time. Then Ask your logbook or your document vault — in Italian, German, or English. Fuel, service, taxes, inspections, EV charging, expenses, and trips on a timeline and in statistics — plus insurance policies in the vault — even across currencies.",
     "ctaPrimary": "Download GarIQ",
@@ -100,7 +100,7 @@
       "open": "Open",
       "rescan": "Rescan",
       "edit": "Edit",
-      "scan": "Scan",
+      "scanAction": "Scan",
       "fill": "Add details",
       "contractEmpty": "Scan or enter contract details",
       "soldTitle": "Vehicle sold",
@@ -254,33 +254,54 @@
     ]
   },
   "problem": {
-    "label": "Sound familiar?",
-    "title": "This is exactly the chaos of your vehicles.",
-    "copy": "Receipts, PDFs, odometer notes, and shared keys — none of it lives in one place you can ask.",
+    "label": "Everything in one place",
+    "title": "Everything about your vehicle. Finally in one place.",
+    "copy": "Documents, costs, work, parts, and vehicle history — GarIQ organizes your information and makes it askable with AI.",
     "cards": [
       {
-        "title": "Camera roll ≠ logbook",
-        "copy": "Receipts and PDFs pile up in photos and folders — never as a searchable vehicle history."
+        "title": "Where are all my vehicle documents?",
+        "copy": "Invoices, receipts, manuals, policies, and PDFs end up in photos, email, and folders. With GarIQ they become part of your vehicle’s story."
       },
       {
-        "title": "What does this vehicle cost per km?",
-        "copy": "Workshop, fuel, tax, insurance — without a trusted cost per kilometer you're flying blind."
+        "title": "What has this vehicle really cost me?",
+        "copy": "Workshop, spare parts, accessories, insurance, tax, and other expenses — all in one place. Compare your spend from year to year.",
+        "examples": [
+          "“How much more did I pay for insurance this year?”",
+          "“What was my vehicle tax last year?”",
+          "“How much have I spent in total on this vehicle?”"
+        ]
       },
       {
-        "title": "When was the last service — and at which km?",
-        "copy": "Dates and odometer readings live in your head, a chat thread, or nowhere."
+        "title": "What was done — and when?",
+        "copy": "Repairs, maintenance, modifications, and your own work, with date, mileage, and details. The full vehicle story, always at hand.",
+        "examples": [
+          "“When did I change the brakes?”",
+          "“What was done at the last job?”"
+        ]
       },
       {
-        "title": "Documents that don't answer",
-        "copy": "Policy and manual sit in email. You dig; they never reply."
+        "title": "How many hours have I put into it?",
+        "copy": "Log the time you spend on repairs, modifications, and DIY work. Keep hours and invested time in view.",
+        "examples": [
+          "“How many hours did I work on the vehicle this year?”",
+          "“How much time did I put into this job?”"
+        ]
       },
       {
-        "title": "Shared vehicle, no single truth",
-        "copy": "Partners and family lack one trusted timeline for the same vehicle."
+        "title": "What did I fit — and what did it cost?",
+        "copy": "Spare parts, accessories, components, and modifications, each with its spend.",
+        "examples": [
+          "“When did I buy this component?”",
+          "“How much did I spend on the modifications?”"
+        ]
       },
       {
-        "title": "What's my real consumption?",
-        "copy": "Fill-up after fill-up, km after km — without a trusted average you're guessing from the dash, not from your history."
+        "title": "What if you could simply ask GarIQ?",
+        "copy": "GarIQ answers from your data, even when the information is spread across years: costs, work, components, documents, and mileage.",
+        "examples": [
+          "“How much more did I spend this year than last year?”",
+          "“How many hours have I worked on the vehicle?”"
+        ]
       }
     ]
   },
@@ -982,85 +1003,47 @@
   },
   "capabilities": {
     "label": "Features",
-    "title": "Scan, Ask, and everything around your garage — in clear pillars.",
-    "copy": "Switch tabs to explore Capture, Ask, Documents, Timeline & Stats, Shared garages, and Plans. Nothing important is hidden.",
-    "tabs": [
-      {
-        "id": "capture",
-        "label": "Capture",
-        "title": "Four insert methods — plus Smart Scan",
-        "bullets": [
-          "Form, Photo, PDF, or conversational Chat for a locked event type",
-          "Smart Scan (Basic+): photo or PDF without picking the type first — OCR infers it, then the same draft",
-          "Smart Insert (Basic+): describe what happened in chat without picking the type first — same review draft",
-          "OCR turns receipts and invoices into an editable draft with confidence hints",
-          "You always review and tap Save before anything is stored — AI never autosaves",
-          "Manual Form stays available when AI credits run out",
-          "Log refuel, charge, workshop, tax, inspection, expense, notes, and trips"
-        ]
-      },
-      {
-        "id": "ask",
-        "label": "Ask",
-        "title": "Two Ask modes on your own data",
-        "bullets": [
-          "Logbook mode: natural-language Q&A over events, costs, profile, and aggregates",
-          "Documents mode: Q&A over the vehicle vault — answers cite document title and page when available",
-          "Optional voice into the composer — you send; no autosend",
-          "Uses the same monthly AI credit pool; exhausted credits disable Ask input with an upgrade path — paid owners can also buy more credits in the app",
-          "App UI and assistant: Italian, German, or English"
-        ]
-      },
-      {
-        "id": "documents",
-        "label": "Documents",
-        "title": "Vehicle document vault",
-        "bullets": [
-          "Four guided slots on vehicle Details: registration, current insurance policy, purchase contract, owner manual — no other uploads",
-          "Insurance policy lives in the vault hub — not via Insert → Insurance (that path is for payment events)",
-          "Scan registration to prefill a vehicle; extract insurance and purchase into editable hubs",
-          "Ask documents is unscoped: ask the whole vehicle vault from Home or Ask — there is no per-file Ask button",
-          "Free: indexing/upload for vault categories other than registration is off; Basic and Advanced unlock document AI"
-        ]
-      },
-      {
-        "id": "insights",
-        "label": "Timeline & stats",
-        "title": "History and spend you can trust",
-        "bullets": [
-          "Year-grouped timeline with shared year control and full-text search",
-          "Statistics by category, vehicle, and trend in garage currency",
-          "Automatic FX: pay abroad, totals convert at the day's rate",
-          "Advanced: export a Timeline calendar year as CSV or branded PDF (visible but locked on Free/Basic)"
-        ]
-      },
-      {
-        "id": "garage",
-        "label": "Shared garages",
-        "title": "Workspaces that scale with you",
-        "bullets": [
-          "One active garage scopes Home, Timeline, Stats, Insert, and Ask",
-          "Invite co-owners, admins, or loggers — no Viewer role in v1",
-          "Shared timelines show who logged and who updated events",
-          "AI credit usage counts against the Primary Owner's plan"
-        ]
-      },
-      {
-        "id": "plans",
-        "label": "Plans",
-        "title": "Free, Basic, Advanced — buy in the app",
-        "bullets": [
-          "Free: 1 garage, 1 vehicle, 10 AI credits/month after first vehicle",
-          "Basic: 1 garage, 5 active vehicles, sharing up to 5 members, 100 credits",
-          "Advanced: 3 garages, 10 active vehicles, 10 members, 500 credits, year export, keep OCR attachments",
-          "Subscribe via App Store / Google Play — this website does not process payments"
-        ],
-        "cta": {
-          "href": "#plans",
-          "label": "View plans"
+    "title": "Two moves. One logbook.",
+    "copy": "Give GarIQ the facts. Then ask it anything about the vehicle.",
+    "insert": {
+      "heading": "Give GarIQ the facts",
+      "promise": "You don’t have to fill everything in by hand.",
+      "examples": [
+        "Photo of an invoice",
+        "Upload a policy",
+        "Photo of a spare part",
+        "Log the hours you worked",
+        "Speak a fact"
+      ],
+      "steps": [
+        {
+          "label": "Capture",
+          "copy": "Photo, file, or voice — you choose how."
+        },
+        {
+          "label": "Draft",
+          "copy": "GarIQ prepares a draft from the facts you gave."
+        },
+        {
+          "label": "Confirm and save",
+          "copy": "You review and save. AI never saves on its own."
         }
-      }
-    ]
+      ]
+    },
+    "bridge": "First give it the facts. Then ask it anything.",
+    "ask": {
+      "heading": "Ask GarIQ",
+      "pairs": [
+        {
+          "q": "How much have I spent on this vehicle this year?",
+          "a": "This year you spent CHF 4'510.40 on the vehicle — maintenance, parts, insurance, and other."
+        },
+        {
+          "q": "How many hours have I worked on the vehicle this year?",
+          "a": "37 hours this year."
+        }
+      ]
+    }
   },
   "audiences": {
     "label": "For whom",
@@ -1079,51 +1062,6 @@
         "copy": "Charge events, trip routes with odometer, and Ask answers when you need a quick number."
       }
     ]
-  },
-  "solutionStrip": {
-    "label": "The idea",
-    "title": "Scan. Confirm. Ask.",
-    "copy": "Add a vehicle, capture in seconds, confirm every save — then ask your history.",
-    "verbs": [
-      {
-        "kicker": "Scan",
-        "title": "Capture in seconds",
-        "copy": "Photo, PDF, Smart Insert, or Smart Scan — AI prepares a draft from what you capture."
-      },
-      {
-        "kicker": "Confirm",
-        "title": "You stay in control",
-        "copy": "Review every field. Nothing is saved until you tap Save — no AI autosave."
-      },
-      {
-        "kicker": "Ask",
-        "title": "Query your own history",
-        "copy": "Ask costs, km, and service on the timeline — or ask your documents for coverage and manuals."
-      }
-    ],
-    "receipt": {
-      "title": "Receipt scan",
-      "merchant": "Fuel stop",
-      "fuel": "Volume",
-      "total": "Total",
-      "scanning": "Scanning…"
-    },
-    "draft": {
-      "title": "Confirm draft",
-      "badge": "Review",
-      "type": "Type",
-      "amount": "Amount",
-      "liters": "Liters",
-      "odometer": "Odometer",
-      "confirm": "Confirm & save"
-    },
-    "chat": {
-      "title": "Ask your logbook",
-      "badge": "Ask",
-      "user": "How many liters did I put in on the last fill-up?",
-      "assistant": "45,20 L of diesel — total CHF 84,50 at 128.450 km.",
-      "typing": "Typing…"
-    }
   },
   "askWalkthrough": {
     "label": "Ask & log",

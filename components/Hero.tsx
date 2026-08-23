@@ -11,7 +11,6 @@ export default async function Hero() {
   const slogan = t("slogan");
   const support = t("support");
   const supportHook = t("supportHook");
-  const supportInvite = t("supportInvite");
 
   return (
     <section id="top" className="relative overflow-hidden">
@@ -32,8 +31,8 @@ export default async function Hero() {
             <div className="hero-support">
               <p className="hero-support-lead">{support}</p>
               <p className="hero-support-lead">{t("supportDocs")}</p>
+              <p className="hero-support-lead">{t("supportWork")}</p>
               <p className="hero-support-lead">{supportHook}</p>
-              <p className="hero-support-aside">{supportInvite}</p>
               <p className="hero-slogan" aria-label={slogan}>
                 {splitSloganBeats(slogan).map((beat) => (
                   <span key={beat} className="hero-slogan-beat">
@@ -56,7 +55,7 @@ export default async function Hero() {
               {t("ctaPrimary")}
             </MagneticButton>
             <a
-              href="#solution"
+              href="#ask"
               className="inline-flex min-h-11 min-w-[11rem] items-center justify-center rounded-full border border-slate-300 px-8 py-3.5 text-base font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-950 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:text-white"
             >
               {t("ctaSecondary")}

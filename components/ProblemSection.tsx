@@ -1,24 +1,24 @@
 import { getTranslations } from "next-intl/server";
 import type { Icon as TablerIcon } from "@tabler/icons-react";
 import {
+  IconClockHour4,
   IconCoin,
+  IconComponents,
   IconFileText,
-  IconGasStation,
-  IconGauge,
-  IconPhoto,
-  IconUsers,
+  IconMessageChatbot,
+  IconTool,
 } from "@tabler/icons-react";
 import Reveal from "./Reveal";
 
-type Card = { title: string; copy: string };
+type Card = { title: string; copy: string; examples?: string[] };
 
 const PROBLEM_ICONS: TablerIcon[] = [
-  IconPhoto,
-  IconCoin,
-  IconGauge,
   IconFileText,
-  IconUsers,
-  IconGasStation,
+  IconCoin,
+  IconTool,
+  IconClockHour4,
+  IconComponents,
+  IconMessageChatbot,
 ];
 
 export default async function ProblemSection() {
@@ -37,7 +37,8 @@ export default async function ProblemSection() {
 
       <ul className="soft-card-grid mt-12">
         {cards.map((card, index) => {
-          const Icon = PROBLEM_ICONS[index] ?? IconPhoto;
+          const Icon = PROBLEM_ICONS[index] ?? IconFileText;
+          const examples = card.examples ?? [];
           return (
             <Reveal as="li" key={card.title} className="soft-card">
               <span className="soft-card-chip" aria-hidden>
@@ -45,6 +46,13 @@ export default async function ProblemSection() {
               </span>
               <h3 className="soft-card-title">{card.title}</h3>
               <p className="soft-card-copy">{card.copy}</p>
+              {examples.length > 0 ? (
+                <ul className="soft-card-examples">
+                  {examples.map((example) => (
+                    <li key={example}>{example}</li>
+                  ))}
+                </ul>
+              ) : null}
             </Reveal>
           );
         })}

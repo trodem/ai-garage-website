@@ -73,15 +73,17 @@ const PLACEHOLDER_PHOTO_STYLE = {
   objectPosition: "center",
 } as const;
 
+function groupCh(digits: string): string {
+  return digits.replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+}
+
 function chf(value: number): string {
-  return `CHF ${value.toLocaleString("de-CH", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  })}`;
+  const [intPart, frac = "00"] = value.toFixed(2).split(".");
+  return `CHF ${groupCh(intPart)}.${frac}`;
 }
 
 function km(value: number): string {
-  return `${value.toLocaleString("de-CH")} km`;
+  return `${groupCh(String(Math.round(value)))} km`;
 }
 
 function isoDate(value: string): Date {
@@ -507,7 +509,7 @@ function DetailsScreen({
       <div className="pm-doc-card">
         <p className="pm-doc-title"><IconFileText className="pm-doc-title-icon" />{t("contract")}</p>
         <p className="pm-empty-hint">{t("contractEmpty")}</p>
-        <DocActions labels={[t("scan"), t("fill")]} />
+        <DocActions labels={[t("scanAction"), t("fill")]} />
       </div>
 
       <p className="pm-doc-title">{t("soldTitle")}</p>
