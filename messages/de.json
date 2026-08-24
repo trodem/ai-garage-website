@@ -254,53 +254,32 @@
   },
   "problem": {
     "label": "Alles an einem Ort",
-    "title": "Alles über dein Fahrzeug. Endlich an einem Ort.",
-    "copy": "Dokumente, Kosten, Arbeiten, Komponenten und Fahrzeughistorie – GarIQ organisiert deine Informationen und macht sie mit KI abfragbar.",
+    "title": "Nicht nur das Logbuch. Alles, was dein Fahrzeug braucht.",
+    "copy": "Dokumenten-Vault, geteilte Garage, Fahrzeugübergabe beim Verkauf, Export eines Timeline-Jahres. Und auf Home: der letzte Ölstand-Check und die montierten Reifen, immer im Blick.",
     "cards": [
       {
         "title": "Wo sind all meine Fahrzeugdokumente?",
-        "copy": "Rechnungen, Belege, Handbücher, Versicherungen und PDFs liegen oft verstreut in Fotos, E-Mails und Ordnern. Mit GarIQ werden sie Teil der Geschichte deines Fahrzeugs."
+        "copy": "Fahrzeugschein, Versicherungen, Kaufverträge, Handbücher und PDFs liegen im Vault des Fahrzeugs, nach Dokumenttyp sortiert. Du öffnest sie im Fahrzeug-Detail statt in irgendeinem Ordner auf dem Handy."
       },
       {
-        "title": "Was hat mich dieses Fahrzeug wirklich gekostet?",
-        "copy": "Werkstatt, Ersatzteile, Zubehör, Versicherung, Steuern und weitere Ausgaben – alles an einem Ort. Vergleiche deine Kosten von Jahr zu Jahr.",
-        "examples": [
-          "„Wie viel mehr habe ich dieses Jahr für die Versicherung bezahlt?“",
-          "„Wie hoch war meine Kfz-Steuer letztes Jahr?“",
-          "„Was hat mich dieses Fahrzeug insgesamt gekostet?“"
-        ]
+        "title": "Eine Garage, mehrere Personen.",
+        "copy": "Lade Co-Owner, Admins oder Logger in deine Garage ein: dieselbe Timeline, dieselben Fahrzeuge, verschiedene Rollen. Teilen ist ab Basic dabei — auf Free gibt es kein Teilen."
       },
       {
-        "title": "Was wurde gemacht – und wann?",
-        "copy": "Reparaturen, Wartungen, Umbauten und eigene Arbeiten mit Datum, Kilometerstand und Details festhalten. Die komplette Geschichte deines Fahrzeugs, immer greifbar.",
-        "examples": [
-          "„Wann wurden die Bremsen gewechselt?“",
-          "„Was wurde beim letzten Eingriff gemacht?“"
-        ]
+        "title": "Fahrzeug verkauft — Logbuch geht mit.",
+        "copy": "Übertrage das Logbuch an ein anderes GarIQ-Konto: der Käufer nimmt in der App an, mit Bezahlplan und einem freien Fahrzeug-Slot. Mit geht nur ein Teil der Historie — Wartungen, Prüfungen und Ausgaben für Reifen oder Tuning — deine Kopie bleibt als Verkaufsarchiv nur lesbar. Der Transfer ist endgültig."
       },
       {
-        "title": "Wie viele Stunden habe ich daran gearbeitet?",
-        "copy": "Erfasse deine Arbeitszeit bei Reparaturen, Umbauten und eigenen Arbeiten. Behalte Stunden und investierte Zeit im Blick.",
-        "examples": [
-          "„Wie viele Stunden habe ich dieses Jahr an meinem Fahrzeug gearbeitet?“",
-          "„Wie viel Zeit habe ich für diesen Umbau investiert?“"
-        ]
+        "title": "Ein Jahr Timeline, zum Mitnehmen.",
+        "copy": "Mit Advanced exportierst du ein Timeline-Jahr als CSV oder gebrandetes PDF, direkt in der App. Auf Free und Basic sind die Bedienelemente sichtbar, aber gesperrt; ein vollständiger Konto-Export ist nicht in v1."
       },
       {
-        "title": "Was habe ich verbaut – und was hat es gekostet?",
-        "copy": "Ersatzteile, Zubehör, Komponenten und Umbauten, jeweils mit den Kosten.",
-        "examples": [
-          "„Wann habe ich dieses Teil gekauft?“",
-          "„Wie viel habe ich für die Umbauten ausgegeben?“"
-        ]
+        "title": "Der letzte Ölstand-Check, auf Home.",
+        "copy": "Du erfasst den Ölstand direkt auf der Home-Karte und siehst auf einen Blick Tage und Kilometer seit dem letzten Check. Das ist keine Service-Wartung, sondern die Ölstand-Kontrolle — auf Fahrzeugen mit Motoröl."
       },
       {
-        "title": "Und wenn du einfach GarIQ fragen könntest?",
-        "copy": "GarIQ antwortet aus deinen Daten, auch wenn Informationen über Jahre verteilt sind: Kosten, Arbeiten, Komponenten, Dokumente und Kilometer.",
-        "examples": [
-          "„Was habe ich dieses Jahr mehr ausgegeben als letztes Jahr?“",
-          "„Wie viele Stunden habe ich an meinem Fahrzeug gearbeitet?“"
-        ]
+        "title": "Die Reifen, die jetzt drauf sind.",
+        "copy": "Die Home-Karte hält das aktive Set: Saison, Tage und Kilometer seit der Montage. Reifenkäufe bleiben eine separate Ausgabe im Logbuch."
       }
     ]
   },

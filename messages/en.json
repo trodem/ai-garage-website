@@ -254,53 +254,32 @@
   },
   "problem": {
     "label": "Everything in one place",
-    "title": "Everything about your vehicle. Finally in one place.",
-    "copy": "Documents, costs, work, parts, and vehicle history — GarIQ organizes your information and makes it askable with AI.",
+    "title": "Not just the logbook. Everything your vehicle asks of you.",
+    "copy": "A document vault, a shared garage, vehicle cession when you sell, and a Timeline year you can export. Plus, on Home: the last oil check and the tyres currently mounted, always in view.",
     "cards": [
       {
         "title": "Where are all my vehicle documents?",
-        "copy": "Invoices, receipts, manuals, policies, and PDFs end up in photos, email, and folders. With GarIQ they become part of your vehicle’s story."
+        "copy": "Registration, policies, purchase contracts, manuals, and PDFs live in the vehicle vault, sorted by document slot. You open them from Vehicle details instead of some folder on your phone."
       },
       {
-        "title": "What has this vehicle really cost me?",
-        "copy": "Workshop, spare parts, accessories, insurance, tax, and other expenses — all in one place. Compare your spend from year to year.",
-        "examples": [
-          "“How much more did I pay for insurance this year?”",
-          "“What was my vehicle tax last year?”",
-          "“How much have I spent in total on this vehicle?”"
-        ]
+        "title": "One garage, several people.",
+        "copy": "Invite co-owners, admins, or loggers into your garage: same timeline, same vehicles, different roles. Sharing is included from Basic — Free has no sharing."
       },
       {
-        "title": "What was done — and when?",
-        "copy": "Repairs, maintenance, modifications, and your own work, with date, mileage, and details. The full vehicle story, always at hand.",
-        "examples": [
-          "“When did I change the brakes?”",
-          "“What was done at the last job?”"
-        ]
+        "title": "Sell the vehicle — the logbook goes with it.",
+        "copy": "Transfer the logbook to another GarIQ account: the buyer accepts in the app, on a paid plan with a free vehicle slot. Only part of the history travels — maintenance, inspections, and tyre or tuning expenses — and your copy stays as a read-only sale archive. The transfer is irreversible."
       },
       {
-        "title": "How many hours have I put into it?",
-        "copy": "Log the time you spend on repairs, modifications, and DIY work. Keep hours and invested time in view.",
-        "examples": [
-          "“How many hours did I work on the vehicle this year?”",
-          "“How much time did I put into this job?”"
-        ]
+        "title": "Take a year of timeline with you.",
+        "copy": "On Advanced, export one Timeline year as CSV or a branded PDF, straight from the app. On Free and Basic the controls are visible but locked, and a full-account export is not in v1."
       },
       {
-        "title": "What did I fit — and what did it cost?",
-        "copy": "Spare parts, accessories, components, and modifications, each with its spend.",
-        "examples": [
-          "“When did I buy this component?”",
-          "“How much did I spend on the modifications?”"
-        ]
+        "title": "Last oil check, on Home.",
+        "copy": "Log the oil level from the Home card and see days and kilometres since the last check at a glance. This is the level check, not an oil-change service — on vehicles with engine oil."
       },
       {
-        "title": "What if you could simply ask GarIQ?",
-        "copy": "GarIQ answers from your data, even when the information is spread across years: costs, work, components, documents, and mileage.",
-        "examples": [
-          "“How much more did I spend this year than last year?”",
-          "“How many hours have I worked on the vehicle?”"
-        ]
+        "title": "The tyres on the car right now.",
+        "copy": "The Home card keeps your active set: season, days, and kilometres since the mount. Tyre purchases stay a separate expense in the logbook."
       }
     ]
   },

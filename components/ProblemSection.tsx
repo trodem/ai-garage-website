@@ -1,12 +1,12 @@
 import { getTranslations } from "next-intl/server";
 import type { Icon as TablerIcon } from "@tabler/icons-react";
 import {
-  IconClockHour4,
-  IconCoin,
-  IconComponents,
+  IconCircleDotted,
+  IconDroplet,
+  IconFileExport,
   IconFileText,
-  IconMessageChatbot,
-  IconTool,
+  IconTransfer,
+  IconUsers,
 } from "@tabler/icons-react";
 import Reveal from "./Reveal";
 
@@ -14,11 +14,11 @@ type Card = { title: string; copy: string; examples?: string[] };
 
 const PROBLEM_ICONS: TablerIcon[] = [
   IconFileText,
-  IconCoin,
-  IconTool,
-  IconClockHour4,
-  IconComponents,
-  IconMessageChatbot,
+  IconUsers,
+  IconTransfer,
+  IconFileExport,
+  IconDroplet,
+  IconCircleDotted,
 ];
 
 export default async function ProblemSection() {

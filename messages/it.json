@@ -254,53 +254,32 @@
   },
   "problem": {
     "label": "Tutto in un posto",
-    "title": "Tutto sul tuo veicolo. Finalmente in un solo posto.",
-    "copy": "Documenti, costi, lavori, componenti e storia del veicolo — GarIQ li organizza e li rende interrogabili con l’IA.",
+    "title": "Non solo il logbook. Tutto quello che il veicolo ti chiede.",
+    "copy": "Vault documenti, garage condiviso, cessione del veicolo quando lo vendi, export di un anno di Timeline. E in Home: ultimo controllo olio e gomme montate, sempre a vista.",
     "cards": [
       {
         "title": "Dove sono tutti i documenti del veicolo?",
-        "copy": "Fatture, scontrini, manuali, polizze e PDF finiscono tra foto, email e cartelle. Con GarIQ diventano parte della storia del tuo veicolo."
+        "copy": "Libretto, polizze, contratti d'acquisto, manuali e PDF stanno nel vault del veicolo, ordinati per tipo di documento. Li apri dal Dettaglio veicolo, non da una cartella qualsiasi del telefono."
       },
       {
-        "title": "Quanto mi è costato davvero questo veicolo?",
-        "copy": "Officina, ricambi, accessori, assicurazione, tasse e altre spese — tutto in un posto. Confronta le tue spese da un anno all’altro.",
-        "examples": [
-          "«Quanto ho pagato di assicurazione in più quest’anno?»",
-          "«Quanto era il bollo l’anno scorso?»",
-          "«Quanto ho speso in totale per questo veicolo?»"
-        ]
+        "title": "Un garage, più persone.",
+        "copy": "Invita co-owner, admin o logger nel tuo garage: stessa timeline, stessi veicoli, ruoli diversi. La condivisione è inclusa da Basic — sul Free non c'è condivisione."
       },
       {
-        "title": "Cosa è stato fatto — e quando?",
-        "copy": "Riparazioni, manutenzione, modifiche e lavori tuoi, con data, km e dettagli. Tutta la storia del veicolo, sempre a portata di mano.",
-        "examples": [
-          "«Quando ho cambiato i freni?»",
-          "«Cosa è stato fatto durante l’ultimo intervento?»"
-        ]
+        "title": "Vendi il veicolo — passa anche il libretto.",
+        "copy": "Trasferisci il libretto a un altro account GarIQ: l'acquirente accetta nell'app, con un piano a pagamento e uno slot veicolo libero. Passa solo una parte della storia — manutenzioni, revisioni e spese di gomme o tuning — e la tua copia resta come archivio di vendita in sola lettura. Il trasferimento è irreversibile."
       },
       {
-        "title": "Quante ore ci ho lavorato?",
-        "copy": "Registra il tempo dedicato a riparazioni, modifiche e lavori in proprio. Tieni sotto controllo le ore e il tempo investito.",
-        "examples": [
-          "«Quante ore ho lavorato sul veicolo quest’anno?»",
-          "«Quanto tempo ho messo in questo intervento?»"
-        ]
+        "title": "Porta via un anno di timeline.",
+        "copy": "Con Advanced esporti un anno di Timeline in CSV o in PDF brandizzato, direttamente dall'app. Su Free e Basic i controlli si vedono ma restano bloccati; l'export completo dell'account non è in v1."
       },
       {
-        "title": "Cosa ho montato — e quanto è costato?",
-        "copy": "Ricambi, accessori, componenti e modifiche, ciascuno con la sua spesa.",
-        "examples": [
-          "«Quando ho comprato questo componente?»",
-          "«Quanto ho speso per le modifiche?»"
-        ]
+        "title": "L'ultimo controllo olio, in Home.",
+        "copy": "Registri il livello dell'olio dalla card in Home e vedi a colpo d'occhio giorni e km dall'ultimo controllo. Non è un tagliando: è il controllo del livello, sui veicoli che hanno olio motore."
       },
       {
-        "title": "E se potessi semplicemente chiedere a GarIQ?",
-        "copy": "GarIQ risponde usando i tuoi dati, anche quando le informazioni sono distribuite su più anni: costi, lavori, componenti, documenti e km.",
-        "examples": [
-          "«Quanto ho speso in più quest’anno rispetto all’anno scorso?»",
-          "«Quante ore ho lavorato sul veicolo?»"
-        ]
+        "title": "Le gomme montate adesso.",
+        "copy": "La card Home tiene il set attivo: stagione, giorni e km dall'ultimo montaggio. Gli acquisti di gomme restano una spesa a parte nel libretto."
       }
     ]
   },
