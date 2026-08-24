@@ -716,6 +716,10 @@
         "a": "Yes. GarIQ can evaluate your logged expenses and consumption and show you statistics on how your vehicle develops. You see not only individual costs, but also connections and changes over time."
       },
       {
+        "q": "Do I have to convert expenses in foreign currencies myself?",
+        "a": "No. GarIQ automatically detects when an event's currency does not match the currency of your active garage and converts the amount. All expenses in the garage stay in one currency and your statistics stay comparable — including spend abroad.\n\n**You log what you paid. GarIQ handles the conversion.**"
+      },
+      {
         "q": "Can I see the current state of my vehicle?",
         "a": "Yes. On the home screen you can see important current information at a glance — for example the last oil check, the days and kilometres since then, or the tyres currently mounted."
       },

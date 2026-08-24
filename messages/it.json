@@ -716,6 +716,10 @@
         "a": "Sì. GarIQ valuta spese e consumi registrati e ti mostra statistiche sull'andamento. Vedi non solo i singoli costi, ma anche i nessi e come cambiano nel tempo."
       },
       {
+        "q": "Devo convertire da solo le spese in valuta estera?",
+        "a": "No. GarIQ riconosce in automatico quando la valuta di un evento non è quella del garage attivo e converte l'importo. Così tutte le spese restano uniformi nel garage e le statistiche restano confrontabili — anche per le spese all'estero.\n\n**Tu registri quello che hai pagato. GarIQ fa la conversione.**"
+      },
+      {
         "q": "Posso vedere lo stato attuale del veicolo?",
         "a": "Sì. In Home vedi a colpo d'occhio informazioni attuali — ad esempio l'ultimo controllo olio, i giorni e i km da allora, o le gomme montate ora."
       },

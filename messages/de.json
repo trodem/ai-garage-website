@@ -716,6 +716,10 @@
         "a": "Ja. GarIQ kann deine erfassten Ausgaben und Verbrauchsdaten auswerten und dir Statistiken über die Entwicklung deines Fahrzeugs zeigen. So erkennst du nicht nur einzelne Kosten, sondern auch Zusammenhänge und Veränderungen über die Zeit."
       },
       {
+        "q": "Muss ich Ausgaben in fremden Währungen selbst umrechnen?",
+        "a": "Nein. GarIQ erkennt automatisch, wenn die Währung eines Ereignisses nicht der Währung deiner aktiven Garage entspricht, und rechnet den Betrag entsprechend um. So bleiben alle Ausgaben in der Garage einheitlich und deine Statistiken vergleichbar – auch bei Ausgaben im Ausland.\n\n**Du erfasst, was du bezahlt hast. GarIQ übernimmt die Umrechnung.**"
+      },
+      {
         "q": "Kann ich den aktuellen Zustand meines Fahrzeugs sehen?",
         "a": "Ja. Auf der Startseite kannst du wichtige aktuelle Informationen zu deinem Fahrzeug auf einen Blick sehen – zum Beispiel den letzten Öl-Check, die vergangenen Tage und Kilometer seitdem oder die aktuell montierten Reifen."
       },
