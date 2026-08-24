@@ -55,7 +55,7 @@ export default function Header() {
         <a href="#top" className="flex items-center gap-3" aria-label={t("homeAria")}>
           <LogoIcon className="logo-hover h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24" />
           <div className="brand-mark text-3xl font-extrabold tracking-tight sm:text-4xl">
-            <span className="text-[#211EE5] dark:text-[#08A7DE]">Gar</span><span className="text-[#ED177B]">IQ</span>
+            <span className="text-[#211EE5] dark:text-brand-cyan-ink">Gar</span><span className="text-brand-pink-ink">IQ</span>
           </div>
         </a>
 

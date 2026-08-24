@@ -16,6 +16,8 @@
 
   --color-brand-cyan: #08A7DE;
   --color-brand-pink: #ED177B;
+  --color-brand-cyan-ink: var(--brand-cyan-ink);
+  --color-brand-pink-ink: var(--brand-pink-ink);
   --color-brand-navy: #0B1F4A;
   --color-brand-canvas: #FAF9FC;
 
@@ -26,6 +28,16 @@
 
 :root {
   --ring: rgba(31, 27, 232, 0.22);
+  /* Text-only ink (WCAG AA on light surfaces). Decorative brand cyan/pink stay as-is. */
+  --brand-cyan-ink: #046a94;
+  --brand-pink-ink: #c41268;
+  --brand-cyan-fill: #046a94;
+  --brand-pink-fill: #c41268;
+}
+
+.dark {
+  --brand-cyan-ink: #08a7de;
+  --brand-pink-ink: #ed177b;
 }
 
 * {
@@ -133,7 +145,7 @@ body {
 
 /* ── Gradient text utility ───────────────────────────────────── */
 .text-gradient {
-  background-image: linear-gradient(110deg, #211EE5 0%, #08A7DE 45%, #ED177B 100%);
+  background-image: linear-gradient(110deg, #211EE5 0%, var(--brand-cyan-ink) 45%, var(--brand-pink-ink) 100%);
   background-size: 220% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -284,7 +296,7 @@ body {
 }
 
 .btn-brand {
-  background-image: linear-gradient(110deg, #211ee5 0%, #08a7de 52%, #ed177b 100%);
+  background-image: linear-gradient(110deg, #211ee5 0%, var(--brand-cyan-fill) 52%, var(--brand-pink-fill) 100%);
   background-size: 180% 100%;
   color: #fff;
   border: 0;
@@ -342,7 +354,7 @@ body {
   line-height: 1.05;
   font-weight: 600;
   letter-spacing: -0.04em;
-  background-image: linear-gradient(110deg, #211EE5 0%, #08A7DE 45%, #ED177B 100%);
+  background-image: linear-gradient(110deg, #211EE5 0%, var(--brand-cyan-ink) 45%, var(--brand-pink-ink) 100%);
   background-size: 220% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -505,6 +517,7 @@ body {
 
 .pricing-card {
   --tier-accent: #211ee5;
+  --tier-accent-ink: #211ee5;
   display: flex;
   min-height: 100%;
   flex-direction: column;
@@ -567,9 +580,9 @@ body {
   );
 }
 
-.pricing-tier-free     { --tier-accent: #08a7de; }
-.pricing-tier-basic    { --tier-accent: #211ee5; }
-.pricing-tier-advanced { --tier-accent: #ed177b; }
+.pricing-tier-free     { --tier-accent: #08a7de; --tier-accent-ink: var(--brand-cyan-ink); }
+.pricing-tier-basic    { --tier-accent: #211ee5; --tier-accent-ink: #211ee5; }
+.pricing-tier-advanced { --tier-accent: #ed177b; --tier-accent-ink: var(--brand-pink-ink); }
 
 .pricing-card h3 {
   font-family: var(--font-display);
@@ -587,7 +600,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--tier-accent);
+  color: var(--tier-accent-ink);
 }
 
 .dark .pricing-badge {
@@ -603,8 +616,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--tier-accent, rgb(100, 116, 139));
-  opacity: 0.9;
+  color: var(--tier-accent-ink, rgb(100, 116, 139));
 }
 
 .pricing-card-featured {
@@ -1386,6 +1398,7 @@ summary:focus-visible {
 
 .soft-card {
   --card-accent: #211ee5;
+  --card-accent-ink: #211ee5;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1410,12 +1423,12 @@ summary:focus-visible {
     border-color 0.28s ease;
 }
 
-.soft-card:nth-child(1) { --card-accent: #211ee5; }
-.soft-card:nth-child(2) { --card-accent: #08a7de; }
-.soft-card:nth-child(3) { --card-accent: #ed177b; }
-.soft-card:nth-child(4) { --card-accent: #211ee5; }
-.soft-card:nth-child(5) { --card-accent: #08a7de; }
-.soft-card:nth-child(6) { --card-accent: #ed177b; }
+.soft-card:nth-child(1) { --card-accent: #211ee5; --card-accent-ink: #211ee5; }
+.soft-card:nth-child(2) { --card-accent: #08a7de; --card-accent-ink: var(--brand-cyan-ink); }
+.soft-card:nth-child(3) { --card-accent: #ed177b; --card-accent-ink: var(--brand-pink-ink); }
+.soft-card:nth-child(4) { --card-accent: #211ee5; --card-accent-ink: #211ee5; }
+.soft-card:nth-child(5) { --card-accent: #08a7de; --card-accent-ink: var(--brand-cyan-ink); }
+.soft-card:nth-child(6) { --card-accent: #ed177b; --card-accent-ink: var(--brand-pink-ink); }
 
 .soft-card::before {
   content: "";
@@ -1498,7 +1511,7 @@ summary:focus-visible {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--card-accent);
+  color: var(--card-accent-ink);
 }
 
 .dark .soft-card-kicker {
@@ -1545,7 +1558,7 @@ summary:focus-visible {
   font-size: 0.88rem;
   line-height: 1.45;
   font-style: italic;
-  color: var(--card-accent);
+  color: var(--card-accent-ink);
 }
 
 .dark .soft-card-examples li {
@@ -1628,11 +1641,11 @@ summary:focus-visible {
 }
 
 .hero-slogan-beat:nth-child(2) {
-  color: #08a7de;
+  color: var(--brand-cyan-ink);
 }
 
 .hero-slogan-beat:nth-child(3) {
-  color: #ed177b;
+  color: var(--brand-pink-ink);
 }
 
 .dark .hero-slogan-beat:nth-child(1) {
@@ -1802,7 +1815,7 @@ summary:focus-visible {
 }
 
 .ask-walk-brand-iq {
-  color: var(--color-brand-pink);
+  color: var(--brand-pink-ink);
 }
 
 .ask-walk-steps {
@@ -1840,6 +1853,7 @@ summary:focus-visible {
 
 .ask-walk-steps button[data-pill="ask-log"] {
   --pill: var(--color-brand-cyan);
+  color: var(--brand-cyan-ink);
 }
 
 .ask-walk-steps button[data-pill="ask-docs"] {
