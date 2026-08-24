@@ -253,33 +253,33 @@
     ]
   },
   "problem": {
-    "label": "Everything in one place",
-    "title": "Not just the logbook. Everything your vehicle asks of you.",
-    "copy": "A document vault, a shared garage, vehicle cession when you sell, and a Timeline year you can export. Plus, on Home: the last oil check and the tyres currently mounted, always in view.",
+    "label": "Not an ordinary tracker.",
+    "title": "Costs, consumption and maintenance in view? GarIQ does more.",
+    "copy": "Vehicle documents, a shared garage, vehicle cession when you sell, timeline and statistics, a year you can take with you. Plus, on Home: the last oil check and the tyres currently mounted, always in view.",
     "cards": [
       {
-        "title": "Where are all my vehicle documents?",
-        "copy": "Registration, policies, purchase contracts, manuals, and PDFs live in the vehicle vault, sorted by document slot. You open them from Vehicle details instead of some folder on your phone."
+        "title": "What belongs to the vehicle stays with the vehicle.",
+        "copy": "Registration, insurance, purchase contract and owner's manual are all stored in one place. Everything stays together, at hand, where you expect it — with your vehicle."
       },
       {
-        "title": "One garage, several people.",
-        "copy": "Invite co-owners, admins, or loggers into your garage: same timeline, same vehicles, different roles. Sharing is included from Basic — Free has no sharing."
+        "title": "The story belongs to the vehicle. Not the owner.",
+        "copy": "When a car changes hands, the history often starts from zero. In GarIQ it stays with the vehicle. When you sell, you show what was done over the years and how it was looked after — and you hand the story to the next driver. A car with a memory, not just a used car."
       },
       {
-        "title": "Sell the vehicle — the logbook goes with it.",
-        "copy": "Transfer the logbook to another GarIQ account: the buyer accepts in the app, on a paid plan with a free vehicle slot. Only part of the history travels — maintenance, inspections, and tyre or tuning expenses — and your copy stays as a read-only sale archive. The transfer is irreversible."
+        "title": "Several vehicles. One garage. One shared overview.",
+        "copy": "Your car, your motorcycle, the family car or your second car – each vehicle has its own place and its own story. Share your garage with partner, family or colleagues and look after your vehicles together. Everyone sees the same information and can keep the vehicle history current. You decide who writes along and who can do more. Separate where it should stay separate – and shared where you need it shared."
       },
       {
-        "title": "Take a year of timeline with you.",
-        "copy": "On Advanced, export one Timeline year as CSV or a branded PDF, straight from the app. On Free and Basic the controls are visible but locked, and a full-account export is not in v1."
+        "title": "Timeline and statistics. The story behind the numbers.",
+        "copy": "Every entry tells a piece of your vehicle. The timeline brings those moments together across the years; statistics make visible what otherwise stays hidden: costs, consumption, and how they change. Single data points become a clear picture of your vehicle."
       },
       {
-        "title": "Last oil check, on Home.",
-        "copy": "Log the oil level from the Home card and see days and kilometres since the last check at a glance. This is the level check, not an oil-change service — on vehicles with engine oil."
+        "title": "Oil, tyres and more. Today's state, always in view.",
+        "copy": "See at a glance what counts for your vehicle today: when the oil level was last checked, how many days and kilometres have passed since, and which tyres are currently mounted. No hunting through notes, no old workshop receipts — the current state of your vehicle, exactly when you need it."
       },
       {
-        "title": "The tyres on the car right now.",
-        "copy": "The Home card keeps your active set: season, days, and kilometres since the mount. Tyre purchases stay a separate expense in the logbook."
+        "title": "Your story. Your format. Your data.",
+        "copy": "What GarIQ has gathered, you can take with you anytime — as a clear PDF to read and share, or as CSV to work with yourself. Your vehicle history does not only live in GarIQ: you have it exactly where you need it."
       }
     ]
   },

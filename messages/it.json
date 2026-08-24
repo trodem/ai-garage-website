@@ -253,33 +253,33 @@
     ]
   },
   "problem": {
-    "label": "Tutto in un posto",
-    "title": "Non solo il logbook. Tutto quello che il veicolo ti chiede.",
-    "copy": "Vault documenti, garage condiviso, cessione del veicolo quando lo vendi, export di un anno di Timeline. E in Home: ultimo controllo olio e gomme montate, sempre a vista.",
+    "label": "Non un tracker qualsiasi.",
+    "title": "Costi, consumi e manutenzione sotto controllo? GarIQ fa di più.",
+    "copy": "Documenti del veicolo, garage condiviso, cessione del veicolo quando lo vendi, timeline e statistiche, un anno da portare con te. E in Home: ultimo controllo olio e gomme montate, sempre a vista.",
     "cards": [
       {
-        "title": "Dove sono tutti i documenti del veicolo?",
-        "copy": "Libretto, polizze, contratti d'acquisto, manuali e PDF stanno nel vault del veicolo, ordinati per tipo di documento. Li apri dal Dettaglio veicolo, non da una cartella qualsiasi del telefono."
+        "title": "Quello che appartiene al veicolo resta sul veicolo.",
+        "copy": "Libretto, polizza, contratto d'acquisto e manuale sono tutti in un posto. Così resta tutto insieme, a portata di mano, dove te lo aspetti — sul tuo veicolo."
       },
       {
-        "title": "Un garage, più persone.",
-        "copy": "Invita co-owner, admin o logger nel tuo garage: stessa timeline, stessi veicoli, ruoli diversi. La condivisione è inclusa da Basic — sul Free non c'è condivisione."
+        "title": "La storia appartiene al veicolo. Non al proprietario.",
+        "copy": "Quando l'auto cambia padrone, la storia spesso riparte da zero. In GarIQ resta sul veicolo. In vendita mostri cosa è stato fatto negli anni e come è stato curato — e passi la storia al nuovo guidatore. Un'auto con una memoria, non solo un usato."
       },
       {
-        "title": "Vendi il veicolo — passa anche il libretto.",
-        "copy": "Trasferisci il libretto a un altro account GarIQ: l'acquirente accetta nell'app, con un piano a pagamento e uno slot veicolo libero. Passa solo una parte della storia — manutenzioni, revisioni e spese di gomme o tuning — e la tua copia resta come archivio di vendita in sola lettura. Il trasferimento è irreversibile."
+        "title": "Più veicoli. Un garage. Uno sguardo condiviso.",
+        "copy": "La tua auto, la moto, l'auto di famiglia o la seconda macchina – ogni veicolo ha il suo posto e la sua storia. Condividi il garage con partner, famiglia o collaboratori e badate insieme ai vostri veicoli. Tutti vedono le stesse informazioni e possono tenere aggiornata la storia. Decidi tu chi scrive e chi può fare di più. Resta separato dove deve esserlo – e insieme dove vi serve insieme."
       },
       {
-        "title": "Porta via un anno di timeline.",
-        "copy": "Con Advanced esporti un anno di Timeline in CSV o in PDF brandizzato, direttamente dall'app. Su Free e Basic i controlli si vedono ma restano bloccati; l'export completo dell'account non è in v1."
+        "title": "Timeline e statistiche. La storia dietro i numeri.",
+        "copy": "Ogni voce racconta un pezzo del tuo veicolo. La timeline riunisce questi momenti negli anni, le statistiche rendono visibile ciò che altrimenti resta nascosto: costi, consumi e come evolvono. Così dai singoli dati nasce un quadro chiaro del tuo veicolo."
       },
       {
-        "title": "L'ultimo controllo olio, in Home.",
-        "copy": "Registri il livello dell'olio dalla card in Home e vedi a colpo d'occhio giorni e km dall'ultimo controllo. Non è un tagliando: è il controllo del livello, sui veicoli che hanno olio motore."
+        "title": "Olio, gomme e altro. Lo stato attuale sempre a vista.",
+        "copy": "A colpo d'occhio vedi cosa conta oggi per il tuo veicolo: quando hai controllato l'olio l'ultima volta, quanti giorni e km sono passati, e quali gomme sono montate ora. Niente caccia tra gli appunti, niente vecchi scontrini d'officina — lo stato attuale del veicolo, proprio quando ti serve."
       },
       {
-        "title": "Le gomme montate adesso.",
-        "copy": "La card Home tiene il set attivo: stagione, giorni e km dall'ultimo montaggio. Gli acquisti di gomme restano una spesa a parte nel libretto."
+        "title": "La tua storia. Il tuo formato. I tuoi dati.",
+        "copy": "Quello che è raccolto in GarIQ lo puoi portare con te in qualsiasi momento — come PDF chiaro da leggere e condividere, o come CSV per lavorarlo tu. Così la storia del veicolo non resta solo in GarIQ: ce l'hai dove ti serve."
       }
     ]
   },

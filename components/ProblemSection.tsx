@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import type { Icon as TablerIcon } from "@tabler/icons-react";
 import {
-  IconCircleDotted,
+  IconChartBar,
   IconDroplet,
   IconFileExport,
   IconFileText,
@@ -14,11 +14,11 @@ type Card = { title: string; copy: string; examples?: string[] };
 
 const PROBLEM_ICONS: TablerIcon[] = [
   IconFileText,
-  IconUsers,
   IconTransfer,
-  IconFileExport,
+  IconUsers,
+  IconChartBar,
   IconDroplet,
-  IconCircleDotted,
+  IconFileExport,
 ];
 
 export default async function ProblemSection() {
@@ -31,7 +31,6 @@ export default async function ProblemSection() {
         <Reveal>
           <span className="section-label">{t("label")}</span>
           <h2 className="section-title">{t("title")}</h2>
-          <p className="section-copy mx-auto mt-4 lg:mx-0">{t("copy")}</p>
         </Reveal>
       </div>
 

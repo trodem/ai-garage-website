@@ -253,33 +253,33 @@
     ]
   },
   "problem": {
-    "label": "Alles an einem Ort",
-    "title": "Nicht nur das Logbuch. Alles, was dein Fahrzeug braucht.",
-    "copy": "Dokumenten-Vault, geteilte Garage, Fahrzeugübergabe beim Verkauf, Export eines Timeline-Jahres. Und auf Home: der letzte Ölstand-Check und die montierten Reifen, immer im Blick.",
+    "label": "Kein gewöhnlicher Tracker.",
+    "title": "Kosten, Verbrauch und Wartung im Blick? GarIQ macht mehr.",
+    "copy": "Fahrzeugdokumente, geteilte Garage, Fahrzeugübergabe beim Verkauf, Timeline und Statistik, ein Jahr zum Mitnehmen. Und auf Home: der letzte Ölstand-Check und die montierten Reifen, immer im Blick.",
     "cards": [
       {
-        "title": "Wo sind all meine Fahrzeugdokumente?",
-        "copy": "Fahrzeugschein, Versicherungen, Kaufverträge, Handbücher und PDFs liegen im Vault des Fahrzeugs, nach Dokumenttyp sortiert. Du öffnest sie im Fahrzeug-Detail statt in irgendeinem Ordner auf dem Handy."
+        "title": "Was zum Fahrzeug gehört, bleibt beim Fahrzeug.",
+        "copy": "Fahrzeugschein, Versicherung, Kaufvertrag und Handbuch sind alle an einem Ort gespeichert. So bleibt alles zusammen, griffbereit und dort, wo du es erwartest – bei deinem Fahrzeug."
       },
       {
-        "title": "Eine Garage, mehrere Personen.",
-        "copy": "Lade Co-Owner, Admins oder Logger in deine Garage ein: dieselbe Timeline, dieselben Fahrzeuge, verschiedene Rollen. Teilen ist ab Basic dabei — auf Free gibt es kein Teilen."
+        "title": "Die Geschichte gehört dem Fahrzeug. Nicht dem Besitzer.",
+        "copy": "Wechselt das Auto den Besitzer, beginnt die Historie oft bei null. Bei GarIQ bleibt sie am Fahrzeug. Beim Verkauf zeigst du, was über die Jahre gemacht wurde und wie es gepflegt wurde — und gibst die Geschichte dem neuen Fahrer mit. Ein Auto mit Gedächtnis, nicht nur ein Gebrauchtwagen."
       },
       {
-        "title": "Fahrzeug verkauft — Logbuch geht mit.",
-        "copy": "Übertrage das Logbuch an ein anderes GarIQ-Konto: der Käufer nimmt in der App an, mit Bezahlplan und einem freien Fahrzeug-Slot. Mit geht nur ein Teil der Historie — Wartungen, Prüfungen und Ausgaben für Reifen oder Tuning — deine Kopie bleibt als Verkaufsarchiv nur lesbar. Der Transfer ist endgültig."
+        "title": "Mehrere Fahrzeuge. Eine Garage. Ein gemeinsamer Überblick.",
+        "copy": "Dein Auto, dein Motorrad, das Familienauto oder dein Zweitwagen – jedes Fahrzeug hat seinen eigenen Platz und seine eigene Geschichte. Teile deine Garage mit Partner, Familie oder Mitarbeitern und gebt gemeinsam auf eure Fahrzeuge acht. Alle sehen dieselben Informationen und können die Fahrzeuggeschichte aktuell halten. Du bestimmst, wer mitschreibt und wer mehr darf. So bleibt alles getrennt, wo es getrennt sein soll – und gemeinsam, wo ihr es gemeinsam braucht."
       },
       {
-        "title": "Ein Jahr Timeline, zum Mitnehmen.",
-        "copy": "Mit Advanced exportierst du ein Timeline-Jahr als CSV oder gebrandetes PDF, direkt in der App. Auf Free und Basic sind die Bedienelemente sichtbar, aber gesperrt; ein vollständiger Konto-Export ist nicht in v1."
+        "title": "Timeline und Statistik. Die Geschichte hinter den Zahlen.",
+        "copy": "Jeder Eintrag erzählt ein Stück deines Fahrzeugs. Die Timeline bringt diese Momente über Jahre zusammen, die Statistik macht sichtbar, was sonst verborgen bleibt: Kosten, Verbrauch und ihre Entwicklung. So wird aus einzelnen Daten ein klares Bild deines Fahrzeugs."
       },
       {
-        "title": "Der letzte Ölstand-Check, auf Home.",
-        "copy": "Du erfasst den Ölstand direkt auf der Home-Karte und siehst auf einen Blick Tage und Kilometer seit dem letzten Check. Das ist keine Service-Wartung, sondern die Ölstand-Kontrolle — auf Fahrzeugen mit Motoröl."
+        "title": "Öl, Reifen und mehr. Den aktuellen Zustand immer im Blick.",
+        "copy": "Auf einen Blick sehen, was heute für dein Fahrzeug zählt: wann der Ölstand zuletzt geprüft wurde, wie viele Tage und Kilometer seitdem vergangen sind und welche Reifen aktuell montiert sind. Keine Suche in Notizen, keine alten Werkstattbelege – sondern der aktuelle Zustand deines Fahrzeugs, genau dann, wenn du ihn brauchst."
       },
       {
-        "title": "Die Reifen, die jetzt drauf sind.",
-        "copy": "Die Home-Karte hält das aktive Set: Saison, Tage und Kilometer seit der Montage. Reifenkäufe bleiben eine separate Ausgabe im Logbuch."
+        "title": "Deine Geschichte. Dein Format. Deine Daten.",
+        "copy": "Was in GarIQ gesammelt ist, kannst du jederzeit mitnehmen – als übersichtliches PDF zum Lesen und Teilen oder als CSV zur eigenen Weiterverarbeitung. So bleibt deine Fahrzeuggeschichte nicht nur in GarIQ: Du hast sie genau dort zur Hand, wo du sie brauchst."
       }
     ]
   },
