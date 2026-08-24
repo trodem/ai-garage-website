@@ -5,7 +5,8 @@
 
 /* Design tokens migrated from the inline tailwind.config in index.html */
 @theme {
-  --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-sans: var(--font-manrope), "Manrope", system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
 
   --color-primary-50: #e8e7fc;
   --color-primary-100: #c8c7f8;
@@ -32,7 +33,7 @@
 }
 
 body {
-  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-family: var(--font-manrope), Manrope, system-ui, sans-serif;
 }
 
 .scroll-progress {
@@ -282,6 +283,19 @@ body {
   overflow: hidden;
 }
 
+.btn-brand {
+  background-image: linear-gradient(110deg, #211ee5 0%, #08a7de 52%, #ed177b 100%);
+  background-size: 180% 100%;
+  color: #fff;
+  border: 0;
+  transition: background-position 320ms ease, transform 160ms ease, opacity 160ms ease;
+}
+
+.btn-brand:hover {
+  background-position: 100% 0;
+  color: #fff;
+}
+
 .btn-shine::after {
   content: "";
   position: absolute;
@@ -323,6 +337,7 @@ body {
 
 .section-title {
   margin-top: 1rem;
+  font-family: var(--font-display);
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.05;
   font-weight: 600;
@@ -360,9 +375,7 @@ body {
 .step-card,
 .ai-card,
 .use-case-card,
-.testimonial-card,
-.pricing-card,
-.faq-item {
+.testimonial-card {
   border-radius: 1.5rem;
   border: 1px solid rgba(148, 163, 184, 0.18);
   background: rgba(255, 255, 255, 0.82);
@@ -374,9 +387,7 @@ body {
 .dark .step-card,
 .dark .ai-card,
 .dark .use-case-card,
-.dark .testimonial-card,
-.dark .pricing-card,
-.dark .faq-item {
+.dark .testimonial-card {
   border-color: rgba(51, 65, 85, 0.75);
   background: rgba(15, 23, 42, 0.78);
 }
@@ -392,9 +403,7 @@ body {
 .step-card:hover,
 .ai-card:hover,
 .use-case-card:hover,
-.testimonial-card:hover,
-.pricing-card:hover,
-.faq-item:hover {
+.testimonial-card:hover {
   transform: translateY(-4px);
   border-color: rgba(31, 27, 232, 0.3);
   box-shadow: 0 24px 64px rgba(31, 27, 232, 0.12), 0 0 0 1px rgba(31, 27, 232, 0.08);
@@ -404,15 +413,9 @@ body {
 .dark .step-card:hover,
 .dark .ai-card:hover,
 .dark .use-case-card:hover,
-.dark .testimonial-card:hover,
-.dark .pricing-card:hover,
-.dark .faq-item:hover {
+.dark .testimonial-card:hover {
   border-color: rgba(0, 167, 229, 0.4);
   box-shadow: 0 24px 64px rgba(0, 167, 229, 0.16), 0 0 0 1px rgba(0, 167, 229, 0.12);
-}
-
-.pricing-card-featured:hover {
-  transform: scale(1.025) translateY(-3px);
 }
 
 .feature-card h3,
@@ -501,14 +504,51 @@ body {
 }
 
 .pricing-card {
+  --tier-accent: #211ee5;
   display: flex;
   min-height: 100%;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 2rem 1.5rem 1.6rem;
   position: relative;
   overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--tier-accent) 18%, transparent);
+  border-radius: 1.35rem;
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--tier-accent) 8%, white) 0%,
+    rgba(255, 255, 255, 0.96) 42%,
+    rgba(248, 249, 252, 0.94) 100%
+  );
+  box-shadow:
+    0 14px 36px color-mix(in srgb, var(--tier-accent) 14%, transparent),
+    0 2px 10px rgba(15, 23, 42, 0.05);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--tier-accent) 42%, transparent);
+  box-shadow:
+    0 22px 48px color-mix(in srgb, var(--tier-accent) 22%, transparent),
+    0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.dark .pricing-card {
+  border-color: color-mix(in srgb, var(--tier-accent) 32%, transparent);
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--tier-accent) 16%, rgb(15 23 42)) 0%,
+    rgba(15, 23, 42, 0.94) 48%,
+    rgba(20, 28, 48, 0.9) 100%
+  );
+  box-shadow:
+    0 16px 36px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 .pricing-tier-free::before,
@@ -520,12 +560,21 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: var(--tier-accent);
+  background: linear-gradient(
+    90deg,
+    var(--tier-accent),
+    color-mix(in srgb, var(--tier-accent) 40%, #08a7de)
+  );
 }
 
-.pricing-tier-free     { --tier-accent: rgb(71, 85, 105); }
-.pricing-tier-basic    { --tier-accent: #1F1BE8; }
-.pricing-tier-advanced { --tier-accent: rgb(242, 19, 123); }
+.pricing-tier-free     { --tier-accent: #08a7de; }
+.pricing-tier-basic    { --tier-accent: #211ee5; }
+.pricing-tier-advanced { --tier-accent: #ed177b; }
+
+.pricing-card h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
 
 .pricing-badge {
   display: inline-flex;
@@ -559,17 +608,30 @@ body {
 }
 
 .pricing-card-featured {
-  border-color: rgba(242, 19, 123, 0.4);
-  background: linear-gradient(180deg, rgba(242, 19, 123, 0.09) 0%, rgba(255, 255, 255, 0.94) 60%);
+  border-color: color-mix(in srgb, var(--tier-accent) 42%, transparent);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--tier-accent) 12%, white) 0%,
+    rgba(255, 255, 255, 0.96) 60%
+  );
   transform: scale(1.025);
   z-index: 1;
 }
 
 .dark .pricing-card-featured {
-  background: linear-gradient(180deg, rgba(242, 19, 123, 0.14) 0%, rgba(15, 23, 42, 0.9) 60%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--tier-accent) 18%, rgb(15 23 42)) 0%,
+    rgba(15, 23, 42, 0.92) 60%
+  );
+}
+
+.pricing-card-featured:hover {
+  transform: scale(1.025) translateY(-6px);
 }
 
 .price-tag {
+  font-family: var(--font-display);
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: -0.06em;
@@ -612,11 +674,11 @@ body {
   top: 0.05em;
   font-size: 0.8em;
   font-weight: 700;
-  color: #1F1BE8;
+  color: var(--tier-accent, #211ee5);
 }
 
 .dark .pricing-card li::before {
-  color: #00A7E5;
+  color: color-mix(in srgb, var(--tier-accent) 55%, white);
 }
 
 .pricing-button {
@@ -690,12 +752,60 @@ body {
 }
 
 .faq-item {
+  --card-accent: #211ee5;
+  position: relative;
+  overflow: hidden;
   padding: 1.25rem 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--card-accent) 16%, transparent);
+  border-radius: 1.35rem;
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--card-accent) 7%, white) 0%,
+    rgba(255, 255, 255, 0.96) 50%
+  );
+  box-shadow:
+    0 10px 28px color-mix(in srgb, var(--card-accent) 10%, transparent),
+    0 2px 8px rgba(15, 23, 42, 0.04);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.faq-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #211ee5, #08a7de 50%, #ed177b);
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--card-accent) 36%, transparent);
+  box-shadow:
+    0 16px 36px color-mix(in srgb, var(--card-accent) 16%, transparent),
+    0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+.dark .faq-item {
+  border-color: color-mix(in srgb, var(--card-accent) 28%, transparent);
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--card-accent) 14%, rgb(15 23 42)) 0%,
+    rgba(15, 23, 42, 0.94) 55%
+  );
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 .faq-item summary {
   cursor: pointer;
   list-style: none;
+  font-family: var(--font-display);
   font-weight: 600;
   padding-right: 2rem;
   position: relative;
@@ -851,20 +961,6 @@ header nav a:hover::after {
 .btn-soft:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 22px rgba(15, 23, 42, 0.14);
-}
-
-.pricing-card-featured {
-  animation: featuredGlow 4.2s ease-in-out infinite;
-}
-
-@keyframes featuredGlow {
-  0%,
-  100% {
-    box-shadow: 0 14px 44px rgba(242, 19, 123, 0.16), 0 0 0 1.5px rgba(242, 19, 123, 0.22);
-  }
-  50% {
-    box-shadow: 0 20px 56px rgba(242, 19, 123, 0.28), 0 0 0 1.5px rgba(242, 19, 123, 0.42);
-  }
 }
 
 a:focus-visible,
@@ -1289,41 +1385,67 @@ summary:focus-visible {
 }
 
 .soft-card {
+  --card-accent: #211ee5;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.7rem;
   padding: 1.35rem 1.35rem 1.45rem;
-  border: 1px solid rgba(33, 30, 229, 0.12);
+  border: 1px solid color-mix(in srgb, var(--card-accent) 18%, transparent);
   border-radius: 1.35rem;
   background: linear-gradient(
-    160deg,
-    rgba(255, 255, 255, 0.96),
-    rgba(248, 249, 252, 0.94)
+    165deg,
+    color-mix(in srgb, var(--card-accent) 8%, white) 0%,
+    rgba(255, 255, 255, 0.96) 42%,
+    rgba(248, 249, 252, 0.94) 100%
   );
   box-shadow:
-    0 14px 36px rgba(33, 30, 229, 0.1),
+    0 14px 36px color-mix(in srgb, var(--card-accent) 14%, transparent),
     0 2px 10px rgba(15, 23, 42, 0.05);
   transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.soft-card:nth-child(1) { --card-accent: #211ee5; }
+.soft-card:nth-child(2) { --card-accent: #08a7de; }
+.soft-card:nth-child(3) { --card-accent: #ed177b; }
+.soft-card:nth-child(4) { --card-accent: #211ee5; }
+.soft-card:nth-child(5) { --card-accent: #08a7de; }
+.soft-card:nth-child(6) { --card-accent: #ed177b; }
+
+.soft-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--card-accent),
+    color-mix(in srgb, var(--card-accent) 40%, #08a7de)
+  );
 }
 
 .soft-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(8, 167, 222, 0.28);
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--card-accent) 42%, transparent);
   box-shadow:
-    0 20px 44px rgba(33, 30, 229, 0.14),
+    0 22px 48px color-mix(in srgb, var(--card-accent) 22%, transparent),
     0 4px 14px rgba(15, 23, 42, 0.06);
 }
 
 .dark .soft-card {
-  border-color: rgba(139, 137, 255, 0.18);
+  border-color: color-mix(in srgb, var(--card-accent) 32%, transparent);
   background: linear-gradient(
-    160deg,
-    rgba(15, 23, 42, 0.92),
-    rgba(20, 28, 48, 0.9)
+    165deg,
+    color-mix(in srgb, var(--card-accent) 16%, rgb(15 23 42)) 0%,
+    rgba(15, 23, 42, 0.94) 48%,
+    rgba(20, 28, 48, 0.9) 100%
   );
   box-shadow:
     0 16px 36px rgba(0, 0, 0, 0.4),
@@ -1331,30 +1453,43 @@ summary:focus-visible {
 }
 
 .soft-card-chip {
+  z-index: 1;
   display: grid;
   place-items: center;
   width: 2.75rem;
   height: 2.75rem;
   border-radius: 0.9rem;
-  color: #211ee5;
-  background: linear-gradient(
-    145deg,
-    rgba(33, 30, 229, 0.14),
-    rgba(8, 167, 222, 0.12) 50%,
-    rgba(237, 23, 123, 0.12)
-  );
-  animation: vehicleIconHue 7s ease-in-out infinite;
+  color: var(--card-accent);
+  background: color-mix(in srgb, var(--card-accent) 16%, white);
+  animation: chipPulse 3.6s ease-in-out infinite;
+  transition: transform 0.28s ease;
 }
 
 .soft-card:nth-child(1) .soft-card-chip { animation-delay: 0s; }
-.soft-card:nth-child(2) .soft-card-chip { animation-delay: 0.4s; }
-.soft-card:nth-child(3) .soft-card-chip { animation-delay: 0.8s; }
-.soft-card:nth-child(4) .soft-card-chip { animation-delay: 1.2s; }
-.soft-card:nth-child(5) .soft-card-chip { animation-delay: 1.6s; }
-.soft-card:nth-child(6) .soft-card-chip { animation-delay: 2s; }
+.soft-card:nth-child(2) .soft-card-chip { animation-delay: 0.35s; }
+.soft-card:nth-child(3) .soft-card-chip { animation-delay: 0.7s; }
+.soft-card:nth-child(4) .soft-card-chip { animation-delay: 1.05s; }
+.soft-card:nth-child(5) .soft-card-chip { animation-delay: 1.4s; }
+.soft-card:nth-child(6) .soft-card-chip { animation-delay: 1.75s; }
+
+.soft-card:hover .soft-card-chip {
+  transform: scale(1.08) rotate(-6deg);
+  animation-play-state: paused;
+}
 
 .dark .soft-card-chip {
-  animation-name: vehicleIconHueDark;
+  color: color-mix(in srgb, var(--card-accent) 55%, white);
+  background: color-mix(in srgb, var(--card-accent) 28%, rgb(15 23 42));
+}
+
+@keyframes chipPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
 }
 
 .soft-card-kicker {
@@ -1363,20 +1498,17 @@ summary:focus-visible {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #211ee5;
-  animation: vehicleIconHue 7s ease-in-out infinite;
+  color: var(--card-accent);
 }
 
-.soft-card:nth-child(1) .soft-card-kicker { animation-delay: 0s; }
-.soft-card:nth-child(2) .soft-card-kicker { animation-delay: 0.4s; }
-.soft-card:nth-child(3) .soft-card-kicker { animation-delay: 0.8s; }
-
 .dark .soft-card-kicker {
-  animation-name: vehicleIconHueDark;
+  color: color-mix(in srgb, var(--card-accent) 55%, white);
 }
 
 .soft-card-title {
+  z-index: 1;
   margin: 0;
+  font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.3;
@@ -1413,11 +1545,11 @@ summary:focus-visible {
   font-size: 0.88rem;
   line-height: 1.45;
   font-style: italic;
-  color: #211ee5;
+  color: var(--card-accent);
 }
 
 .dark .soft-card-examples li {
-  color: #8b89ff;
+  color: color-mix(in srgb, var(--card-accent) 55%, white);
 }
 
 /* Reveal transitions must win over soft-card / pricing / faq transitions */
@@ -1439,8 +1571,18 @@ summary:focus-visible {
     background 0.25s ease !important;
 }
 
-.soft-card.reveal.is-visible:hover {
-  transform: translateY(-4px);
+.soft-card.reveal.is-visible:hover,
+.pricing-card.reveal.is-visible:hover,
+.faq-item.reveal.is-visible:hover {
+  transform: translateY(-6px);
+}
+
+.pricing-card-featured.reveal.is-visible {
+  transform: scale(1.025);
+}
+
+.pricing-card-featured.reveal.is-visible:hover {
+  transform: scale(1.025) translateY(-6px);
 }
 
 /* ── Phone mockup ── */
@@ -1456,6 +1598,14 @@ summary:focus-visible {
 
 .hero-grid-copy {
   grid-area: copy;
+}
+
+.hero-grid-copy h1 {
+  font-family: var(--font-display);
+}
+
+.brand-mark {
+  font-family: var(--font-display);
 }
 
 .hero-slogan {
@@ -1626,6 +1776,7 @@ summary:focus-visible {
 
 .ask-walk-subtitle {
   margin: 0;
+  font-family: var(--font-display);
   color: rgb(2 6 23);
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 700;

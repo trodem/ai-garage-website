@@ -54,7 +54,7 @@ export default function Header() {
       >
         <a href="#top" className="flex items-center gap-3" aria-label={t("homeAria")}>
           <LogoIcon className="logo-hover h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24" />
-          <div className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+          <div className="brand-mark text-3xl font-extrabold tracking-tight sm:text-4xl">
             <span className="text-[#211EE5] dark:text-[#08A7DE]">Gar</span><span className="text-[#ED177B]">IQ</span>
           </div>
         </a>
@@ -83,7 +83,7 @@ export default function Header() {
           </button>
           <a
             href="#plans"
-            className="inline-flex items-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+            className="btn-brand btn-shine inline-flex items-center rounded-full px-5 py-2.5 text-sm font-semibold text-white"
           >
             {t("ctaDownload")}
           </a>
@@ -129,7 +129,7 @@ export default function Header() {
               <a
                 href="#plans"
                 onClick={closeMenu}
-                className="inline-flex items-center rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white dark:bg-white dark:text-slate-950"
+                className="btn-brand btn-shine inline-flex items-center rounded-full px-4 py-2 text-sm font-semibold text-white"
               >
                 {t("ctaDownload")}
               </a>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -11,10 +11,17 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
+const manrope = Manrope({
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-inter",
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600", "700"],
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
@@ -116,7 +123,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   return (
     <html
       lang={locale}
-      className={`scroll-smooth ${inter.variable}`}
+      className={`scroll-smooth ${manrope.variable} ${spaceGrotesk.variable}`}
       suppressHydrationWarning
     >
       <head>

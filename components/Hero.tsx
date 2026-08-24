@@ -50,7 +50,7 @@ export default async function Hero() {
           <div className="hero-grid-cta flex flex-col items-center gap-3 sm:flex-row lg:justify-start">
             <MagneticButton
               href="#plans"
-              className="btn-shine inline-flex min-h-11 min-w-[11rem] items-center justify-center rounded-full bg-primary-500 px-8 py-3.5 text-base font-semibold text-white hover:bg-primary-600"
+              className="btn-brand btn-shine inline-flex min-h-11 min-w-[11rem] items-center justify-center rounded-full px-8 py-3.5 text-base font-semibold text-white"
             >
               {t("ctaPrimary")}
             </MagneticButton>

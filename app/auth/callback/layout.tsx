@@ -1,10 +1,17 @@
-import { Inter } from "next/font/google";
+import { Manrope, Space_Grotesk } from "next/font/google";
 import "../../globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
+const manrope = Manrope({
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600", "700"],
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
@@ -22,7 +29,7 @@ export const metadata = {
 
 export default function AuthCallbackLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`scroll-smooth ${inter.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`scroll-smooth ${manrope.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#0b1020" />
         <meta name="color-scheme" content="dark light" />
