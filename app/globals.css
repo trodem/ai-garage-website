@@ -523,7 +523,7 @@ body {
   background: var(--tier-accent);
 }
 
-.pricing-tier-free     { --tier-accent: rgba(100, 116, 139, 0.55); }
+.pricing-tier-free     { --tier-accent: rgb(71, 85, 105); }
 .pricing-tier-basic    { --tier-accent: #1F1BE8; }
 .pricing-tier-advanced { --tier-accent: rgb(242, 19, 123); }
 
@@ -533,17 +533,17 @@ body {
   margin-bottom: 0.75rem;
   padding: 0.22rem 0.7rem;
   border-radius: 9999px;
-  background: rgba(242, 19, 123, 0.12);
+  background: color-mix(in srgb, var(--tier-accent) 14%, transparent);
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgb(210, 12, 100);
+  color: var(--tier-accent);
 }
 
 .dark .pricing-badge {
-  background: rgba(242, 19, 123, 0.2);
-  color: rgb(255, 115, 165);
+  background: color-mix(in srgb, var(--tier-accent) 22%, transparent);
+  color: var(--tier-accent);
 }
 
 .pricing-price {
@@ -649,6 +649,44 @@ body {
 .dark .pricing-button-featured {
   background: white;
   color: rgb(15 23 42);
+}
+
+.pricing-notes h3 {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: rgb(100 116 139);
+}
+
+.dark .pricing-notes h3 {
+  color: rgb(148 163 184);
+}
+
+.pricing-notes > div + div {
+  margin-top: 0.85rem;
+}
+
+.pricing-notes h4 {
+  margin-bottom: 0.15rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(100 116 139);
+}
+
+.dark .pricing-notes h4 {
+  color: rgb(148 163 184);
+}
+
+.pricing-notes p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: rgb(100 116 139);
+}
+
+.dark .pricing-notes p {
+  color: rgb(148 163 184);
 }
 
 .faq-item {
@@ -1599,9 +1637,21 @@ summary:focus-visible {
   color: white;
 }
 
-.ask-walk-subtitle .ask-walk-brand {
+.ask-walk-brand {
   white-space: nowrap;
-  vertical-align: -0.08em;
+  font-weight: 800;
+}
+
+.ask-walk-brand-gar {
+  color: var(--color-primary-500);
+}
+
+.dark .ask-walk-brand-gar {
+  color: var(--color-brand-cyan);
+}
+
+.ask-walk-brand-iq {
+  color: var(--color-brand-pink);
 }
 
 .ask-walk-steps {

@@ -31,6 +31,7 @@ export default async function ProblemSection() {
         <Reveal>
           <span className="section-label">{t("label")}</span>
           <h2 className="section-title">{t("title")}</h2>
+          <p className="section-copy mx-auto mt-4 lg:mx-0">{t("copy")}</p>
         </Reveal>
       </div>
 

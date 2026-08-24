@@ -11,14 +11,14 @@
   },
   "header": {
     "homeAria": "GarIQ Startseite",
-    "navHow": "So funktioniert's",
+    "navFeatures": "Funktionen",
+    "navAsk": "Fragen & erfassen",
     "navPlans": "Tarife",
-    "navDownload": "Download",
     "navFaq": "FAQ",
     "toggleThemeAria": "Dunkelmodus umschalten",
     "openMenuAria": "Menü öffnen",
     "themeButton": "Thema",
-    "ctaDownload": "App holen"
+    "ctaDownload": "Kostenlos starten"
   },
   "hero": {
     "badge": "Das intelligente Fahrtenbuch",
@@ -592,9 +592,25 @@
   },
   "plans": {
     "label": "Tarife & KI",
-    "title": "Drei Kontotarife. Eine App — wächst mit deiner Garage.",
-    "copy": "Die Limits entsprechen dem Produkt (Garagen, Fahrzeuge, Freigabe und monatliche KI-Credits). Listenpreise in CHF (Primärmarkt: Schweiz); App Store und Google Play in DE/AT belasten die lokale Währung. Abo und Tarifverwaltung in der GarIQ-App — diese Website verarbeitet keine Zahlungen. Beim Free-Tarif beginnt die monatliche KI-Credit-Periode mit deinem ersten Fahrzeug.",
-    "footnote": "Monatliche KI-Credits decken OCR, Chat-Insert, Ask (Fahrtenbuch und Dokumente) und verwandte abgerechnete KI-Aktionen ab. Beim Free zählt der Fahrzeugschein-Scan vor dem ersten Fahrzeug nicht gegen die monatlichen Credits; Document-AI für Vault-Kategorien außer Schein ist aus. Das manuelle Formular bleibt immer verfügbar, wenn du das Limit erreichst. Du bestätigst jedes Event vor dem Speichern. Der abgebuchte Abopreis kommt vom Store deines Landes — nicht von dieser Seite. Auf Basic und Advanced kannst du zusätzlich KI-Credit-Pakete in der App kaufen; sie verfallen nie und kommen zum Monats-Pool dazu.",
+    "title": "Der passende GarIQ für deine Garage.",
+    "copy": "Starte mit deinem ersten Fahrzeug, teile deine Garage mit anderen oder verwalte mehrere Garagen und Fahrzeuge an einem Ort. Wähle den Tarif, der dir genau die Möglichkeiten gibt, die du für deine Fahrzeugwelt brauchst.",
+    "notes": {
+      "title": "Hinweise zu KI-Credits & Abrechnung",
+      "items": [
+        {
+          "heading": "KI-Credits",
+          "body": "Die monatlichen KI-Credits werden für KI-gestützte Funktionen verwendet – zum Beispiel um Informationen aus Fotos und PDFs zu erkennen, Einträge über den Chat vorzubereiten oder Fragen zu deinen Fahrzeugdaten zu beantworten. Wenn dein monatliches Kontingent aufgebraucht ist, bleibt die manuelle Eingabe jederzeit verfügbar."
+        },
+        {
+          "heading": "Du entscheidest, was gespeichert wird",
+          "body": "GarIQ speichert KI-Vorschläge nicht automatisch. Du prüfst jeden Vorschlag und entscheidest selbst, ob er gespeichert wird."
+        },
+        {
+          "heading": "Abrechnung",
+          "body": "Das Abonnement wird über den App Store oder Google Play deines Landes abgerechnet. Diese Website verarbeitet keine Zahlungen."
+        }
+      ]
+    },
     "popularBadge": "Am flexibelsten",
     "cta": "GarIQ laden",
     "tiers": [
@@ -602,48 +618,51 @@
         "id": "free",
         "name": "Free",
         "price": "Kostenlos",
-        "description": "Einstieg mit Formularen und Server-KI ab dem ersten Fahrzeug.",
+        "description": "Alles, was du brauchst, um dein erstes Fahrzeug digital zu begleiten – mit vollständigem Fahrtenbuch, Statistik und KI-Unterstützung.",
+        "badge": "Einstieg",
         "featured": false,
         "highlights": [
           "1 Garage · 1 Fahrzeug",
-          "Volles Fahrtenbuch & Statistik",
-          "10 KI-Credits / Monat",
-          "OCR für Tanken & Laden",
-          "Chat für Notizen, Tanken & Laden",
-          "Ask im Fahrtenbuch innerhalb der Credits",
-          "Manuelles Formular immer verfügbar"
+          "Vollständige Fahrzeughistorie & Statistik",
+          "10 KI-Credits pro Monat",
+          "Tank- & Ladevorgänge per Foto erfassen",
+          "Notizen, Tanken & Laden per Chat",
+          "GarIQ fragen – innerhalb deiner verfügbaren KI-Credits",
+          "Manuelle Eingabe jederzeit möglich"
         ]
       },
       {
         "id": "basic",
         "name": "Basic",
         "price": "CHF 4.90 / Monat",
-        "description": "Mehr Fahrzeuge, Freigabe, Smart Scan & Smart Insert. Basic kostenlos testen mit dem Store-Einführungsangebot (~30 Tage) — jährlich CHF 49 in-App. In DE/AT zeigt der Store lokales EUR.",
+        "description": "Mehr Platz für deine Fahrzeuge und mehr Freiheit bei der Nutzung: Verwalte mehrere Fahrzeuge, teile deine Garage mit anderen und erfasse Informationen einfach per Foto, PDF oder Chat.",
+        "badge": "Empfohlen",
         "featured": false,
         "highlights": [
           "Alles aus Free",
           "Bis zu 5 aktive Fahrzeuge",
-          "Freigabe für bis zu 5 Mitglieder",
-          "100 KI-Credits / Monat",
-          "Foto, PDF & Chat für alle Ereignistypen",
+          "Garage mit bis zu 5 Mitgliedern teilen",
+          "100 KI-Credits pro Monat",
+          "Informationen per Foto, PDF oder Chat erfassen",
           "Smart Scan & Smart Insert",
-          "Document-AI für den Fahrzeug-Vault"
+          "KI-gestützte Dokumentenverwaltung für dein Fahrzeug"
         ]
       },
       {
         "id": "advanced",
         "name": "Advanced",
         "price": "CHF 14.90 / Monat",
-        "description": "Mehrere Garagen und höheres KI-Kontingent für aktive Nutzer. Jährlich CHF 149 in-App. In DE/AT zeigt der Store lokales EUR.",
+        "description": "Für Familien, Enthusiasten und kleine Unternehmen mit mehreren Fahrzeugen: mehr Garagen, mehr Fahrzeuge, mehr Nutzer – und mehr Möglichkeiten.",
+        "badge": "Am flexibelsten",
         "featured": true,
         "highlights": [
           "Alles aus Basic",
-          "3 eigene Garagen",
+          "Bis zu 3 eigene Garagen",
           "Bis zu 10 aktive Fahrzeuge pro Garage",
-          "Freigabe für bis zu 10 Mitglieder",
-          "500 KI-Credits / Monat",
-          "Timeline-Jahrexport (CSV & PDF)",
-          "Originalfoto/-PDF an Events behalten"
+          "Garage mit bis zu 10 Mitgliedern teilen",
+          "500 KI-Credits pro Monat",
+          "Fahrzeuggeschichte als PDF oder CSV exportieren",
+          "Originalfotos und PDFs direkt bei den Ereignissen behalten"
         ]
       }
     ]
@@ -662,71 +681,71 @@
   },
   "faq": {
     "label": "FAQ",
-    "title": "Fragen vor der Installation.",
+    "title": "Häufige Fragen zu GarIQ",
     "items": [
       {
-        "q": "Was kann ich erfassen?",
-        "a": "Tanken, Laden, Werkstatt, Steuern, Prüfungen, Ausgaben, Notizen und Fahrten — pro Fahrzeug. Versicherungszahlungen kannst du als Events loggen; aktuelle Policen und Kaufverträge liegen in der Dokumentenablage (nicht über Insert → Versicherung für die Police selbst)."
+        "q": "Was ist GarIQ?",
+        "a": "GarIQ macht aus deinem Fahrzeug mehr als nur ein Fahrzeug. Es gibt ihm eine digitale Geschichte, die mit jedem Tankvorgang, jeder Wartung, jeder Rechnung, jeder Fahrt und jedem wichtigen Ereignis wächst.\n\nDu behältst den Überblick über Kosten, Verbrauch und aktuellen Zustand, kannst deine Geschichte über Jahre nachvollziehen, Dokumente griffbereit halten und deine eigenen Fahrzeugdaten einfach abfragen. Du kannst Fahrzeuge gemeinsam mit anderen nutzen, mehrere Fahrzeuge an einem Ort verwalten und die komplette Geschichte sogar an den nächsten Besitzer weitergeben.\n\nGarIQ verbindet alles, was dein Fahrzeug ausmacht – damit du jederzeit weisst, was war, was ist und was du daraus wissen möchtest."
       },
       {
-        "q": "Was ist im Free-Tarif enthalten?",
-        "a": "1 eigene Garage, 1 Fahrzeug, 10 KI-Credits/Monat ab dem ersten Fahrzeug. OCR für Tanken und Laden; Chat für Notizen, Tanken und Laden. Document-AI aus (außer Schein-Scan). Kein Smart Scan, Smart Insert oder Freigabe. Formular immer verfügbar. Ask innerhalb der Credits."
+        "q": "Ist GarIQ nur für Autos geeignet?",
+        "a": "Nein. GarIQ kannst du für verschiedene Fahrzeuge nutzen – zum Beispiel für Autos, Motorräder oder mehrere Fahrzeuge innerhalb deiner Familie. Jedes Fahrzeug behält dabei seine eigene Geschichte und seine eigenen Informationen."
       },
       {
-        "q": "Speichert die KI automatisch?",
-        "a": "Nein. KI erstellt einen Entwurf aus OCR, Smart Scan, Smart Insert oder Chat; du bearbeitest und bestätigst auf dem Entwurfsbildschirm."
+        "q": "Was kann ich mit GarIQ alles dokumentieren?",
+        "a": "Du kannst unter anderem Tankvorgänge, Ladevorgänge, Wartungen, Werkstattbesuche, Versicherungen, Steuern, Prüfungen, Ausgaben, Fahrten, Notizen und weitere Ereignisse rund um dein Fahrzeug dokumentieren."
       },
       {
-        "q": "Was ist Smart Scan?",
-        "a": "Eine Home-Aktion: Foto oder PDF ohne vorherige Eventtyp-Wahl — verfügbar ab Basic. OCR erkennt den Typ unter dokumentähnlichen Events; danach prüfst du denselben Entwurf und bestätigst. Auf Free loggst du mit dem Formular oder mit typisiertem OCR/Chat für Tanken und Laden."
+        "q": "Kann ich meine Fahrzeugdaten auch mit anderen teilen?",
+        "a": "Ja. Mit einer gemeinsamen Garage können mehrere Personen auf dieselben Fahrzeuge und deren Informationen zugreifen. So können beispielsweise Partner, Familienmitglieder oder andere Mitnutzer gemeinsam an der Fahrzeuggeschichte arbeiten. Dabei kannst du festlegen, wer welche Rechte hat."
       },
       {
-        "q": "Was ist Smart Insert?",
-        "a": "Das Chat-Gegenstück zu Smart Scan (Basic+): beschreibe, was passiert ist, ohne vorher den Eventtyp zu wählen — GarIQ erkennt ihn und erstellt denselben Entwurf zur Bestätigung."
+        "q": "Was passiert mit der Fahrzeuggeschichte, wenn ich mein Fahrzeug verkaufe?",
+        "a": "Die Geschichte kann gemeinsam mit dem Fahrzeug an den neuen Besitzer übertragen werden. So bekommt der Käufer nicht nur ein gebrauchtes Fahrzeug, sondern kann auch seine dokumentierte Geschichte nachvollziehen."
       },
       {
-        "q": "Gibt es eine Gratis-Testphase für Basic?",
-        "a": "Basic kann eine kostenlose Testphase (Ziel: ~30 Tage) als Store-Einführungsangebot auf iOS und Android enthalten — prüfe das aktuelle Angebot in der App vor dem Abo. Die Website übernimmt weder die Testphase noch die Bezahlung."
+        "q": "Kann ich mehrere Fahrzeuge mit GarIQ verwalten?",
+        "a": "Ja. Du kannst mehrere Fahrzeuge in einer App verwalten. Jedes Fahrzeug hat seinen eigenen Bereich und seine eigene Geschichte, während du trotzdem alles zentral an einem Ort hast."
       },
       {
-        "q": "Was sind die zwei Ask-Modi?",
-        "a": "Fahrtenbuch-Ask beantwortet Fragen zu Events, Kosten und Aggregaten. Dokumente-Ask beantwortet Fragen zur Fahrzeugablage und kann Titel und Seite zitieren. Beide nutzen denselben monatlichen KI-Credit-Pool. Ask sucht nicht im Web — nur deine Events und Dateien."
+        "q": "Kann ich meine Daten aus GarIQ exportieren?",
+        "a": "Ja. Deine Fahrzeugdaten können als übersichtliches PDF oder als CSV-Datei exportiert werden. So kannst du deine Informationen lesen, teilen oder für die eigene Weiterverarbeitung nutzen."
       },
       {
-        "q": "Was passiert bei leeren KI-Credits?",
-        "a": "KI-Methoden (OCR, Chat-Insert, Ask) sind deaktiviert bis Credits zurückgesetzt werden oder du upgradest. Auf Basic und Advanced kann der Rechnungsinhaber zusätzlich ein Credit-Paket in der App kaufen — Top-Up Mini 20, Standard 50 oder Pro 150 Credits (CHF 2.90 / 5.90 / 14.90) — sie verfallen nie und kommen zum Monats-Pool dazu. Beim Free upgradest du zuerst. Das manuelle Formular bleibt immer verfügbar."
+        "q": "Kann ich sehen, wie viel mein Fahrzeug wirklich kostet?",
+        "a": "Ja. GarIQ kann deine erfassten Ausgaben und Verbrauchsdaten auswerten und dir Statistiken über die Entwicklung deines Fahrzeugs zeigen. So erkennst du nicht nur einzelne Kosten, sondern auch Zusammenhänge und Veränderungen über die Zeit."
       },
       {
-        "q": "Mehrere Garagen?",
-        "a": "Free und Basic umfassen 1 eigene Garage. Advanced bis zu 3. Bei Basic und Advanced kannst du Co-Owner, Admins oder Logger einladen (keine Viewer-Rolle in v1); Free hat keine Freigabe."
+        "q": "Kann ich den aktuellen Zustand meines Fahrzeugs sehen?",
+        "a": "Ja. Auf der Startseite kannst du wichtige aktuelle Informationen zu deinem Fahrzeug auf einen Blick sehen – zum Beispiel den letzten Öl-Check, die vergangenen Tage und Kilometer seitdem oder die aktuell montierten Reifen."
       },
       {
-        "q": "Was passiert mit meinen Daten bei Downgrade oder Kündigung?",
-        "a": "Nichts wird gelöscht. Ressourcen über den Grenzen des neuen Tarifs werden eingefroren — sichtbar mit Upgrade-Pfad — bis du upgradest oder sie selbst entfernst."
+        "q": "Wie kann ich Informationen in GarIQ hinzufügen?",
+        "a": "So, wie es für dich am einfachsten ist: manuell per Formular, per Chat oder einfach mit einem Foto oder einer PDF-Datei. Die KI analysiert die Informationen, erkennt die relevanten Daten und bereitet daraus einen Eintrag vor. Du prüfst den Vorschlag, bestätigst ihn – und erst dann wird er gespeichert.\n\n**Du lieferst die Information. GarIQ macht daraus einen fertigen Eintrag.**"
       },
       {
-        "q": "Police vs. Versicherungszahlung?",
-        "a": "Aktuelle Police-PDFs und Deckungsdaten liegen in den Fahrzeug-Details → Police-Hub. Eine Versicherungszahlung ist ein separates Fahrtenbuch-Event. Nutze Insert → Versicherung nicht, um eine Police anzulegen."
+        "q": "Was mache ich, wenn ich nicht weiss, zu welchem Ereignistyp etwas gehört?",
+        "a": "Kein Problem. Du musst nicht wissen, wo eine Information in GarIQ hingehört. **Smart Scan** erkennt relevante Informationen aus Fotos und Dateien und hilft dabei, sie dem passenden Ereignistyp zuzuordnen. **Smart Log** macht dasselbe bei Informationen, die du über den Chat eingibst. GarIQ bereitet daraus einen passenden Eintrag vor – du prüfst ihn und entscheidest selbst, ob er gespeichert wird.\n\n**Du musst nicht wissen, wo es hingehört. GarIQ hilft dir dabei.**"
       },
       {
-        "q": "Welche Sprachen unterstützt GarIQ?",
-        "a": "App-Oberfläche und Assistent: Italienisch, Deutsch und Englisch — eine bevorzugte Sprache in den Einstellungen für beides."
+        "q": "Speichert die KI Informationen automatisch?",
+        "a": "Nein. Die KI erstellt einen Vorschlag, aber nichts wird automatisch gespeichert. Du entscheidest immer selbst, ob die vorgeschlagenen Informationen übernommen werden."
       },
       {
-        "q": "In welchen Währungen kann ich Ausgaben erfassen?",
-        "a": "Du kannst in einer anderen Währung als der Garagenwährung zahlen: GarIQ holt den Tageskurs und rechnet automatisch um."
+        "q": "Kann ich GarIQ Fragen zu meinem Fahrzeug stellen?",
+        "a": "Ja. Frag GarIQ einfach in natürlicher Sprache, was du über dein Fahrzeug wissen möchtest. Zum Beispiel: Wie viel habe ich dieses Jahr für mein Fahrzeug ausgegeben? Wie hat sich der Verbrauch über die letzten drei Jahre entwickelt? Wann war die letzte Wartung? Was steht in meiner Versicherung oder im Handbuch? Welche Reparaturen wurden bereits gemacht?\n\nGarIQ durchsucht die in deinem Fahrzeug hinterlegten Informationen und stellt die relevanten Daten für dich zusammen. So musst du nicht wissen, wo etwas gespeichert ist – du musst nur wissen, was du wissen möchtest."
       },
       {
-        "q": "Kann ich meine Daten exportieren?",
-        "a": "Mit Advanced exportierst du ein Timeline-Kalenderjahr als CSV oder gebrandetes PDF (Steuerelemente bei Free/Basic sichtbar aber gesperrt). Ein Voll-Konto-Export aus den Einstellungen ist in v1 noch nicht verfügbar."
+        "q": "Du verstehst eine Anzeige am Fahrzeug nicht? Zeig sie GarIQ.",
+        "a": "Eine unbekannte Warnleuchte, ein Symbol oder eine Meldung auf dem Display? Mach ein Foto und frag GarIQ einfach, was du darauf siehst und was es bedeuten könnte. Die KI analysiert das Bild und hilft dir, schneller zu verstehen, was dein Fahrzeug dir sagen möchte.\n\n**Nicht suchen. Einfach zeigen und fragen.**"
       },
       {
-        "q": "Kann ich ein Fahrzeug beim Verkauf übergeben?",
-        "a": "Ja. Der Primary Owner der Garage kann das Fahrtenbuch eines Fahrzeugs an ein anderes GarIQ-Konto übertragen: Der Käufer erhält eine E-Mail-Einladung und akzeptiert in der App. Er braucht einen bezahlten Tarif und einen freien Fahrzeug-Slot. Kopiert wird nur ein Teil der Historie — Wartung, Prüfungen sowie Reifen- und Tuning-Ausgaben — nicht Kraftstoff, Versicherung, Steuern, Fahrten, Notizen oder Vault-Dokumente. Deine Kopie bleibt als schreibgeschütztes Verkaufsarchiv. Die Übertragung ist unwiderruflich und kann nicht auf dieser Website akzeptiert werden."
+        "q": "Für wen ist GarIQ gedacht?",
+        "a": "GarIQ ist für alle, die mehr aus ihrer Fahrzeuggeschichte machen möchten: private Fahrzeughalter, Familien mit mehreren Fahrzeugen, Motorrad- und Tuning-Enthusiasten, Sammler sowie kleine Unternehmen mit einem eigenen Fahrzeugbestand. Auch für alle, die Wartungen, Reparaturen oder Umbauten selbst durchführen und dabei Arbeitszeit, Kosten und erledigte Arbeiten dokumentieren möchten. Besonders wertvoll ist GarIQ für alle, die ihre Fahrzeuge langfristig dokumentieren und ihre vollständige Geschichte auch für einen späteren Verkauf erhalten möchten."
       },
       {
-        "q": "Kann ich auf dieser Website abonnieren?",
-        "a": "Nein. Basic und Advanced kaufst du in der GarIQ-App über App Store oder Google Play (RevenueCat). Diese Marketing-Website verarbeitet keine Zahlungen und ist kein Checkout."
+        "q": "Warum sollte ich GarIQ statt Notizen, Excel oder einem Ordner verwenden?",
+        "a": "Weil deine Fahrzeugdaten dann nicht mehr an verschiedenen Orten verstreut sind. GarIQ verbindet Informationen, Dokumente, Ereignisse, Statistiken und die Fahrzeuggeschichte an einem Ort – und macht diese Informationen leichter zugänglich, teilbar und nutzbar."
       }
     ]
   },

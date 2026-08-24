@@ -6,9 +6,9 @@ import LogoIcon from "@/components/LogoIcon";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const NAV_KEYS = [
-  { href: "#ask", key: "navHow" as const },
+  { href: "#problem", key: "navFeatures" as const },
+  { href: "#ask", key: "navAsk" as const },
   { href: "#plans", key: "navPlans" as const },
-  { href: "#download", key: "navDownload" as const },
   { href: "#faq", key: "navFaq" as const },
 ];
 
@@ -82,7 +82,7 @@ export default function Header() {
             <span>{isDark ? "☾" : "☀"}</span>
           </button>
           <a
-            href="#download"
+            href="#plans"
             className="inline-flex items-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
           >
             {t("ctaDownload")}
@@ -127,7 +127,7 @@ export default function Header() {
                 {t("themeButton")}
               </button>
               <a
-                href="#download"
+                href="#plans"
                 onClick={closeMenu}
                 className="inline-flex items-center rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white dark:bg-white dark:text-slate-950"
               >

@@ -6,6 +6,7 @@ type PlanTier = {
   name: string;
   price: string;
   description: string;
+  badge: string;
   featured: boolean;
   highlights: string[];
 };
@@ -13,10 +14,11 @@ type PlanTier = {
 export default async function PlansExplainer() {
   const t = await getTranslations("plans");
   const tiers = t.raw("tiers") as PlanTier[];
+  const notes = t.raw("notes.items") as { heading: string; body: string }[];
 
   return (
     <section id="plans" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <Reveal className="max-w-2xl">
+      <Reveal className="max-w-3xl">
         <span className="section-label">{t("label")}</span>
         <h2 className="section-title">{t("title")}</h2>
         <p className="section-copy mt-4">{t("copy")}</p>
@@ -30,9 +32,7 @@ export default async function PlansExplainer() {
             className={`pricing-card pricing-tier-${plan.id}${plan.featured ? " pricing-card-featured" : ""}`}
           >
             <div>
-              {plan.featured && (
-                <div className="pricing-badge">{t("popularBadge")}</div>
-              )}
+              <div className="pricing-badge">{plan.badge}</div>
               <h3>{plan.name}</h3>
               <p className="pricing-price">{plan.price}</p>
               <p>{plan.description}</p>
@@ -42,27 +42,18 @@ export default async function PlansExplainer() {
                 <li key={feature}>{feature}</li>
               ))}
             </ul>
-            <a
-              href="#download"
-              className={`pricing-button${plan.featured ? " pricing-button-featured" : ""}`}
-            >
-              {t("cta")}
-            </a>
           </Reveal>
         ))}
       </div>
 
-      <p className="mt-8 max-w-3xl text-sm leading-6 text-slate-500 dark:text-slate-400">
-        {t("footnote")}
-      </p>
-
-      <div className="mt-10">
-        <a
-          href="#download"
-          className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
-        >
-          {t("cta")}
-        </a>
+      <div className="pricing-notes mt-12 max-w-3xl">
+        <h3>{t("notes.title")}</h3>
+        {notes.map((note) => (
+          <div key={note.heading}>
+            <h4>{note.heading}</h4>
+            <p>{note.body}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

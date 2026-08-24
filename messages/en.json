@@ -11,14 +11,14 @@
   },
   "header": {
     "homeAria": "GarIQ home",
-    "navHow": "How it works",
+    "navFeatures": "Features",
+    "navAsk": "Ask & log",
     "navPlans": "Plans",
-    "navDownload": "Download",
     "navFaq": "FAQ",
     "toggleThemeAria": "Toggle dark mode",
     "openMenuAria": "Open menu",
     "themeButton": "Theme",
-    "ctaDownload": "Get the app"
+    "ctaDownload": "Start free"
   },
   "hero": {
     "badge": "The intelligent vehicle logbook",
@@ -255,7 +255,7 @@
   "problem": {
     "label": "Not an ordinary tracker.",
     "title": "Costs, consumption and maintenance in view? GarIQ does more.",
-    "copy": "Vehicle documents, a shared garage, vehicle cession when you sell, timeline and statistics, a year you can take with you. Plus, on Home: the last oil check and the tyres currently mounted, always in view.",
+    "copy": "GarIQ turns your vehicle into more than data: you get the overview, keep control, and have everything that matters exactly where you need it — alone or together.",
     "cards": [
       {
         "title": "What belongs to the vehicle stays with the vehicle.",
@@ -592,58 +592,77 @@
   },
   "plans": {
     "label": "Plans & AI",
-    "title": "Three account tiers. Same app — scales with your garage.",
-    "copy": "Limits below match the live product (garages, vehicles, sharing, and monthly AI credits). List prices are shown in CHF (primary market: Switzerland); App Store and Google Play charge the local currency in DE/AT. Subscribe and manage your plan in the GarIQ app — this website does not process payments. On Free, your monthly AI credit period starts when you add your first vehicle.",
-    "footnote": "Monthly AI credits cover OCR, chat insert, Ask (logbook and documents), and related billed AI actions. On Free, scanning your registration before your first vehicle does not use monthly credits; document AI for vault categories other than registration is off. Manual Form insert always stays available if you reach the credit limit. You always confirm before an event is saved. Charged subscription amounts come from the store for your country — not from this page. On Basic and Advanced you can also buy AI credit packs in the app; they never expire and stack on your monthly pool.",
+    "title": "The right GarIQ for your garage.",
+    "copy": "Start with your first vehicle, share your garage with others, or manage several garages and vehicles in one place. Choose the plan that gives you exactly the options you need for your vehicle world.",
+    "notes": {
+      "title": "Notes on AI credits & billing",
+      "items": [
+        {
+          "heading": "AI credits",
+          "body": "Monthly AI credits are used for AI-supported features — for example to read information from photos and PDFs, prepare entries via chat, or answer questions about your vehicle data. If your monthly allowance is used up, manual entry remains available at any time."
+        },
+        {
+          "heading": "You decide what is saved",
+          "body": "GarIQ does not save AI suggestions automatically. You review every suggestion and decide yourself whether it is saved."
+        },
+        {
+          "heading": "Billing",
+          "body": "The subscription is billed through the App Store or Google Play for your country. This website does not process payments."
+        }
+      ]
+    },
     "popularBadge": "Most flexible",
     "cta": "Download GarIQ",
     "tiers": [
       {
         "id": "free",
         "name": "Free",
-        "price": "Free forever",
-        "description": "Start with forms and server AI after you add your first vehicle.",
+        "price": "Free",
+        "description": "Everything you need to accompany your first vehicle digitally — with a complete logbook, statistics and AI support.",
+        "badge": "To start",
         "featured": false,
         "highlights": [
           "1 garage · 1 vehicle",
-          "Full logbook & statistics",
-          "10 AI credits / month",
-          "OCR for fuel & charge",
-          "Chat for notes, fuel & charge",
-          "Ask your logbook within credits",
-          "Manual form always available"
+          "Complete vehicle history & statistics",
+          "10 AI credits per month",
+          "Capture fuel & charging from a photo",
+          "Notes, fuel & charging via chat",
+          "Ask GarIQ — within your available AI credits",
+          "Manual entry anytime"
         ]
       },
       {
         "id": "basic",
         "name": "Basic",
-        "price": "CHF 4.90 / mo",
-        "description": "More vehicles, sharing, Smart Scan & Smart Insert. Try Basic free via the store intro offer (~30 days) — annual CHF 49 in-app. DE/AT stores show local EUR.",
+        "price": "CHF 4.90 / month",
+        "description": "More room for your vehicles and more freedom in how you use GarIQ: manage several vehicles, share your garage with others, and capture information simply by photo, PDF or chat.",
+        "badge": "Recommended",
         "featured": false,
         "highlights": [
-          "Everything in Free",
+          "Everything from Free",
           "Up to 5 active vehicles",
-          "Sharing for up to 5 members",
-          "100 AI credits / month",
-          "Photo, PDF & chat for all event types",
+          "Share your garage with up to 5 members",
+          "100 AI credits per month",
+          "Capture information by photo, PDF or chat",
           "Smart Scan & Smart Insert",
-          "Document AI for the vehicle vault"
+          "AI-supported document management for your vehicle"
         ]
       },
       {
         "id": "advanced",
         "name": "Advanced",
-        "price": "CHF 14.90 / mo",
-        "description": "Multiple garages and higher AI headroom for active loggers. Annual CHF 149 in-app. DE/AT stores show local EUR.",
+        "price": "CHF 14.90 / month",
+        "description": "For families, enthusiasts and small businesses with several vehicles: more garages, more vehicles, more users — and more options.",
+        "badge": "Most flexible",
         "featured": true,
         "highlights": [
-          "Everything in Basic",
-          "3 owned garages",
+          "Everything from Basic",
+          "Up to 3 owned garages",
           "Up to 10 active vehicles per garage",
-          "Sharing for up to 10 members",
-          "500 AI credits / month",
-          "Timeline year export (CSV & PDF)",
-          "Keep original photo/PDF on events"
+          "Share your garage with up to 10 members",
+          "500 AI credits per month",
+          "Export vehicle history as PDF or CSV",
+          "Keep original photos and PDFs on the events"
         ]
       }
     ]
@@ -662,71 +681,71 @@
   },
   "faq": {
     "label": "FAQ",
-    "title": "Questions before you install.",
+    "title": "Frequently asked questions about GarIQ",
     "items": [
       {
-        "q": "What can I track?",
-        "a": "Fuel, charging, workshop, taxes, inspections, general expenses, diary notes, and trips — all tied to a vehicle. Insurance payment events can be logged; current insurance policies and purchase contracts live in the document vault (not via Insert → Insurance for the policy itself)."
+        "q": "What is GarIQ?",
+        "a": "GarIQ turns your vehicle into more than just a vehicle. It gives it a digital history that grows with every fill-up, every service, every invoice, every trip and every important event.\n\nYou keep an overview of costs, consumption and current condition, can follow your story over the years, keep documents to hand and simply query your own vehicle data. You can use vehicles together with others, manage several vehicles in one place and even pass the complete history on to the next owner.\n\nGarIQ connects everything that makes up your vehicle — so you always know what was, what is, and what you want to know from it."
       },
       {
-        "q": "What's included in the Free plan?",
-        "a": "1 owned garage, 1 vehicle, 10 AI credits/month after the first vehicle. OCR for fuel and charge; chat for notes, fuel and charge. Document AI off (except registration scan). No Smart Scan, Smart Insert, or sharing. Manual Form always available. Ask within credits."
+        "q": "Is GarIQ only for cars?",
+        "a": "No. You can use GarIQ for different vehicles — for example cars, motorcycles, or several vehicles in your family. Each vehicle keeps its own story and its own information."
       },
       {
-        "q": "Does AI save automatically?",
-        "a": "No. AI proposes a draft from OCR, Smart Scan, Smart Insert, or chat; you edit and confirm on the draft screen before anything is stored."
+        "q": "What can I document with GarIQ?",
+        "a": "Among other things you can document refuels, charges, maintenance, workshop visits, insurance, taxes, inspections, expenses, trips, notes and other events around your vehicle."
       },
       {
-        "q": "What is Smart Scan?",
-        "a": "A Home hub action: take a photo or pick a PDF without choosing the event type first — available from the Basic plan. OCR infers the type among document-like events, then you review the same draft and confirm. On Free, log with the form or typed OCR/chat for fuel and charge."
+        "q": "Can I share my vehicle data with others?",
+        "a": "Yes. With a shared garage, several people can access the same vehicles and their information. Partners, family members or other co-users can work on the vehicle history together. You can decide who has which rights."
       },
       {
-        "q": "What is Smart Insert?",
-        "a": "The chat twin of Smart Scan (Basic+): describe what happened without picking the event type first — GarIQ infers it and prepares the same review draft you confirm."
+        "q": "What happens to the vehicle history when I sell my vehicle?",
+        "a": "The history can be transferred to the new owner together with the vehicle. The buyer does not only get a used vehicle — they can also follow its documented story."
       },
       {
-        "q": "Is there a free trial for Basic?",
-        "a": "Basic can include a free trial (target ~30 days) as a store intro offer on iOS and Android — check the current offer in the app before you subscribe. The website does not run the trial or the checkout."
+        "q": "Can I manage several vehicles with GarIQ?",
+        "a": "Yes. You can manage several vehicles in one app. Each vehicle has its own space and its own story, while you still have everything in one place."
       },
       {
-        "q": "What are the two Ask modes?",
-        "a": "Logbook Ask answers questions over events, costs, and aggregates. Documents Ask answers over the vehicle vault and can cite document title and page. Both use the same monthly AI credit pool. Ask does not search the web — only your events and files."
+        "q": "Can I export my data from GarIQ?",
+        "a": "Yes. Your vehicle data can be exported as a clear PDF or as a CSV file. You can read, share or work with the information yourself."
       },
       {
-        "q": "What happens when AI credits run out?",
-        "a": "AI methods (OCR, chat insert, Ask) are disabled until credits reset or you upgrade. On Basic and Advanced the billing owner can also buy a credit pack in the app — Top-Up Mini 20, Standard 50, or Pro 150 credits (CHF 2.90 / 5.90 / 14.90) — never expiring and stacked on the monthly pool. On Free you upgrade first. Manual Form insert always remains available so you can keep logging."
+        "q": "Can I see how much my vehicle really costs?",
+        "a": "Yes. GarIQ can evaluate your logged expenses and consumption and show you statistics on how your vehicle develops. You see not only individual costs, but also connections and changes over time."
       },
       {
-        "q": "Can I use multiple garages?",
-        "a": "Free and Basic include 1 owned garage. Advanced can own up to 3. On Basic and Advanced you can invite co-owners, admins, or loggers (no Viewer role in v1); Free has no sharing."
+        "q": "Can I see the current state of my vehicle?",
+        "a": "Yes. On the home screen you can see important current information at a glance — for example the last oil check, the days and kilometres since then, or the tyres currently mounted."
       },
       {
-        "q": "What happens to my data if I downgrade or cancel?",
-        "a": "Nothing is deleted. Resources over your new plan's limits are marked frozen — visible with an upgrade path — until you upgrade or remove them yourself."
+        "q": "How can I add information in GarIQ?",
+        "a": "However is easiest for you: manually with a form, via chat, or simply with a photo or a PDF. The AI analyses the information, picks out the relevant data and prepares an entry. You review the suggestion, confirm it — and only then is it saved.\n\n**You provide the information. GarIQ turns it into a finished entry.**"
       },
       {
-        "q": "Insurance policy vs insurance payment?",
-        "a": "Current policy PDFs and coverage dates live on vehicle Details → Insurance policy hub. Logging an insurance payment is a separate logbook event. Do not use Insert → Insurance as the way to add a policy."
+        "q": "What if I don't know which event type something belongs to?",
+        "a": "No problem. You don't need to know where a piece of information belongs in GarIQ. **Smart Scan** picks up relevant information from photos and files and helps assign it to the right event type. **Smart Log** does the same for information you enter via chat. GarIQ prepares a matching entry — you review it and decide whether it is saved.\n\n**You don't need to know where it belongs. GarIQ helps you with that.**"
       },
       {
-        "q": "What languages does GarIQ support?",
-        "a": "App UI and assistant: Italian, German, and English only — one preferred language in Settings for both."
+        "q": "Does the AI save information automatically?",
+        "a": "No. The AI creates a suggestion, but nothing is saved automatically. You always decide whether the suggested information is kept."
       },
       {
-        "q": "Which currencies can I log expenses in?",
-        "a": "You can pay in a currency other than your garage's: GarIQ fetches the day's rate and converts automatically, with no manual override."
+        "q": "Can I ask GarIQ questions about my vehicle?",
+        "a": "Yes. Just ask GarIQ in natural language what you want to know about your vehicle. For example: How much did I spend on my vehicle this year? How has consumption developed over the last three years? When was the last service? What does my insurance or the handbook say? Which repairs have already been done?\n\nGarIQ searches the information stored on your vehicle and puts the relevant data together for you. You do not need to know where something is stored — you only need to know what you want to know."
       },
       {
-        "q": "Can I export my data?",
-        "a": "On Advanced, export a Timeline calendar year as CSV or branded PDF from the Timeline tab (controls are visible but locked on Free/Basic). Full-account export from Settings is not in v1 yet."
+        "q": "Don't understand a warning on the vehicle? Show it to GarIQ.",
+        "a": "An unknown warning light, a symbol or a message on the display? Take a photo and just ask GarIQ what you see and what it might mean. The AI analyses the image and helps you understand faster what your vehicle is trying to tell you.\n\n**Don't search. Just show and ask.**"
       },
       {
-        "q": "Can I hand over a vehicle when I sell it?",
-        "a": "Yes. The garage Primary Owner can transfer one vehicle's logbook to another GarIQ account: the buyer gets an email invite and accepts in the app. The buyer needs a paid plan and a free vehicle slot. Only part of the history is copied — maintenance, inspections, and tyre or tuning expenses — not fuel, insurance, taxes, trips, notes, or vault documents. Your copy stays as a read-only sale archive. The transfer is irreversible and cannot be accepted on this website."
+        "q": "Who is GarIQ for?",
+        "a": "GarIQ is for anyone who wants more from their vehicle history: private owners, families with several vehicles, motorcycle and tuning enthusiasts, collectors, and small businesses with their own fleet. Also for anyone who does maintenance, repairs or modifications themselves and wants to document hours, costs and the work done. GarIQ is especially valuable if you document your vehicles over the long term and want to keep the complete story for a later sale."
       },
       {
-        "q": "Can I subscribe on this website?",
-        "a": "No. Basic and Advanced are purchased in the GarIQ app via the App Store or Google Play (RevenueCat). This marketing site does not process payments or act as checkout."
+        "q": "Why should I use GarIQ instead of notes, Excel or a folder?",
+        "a": "Because your vehicle data is then no longer scattered across different places. GarIQ connects information, documents, events, statistics and the vehicle history in one place — and makes that information easier to access, share and use."
       }
     ]
   },

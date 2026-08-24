@@ -10,7 +10,6 @@ import {
   type PhoneMockupTourId,
 } from "@/components/phone-mockup/PhoneMockupChrome";
 import Reveal from "@/components/Reveal";
-import GarIqWordmark from "@/components/GarIqWordmark";
 
 const SLIDE_KEY: Record<PhoneMockupTourId, "askLog" | "askDocs" | "smartScan" | "smartLog"> = {
   "ask-log": "askLog",
@@ -67,7 +66,10 @@ export default function AskWalkthroughSection() {
               <h3 className="ask-walk-subtitle">
                 {t.rich(`slides.${slide}.subtitle`, {
                   brand: () => (
-                    <GarIqWordmark size="inline" className="ask-walk-brand" />
+                    <span className="ask-walk-brand">
+                      <span className="ask-walk-brand-gar">Gar</span>
+                      <span className="ask-walk-brand-iq">IQ</span>
+                    </span>
                   ),
                 })}
               </h3>
