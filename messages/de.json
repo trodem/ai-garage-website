@@ -60,7 +60,6 @@
       "policy": "Police",
       "untilDate": "Bis {date}",
       "latest": "Letzte Aktivitäten",
-      "spendingYear": "Ausgaben {year}",
       "spending": "Ausgaben",
       "eventCount": "{count, plural, one {# Ereignis} other {# Ereignisse}}",
       "vsLastYear": "+{percent}% ggü. VJ",

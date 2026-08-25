@@ -60,7 +60,6 @@
       "policy": "Polizza",
       "untilDate": "Fino al {date}",
       "latest": "Ultime attività",
-      "spendingYear": "Spese {year}",
       "spending": "Spesa",
       "eventCount": "{count, plural, one {# evento} other {# eventi}}",
       "vsLastYear": "+{percent}% vs AP",

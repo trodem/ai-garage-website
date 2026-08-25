@@ -60,7 +60,6 @@
       "policy": "Policy",
       "untilDate": "Until {date}",
       "latest": "Latest activities",
-      "spendingYear": "Spending {year}",
       "spending": "Spending",
       "eventCount": "{count, plural, one {# event} other {# events}}",
       "vsLastYear": "+{percent}% vs LY",

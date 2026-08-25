@@ -50,7 +50,6 @@ import {
   MOCKUP_FLEET,
   MOCKUP_FOCUS_YEAR,
   MOCKUP_HOME_ACTIVITIES,
-  MOCKUP_HOME_SPEND_BARS,
   MOCKUP_INSURANCE_AVG,
   MOCKUP_INSURANCE_BARS,
   MOCKUP_INSURANCE_PAYMENTS,
@@ -292,7 +291,6 @@ function ActivityRow({
 function HomeScreen({
   t,
   formatter,
-  monthLabels,
   hubTapTarget,
   motionPaused,
   onHubTapComplete,
@@ -300,7 +298,6 @@ function HomeScreen({
 }: {
   t: ScreenCopy;
   formatter: ReturnType<typeof useFormatter>;
-  monthLabels: string[];
   hubTapTarget?: PhoneMockupTourId;
   motionPaused?: boolean;
   onHubTapComplete?: () => void;
@@ -431,16 +428,6 @@ function HomeScreen({
           {MOCKUP_HOME_ACTIVITIES.map((item) => (
             <ActivityRow key={`${item.title}-${item.date}`} formatter={formatter} item={item} />
           ))}
-        </div>
-
-        <p className="pm-section">{t("spendingYear", { year: MOCKUP_FOCUS_YEAR })}</p>
-        <div className="pm-spend-card">
-          <div className="pm-spend-head">
-            <strong>{chf(MOCKUP_VEHICLE.spendTotal)}</strong>
-            <em>{t("eventCount", { count: MOCKUP_VEHICLE.spendEvents })}</em>
-            <span>{t("vsLastYear", { percent: MOCKUP_VEHICLE.spendVsLast })}</span>
-          </div>
-          <MonthChart values={[...MOCKUP_HOME_SPEND_BARS]} labels={monthLabels} />
         </div>
 
         <span className="pm-switch">
@@ -734,7 +721,6 @@ export function PhoneMockupScreen({
         <HomeScreen
           t={t}
           formatter={formatter}
-          monthLabels={monthLabels}
           hubTapTarget={hubTapTarget}
           motionPaused={motionPaused}
           onHubTapComplete={onHubTapComplete}

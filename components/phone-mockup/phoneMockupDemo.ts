@@ -198,7 +198,6 @@ export const MOCKUP_TIMELINE_MONTHS: {
 export const MOCKUP_SPEND_BARS = [640, 210, 420, 310, 780, 520, 340, 290, 230, 320, 190, 260];
 export const MOCKUP_FIXED_BARS = [28, 32, 30, 186, 28, 34, 28, 30, 28, 78, 28, 42];
 export const MOCKUP_INSURANCE_BARS = [720, 180, 150, 165, 740, 190, 140, 155, 170, 185, 145, 200];
-export const MOCKUP_HOME_SPEND_BARS = MOCKUP_SPEND_BARS;
 
 export const MOCKUP_SPEND_CATEGORIES: {
   kind: MockupEventKind;
