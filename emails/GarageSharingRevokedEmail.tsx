@@ -1,4 +1,12 @@
 import { Button, Section, Text } from '@react-email/components';
+import {
+  EMAIL_SITE_DE,
+  emailButtonSectionStyle,
+  emailCtaButtonStyle,
+  emailLeadStyle,
+  emailMutedStyle,
+  emailParagraphStyle,
+} from './emailBrand';
 import { GarIqEmailLayout } from './GarIqEmailLayout';
 
 export type GarageSharingRevokedKind = 'pending_invitation' | 'member_access';
@@ -12,15 +20,13 @@ export type GarageSharingRevokedEmailProps = {
   ctaUrl?: string;
 };
 
-const defaultCta = 'https://gariq.app/de';
-
 export function GarageSharingRevokedEmail({
   kind,
   recipientEmail,
   garageName,
   actorDisplayName,
   roleLabel,
-  ctaUrl = defaultCta,
+  ctaUrl = EMAIL_SITE_DE,
 }: GarageSharingRevokedEmailProps) {
   const preview =
     kind === 'pending_invitation'
@@ -29,10 +35,10 @@ export function GarageSharingRevokedEmail({
 
   return (
     <GarIqEmailLayout preview={preview}>
-      <Text style={lead}>Hallo,</Text>
+      <Text style={emailLeadStyle}>Hallo,</Text>
       {kind === 'pending_invitation' ? (
         <>
-          <Text style={paragraph}>
+          <Text style={emailParagraphStyle}>
             <strong>{actorDisplayName}</strong> hat die Einladung zum Garagen-Workspace{' '}
             <strong>{garageName}</strong>
             {roleLabel != null ? (
@@ -43,7 +49,7 @@ export function GarageSharingRevokedEmail({
             ) : null}{' '}
             zurückgezogen.
           </Text>
-          <Text style={paragraph}>
+          <Text style={emailParagraphStyle}>
             Die Einladung für <strong>{recipientEmail}</strong> ist nicht mehr gültig. Du kannst
             den Workspace nicht mehr über die App annehmen, es sei denn, du erhältst eine neue
             Einladung.
@@ -51,63 +57,25 @@ export function GarageSharingRevokedEmail({
         </>
       ) : (
         <>
-          <Text style={paragraph}>
+          <Text style={emailParagraphStyle}>
             <strong>{actorDisplayName}</strong> hat deinen Zugriff auf den Garagen-Workspace{' '}
             <strong>{garageName}</strong> entfernt.
           </Text>
-          <Text style={paragraph}>
+          <Text style={emailParagraphStyle}>
             Dein Konto <strong>{recipientEmail}</strong> hat keinen Zugriff mehr auf Fahrzeuge und
             Einträge in diesem Workspace. Bereits gespeicherte Daten bleiben beim Eigentümer des
             Garagens.
           </Text>
         </>
       )}
-      <Section style={buttonSection}>
-        <Button href={ctaUrl} style={button}>
+      <Section style={emailButtonSectionStyle}>
+        <Button href={ctaUrl} style={emailCtaButtonStyle}>
           GarIQ im Browser öffnen
         </Button>
       </Section>
-      <Text style={muted}>
+      <Text style={emailMutedStyle}>
         Bei Fragen wende dich direkt an die Person, die den Zugriff verwaltet.
       </Text>
     </GarIqEmailLayout>
   );
 }
-
-const lead = {
-  fontSize: '16px',
-  lineHeight: '24px',
-  color: '#18181b',
-  margin: '0 0 12px',
-};
-
-const paragraph = {
-  fontSize: '15px',
-  lineHeight: '24px',
-  color: '#3f3f46',
-  margin: '0 0 16px',
-};
-
-const muted = {
-  fontSize: '13px',
-  lineHeight: '20px',
-  color: '#71717a',
-  margin: '16px 0 0',
-};
-
-const buttonSection = {
-  margin: '24px 0',
-  textAlign: 'center' as const,
-};
-
-const button = {
-  backgroundColor: '#2563eb',
-  borderRadius: '6px',
-  color: '#ffffff',
-  fontSize: '15px',
-  fontWeight: '600' as const,
-  textDecoration: 'none',
-  textAlign: 'center' as const,
-  display: 'inline-block',
-  padding: '12px 24px',
-};

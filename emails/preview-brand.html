@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GarIQ — all email templates</title>
+    <style>
+      body {
+        background: #e4e4e7;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        padding: 32px 16px 64px;
+      }
+      .intro, .label {
+        max-width: 560px;
+        margin: 0 auto;
+      }
+      .intro { color: #334155; font-size: 13px; margin-bottom: 28px; line-height: 1.5; }
+      .label {
+        color: #0B1F4A;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin: 0 auto 8px;
+      }
+      .card {
+        margin: 0 auto 40px;
+        padding: 32px 24px;
+        max-width: 560px;
+        background: #fff;
+        border-radius: 8px;
+      }
+      a.email-cta:hover, a.email-cta:visited {
+        color: #ffffff !important;
+        text-decoration: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="intro">
+      Anteprima locale di <strong>tutti</strong> i template GarIQ (stesso header).
+      Logo relativo — non incollare questa pagina nel Dashboard Supabase.
+    </p>
+    <div id="gallery"></div>
+    <script>
+      const logo = "../public/images/logo_gariq.png";
+      const cta =
+        'background-color:#08A7DE;border-radius:9999px;color:#ffffff;font-size:15px;font-weight:600;text-decoration:none;padding:12px 24px;display:inline-block;';
+
+      function header() {
+        return `
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 16px;">
+        <tr>
+          <td style="vertical-align:middle;padding-right:12px;width:68px;">
+            <img src="${logo}" width="56" height="56" alt="GarIQ" style="display:block;border:0;" />
+          </td>
+          <td style="vertical-align:middle;">
+            <span style="font-family:Arial,Helvetica,sans-serif;font-size:28px;font-weight:800;letter-spacing:-0.04em;line-height:32px;">
+              <span style="color:#211EE5;">Gar</span><span style="color:#ED177B;">IQ</span>
+            </span>
+            <div style="font-size:13px;font-weight:600;letter-spacing:-0.01em;line-height:18px;margin-top:4px;">
+              <span style="color:#211EE5;">Snap it.</span>
+              <span style="color:#08A7DE;"> Scan it.</span>
+              <span style="color:#ED177B;"> Ask GarIQ.</span>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 24px;">
+        <tr>
+          <td style="height:3px;line-height:3px;font-size:0;background-color:#211EE5;">&nbsp;</td>
+          <td style="height:3px;line-height:3px;font-size:0;background-color:#08A7DE;">&nbsp;</td>
+          <td style="height:3px;line-height:3px;font-size:0;background-color:#ED177B;">&nbsp;</td>
+        </tr>
+      </table>`;
+      }
+
+      function footer() {
+        return `
+      <hr style="border:none;border-top:1px solid #e4e4e7;margin:32px 0 16px;" />
+      <p style="font-size:12px;color:#64748b;line-height:20px;margin:0;">
+        <a href="https://gariq.app/de" style="color:#52525b;text-decoration:underline;">GarIQ</a>
+        · Impressum · Datenschutz · Hilfe
+      </p>`;
+      }
+
+      function card(title, inner) {
+        return `
+    <p class="label">${title}</p>
+    <div class="card">
+      ${header()}
+      ${inner}
+      ${footer()}
+    </div>`;
+      }
+
+      const p = 'font-size:15px;line-height:24px;color:#334155;margin:0 0 16px;';
+      const lead = 'font-size:16px;line-height:24px;color:#0B1F4A;margin:0 0 12px;';
+      const muted = 'font-size:13px;line-height:20px;color:#64748b;margin:16px 0 0;';
+      const btnWrap = 'text-align:center;margin:24px 0;';
+      const btn = (label) =>
+        `<p style="${btnWrap}"><a href="#" class="email-cta" style="${cta}">${label}</a></p>`;
+
+      const templates = [
+        [
+          "1 · Confirm signup · Supabase Auth",
+          `<p style="${lead}">Hallo,</p>
+           <p style="${p}">Bitte bestätige deine E-Mail-Adresse, um dein GarIQ-Konto zu aktivieren. Tippe auf den Button, um die Registrierung abzuschließen.</p>
+           ${btn("E-Mail bestätigen")}
+           <p style="${muted}">Wenn du kein Konto erstellt hast, kannst du diese E-Mail ignorieren.</p>`,
+        ],
+        [
+          "2 · Reset password · Supabase Auth",
+          `<p style="${lead}">Hallo,</p>
+           <p style="${p}">Wir haben eine Anfrage erhalten, das Passwort für dein GarIQ-Konto zurückzusetzen. Tippe auf den Button, um ein neues Passwort zu wählen.</p>
+           ${btn("Passwort zurücksetzen")}
+           <p style="${muted}">Wenn du diese Anfrage nicht gestellt hast, kannst du diese E-Mail ignorieren.</p>`,
+        ],
+        [
+          "3 · Garage invitation · Resend",
+          `<p style="${lead}">Hallo,</p>
+           <p style="${p}"><strong>Alex</strong> hat dich eingeladen, dem Garagen-Workspace <strong>Test Garage</strong> beizutreten — Rolle: <strong>Protokollführer</strong>.</p>
+           <p style="${p}">Melde dich in der GarIQ-App mit der E-Mail-Adresse <strong>you@example.com</strong> an und nimm die Einladung dort an oder lehne sie ab. Es gibt keine automatische Freigabe über diesen Link.</p>
+           ${btn("GarIQ im Browser öffnen")}
+           <p style="${muted}">Falls du noch kein Konto hast, registriere dich mit derselben E-Mail-Adresse und öffne die App erneut.</p>`,
+        ],
+        [
+          "4 · Garage invite withdrawn · Resend",
+          `<p style="${lead}">Hallo,</p>
+           <p style="${p}"><strong>Alex</strong> hat die Einladung zum Garagen-Workspace <strong>Test Garage</strong> (Rolle: <strong>Protokollführer</strong>) zurückgezogen.</p>
+           <p style="${p}">Die Einladung für <strong>you@example.com</strong> ist nicht mehr gültig. Du kannst den Workspace nicht mehr über die App annehmen, es sei denn, du erhältst eine neue Einladung.</p>
+           ${btn("GarIQ im Browser öffnen")}
+           <p style="${muted}">Bei Fragen wende dich direkt an die Person, die den Zugriff verwaltet.</p>`,
+        ],
+        [
+          "5 · Garage access removed · Resend",
+          `<p style="${lead}">Hallo,</p>
+           <p style="${p}"><strong>Alex</strong> hat deinen Zugriff auf den Garagen-Workspace <strong>Test Garage</strong> entfernt.</p>
+           <p style="${p}">Dein Konto <strong>you@example.com</strong> hat keinen Zugriff mehr auf Fahrzeuge und Einträge in diesem Workspace. Bereits gespeicherte Daten bleiben beim Eigentümer des Garagens.</p>
+           ${btn("GarIQ im Browser öffnen")}
+           <p style="${muted}">Bei Fragen wende dich direkt an die Person, die den Zugriff verwaltet.</p>`,
+        ],
+        [
+          "6 · Vehicle cession invitation · Resend",
+          `<p style="${lead}">Hallo,</p>
+           <p style="${p}"><strong>Alex</strong> möchte dir das Fahrtenbuch für <strong>BMW 320d</strong> übertragen.</p>
+           <p style="${p}">Melde dich in der GarIQ-App mit der E-Mail-Adresse <strong>you@example.com</strong> an und nimm die Übertragung dort an oder lehne sie ab. Es gibt keine automatische Freigabe über diesen Link. Du brauchst einen bezahlten Plan und einen freien Fahrzeugplatz in einer Garage, deren Hauptinhaber du bist.</p>
+           ${btn("GarIQ im Browser öffnen")}
+           <p style="${muted}">Falls du noch kein Konto hast, registriere dich mit derselben E-Mail-Adresse und öffne die App erneut.</p>`,
+        ],
+        [
+          "7 · Vehicle cession revoked · Resend",
+          `<p style="${lead}">Hallo,</p>
+           <p style="${p}"><strong>Alex</strong> hat die Übertragung des Fahrtenbuchs <strong>BMW 320d</strong> zurückgezogen.</p>
+           <p style="${p}">Die Einladung für <strong>you@example.com</strong> ist nicht mehr gültig. Du kannst das Fahrtenbuch nicht mehr über die App annehmen, es sei denn, du erhältst eine neue Einladung.</p>
+           ${btn("GarIQ im Browser öffnen")}
+           <p style="${muted}">Bei Fragen wende dich direkt an die Person, die die Übertragung gestartet hat.</p>`,
+        ],
+      ];
+
+      document.getElementById("gallery").innerHTML = templates
+        .map(([title, inner]) => card(title, inner))
+        .join("");
+    </script>
+  </body>
+</html>

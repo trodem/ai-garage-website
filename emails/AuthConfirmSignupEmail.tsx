@@ -9,27 +9,27 @@ import {
 import { GarIqEmailLayout } from './GarIqEmailLayout';
 
 /**
- * Source of truth for Supabase Auth "Reset password" email HTML styling.
+ * Source of truth for Supabase Auth "Confirm signup" email HTML styling.
  * Auth emails are sent by Supabase (not Resend). Export HTML and paste into
- * Dashboard → Authentication → Email Templates → Reset password.
+ * Dashboard → Authentication → Email Templates → Confirm signup.
  * The CTA href MUST remain `{{ .ConfirmationURL }}` (Go template) — never hardcode Site URL.
  */
-export function AuthPasswordRecoveryEmail() {
+export function AuthConfirmSignupEmail() {
   return (
-    <GarIqEmailLayout preview="Passwort zurücksetzen — GarIQ">
+    <GarIqEmailLayout preview="E-Mail bestätigen — GarIQ">
       <Text style={emailLeadStyle}>Hallo,</Text>
       <Text style={emailParagraphStyle}>
-        Wir haben eine Anfrage erhalten, das Passwort für dein GarIQ-Konto zurückzusetzen.
-        Tippe auf den Button, um ein neues Passwort zu wählen.
+        Bitte bestätige deine E-Mail-Adresse, um dein GarIQ-Konto zu aktivieren.
+        Tippe auf den Button, um die Registrierung abzuschließen.
       </Text>
       <Section style={emailButtonSectionStyle}>
         {/* Supabase Go template — keep exactly this href when pasting into Dashboard */}
         <Button href="{{ .ConfirmationURL }}" style={emailCtaButtonStyle}>
-          Passwort zurücksetzen
+          E-Mail bestätigen
         </Button>
       </Section>
       <Text style={emailMutedStyle}>
-        Wenn du diese Anfrage nicht gestellt hast, kannst du diese E-Mail ignorieren.
+        Wenn du kein Konto erstellt hast, kannst du diese E-Mail ignorieren.
       </Text>
     </GarIqEmailLayout>
   );

@@ -8,7 +8,6 @@ export default async function Hero() {
   const t = await getTranslations("hero");
   const vt = await getTranslations("vehicleTypes");
   const vehicles = vt.raw("items") as string[];
-  const slogan = t("slogan");
   const support = t("support");
   const supportHook = t("supportHook");
 
@@ -33,13 +32,6 @@ export default async function Hero() {
               <p className="hero-support-lead">{t("supportDocs")}</p>
               <p className="hero-support-lead">{t("supportWork")}</p>
               <p className="hero-support-lead">{supportHook}</p>
-              <p className="hero-slogan" aria-label={slogan}>
-                {splitSloganBeats(slogan).map((beat) => (
-                  <span key={beat} className="hero-slogan-beat">
-                    {beat}.
-                  </span>
-                ))}
-              </p>
             </div>
           </div>
 
@@ -67,12 +59,4 @@ export default async function Hero() {
       </div>
     </section>
   );
-}
-
-function splitSloganBeats(slogan: string): string[] {
-  const beats = slogan
-    .split(/\.\s+/)
-    .map((part) => part.replace(/\.$/, "").trim())
-    .filter(Boolean);
-  return beats.length > 0 ? beats : [slogan];
 }

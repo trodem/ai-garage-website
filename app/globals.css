@@ -1621,12 +1621,23 @@ summary:focus-visible {
   font-family: var(--font-display);
 }
 
-.hero-slogan {
+.header-slogan {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.15rem 0.65rem;
-  margin: 1.1rem 0 0;
+  justify-content: flex-start;
+  gap: 0.1rem 0.35rem;
+  margin: 0.2rem 0 0;
+}
+
+.header-slogan .hero-slogan-beat {
+  font-size: 0.65rem;
+  line-height: 1.25;
+}
+
+@media (min-width: 640px) {
+  .header-slogan .hero-slogan-beat {
+    font-size: 0.75rem;
+  }
 }
 
 .hero-slogan-beat {
@@ -1710,10 +1721,6 @@ summary:focus-visible {
 }
 
 @media (min-width: 1024px) {
-  .hero-slogan {
-    justify-content: flex-start;
-  }
-
   .hero-title-knows {
     justify-content: flex-start;
   }

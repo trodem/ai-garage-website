@@ -61,7 +61,7 @@ Internal API for the mobile app Edge function **`garage-invite-notify`** (**ADR-
 
 Templates: `emails/GarageInvitationEmail.tsx`, `emails/GarageSharingRevokedEmail.tsx` (German). Routes: `POST /api/internal/send-garage-invitation`, `POST /api/internal/send-garage-sharing-revoked`.
 
-**Auth reset email styling** (Supabase Dashboard, not Resend): see [`docs/supabase-auth-email-templates.md`](./docs/supabase-auth-email-templates.md) and `emails/AuthPasswordRecoveryEmail.tsx`.
+**Auth email styling** (Supabase Dashboard, not Resend): Confirm signup + Reset password — see [`docs/supabase-auth-email-templates.md`](./docs/supabase-auth-email-templates.md), `emails/AuthConfirmSignupEmail.tsx`, `emails/AuthPasswordRecoveryEmail.tsx`. Shared chrome: `emails/GarIqEmailLayout.tsx`. Deploy `public/images/logo_gariq.png` before pasting Dashboard HTML.
 
 Local test (replace secret and recipient):
 

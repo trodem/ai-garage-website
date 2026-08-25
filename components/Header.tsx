@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import BrandSlogan from "@/components/BrandSlogan";
 import LogoIcon from "@/components/LogoIcon";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 
@@ -14,6 +15,7 @@ const NAV_KEYS = [
 
 export default function Header() {
   const t = useTranslations("header");
+  const tHero = useTranslations("hero");
   const [isDark, setIsDark] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -52,10 +54,13 @@ export default function Header() {
           scrolled ? "py-3" : "py-4"
         }`}
       >
-        <a href="#top" className="flex items-center gap-3" aria-label={t("homeAria")}>
-          <LogoIcon className="logo-hover h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24" />
-          <div className="brand-mark text-3xl font-extrabold tracking-tight sm:text-4xl">
-            <span className="text-[#211EE5] dark:text-brand-cyan-ink">Gar</span><span className="text-brand-pink-ink">IQ</span>
+        <a href="#top" className="flex min-w-0 items-center gap-3" aria-label={t("homeAria")}>
+          <LogoIcon className="logo-hover h-12 w-12 shrink-0 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24" />
+          <div className="min-w-0">
+            <div className="brand-mark text-3xl font-extrabold tracking-tight sm:text-4xl">
+              <span className="text-[#211EE5] dark:text-brand-cyan-ink">Gar</span><span className="text-brand-pink-ink">IQ</span>
+            </div>
+            <BrandSlogan slogan={tHero("slogan")} />
           </div>
         </a>
 
