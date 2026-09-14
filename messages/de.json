@@ -371,7 +371,7 @@
       },
       {
         "title": "Timeline-Jahrexport",
-        "copy": "Exportiere ein Kalenderjahr als CSV oder PDF aus der Timeline — Tarif Advanced (Upgrade in der App)."
+        "copy": "Exportiere ein Kalenderjahr als CSV oder PDF aus der Timeline — Basic und Advanced (Upgrade in der App)."
       },
       {
         "title": "Datenschutz",
@@ -592,13 +592,13 @@
   "plans": {
     "label": "Tarife & KI",
     "title": "Der passende GarIQ für deine Garage.",
-    "copy": "Starte mit deinem ersten Fahrzeug, teile deine Garage mit anderen oder verwalte mehrere Garagen und Fahrzeuge an einem Ort. Wähle den Tarif, der dir genau die Möglichkeiten gibt, die du für deine Fahrzeugwelt brauchst.",
+    "copy": "Starte mit deinem ersten Fahrzeug auf Free, hole das vollständige persönliche Fahrtenbuch mit Basic, oder teile Garagen und verwalte mehr Fahrzeuge mit Advanced. Wähle den Tarif, der zu deiner Fahrzeugwelt passt.",
     "notes": {
-      "title": "Hinweise zu KI-Credits & Abrechnung",
+      "title": "Hinweise zu KI-Nutzungen & Abrechnung",
       "items": [
         {
-          "heading": "KI-Credits",
-          "body": "Die monatlichen KI-Credits werden für KI-gestützte Funktionen verwendet – zum Beispiel um Informationen aus Fotos und PDFs zu erkennen, Einträge über den Chat vorzubereiten oder Fragen zu deinen Fahrzeugdaten zu beantworten. Wenn dein monatliches Kontingent aufgebraucht ist, bleibt die manuelle Eingabe jederzeit verfügbar."
+          "heading": "KI-Nutzungen",
+          "body": "KI-Nutzungen speisen Funktionen wie das Lesen von Fotos und PDFs, das Vorbereiten von Einträgen per Chat oder Antworten zu deinen Fahrzeugdaten. Free enthält 5 KI-Nutzungen pro Monat. Basic und Advanced enthalten unbegrenzte KI mit Fair Use. Wenn die Free-Nutzungen aufgebraucht sind, bleibt die manuelle Eingabe jederzeit verfügbar."
         },
         {
           "heading": "Du entscheidest, was gespeichert wird",
@@ -623,10 +623,11 @@
         "highlights": [
           "1 Garage · 1 Fahrzeug",
           "Vollständige Fahrzeughistorie & Statistik",
-          "10 KI-Credits pro Monat",
+          "5 KI-Nutzungen pro Monat",
           "Tank- & Ladevorgänge per Foto erfassen",
           "Notizen, Tanken & Laden per Chat",
-          "GarIQ fragen – innerhalb deiner verfügbaren KI-Credits",
+          "GarIQ fragen – innerhalb deiner verfügbaren KI-Nutzungen",
+          "Kein Teilen · kein Timeline-Export · keine gespeicherten Scan-Anhänge",
           "Manuelle Eingabe jederzeit möglich"
         ]
       },
@@ -634,34 +635,34 @@
         "id": "basic",
         "name": "Basic",
         "price": "CHF 4.90 / Monat",
-        "description": "Mehr Platz für deine Fahrzeuge und mehr Freiheit bei der Nutzung: Verwalte mehrere Fahrzeuge, teile deine Garage mit anderen und erfasse Informationen einfach per Foto, PDF oder Chat.",
+        "description": "Das vollständige persönliche Fahrtenbuch: mehr Fahrzeuge, unbegrenzte KI, Timeline-Export und gespeicherte Scan-Anhänge — ohne Garage-Sharing.",
         "badge": "Empfohlen",
         "featured": false,
         "highlights": [
           "Alles aus Free",
           "Bis zu 5 aktive Fahrzeuge",
-          "Garage mit bis zu 5 Mitgliedern teilen",
-          "100 KI-Credits pro Monat",
+          "Persönliche Garage — kein Teilen",
+          "Unbegrenzte KI (Fair Use)",
           "Informationen per Foto, PDF oder Chat erfassen",
           "Smart Scan & Smart Insert",
-          "KI-gestützte Dokumentenverwaltung für dein Fahrzeug"
+          "KI-gestützte Dokumentenverwaltung für dein Fahrzeug",
+          "Fahrzeuggeschichte als PDF oder CSV exportieren",
+          "Originalfotos und PDFs direkt bei den Ereignissen behalten"
         ]
       },
       {
         "id": "advanced",
         "name": "Advanced",
-        "price": "CHF 14.90 / Monat",
-        "description": "Für Familien, Enthusiasten und kleine Unternehmen mit mehreren Fahrzeugen: mehr Garagen, mehr Fahrzeuge, mehr Nutzer – und mehr Möglichkeiten.",
+        "price": "CHF 9.90 / Monat",
+        "description": "Für Familien, Enthusiasten und kleine Unternehmen mit mehreren Fahrzeugen: mehr Garagen, gemeinsamer Zugriff und mehr Raum zum Wachsen.",
         "badge": "Am flexibelsten",
         "featured": true,
         "highlights": [
           "Alles aus Basic",
-          "Bis zu 3 eigene Garagen",
+          "Bis zu 2 eigene Garagen",
           "Bis zu 10 aktive Fahrzeuge pro Garage",
-          "Garage mit bis zu 10 Mitgliedern teilen",
-          "500 KI-Credits pro Monat",
-          "Fahrzeuggeschichte als PDF oder CSV exportieren",
-          "Originalfotos und PDFs direkt bei den Ereignissen behalten"
+          "Garage mit bis zu 5 Mitgliedern teilen",
+          "Unbegrenzte KI (Fair Use)"
         ]
       }
     ]
@@ -696,7 +697,7 @@
       },
       {
         "q": "Kann ich meine Fahrzeugdaten auch mit anderen teilen?",
-        "a": "Ja. Mit einer gemeinsamen Garage können mehrere Personen auf dieselben Fahrzeuge und deren Informationen zugreifen. So können beispielsweise Partner, Familienmitglieder oder andere Mitnutzer gemeinsam an der Fahrzeuggeschichte arbeiten. Dabei kannst du festlegen, wer welche Rechte hat."
+        "a": "Ja — im Advanced-Tarif. Mit einer gemeinsamen Garage können mehrere Personen auf dieselben Fahrzeuge und deren Informationen zugreifen. So können beispielsweise Partner, Familienmitglieder oder andere Mitnutzer gemeinsam an der Fahrzeuggeschichte arbeiten. Dabei kannst du festlegen, wer welche Rechte hat. Free und Basic bleiben persönlich (kein Garage-Sharing)."
       },
       {
         "q": "Was passiert mit der Fahrzeuggeschichte, wenn ich mein Fahrzeug verkaufe?",
@@ -708,7 +709,7 @@
       },
       {
         "q": "Kann ich meine Daten aus GarIQ exportieren?",
-        "a": "Ja. Deine Fahrzeugdaten können als übersichtliches PDF oder als CSV-Datei exportiert werden. So kannst du deine Informationen lesen, teilen oder für die eigene Weiterverarbeitung nutzen."
+        "a": "Ja — in Basic und Advanced. Deine Fahrzeugdaten können als übersichtliches PDF oder als CSV-Datei exportiert werden. So kannst du deine Informationen lesen, teilen oder für die eigene Weiterverarbeitung nutzen. Der Timeline-Jahrexport ist in Free nicht enthalten."
       },
       {
         "q": "Kann ich sehen, wie viel mein Fahrzeug wirklich kostet?",

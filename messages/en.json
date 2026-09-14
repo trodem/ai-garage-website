@@ -371,7 +371,7 @@
       },
       {
         "title": "Timeline year export",
-        "copy": "Export a calendar year of events as CSV or PDF from Timeline — Advanced plan (upgrade in the app)."
+        "copy": "Export a calendar year of events as CSV or PDF from Timeline — Basic and Advanced (upgrade in the app)."
       },
       {
         "title": "Privacy by design",
@@ -592,13 +592,13 @@
   "plans": {
     "label": "Plans & AI",
     "title": "The right GarIQ for your garage.",
-    "copy": "Start with your first vehicle, share your garage with others, or manage several garages and vehicles in one place. Choose the plan that gives you exactly the options you need for your vehicle world.",
+    "copy": "Start with your first vehicle on Free, unlock the full personal logbook on Basic, or share garages and manage more vehicles on Advanced. Choose the plan that fits your vehicle world.",
     "notes": {
-      "title": "Notes on AI credits & billing",
+      "title": "Notes on AI uses & billing",
       "items": [
         {
-          "heading": "AI credits",
-          "body": "Monthly AI credits are used for AI-supported features — for example to read information from photos and PDFs, prepare entries via chat, or answer questions about your vehicle data. If your monthly allowance is used up, manual entry remains available at any time."
+          "heading": "AI uses",
+          "body": "AI uses power features such as reading photos and PDFs, preparing entries via chat, or answering questions about your vehicle data. Free includes 5 AI uses per month. Basic and Advanced include unlimited AI with fair use. If Free uses are exhausted, manual entry remains available at any time."
         },
         {
           "heading": "You decide what is saved",
@@ -623,10 +623,11 @@
         "highlights": [
           "1 garage · 1 vehicle",
           "Complete vehicle history & statistics",
-          "10 AI credits per month",
+          "5 AI uses per month",
           "Capture fuel & charging from a photo",
           "Notes, fuel & charging via chat",
-          "Ask GarIQ — within your available AI credits",
+          "Ask GarIQ — within your available AI uses",
+          "No sharing · no timeline export · no saved scan attachments",
           "Manual entry anytime"
         ]
       },
@@ -634,34 +635,34 @@
         "id": "basic",
         "name": "Basic",
         "price": "CHF 4.90 / month",
-        "description": "More room for your vehicles and more freedom in how you use GarIQ: manage several vehicles, share your garage with others, and capture information simply by photo, PDF or chat.",
+        "description": "The complete personal logbook: more vehicles, unlimited AI, timeline export and saved scan attachments — without garage sharing.",
         "badge": "Recommended",
         "featured": false,
         "highlights": [
           "Everything from Free",
           "Up to 5 active vehicles",
-          "Share your garage with up to 5 members",
-          "100 AI credits per month",
+          "Personal garage — no sharing",
+          "Unlimited AI (fair use)",
           "Capture information by photo, PDF or chat",
           "Smart Scan & Smart Insert",
-          "AI-supported document management for your vehicle"
+          "AI-supported document management for your vehicle",
+          "Export vehicle history as PDF or CSV",
+          "Keep original photos and PDFs on the events"
         ]
       },
       {
         "id": "advanced",
         "name": "Advanced",
-        "price": "CHF 14.90 / month",
-        "description": "For families, enthusiasts and small businesses with several vehicles: more garages, more vehicles, more users — and more options.",
+        "price": "CHF 9.90 / month",
+        "description": "For families, enthusiasts and small businesses with several vehicles: more garages, shared access, and more room to grow.",
         "badge": "Most flexible",
         "featured": true,
         "highlights": [
           "Everything from Basic",
-          "Up to 3 owned garages",
+          "Up to 2 owned garages",
           "Up to 10 active vehicles per garage",
-          "Share your garage with up to 10 members",
-          "500 AI credits per month",
-          "Export vehicle history as PDF or CSV",
-          "Keep original photos and PDFs on the events"
+          "Share your garage with up to 5 members",
+          "Unlimited AI (fair use)"
         ]
       }
     ]
@@ -696,7 +697,7 @@
       },
       {
         "q": "Can I share my vehicle data with others?",
-        "a": "Yes. With a shared garage, several people can access the same vehicles and their information. Partners, family members or other co-users can work on the vehicle history together. You can decide who has which rights."
+        "a": "Yes — on the Advanced plan. With a shared garage, several people can access the same vehicles and their information. Partners, family members or other co-users can work on the vehicle history together. You can decide who has which rights. Free and Basic stay personal (no garage sharing)."
       },
       {
         "q": "What happens to the vehicle history when I sell my vehicle?",
@@ -708,7 +709,7 @@
       },
       {
         "q": "Can I export my data from GarIQ?",
-        "a": "Yes. Your vehicle data can be exported as a clear PDF or as a CSV file. You can read, share or work with the information yourself."
+        "a": "Yes — on Basic and Advanced. Your vehicle data can be exported as a clear PDF or as a CSV file. You can read, share or work with the information yourself. Timeline year export is not included on Free."
       },
       {
         "q": "Can I see how much my vehicle really costs?",
