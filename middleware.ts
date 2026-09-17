@@ -50,5 +50,12 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/(de|en|it)/:path*", "/auth/callback"],
+  matcher: [
+    "/",
+    "/privacy",
+    "/terms",
+    "/contact",
+    "/(de|en|it)/:path*",
+    "/auth/callback",
+  ],
 };

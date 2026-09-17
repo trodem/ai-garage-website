@@ -18,6 +18,13 @@ Separate git repo from the mobile app (`031_ai_garage_app`).
 | `/en` | English (default) |
 | `/de` | German |
 | `/it` | Italian |
+| `/{locale}/privacy` | Privacy Policy |
+| `/{locale}/terms` | Terms of Service |
+| `/{locale}/contact` | Contact / support |
+
+Unprefixed `/privacy`, `/terms`, and `/contact` redirect to the default-locale equivalents via next-intl middleware.
+
+Legal and contact copy lives in `messages/{en,de,it}.json` under `legal.*`. The public support address is defined once in `lib/legalContact.ts` (never hard-coded in message JSON).
 
 Signup and password-recovery emails use `https://gariq.app/auth/callback` (app `AUTH_SIGNUP_EMAIL_REDIRECT_TO` / `AUTH_RECOVERY_EMAIL_REDIRECT_TO`; **ADR-047** / **ADR-053**). **Protected surfaces:** `/auth/callback` (middleware + client gate in `lib/authCallbackAccess.ts`) and `/[locale]/welcome` (middleware redirect to locale home). Callback pages are informational only **except** password recovery, which shows a new-password form then success copy (no store/download CTAs).
 

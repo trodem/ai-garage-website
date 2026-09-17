@@ -768,6 +768,140 @@
     "contact": "Kontakt",
     "logoAttribution": "Logos provided by Logo.dev"
   },
+  "legal": {
+    "privacy": {
+      "metaTitle": "Datenschutzerklärung — GarIQ",
+      "metaDescription": "Wie GarIQ Konto-, Fahrzeug- und Dokumentendaten verarbeitet; KI-Entwürfe, die Sie bestätigen; Auftragsverarbeiter; Aufbewahrung; und Ihre Rechte.",
+      "title": "Datenschutzerklärung",
+      "updated": "2026-09-17",
+      "intro": "Diese Datenschutzerklärung erläutert, wie **GarIQ** (die mobile App und diese Website) personenbezogene Daten verarbeitet. Sie beschreibt das Produkt so, wie es heute ausgeliefert wird. Was hier nicht genannt ist, beanspruchen wir nicht.",
+      "sections": [
+        {
+          "title": "Wer ist der Verantwortliche?",
+          "body": "Verantwortlicher für die über GarIQ verarbeiteten personenbezogenen Daten ist:\n\n**Demis Troisi**\nSwitzerland\n\nKontakt für Datenschutzanfragen: **{email}** (nur E-Mail — eine Postanschrift wird noch nicht veröffentlicht).\n\nGarIQ ist ein Fahrzeug-Fahrtenbuch-Produkt. Diese Erklärung gilt für die GarIQ-Mobile-App und die Marketing-/Konto-Seiten auf gariq.app."
+        },
+        {
+          "title": "Welche Daten wir verarbeiten",
+          "body": "Je nachdem, wie Sie GarIQ nutzen, können wir verarbeiten:\n\n**Kontodaten** — E-Mail-Adresse, Passwort (über unseren Authentifizierungsanbieter), vollständiger Name oder Spitzname sowie optionale Anmeldung über Apple oder Google.\n\n**Garage-, Fahrzeug- und Fahrtenbuchdaten** — Garagen und Mitglieder; Fahrzeuge (einschließlich Foto, Kennzeichen, technische Daten und Kilometerstand); sowie Ereignisse wie Tanken, Laden, Wartung, Versicherung, Steuer, Inspektion, Ausgabe, Fahrt und Notiz, mit Datum, Kosten, Kilometerständen und von Ihnen eingegebenen Notizen.\n\n**Dateien** — Fahrzeugfotos, optionale Ereignisanhänge und Dokumente, die Sie im Tresor speichern. Dateien liegen in privaten Cloud-Speicher-Buckets.\n\n**Support-Nachrichten** — Inhalte, die Sie an unsere Support-E-Mail senden.\n\n**Technische und Absturzdaten** — begrenzte Diagnoseinformationen für den Betrieb des Dienstes und, sofern aktiviert, Absturzberichte (siehe Auftragsverarbeiter unten).\n\n**Website-Daten** — Einstellungen, die in Ihrem Browser gespeichert werden (siehe Abschnitt zur Website unten)."
+        },
+        {
+          "title": "Warum wir Daten verarbeiten und Rechtsgrundlagen",
+          "body": "Wir verarbeiten Daten, um:\n\n- Ihr Konto und die von Ihnen angeforderten Fahrtenbuch-Funktionen bereitzustellen und zu sichern;\n- die von Ihnen erstellte Fahrzeug- und Ereignishistorie zu speichern und anzuzeigen;\n- KI-Funktionen auszuführen, die aus von Ihnen übermittelten Inhalten Entwürfe oder Antworten erstellen (stets vorbehaltlich Ihrer Bestätigung, bevor etwas als Fahrtenbuch-Eintrag gespeichert wird);\n- transaktionale E-Mails zu Ihrem Konto zu senden (z. B. Verifizierung oder Garagen-Einladungen);\n- Berechtigungen für kostenpflichtige Pläne über die App-Stores zu verarbeiten;\n- Abstürze zu diagnostizieren und den Dienst zuverlässig zu halten;\n- auf Support-Anfragen zu antworten.\n\nSoweit schweizerisches oder anwendbares europäisches Datenschutzrecht eine Rechtsgrundlage verlangt, stützen wir uns auf die **Erfüllung eines Vertrags** (Bereitstellung des von Ihnen angeforderten Dienstes), **berechtigte Interessen** (Sicherheit, Zuverlässigkeit, Produktverbesserung ohne Werbeprofile) sowie **Einwilligung**, wo das Gesetz dies für eine bestimmte optionale Funktion verlangt. Sie können eine Einwilligung für optionale Verarbeitung widerrufen, ohne den Zugang zu Kernfunktionen des Fahrtenbuchs zu verlieren, die nicht von dieser Einwilligung abhängen."
+        },
+        {
+          "title": "KI-Verarbeitung — nur Entwürfe, Sie bestätigen das Speichern",
+          "body": "Wenn Sie KI-Funktionen nutzen, kann GarIQ den von Ihnen bereitgestellten Text, Fotos, PDFs oder Fahrzeug-/Ereigniskontext an Anbieter großer Sprachmodelle senden, damit diese einen **Entwurf** (Vorschlag oder Antwort) erstellen.\n\n**Nichts wird ohne Ihre ausdrückliche Bestätigung als gespeichertes Ereignis in Ihr Fahrtenbuch geschrieben.** KI-Ausgabe ist ein Vorschlag. Sie prüfen ihn und entscheiden, ob er behalten wird.\n\nSprachdiktat nutzt — sofern Sie es verwenden — die Spracherkennung Ihres Geräts bzw. Betriebssystems (Apple oder Google auf dem Gerät). GarIQ betreibt dafür keinen eigenen GarIQ-Sprachserver."
+        },
+        {
+          "title": "Auftragsverarbeiter und weitere von uns genutzte Dienste",
+          "body": "Wir nutzen Dienstleister, die Daten in unserem Auftrag oder — wo das Produkt es erfordert — als unabhängige Verantwortliche verarbeiten. Dazu gehören heute:\n\n- **Supabase** — Datenbank, Authentifizierung, Dateispeicher und serverseitige Funktionen der App;\n- **Anthropic (Claude)** und **OpenAI** — Sprachmodell-Verarbeitung für KI-Entwürfe und verwandte Funktionen (einschließlich Embeddings für die Dokumentsuche, sofern diese Funktion verfügbar ist);\n- **Apple App Store** und **Google Play**, zusammen mit **RevenueCat** — Kauf, Verlängerung und Berechtigungsstatus kostenpflichtiger Pläne (die Abrechnung erfolgt im Store, nicht auf gariq.app);\n- **Resend** — transaktionale E-Mail;\n- **Sentry** — Absturzberichte ohne standardmäßige personenbezogene Kennungen und ohne Session-Replay- oder Performance-Tracing-Produkte;\n- **logo.dev** — Markenlogo-Abruf bei der Suche nach Fahrzeugmarken;\n- **Frankfurter** — öffentliche Wechselkursabfragen für Währungsumrechnung (kein persönliches Profil wird für diese Kursabfrage gesendet);\n- **Vercel** — Hosting dieser Website.\n\nWir nutzen in der heute ausgelieferten GarIQ-App **keine** Werbe-SDKs Dritter und keine produktanalytischen Werbenetzwerke."
+        },
+        {
+          "title": "Weitergabe zwischen Nutzern",
+          "body": "GarIQ ist innerhalb einer von Ihnen kontrollierten Garage von Grund auf mehrmandantenfähig:\n\n- **Garagen-Freigabe** — wenn Sie jemanden in eine Garage einladen (bei Plänen mit Freigabe), können Mitglieder die Fahrzeuge und die Historie in diesem gemeinsamen Raum gemäß den vom Produkt vorgesehenen Rollen sehen und bearbeiten.\n- **Fahrzeugzession** — wenn Sie ein Fahrzeug über den In-App-Zessionsablauf an einen anderen GarIQ-Nutzer übertragen, wird eine freigegebene Teilmenge der Historie dieses Fahrzeugs an den Käufer kopiert, wie in der App beschrieben.\n\nWir verkaufen Ihre personenbezogenen Daten nicht."
+        },
+        {
+          "title": "Speicherung, Ort und Aufbewahrung",
+          "body": "Anwendungsdaten werden in Cloud-Infrastruktur über unsere Auftragsverarbeiter gespeichert (insbesondere Supabase). Die genauen Hosting-Regionen hängen von der Konfiguration dieses Anbieters für das GarIQ-Projekt ab.\n\n**Soft delete:** Wenn Sie Datensätze in der App löschen, markiert GarIQ sie als gelöscht (deleted_at), statt jede Zeile sofort endgültig zu entfernen. Soft-gelöschte Daten werden so lange aufbewahrt, wie es nötig ist, um die Historie gemeinsamer Garagen konsistent zu halten und das Produkt sicher zu betreiben.\n\nWir speichern Konto- und Fahrtenbuchdaten, solange Ihr Konto aktiv ist, und danach für einen angemessenen Zeitraum für Backups, Streitfälle und gesetzliche Pflichten. Absturzberichte werden gemäß den Aufbewahrungseinstellungen unseres Absturzbericht-Anbieters aufbewahrt."
+        },
+        {
+          "title": "Kontolöschung und Export",
+          "body": "Sie können Ihr Konto in der GarIQ-App löschen. Die Kontolöschung soft-löscht personenbezogene Daten wo angemessen, bewahrt die Historie gemeinsamer Garagen, damit andere Mitglieder keine beschädigten Datensätze zurücklassen, und löscht Ihren Authentifizierungsnutzer, sodass Sie sich nicht mehr anmelden können.\n\nSoweit Ihr Plan Exportfunktionen umfasst, können Sie Fahrzeugdaten aus der App exportieren (z. B. PDF oder CSV) vor oder anstelle der Löschung. Die Verfügbarkeit des Exports hängt vom in der App angezeigten Plan ab — diese Erklärung wiederholt keine Planlimits."
+        },
+        {
+          "title": "Ihre Rechte und wie Sie uns kontaktieren",
+          "body": "Je nach Ihrem Wohnsitz können Sie Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung oder Widerspruch gegen bestimmte Verarbeitungen sowie auf Datenübertragbarkeit haben. Sie können auch das Recht haben, bei einer zuständigen Aufsichtsbehörde Beschwerde einzulegen.\n\nUm Datenschutzrechte wahrzunehmen oder eine Frage zu dieser Erklärung zu stellen, schreiben Sie an **{email}**. Bitte beschreiben Sie Ihr Anliegen klar und nennen Sie die Konto-E-Mail, die Sie in GarIQ verwenden. Wir müssen ggf. prüfen, dass wir mit dem Kontoinhaber sprechen.\n\nFür Abrechnung, Verlängerungen und Rückerstattungen kostenpflichtiger Pläne wenden Sie sich an Apple oder Google über das Store-Konto, in dem Sie gekauft haben — gariq.app nimmt keine Zahlungen entgegen und kann keine Store-Rückerstattungen ausstellen."
+        },
+        {
+          "title": "Diese Website — Cookies und lokaler Speicher",
+          "body": "Auf gariq.app beobachten wir derzeit:\n\n- eine **Theme-Einstellung**, die im Browser als gariq-theme gespeichert wird (hell / dunkel);\n- eine **Spracheinstellung**, die von next-intl (Cookie / Locale-Routing) verarbeitet wird, damit die Website Englisch, Deutsch oder Italienisch anzeigen kann.\n\nDas sind funktionale Einstellungen zur Darstellung der Website. Diese Erklärung behauptet keine zusätzlichen Marketing- oder Werbe-Cookies über das hinaus, was ein frischer Besuch tatsächlich setzt."
+        },
+        {
+          "title": "Kinder",
+          "body": "GarIQ richtet sich nicht an Kinder. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter dem Alter, das das anwendbare Recht für die Nutzung von Online-Diensten ohne elterliche Zustimmung verlangt. Wenn Sie glauben, dass ein Kind ein Konto erstellt hat, kontaktieren Sie **{email}** — wir werden geeignete Schritte einleiten."
+        },
+        {
+          "title": "Änderungen dieser Erklärung",
+          "body": "Wir können diese Datenschutzerklärung aktualisieren, wenn sich das Produkt oder das Recht ändert. Das Datum **Zuletzt aktualisiert** oben auf dieser Seite ändert sich dann. Bei fortgesetzter Nutzung von GarIQ nach einer Aktualisierung sollten Sie den neuen Text prüfen. Wesentliche Änderungen, die nach anwendbarem Recht eine Mitteilung erfordern, werden in einer der Änderung angemessenen Weise kommuniziert."
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "Nutzungsbedingungen — GarIQ",
+      "metaDescription": "Bedingungen für die Nutzung von GarIQ: Konto, KI-Entwürfe die Sie bestätigen, Abrechnung über die App-Stores, gemeinsame Garagen, Haftung und Schweizer Recht.",
+      "title": "Nutzungsbedingungen",
+      "updated": "2026-09-17",
+      "intro": "Diese Nutzungsbedingungen regeln Ihre Nutzung von **GarIQ**, dem Fahrzeug-Fahrtenbuch (Mobile-App und zugehörige Seiten auf gariq.app). Mit der Erstellung eines Kontos oder der Nutzung der App stimmen Sie diesen Bedingungen zu. Wenn Sie nicht einverstanden sind, nutzen Sie GarIQ nicht.",
+      "sections": [
+        {
+          "title": "Wer den Dienst bereitstellt",
+          "body": "GarIQ wird bereitgestellt von:\n\n**Demis Troisi**\nSwitzerland\n\nKontakt: **{email}** (nur E-Mail — eine Postanschrift wird noch nicht veröffentlicht).\n\nAuf diese Bedingungen findet **Schweizer Recht** Anwendung; Streitigkeiten unterliegen den Gerichten in der Schweiz, unbeschadet zwingender Verbraucherschutzrechte, die an Ihrem Wohnsitz gelten können."
+        },
+        {
+          "title": "Konto und Berechtigung",
+          "body": "Sie müssen korrekte Kontoangaben machen und Ihre Zugangsdaten sicher aufbewahren. Sie sind für Aktivitäten unter Ihrem Konto verantwortlich.\n\nSie müssen nach anwendbarem Recht alt genug sein, um diese Bedingungen einzugehen und Online-Dienste zu nutzen. Wenn Sie GarIQ im Namen einer anderen Person nutzen, bestätigen Sie, dass Sie dazu berechtigt sind.\n\nWir können den Zugang sperren oder beenden, wenn wir vernünftigerweise annehmen, dass diese Bedingungen verletzt werden, das Konto kompromittiert ist oder die weitere Nutzung den Dienst oder andere Nutzer gefährdet."
+        },
+        {
+          "title": "Was GarIQ ist",
+          "body": "GarIQ ist ein **Fahrzeug-Fahrtenbuch**. Es hilft Ihnen, fahrzeugbezogene Ereignisse, Kosten, Dokumente und Historie zu erfassen und Fragen zu den von Ihnen gespeicherten Daten zu stellen.\n\n**GarIQ ist keine professionelle, rechtliche, steuerliche, buchhalterische, technische oder sicherheitsbezogene Beratung.** KI-Antworten und -Entwürfe sind informative Vorschläge auf Basis der von Ihnen bereitgestellten Inhalte und der Daten in Ihrem Konto. Treffen Sie Entscheidungen zu Sicherheit, Geld oder Compliance stets mit eigenem Urteil und ziehen Sie bei Bedarf qualifizierte Fachleute hinzu."
+        },
+        {
+          "title": "Ihre Inhalte und Verantwortung",
+          "body": "Sie behalten das Eigentum an den von Ihnen übermittelten Inhalten (Fahrzeugdaten, Ereignisse, Fotos, Dokumente und Nachrichten). Sie räumen uns eine beschränkte Lizenz ein, diese Inhalte nur soweit zu hosten, zu verarbeiten und anzuzeigen, wie es nötig ist, um GarIQ für Sie und für Mitglieder von Garagen zu betreiben, die Sie freigeben.\n\nSie sind für die **Richtigkeit** dessen verantwortlich, was Sie erfassen, und dafür, eine rechtmäßige Grundlage zu haben, Material hochzuladen, das andere Personen oder Dokumente Dritter betrifft. Laden Sie keine rechtswidrigen Inhalte, Schadsoftware oder Material hoch, das Sie nicht teilen dürfen."
+        },
+        {
+          "title": "KI-Funktionen — nur Entwürfe",
+          "body": "KI-Funktionen können Ereignisentwürfe, Zuordnungen oder Antworten aus Text, Bildern, PDFs oder von Ihnen bereitgestelltem Kontext vorschlagen.\n\n**KI-Ausgabe ist ein Vorschlag. Nichts wird ohne Ihre ausdrückliche Bestätigung als Fahrtenbuch-Ereignis gespeichert.** Es gibt kein KI-Autosave von Ereignissen.\n\nGarIQ führt **keine** automatische Zusammenführung oder Korrektur doppelter Einträge durch. Wenn Sie Duplikate erzeugen, verwalten Sie die Bereinigung selbst.\n\nSprachdiktat nutzt die Sprachdienste Ihres Geräts bzw. Betriebssystems, wenn Sie es aktivieren."
+        },
+        {
+          "title": "Pläne und Abrechnung",
+          "body": "Kostenpflichtige Pläne, Verlängerungen, Kündigungen und Rückerstattungen laufen **ausschließlich** über den **Apple App Store** oder **Google Play**, zusammen mit unserem Berechtigungsanbieter **RevenueCat**. Kaufen und verwalten Sie Abonnements in Ihrem Store-Konto.\n\n**gariq.app nimmt keine Zahlungen entgegen und verkauft keine Abonnements auf der Website.** Wir können keine App-Store- oder Play-Rückerstattungen ausstellen; beantragen Sie diese bei Apple oder Google.\n\nIn der App gezeigte Planfunktionen können sich ändern. Dieses Dokument wiederholt keine numerischen Planlimits — diese stehen in der App und im Marketing-Bereich zu den Plänen."
+        },
+        {
+          "title": "Faire Nutzung und verbotene Nutzung",
+          "body": "Nutzen Sie GarIQ nur für rechtmäßiges persönliches oder kleines Team-Fahrzeuglogging, wie das Produkt vorgesehen ist. Sie dürfen nicht:\n\n- KI- oder andere Kontingente so missbrauchen, dass der Dienst für andere beeinträchtigt wird;\n- scrapen, massenhaft exportieren oder den Zugang über die normale App-Nutzung hinaus automatisieren ohne unsere schriftliche Erlaubnis;\n- Sicherheit umgehen, nicht öffentliche Schnittstellen reverse-engineeren oder den Dienst stören;\n- personenbezogene Daten Dritter ohne Grundlage hochladen;\n- GarIQ nutzen, um durch systematisches Extrahieren von Inhalten einen konkurrierenden Datensatz oder Dienst aufzubauen."
+        },
+        {
+          "title": "Gemeinsame Garagen und Fahrzeugzession",
+          "body": "Bei Plänen mit Freigabe ermöglichen Garagen-Einladungen anderen GarIQ-Nutzern den Zugang zu Fahrzeugen und Historie gemäß den In-App-Rollen. Sie sind dafür verantwortlich, wen Sie einladen und welche Daten diese sehen können.\n\nDie **Fahrzeugzession** überträgt eine freigegebene Teilmenge der Historie eines Fahrzeugs an einen anderen Nutzer, wie in der App beschrieben. Wo die App einen Schritt als endgültig darstellt, behandeln Sie ihn praktisch als **unwiderruflich** — prüfen Sie sorgfältig, bevor Sie bestätigen."
+        },
+        {
+          "title": "Verfügbarkeit, Änderungen und Beendigung",
+          "body": "Wir streben eine zuverlässige Verfügbarkeit an, garantieren aber keinen ununterbrochenen Dienst. Funktionen können sich ändern, eingeschränkt oder eingestellt werden.\n\nSie können GarIQ nicht mehr nutzen und Ihr Konto in der App löschen. Wir können diese Bedingungen aktualisieren; das Datum **Zuletzt aktualisiert** auf dieser Seite ändert sich dann. Die fortgesetzte Nutzung nach einer Aktualisierung gilt — soweit gesetzlich zulässig — als Annahme der geänderten Bedingungen. Wesentliche Änderungen können angemessen mitgeteilt werden."
+        },
+        {
+          "title": "Haftung",
+          "body": "Soweit nach anwendbarem Recht zulässig, haften GarIQ und der Anbieter nicht für indirekte, zufällige, besondere, Folgeschäden oder Strafschadensersatz sowie nicht für entgangenen Gewinn, Datenverlust oder Goodwill aus Ihrer Nutzung des Dienstes oder dem Vertrauen auf KI-Vorschläge.\n\nUnsere Gesamthaftung für Ansprüche im Zusammenhang mit GarIQ ist begrenzt auf den höheren Betrag aus (a) den Beträgen, die Sie in den zwölf Monaten vor dem Anspruch für GarIQ-Abonnements gezahlt haben, oder (b) fünfzig Schweizer Franken (CHF 50), es sei denn, zwingendes Recht verbietet eine solche Begrenzung (einschließlich Tod, Körperverletzung oder Betrug durch unsere Fahrlässigkeit oder vorsätzliches Fehlverhalten, soweit solche Regeln gelten).\n\nNichts in diesen Bedingungen schließt Rechte aus, auf die nach zwingendem Verbraucherschutzrecht nicht verzichtet werden kann."
+        },
+        {
+          "title": "Anwendbares Recht",
+          "body": "Diese Bedingungen unterliegen **Schweizer Recht**. Gerichte in der Schweiz sind zuständig, vorbehaltlich zwingender Verbraucherschutzrechte in Ihrem Wohnsitzland."
+        },
+        {
+          "title": "Kontakt",
+          "body": "Fragen zu diesen Bedingungen: **{email}**.\n\nFür Abrechnung und Rückerstattungen kostenpflichtiger Pläne nutzen Sie Ihr Apple- oder Google-Store-Konto. Für Datenschutzanfragen siehe die Datenschutzerklärung auf dieser Website."
+        }
+      ]
+    },
+    "contact": {
+      "metaTitle": "Kontakt — GarIQ",
+      "metaDescription": "Kontaktieren Sie den GarIQ-Support per E-Mail zu Konto, App oder Datenschutz. Abrechnung und Rückerstattungen laufen über Apple oder Google.",
+      "title": "Kontakt",
+      "lead": "Brauchen Sie Hilfe mit GarIQ? Schreiben Sie an **{email}**. Wir lesen jede Nachricht; die Antwortzeit kann variieren.",
+      "cta": "Support per E-Mail",
+      "includeTitle": "Was Sie angeben sollten",
+      "includeItems": [
+        "App-Version (unter Einstellungen, wenn Sie die App öffnen können)",
+        "Gerät und Betriebssystem (z. B. iPhone 15 · iOS 18 oder Pixel · Android 15)",
+        "Welches Fahrzeug oder Ereignis betroffen ist (keine Passwörter)",
+        "Eine kurze Beschreibung dessen, was passiert ist und was Sie erwartet haben"
+      ],
+      "billingNote": "Für **Abrechnung, Verlängerungen und Rückerstattungen** kostenpflichtiger Pläne nutzen Sie Ihr Apple-App-Store- oder Google-Play-Konto. gariq.app nimmt keine Zahlungen entgegen und kann keine Store-Rückerstattungen ausstellen.",
+      "privacyLink": "Datenschutzerklärung",
+      "termsLink": "Nutzungsbedingungen",
+      "linksLead": "Ebenfalls auf dieser Website:"
+    }
+  },
   "welcome": {
     "metaTitle": "E-Mail bestätigt — GarIQ",
     "metaDescription": "Deine GarIQ-Registrierung ist abgeschlossen und deine E-Mail-Adresse ist bestätigt.",

@@ -1,24 +1,8 @@
 import Reveal from "./Reveal";
+import RichParagraphs from "./shared/RichParagraphs";
 import { getTranslations } from "next-intl/server";
 
 type FaqItem = { q: string; a: string };
-
-function FaqAnswerBody({ text }: { text: string }) {
-  const paragraphs = text.split(/\n\n/).map((part) => part.trim()).filter(Boolean);
-  return (
-    <>
-      {paragraphs.map((paragraph) => (
-        <p key={paragraph.slice(0, 48)}>
-          {paragraph.split(/(\*\*[^*]+\*\*)/g).map((chunk, index) => {
-            const bold = chunk.startsWith("**") && chunk.endsWith("**");
-            if (!bold) return chunk;
-            return <strong key={index}>{chunk.slice(2, -2)}</strong>;
-          })}
-        </p>
-      ))}
-    </>
-  );
-}
 
 export default async function Faq() {
   const t = await getTranslations("faq");
@@ -36,7 +20,7 @@ export default async function Faq() {
             <summary>{faq.q}</summary>
             <div className="faq-answer">
               <div>
-                <FaqAnswerBody text={faq.a} />
+                <RichParagraphs text={faq.a} />
               </div>
             </div>
           </Reveal>
