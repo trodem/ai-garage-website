@@ -305,7 +305,7 @@
       {
         "kicker": "Dokumente",
         "title": "Tresor + Ask",
-        "copy": "Handbücher und Policen speichern; Fragen mit Antworten aus deinen Dateien."
+        "copy": "Handbücher und Policen speichern; Fragen zuerst aus deinen Dateien. Fehlt eine Werksangabe, kann Ask eine gekennzeichnete, zitierte Web-Antwort zeigen."
       }
     ]
   },
@@ -343,7 +343,7 @@
       },
       {
         "title": "Ask AI",
-        "copy": "Fragen zu Ausgaben, Historie und hochgeladenen Dokumenten — aus deinen Daten."
+        "copy": "Fragen zu Ausgaben, Historie und hochgeladenen Dokumenten — zuerst aus deinen Daten. Werksangaben können eine gekennzeichnete Web-Zitation nutzen, wenn sie im Handbuch fehlen."
       },
       {
         "title": "Dokumententresor",
@@ -431,7 +431,7 @@
       },
       {
         "title": "Frag deine Daten — auch per Sprache",
-        "copy": "„Wie viel Werkstatt 2025?“ oder „empfohlener Reifendruck?“ Tippen oder aufs Mikrofon tippen und diktieren — Antworten aus deinen Events und Dokumenten, mit Zitaten.",
+        "copy": "„Wie viel Werkstatt 2025?“ oder „empfohlener Reifendruck?“ Tippen oder aufs Mikrofon tippen — Antworten zuerst aus deinen Events und Dokumenten, mit Zitaten. Fehlende Werksangaben können eine gekennzeichnete Webquelle nutzen.",
         "alt": "GarIQ-Screen: Assistenten-Chat mit Sprachmikrofon, Antwort und Zitat aus einem PDF-Handbuch."
       },
       {
@@ -465,7 +465,7 @@
       },
       {
         "title": "Ask · Dokumente",
-        "copy": "Q&A über deine Ablage mit Zitaten zu Titel und Seite — derselbe KI-Credit-Pool wie Fahrtenbuch-Ask."
+        "copy": "Q&A über deine Ablage mit Zitaten zu Titel und Seite. Steht eine Werksangabe nicht in der Datei, kann eine gekennzeichnete Web-Zitation folgen — derselbe KI-Credit-Pool wie Fahrtenbuch-Ask."
       }
     ],
     "preview": {
@@ -565,7 +565,7 @@
       },
       {
         "title": "Handbuch-PDF",
-        "copy": "In den Tresor → Ask „Empfohlener Reifendruck?“ — Zitat aus deiner Datei."
+        "copy": "In den Tresor → Ask „Empfohlener Reifendruck?“ — Zitat aus deiner Datei, wenn sie da ist; sonst eine gekennzeichnete Webquelle."
       },
       {
         "title": "Wartung per Chat",
@@ -737,7 +737,7 @@
       },
       {
         "q": "Kann ich GarIQ Fragen zu meinem Fahrzeug stellen?",
-        "a": "Ja. Frag GarIQ einfach in natürlicher Sprache, was du über dein Fahrzeug wissen möchtest. Zum Beispiel: Wie viel habe ich dieses Jahr für mein Fahrzeug ausgegeben? Wie hat sich der Verbrauch über die letzten drei Jahre entwickelt? Wann war die letzte Wartung? Was steht in meiner Versicherung oder im Handbuch? Welche Reparaturen wurden bereits gemacht?\n\nGarIQ durchsucht die in deinem Fahrzeug hinterlegten Informationen und stellt die relevanten Daten für dich zusammen. So musst du nicht wissen, wo etwas gespeichert ist – du musst nur wissen, was du wissen möchtest."
+        "a": "Ja. Frag GarIQ einfach in natürlicher Sprache, was du über dein Fahrzeug wissen möchtest. Zum Beispiel: Wie viel habe ich dieses Jahr für mein Fahrzeug ausgegeben? Wie hat sich der Verbrauch über die letzten drei Jahre entwickelt? Wann war die letzte Wartung? Was steht in meiner Versicherung oder im Handbuch? Welche Reparaturen wurden bereits gemacht?\n\nAsk schaut zuerst in gespeicherte Events (Fahrtenbuch) und hochgeladene Dateien (Dokumente). Für Werksangaben wie Ölspezifikation oder Reifendruck kalt gilt: steht die Antwort nicht in deinen Dateien, kann Ask auf eine gekennzeichnete, zitierte Webquelle zurückgreifen — klar als nicht aus deinen Dateien markiert. Aus dem Web wird nichts auf dein Fahrzeug oder in den Tresor geschrieben.\n\nSo musst du nicht wissen, wo etwas gespeichert ist – du musst nur wissen, was du wissen möchtest."
       },
       {
         "q": "Du verstehst eine Anzeige am Fahrzeug nicht? Zeig sie GarIQ.",
@@ -1167,7 +1167,7 @@
       "askDocs": {
         "kicker": "Ask docs",
         "subtitle": "Eine Warnlampe blinkt? Was deckt die Police? <brand></brand> weiss es.",
-        "description": "Welches Öl empfiehlt der Hersteller? Welcher Reifendruck? Windschutzscheibe kaputt: zahlt die Versicherung? Warnlampe an: was heisst das? Foto von der Warnlampe: GarIQ sagt, was sie bedeutet. Foto von der Ölflasche: sagt, ob es das richtige Produkt ist. Das Foto wird mit dem geladenen Handbuch und der Police verglichen, nicht mit dem Web. Lade das Handbuch und die Police des Fahrzeugs. Ohne dreihundert Seiten für eine Zeile umzublättern. Eine Frage, und die Antwort kommt aus der Datei."
+        "description": "Welches Öl empfiehlt der Hersteller? Welcher Reifendruck? Windschutzscheibe kaputt: zahlt die Versicherung? Warnlampe an: was heisst das? Foto von der Warnlampe: GarIQ sagt, was sie bedeutet. Foto von der Ölflasche: sagt, ob es das richtige Produkt ist. Das Foto wird zuerst mit dem geladenen Handbuch und der Police verglichen. Steht diese Werksangabe nicht in deinen Dateien, kann Ask auf eine gekennzeichnete, zitierte Web-Antwort zurückgreifen — klar als nicht aus deinen Dateien markiert. Lade das Handbuch und die Police des Fahrzeugs. Ohne dreihundert Seiten für eine Zeile umzublättern."
       },
       "smartScan": {
         "kicker": "Smart Scan",
@@ -1257,7 +1257,7 @@
       {
         "approach": "Generische KI-Chatbots",
         "breaks": "Kennen deine Garage nicht; können Fakten erfinden",
-        "why": "Antworten auf Basis deiner eigenen Events und Dateien"
+        "why": "Antworten zuerst aus deinen Events und Dateien — gekennzeichnetes Web nur ohne Handbuch"
       }
     ]
   }

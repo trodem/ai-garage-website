@@ -305,7 +305,7 @@
       {
         "kicker": "Documents",
         "title": "Vault + Ask",
-        "copy": "Store manuals and policies; ask questions and get answers grounded in your files."
+        "copy": "Store manuals and policies; ask questions grounded in your files first. If a factory spec is missing, Ask may show a labeled, cited web answer."
       }
     ]
   },
@@ -343,7 +343,7 @@
       },
       {
         "title": "Ask AI",
-        "copy": "Questions about spend, history, and uploaded documents — answered from your data."
+        "copy": "Questions about spend, history, and uploaded documents — from your data first. Factory handbook facts may use a labeled web citation if the manual misses them."
       },
       {
         "title": "Document vault",
@@ -431,7 +431,7 @@
       },
       {
         "title": "Ask your data — even by voice",
-        "copy": "“How much on workshop in 2025?” or “recommended tire pressure?” Type or tap the mic to dictate — answers from your events and documents, with citations.",
+        "copy": "“How much on workshop in 2025?” or “recommended tire pressure?” Type or tap the mic — answers from your events and documents first, with citations. Missing handbook facts may use a labeled web source.",
         "alt": "GarIQ screen: assistant chat with a voice mic, an answer, and a citation from a PDF manual."
       },
       {
@@ -465,7 +465,7 @@
       },
       {
         "title": "Ask · Documents",
-        "copy": "Q&A over your vault with citations to document title and page — same AI credit pool as logbook Ask."
+        "copy": "Q&A over your vault with citations to document title and page. If a factory spec isn’t in the file, a labeled web citation may follow — same AI credit pool as logbook Ask."
       }
     ],
     "preview": {
@@ -565,7 +565,7 @@
       },
       {
         "title": "Owner manual PDF",
-        "copy": "Upload to the document vault → Ask “What’s the recommended tire pressure?” — answer cites your file."
+        "copy": "Upload to the document vault → Ask “What’s the recommended tire pressure?” — cites your file when it’s there; otherwise a labeled web source."
       },
       {
         "title": "Maintenance via chat",
@@ -737,7 +737,7 @@
       },
       {
         "q": "Can I ask GarIQ questions about my vehicle?",
-        "a": "Yes. Just ask GarIQ in natural language what you want to know about your vehicle. For example: How much did I spend on my vehicle this year? How has consumption developed over the last three years? When was the last service? What does my insurance or the handbook say? Which repairs have already been done?\n\nGarIQ searches the information stored on your vehicle and puts the relevant data together for you. You do not need to know where something is stored — you only need to know what you want to know."
+        "a": "Yes. Just ask GarIQ in natural language what you want to know about your vehicle. For example: How much did I spend on my vehicle this year? How has consumption developed over the last three years? When was the last service? What does my insurance or the handbook say? Which repairs have already been done?\n\nAsk looks first at saved events (Logbook) and uploaded files (Documents). For factory handbook facts such as oil spec or cold tyre pressures, if that answer is not in your files, Ask may fall back to a labeled, cited web source — clearly marked as not from your files. Nothing from the web is written onto your vehicle or vault.\n\nYou do not need to know where something is stored — you only need to know what you want to know."
       },
       {
         "q": "Don't understand a warning on the vehicle? Show it to GarIQ.",
@@ -1167,7 +1167,7 @@
       "askDocs": {
         "kicker": "Ask docs",
         "subtitle": "A warning light flashing? What’s covered? <brand></brand> knows.",
-        "description": "Which oil does the manufacturer recommend? What tyre pressure? Windscreen cracked: does insurance cover it? Warning light on: what does it mean? Photograph the light: GarIQ says what it means. Photograph the oil bottle: it says whether it’s the right product. The photo is checked against the uploaded manual and policy, not the web. Upload the owner’s manual and the vehicle policy. No flipping three hundred pages for one line. One question, and the answer comes from the file."
+        "description": "Which oil does the manufacturer recommend? What tyre pressure? Windscreen cracked: does insurance cover it? Warning light on: what does it mean? Photograph the light: GarIQ says what it means. Photograph the oil bottle: it says whether it’s the right product. The photo is checked against the uploaded manual and policy first. If that factory fact isn’t in your files, Ask can fall back to a labeled, cited web answer — marked as not from your files. Upload the owner’s manual and the vehicle policy. No flipping three hundred pages for one line."
       },
       "smartScan": {
         "kicker": "Smart Scan",
@@ -1257,7 +1257,7 @@
       {
         "approach": "Generic AI chatbots",
         "breaks": "Don't know your garage; can invent facts",
-        "why": "Answers grounded in your own events and files"
+        "why": "Answers from your events and files first — labeled web only if the handbook isn’t there"
       }
     ]
   }

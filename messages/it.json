@@ -305,7 +305,7 @@
       {
         "kicker": "Documenti",
         "title": "Archivio + Ask",
-        "copy": "Manuali e polizze; domande con risposte dai tuoi file."
+        "copy": "Manuali e polizze; domande prima dai tuoi file. Se manca una prescrizione di fabbrica, Ask può mostrare una risposta web etichettata e citata."
       }
     ]
   },
@@ -343,7 +343,7 @@
       },
       {
         "title": "Ask AI",
-        "copy": "Domande su spese, cronologia e documenti — dai tuoi dati."
+        "copy": "Domande su spese, cronologia e documenti — prima dai tuoi dati. Le prescrizioni di fabbrica possono usare una citazione web etichettata se il manuale non le ha."
       },
       {
         "title": "Archivio documenti",
@@ -431,7 +431,7 @@
       },
       {
         "title": "Chiedi ai tuoi dati — anche a voce",
-        "copy": "«Quanto ho speso di officina nel 2025?» o «pressione gomme consigliata?» Scrivi o tocca il microfono per dettare — risposte dai tuoi eventi e documenti, con citazioni.",
+        "copy": "«Quanto ho speso di officina nel 2025?» o «pressione gomme consigliata?» Scrivi o tocca il microfono — risposte prima dai tuoi eventi e documenti, con citazioni. Se manca il dato di fabbrica, può comparire una fonte web etichettata.",
         "alt": "Schermata GarIQ: chat dell'assistente con microfono vocale, risposta e citazione da un manuale PDF."
       },
       {
@@ -465,7 +465,7 @@
       },
       {
         "title": "Ask · Documenti",
-        "copy": "Q&A sul vault con citazioni a titolo e pagina — stesso pool di crediti IA dell'Ask libretto."
+        "copy": "Q&A sul vault con citazioni a titolo e pagina. Se una prescrizione di fabbrica non è nel file, può seguire una citazione web etichettata — stesso pool di crediti IA dell'Ask libretto."
       }
     ],
     "preview": {
@@ -565,7 +565,7 @@
       },
       {
         "title": "PDF manuale",
-        "copy": "In archivio → Ask «Pressione gomme consigliata?» — citazione dal tuo file."
+        "copy": "In archivio → Ask «Pressione gomme consigliata?» — cita il tuo file se c’è; altrimenti una fonte web etichettata."
       },
       {
         "title": "Manutenzione in chat",
@@ -737,7 +737,7 @@
       },
       {
         "q": "Posso fare domande a GarIQ sul mio veicolo?",
-        "a": "Sì. Chiedi a GarIQ in linguaggio naturale quello che vuoi sapere del veicolo. Ad esempio: quanto ho speso quest'anno per il veicolo? Come è andato il consumo negli ultimi tre anni? Quando è stata l'ultima manutenzione? Cosa c'è in polizza o nel manuale? Quali riparazioni sono già state fatte?\n\nGarIQ cerca tra le informazioni del veicolo e ti mette insieme i dati utili. Non devi sapere dove è salvato — basta sapere cosa vuoi sapere."
+        "a": "Sì. Chiedi a GarIQ in linguaggio naturale quello che vuoi sapere del veicolo. Ad esempio: quanto ho speso quest'anno per il veicolo? Come è andato il consumo negli ultimi tre anni? Quando è stata l'ultima manutenzione? Cosa c'è in polizza o nel manuale? Quali riparazioni sono già state fatte?\n\nAsk guarda prima gli eventi salvati (libretto) e i file caricati (documenti). Per le prescrizioni di fabbrica come olio o pressione a freddo, se la risposta non è nei tuoi file, Ask può usare una fonte web etichettata e citata — chiaramente contrassegnata come non dai tuoi file. Dal web non viene scritto nulla sul veicolo né nel vault.\n\nNon devi sapere dove è salvato — basta sapere cosa vuoi sapere."
       },
       {
         "q": "Non capisci una spia sul veicolo? Mostrala a GarIQ.",
@@ -1167,7 +1167,7 @@
       "askDocs": {
         "kicker": "Ask docs",
         "subtitle": "Una spia lampeggia? Cosa copre la polizza? <brand></brand> lo sa.",
-        "description": "Quale olio consiglia il produttore? Che pressione i pneumatici? Parabrezza rotto: copre l’assicurazione? Spia accesa: che significa? Si fotografa la spia: GarIQ dice che significa. Si fotografa il flacone dell’olio: dice se è il prodotto giusto. La foto si confronta con il manuale e la polizza caricati, non con il web. Carica il manuale d’uso e la polizza del veicolo. Senza sfogliare trecento pagine per una riga. Una domanda, e la risposta esce dal file."
+        "description": "Quale olio consiglia il produttore? Che pressione i pneumatici? Parabrezza rotto: copre l’assicurazione? Spia accesa: che significa? Si fotografa la spia: GarIQ dice che significa. Si fotografa il flacone dell’olio: dice se è il prodotto giusto. La foto si confronta prima con il manuale e la polizza caricati. Se quella prescrizione di fabbrica non è nei tuoi file, Ask può usare una risposta web etichettata e citata — contrassegnata come non dai tuoi file. Carica il manuale d’uso e la polizza del veicolo. Senza sfogliare trecento pagine per una riga."
       },
       "smartScan": {
         "kicker": "Smart Scan",
@@ -1257,7 +1257,7 @@
       {
         "approach": "Chatbot IA generici",
         "breaks": "Non conoscono il tuo garage; possono inventare fatti",
-        "why": "Risposte fondate sui tuoi eventi e file"
+        "why": "Risposte prima dai tuoi eventi e file — web etichettato solo se manca il manuale"
       }
     ]
   }
