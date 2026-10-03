@@ -773,7 +773,7 @@
       "metaTitle": "Informativa sulla privacy — GarIQ",
       "metaDescription": "Come GarIQ tratta i dati di account, veicoli e documenti; bozze AI che Lei conferma; responsabili del trattamento; conservazione; e i Suoi diritti.",
       "title": "Informativa sulla privacy",
-      "updated": "2026-10-01",
+      "updated": "2026-10-03",
       "intro": "La presente Informativa sulla privacy spiega come **GarIQ** (l’app mobile e questo sito) tratta i dati personali. Descrive il prodotto così come è rilasciato oggi. Ciò che non è elencato qui non è da noi rivendicato.",
       "sections": [
         {
@@ -802,11 +802,11 @@
         },
         {
           "title": "Conservazione, luogo e retention",
-          "body": "I dati dell’applicazione sono memorizzati in infrastruttura cloud gestita tramite i nostri responsabili del trattamento (in particolare Supabase). Le regioni di hosting esatte dipendono dalla configurazione di quel fornitore per il progetto GarIQ.\n\n**Soft delete:** quando elimina record nell’app, GarIQ li contrassegna come eliminati (deleted_at) anziché cancellare definitivamente ogni riga immediatamente. I dati soft-deleted sono conservati quanto necessario per mantenere coerente la cronologia dei garage condivisi e per operare il prodotto in modo sicuro.\n\nConserviamo i dati di account e libretto mentre l’account è attivo e per un periodo ragionevole successivo, per backup, gestione di controversie e obblighi di legge. I report di crash sono conservati secondo le impostazioni di retention del fornitore di crash reporting."
+          "body": "I dati dell’applicazione sono memorizzati in infrastruttura cloud gestita tramite i nostri responsabili del trattamento (in particolare Supabase). Le regioni di hosting esatte dipendono dalla configurazione di quel fornitore per il progetto GarIQ.\n\n**Soft delete:** quando elimina record nell’app, GarIQ li contrassegna come eliminati (deleted_at) anziché cancellare definitivamente ogni riga immediatamente. I dati cancellati sono eliminati definitivamente entro 30 giorni. Un veicolo solo inattivo, o ceduto senza essere cancellato, non viene rimosso.\n\nConserviamo i dati di account e libretto mentre l’account è attivo e per un periodo ragionevole successivo, per backup, gestione di controversie e obblighi di legge. I report di crash sono conservati secondo le impostazioni di retention del fornitore di crash reporting."
         },
         {
           "title": "Cancellazione dell’account ed esportazione",
-          "body": "Può eliminare l’account dall’interno dell’app GarIQ. La cancellazione dell’account soft-elimina i dati personali ove appropriato, preserva la cronologia dei garage condivisi affinché gli altri membri non restino con record corrotti, ed elimina l’utente di autenticazione così che non possa più accedere.\n\nOve il Suo piano includa funzioni di esportazione, può esportare i dati del veicolo dall’app (ad esempio PDF o CSV) prima o al posto della cancellazione. La disponibilità dell’export dipende dal piano mostrato nell’app — la presente informativa non ripete i limiti di piano."
+          "body": "Può eliminare l’account dall’interno dell’app GarIQ. Se cancella il Suo account, gli eventi che ha registrato nei garage condivisi di altri utenti restano visibili al proprietario, con il Suo nome. La cancellazione dell’account soft-elimina i dati personali ove appropriato, preserva la cronologia dei garage condivisi affinché gli altri membri non restino con record corrotti, ed elimina l’utente di autenticazione così che non possa più accedere.\n\nOve il Suo piano includa funzioni di esportazione, può esportare i dati del veicolo dall’app (ad esempio PDF o CSV) prima o al posto della cancellazione. La disponibilità dell’export dipende dal piano mostrato nell’app — la presente informativa non ripete i limiti di piano."
         },
         {
           "title": "I Suoi diritti e come contattarci",

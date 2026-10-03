@@ -773,7 +773,7 @@
       "metaTitle": "Privacy Policy — GarIQ",
       "metaDescription": "How GarIQ processes account, vehicle, and document data; AI drafts you confirm; processors; retention; and your rights.",
       "title": "Privacy Policy",
-      "updated": "2026-10-01",
+      "updated": "2026-10-03",
       "intro": "This Privacy Policy explains how **GarIQ** (the mobile app and this website) processes personal data. It describes the product as it ships today. If something is not listed here, we do not claim to do it.",
       "sections": [
         {
@@ -802,11 +802,11 @@
         },
         {
           "title": "Storage, location, and retention",
-          "body": "Application data is stored in cloud infrastructure operated through our processors (notably Supabase). Exact hosting regions depend on that provider’s configuration for the GarIQ project.\n\n**Soft delete:** when you delete records in the app, GarIQ marks them as deleted (`deleted_at`) rather than permanently erasing every row immediately. Soft-deleted data is retained as needed to keep shared-garage history consistent and to operate the product securely.\n\nWe keep account and logbook data while your account is active and for a reasonable period afterward as needed for backups, dispute handling, and legal obligations. Crash reports are retained according to our crash-reporting provider’s retention settings."
+          "body": "Application data is stored in cloud infrastructure operated through our processors (notably Supabase). Exact hosting regions depend on that provider’s configuration for the GarIQ project.\n\n**Soft delete:** when you delete records in the app, GarIQ marks them as deleted (`deleted_at`) rather than permanently erasing every row immediately. Deleted data is permanently removed within 30 days. A vehicle that is only inactive, or that you transferred without deleting it, is not removed.\n\nWe keep account and logbook data while your account is active and for a reasonable period afterward as needed for backups, dispute handling, and legal obligations. Crash reports are retained according to our crash-reporting provider’s retention settings."
         },
         {
           "title": "Account deletion and export",
-          "body": "You can delete your account from inside the GarIQ app. Account deletion soft-deletes personal data where appropriate, preserves shared-garage history so other members are not left with broken records, and deletes your authentication user so you can no longer sign in.\n\nWhere your plan includes export features, you can export vehicle data from the app (for example PDF or CSV) before or instead of deletion. Export availability depends on the plan shown in the app — this policy does not restate plan limits."
+          "body": "You can delete your account from inside the GarIQ app. If you delete your account, events you logged in other people’s shared garages remain visible to the owner, with your name. Account deletion soft-deletes personal data where appropriate, preserves shared-garage history so other members are not left with broken records, and deletes your authentication user so you can no longer sign in.\n\nWhere your plan includes export features, you can export vehicle data from the app (for example PDF or CSV) before or instead of deletion. Export availability depends on the plan shown in the app — this policy does not restate plan limits."
         },
         {
           "title": "Your rights and how to contact us",

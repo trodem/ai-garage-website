@@ -773,7 +773,7 @@
       "metaTitle": "Datenschutzerklärung — GarIQ",
       "metaDescription": "Wie GarIQ Konto-, Fahrzeug- und Dokumentendaten verarbeitet; KI-Entwürfe, die Sie bestätigen; Auftragsverarbeiter; Aufbewahrung; und Ihre Rechte.",
       "title": "Datenschutzerklärung",
-      "updated": "2026-10-01",
+      "updated": "2026-10-03",
       "intro": "Diese Datenschutzerklärung erläutert, wie **GarIQ** (die mobile App und diese Website) personenbezogene Daten verarbeitet. Sie beschreibt das Produkt so, wie es heute ausgeliefert wird. Was hier nicht genannt ist, beanspruchen wir nicht.",
       "sections": [
         {
@@ -802,11 +802,11 @@
         },
         {
           "title": "Speicherung, Ort und Aufbewahrung",
-          "body": "Anwendungsdaten werden in Cloud-Infrastruktur über unsere Auftragsverarbeiter gespeichert (insbesondere Supabase). Die genauen Hosting-Regionen hängen von der Konfiguration dieses Anbieters für das GarIQ-Projekt ab.\n\n**Soft delete:** Wenn Sie Datensätze in der App löschen, markiert GarIQ sie als gelöscht (deleted_at), statt jede Zeile sofort endgültig zu entfernen. Soft-gelöschte Daten werden so lange aufbewahrt, wie es nötig ist, um die Historie gemeinsamer Garagen konsistent zu halten und das Produkt sicher zu betreiben.\n\nWir speichern Konto- und Fahrtenbuchdaten, solange Ihr Konto aktiv ist, und danach für einen angemessenen Zeitraum für Backups, Streitfälle und gesetzliche Pflichten. Absturzberichte werden gemäß den Aufbewahrungseinstellungen unseres Absturzbericht-Anbieters aufbewahrt."
+          "body": "Anwendungsdaten werden in Cloud-Infrastruktur über unsere Auftragsverarbeiter gespeichert (insbesondere Supabase). Die genauen Hosting-Regionen hängen von der Konfiguration dieses Anbieters für das GarIQ-Projekt ab.\n\n**Soft delete:** Wenn Sie Datensätze in der App löschen, markiert GarIQ sie als gelöscht (deleted_at), statt jede Zeile sofort endgültig zu entfernen. Gelöschte Daten werden innerhalb von 30 Tagen endgültig entfernt. Ein Fahrzeug, das nur inaktiv ist oder das Sie ohne Löschung übertragen haben, wird nicht entfernt.\n\nWir speichern Konto- und Fahrtenbuchdaten, solange Ihr Konto aktiv ist, und danach für einen angemessenen Zeitraum für Backups, Streitfälle und gesetzliche Pflichten. Absturzberichte werden gemäß den Aufbewahrungseinstellungen unseres Absturzbericht-Anbieters aufbewahrt."
         },
         {
           "title": "Kontolöschung und Export",
-          "body": "Sie können Ihr Konto in der GarIQ-App löschen. Die Kontolöschung soft-löscht personenbezogene Daten wo angemessen, bewahrt die Historie gemeinsamer Garagen, damit andere Mitglieder keine beschädigten Datensätze zurücklassen, und löscht Ihren Authentifizierungsnutzer, sodass Sie sich nicht mehr anmelden können.\n\nSoweit Ihr Plan Exportfunktionen umfasst, können Sie Fahrzeugdaten aus der App exportieren (z. B. PDF oder CSV) vor oder anstelle der Löschung. Die Verfügbarkeit des Exports hängt vom in der App angezeigten Plan ab — diese Erklärung wiederholt keine Planlimits."
+          "body": "Sie können Ihr Konto in der GarIQ-App löschen. Wenn Sie Ihr Konto löschen, bleiben Ereignisse, die Sie in den gemeinsamen Garagen anderer Nutzer erfasst haben, für den Eigentümer sichtbar, mit Ihrem Namen. Die Kontolöschung soft-löscht personenbezogene Daten wo angemessen, bewahrt die Historie gemeinsamer Garagen, damit andere Mitglieder keine beschädigten Datensätze zurücklassen, und löscht Ihren Authentifizierungsnutzer, sodass Sie sich nicht mehr anmelden können.\n\nSoweit Ihr Plan Exportfunktionen umfasst, können Sie Fahrzeugdaten aus der App exportieren (z. B. PDF oder CSV) vor oder anstelle der Löschung. Die Verfügbarkeit des Exports hängt vom in der App angezeigten Plan ab — diese Erklärung wiederholt keine Planlimits."
         },
         {
           "title": "Ihre Rechte und wie Sie uns kontaktieren",
