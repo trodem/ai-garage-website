@@ -278,7 +278,7 @@
       },
       {
         "title": "Deine Geschichte. Dein Format. Deine Daten.",
-        "copy": "Was in GarIQ gesammelt ist, kannst du jederzeit mitnehmen – als übersichtliches PDF zum Lesen und Teilen oder als CSV zur eigenen Weiterverarbeitung. So bleibt deine Fahrzeuggeschichte nicht nur in GarIQ: Du hast sie genau dort zur Hand, wo du sie brauchst."
+        "copy": "Unter Einstellungen → Daten lädst du auf jedem Tarif dein Fahrtenbuch als ein Zip herunter: die Datendatei (JSON) plus die Dateien, die noch gespeichert sind. Du bestätigst, wartest und teilst dann die Datei. Ein unvollständiger Download wird nicht geteilt. Bis zu drei abgeschlossene Downloads pro UTC-Tag, mit mindestens 15 Minuten Abstand."
       }
     ]
   },
@@ -371,7 +371,7 @@
       },
       {
         "title": "Timeline-Jahrexport",
-        "copy": "Exportiere ein Kalenderjahr als CSV oder PDF aus der Timeline — Basic und Advanced (Upgrade in der App)."
+        "copy": "Exportiere ein Kalenderjahr als CSV oder PDF aus der Timeline — Basic, Advanced und Development. Nicht in Free enthalten."
       },
       {
         "title": "Datenschutz",
@@ -627,6 +627,7 @@
           "Tank- & Ladevorgänge per Foto erfassen",
           "Notizen, Tanken & Laden per Chat",
           "GarIQ fragen – innerhalb deiner verfügbaren KI-Nutzungen",
+          "Fahrtenbuch aus den Einstellungen als Zip herunterladen",
           "Kein Teilen · kein Timeline-Export · keine gespeicherten Scan-Anhänge",
           "Manuelle Eingabe jederzeit möglich"
         ]
@@ -709,7 +710,7 @@
       },
       {
         "q": "Kann ich meine Daten aus GarIQ exportieren?",
-        "a": "Ja — in Basic und Advanced. Deine Fahrzeugdaten können als übersichtliches PDF oder als CSV-Datei exportiert werden. So kannst du deine Informationen lesen, teilen oder für die eigene Weiterverarbeitung nutzen. Der Timeline-Jahrexport ist in Free nicht enthalten."
+        "a": "Ja. Unter Einstellungen → Daten bestätigst du auf jedem Tarif, wartest und teilst dann ein Zip deines Fahrtenbuchs: die Datendatei (JSON) plus die Dateien, die noch gespeichert sind. Ein unvollständiger Download wird nicht geteilt. Du kannst bis zu drei dieser Downloads pro UTC-Tag abschließen, mit mindestens 15 Minuten Abstand.\n\nEin separater Timeline-Jahrexport als CSV oder PDF ist in Basic, Advanced und Development enthalten. In Free ist er nicht enthalten."
       },
       {
         "q": "Kann ich sehen, wie viel mein Fahrzeug wirklich kostet?",
@@ -806,7 +807,7 @@
         },
         {
           "title": "Kontolöschung und Export",
-          "body": "Sie können Ihr Konto in der GarIQ-App löschen. Wenn Sie Ihr Konto löschen, bleiben Ereignisse, die Sie in den gemeinsamen Garagen anderer Nutzer erfasst haben, für den Eigentümer sichtbar, mit Ihrem Namen. Die Kontolöschung soft-löscht personenbezogene Daten wo angemessen, bewahrt die Historie gemeinsamer Garagen, damit andere Mitglieder keine beschädigten Datensätze zurücklassen, und löscht Ihren Authentifizierungsnutzer, sodass Sie sich nicht mehr anmelden können.\n\nSoweit Ihr Plan Exportfunktionen umfasst, können Sie Fahrzeugdaten aus der App exportieren (z. B. PDF oder CSV) vor oder anstelle der Löschung. Die Verfügbarkeit des Exports hängt vom in der App angezeigten Plan ab — diese Erklärung wiederholt keine Planlimits."
+          "body": "Sie können Ihr Konto in der GarIQ-App löschen. Wenn Sie Ihr Konto löschen, bleiben Ereignisse, die Sie in den gemeinsamen Garagen anderer Nutzer erfasst haben, für den Eigentümer sichtbar, mit Ihrem Namen. Die Kontolöschung soft-löscht personenbezogene Daten wo angemessen, bewahrt die Historie gemeinsamer Garagen, damit andere Mitglieder keine beschädigten Datensätze zurücklassen, und löscht Ihren Authentifizierungsnutzer, sodass Sie sich nicht mehr anmelden können.\n\nUnter Einstellungen → Daten können Sie Ihr Fahrtenbuch auf jedem Tarif herunterladen, vor oder anstelle der Löschung: ein Zip mit der Datendatei (JSON) und den Dateien, die noch gespeichert sind. Ein unvollständiger Download wird nicht geteilt. Sie können bis zu drei dieser Downloads pro UTC-Tag abschließen, mit mindestens 15 Minuten Abstand. Ein separater Timeline-Jahrexport als CSV oder PDF ist in Basic, Advanced und Development enthalten und in Free nicht enthalten."
         },
         {
           "title": "Ihre Rechte und wie Sie uns kontaktieren",

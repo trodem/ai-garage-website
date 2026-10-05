@@ -278,7 +278,7 @@
       },
       {
         "title": "La tua storia. Il tuo formato. I tuoi dati.",
-        "copy": "Quello che è raccolto in GarIQ lo puoi portare con te in qualsiasi momento — come PDF chiaro da leggere e condividere, o come CSV per lavorarlo tu. Così la storia del veicolo non resta solo in GarIQ: ce l'hai dove ti serve."
+        "copy": "Da Impostazioni → Dati, su ogni piano, scarichi il libretto in un solo zip: il file dei dati (JSON) più i file ancora presenti. Confermi, aspetti, poi condividi il file. Uno scaricamento incompleto non viene condiviso. Fino a tre scaricamenti completati per giorno UTC, con almeno 15 minuti tra uno e l'altro."
       }
     ]
   },
@@ -371,7 +371,7 @@
       },
       {
         "title": "Export timeline per anno",
-        "copy": "Esporta un anno di eventi in CSV o PDF dalla Timeline — piani Basic e Advanced (upgrade nell'app)."
+        "copy": "Esporta un anno di eventi in CSV o PDF dalla Timeline — piani Basic, Advanced e Development. Non incluso nel Free."
       },
       {
         "title": "Privacy",
@@ -627,6 +627,7 @@
           "Rifornimenti e ricariche da foto",
           "Note, rifornimento e ricarica in chat",
           "Chiedi a GarIQ — entro gli utilizzi IA disponibili",
+          "Scarica il libretto da Impostazioni come zip",
           "Niente condivisione · niente export timeline · niente allegati scan salvati",
           "Inserimento manuale sempre possibile"
         ]
@@ -709,7 +710,7 @@
       },
       {
         "q": "Posso esportare i dati da GarIQ?",
-        "a": "Sì — su Basic e Advanced. I dati del veicolo si possono esportare come PDF chiaro o come file CSV. Così li leggi, li condividi o li lavori tu. L'export timeline per anno non è incluso nel Free."
+        "a": "Sì. In Impostazioni → Dati, su ogni piano, confermi, aspetti e poi condividi un solo zip del libretto: il file dei dati (JSON) più i file ancora presenti. Uno scaricamento incompleto non viene condiviso. Puoi completare fino a tre di questi scaricamenti per giorno UTC, con almeno 15 minuti tra uno e l'altro.\n\nL'export della Timeline per anno, in CSV o PDF, è incluso in Basic, Advanced e Development. Non è incluso nel Free."
       },
       {
         "q": "Posso vedere quanto mi costa davvero il veicolo?",
@@ -806,7 +807,7 @@
         },
         {
           "title": "Cancellazione dell’account ed esportazione",
-          "body": "Può eliminare l’account dall’interno dell’app GarIQ. Se cancella il Suo account, gli eventi che ha registrato nei garage condivisi di altri utenti restano visibili al proprietario, con il Suo nome. La cancellazione dell’account soft-elimina i dati personali ove appropriato, preserva la cronologia dei garage condivisi affinché gli altri membri non restino con record corrotti, ed elimina l’utente di autenticazione così che non possa più accedere.\n\nOve il Suo piano includa funzioni di esportazione, può esportare i dati del veicolo dall’app (ad esempio PDF o CSV) prima o al posto della cancellazione. La disponibilità dell’export dipende dal piano mostrato nell’app — la presente informativa non ripete i limiti di piano."
+          "body": "Può eliminare l’account dall’interno dell’app GarIQ. Se cancella il Suo account, gli eventi che ha registrato nei garage condivisi di altri utenti restano visibili al proprietario, con il Suo nome. La cancellazione dell’account soft-elimina i dati personali ove appropriato, preserva la cronologia dei garage condivisi affinché gli altri membri non restino con record corrotti, ed elimina l’utente di autenticazione così che non possa più accedere.\n\nDa Impostazioni → Dati può scaricare il libretto su ogni piano, prima o al posto della cancellazione: un solo zip con il file dei dati (JSON) e i file ancora presenti. Uno scaricamento incompleto non viene condiviso. Può completare fino a tre di questi scaricamenti per giorno UTC, con almeno 15 minuti tra uno e l’altro. L’export della Timeline per anno, in CSV o PDF, è incluso in Basic, Advanced e Development, e non è incluso nel Free."
         },
         {
           "title": "I Suoi diritti e come contattarci",
