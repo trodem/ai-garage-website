@@ -371,7 +371,7 @@
       },
       {
         "title": "Export timeline per anno",
-        "copy": "Esporta un anno di eventi in CSV o PDF dalla Timeline — piani Basic, Advanced e Development. Non incluso nel Free."
+        "copy": "Esporta un anno di eventi in PDF dalla Timeline — piani Basic, Advanced e Development. Non incluso nel Free."
       },
       {
         "title": "Privacy",
@@ -647,7 +647,7 @@
           "Registra informazioni con foto, PDF o chat",
           "Smart Scan & Smart Insert",
           "Gestione documenti con IA per il tuo veicolo",
-          "Esporta la storia del veicolo come PDF o CSV",
+          "Esporta la storia del veicolo come PDF",
           "Tieni foto e PDF originali sugli eventi"
         ]
       },
@@ -710,7 +710,7 @@
       },
       {
         "q": "Posso esportare i dati da GarIQ?",
-        "a": "Sì. In Impostazioni → Dati, su ogni piano, confermi, aspetti e poi condividi un solo zip del libretto: il file dei dati (JSON) più i file ancora presenti. Uno scaricamento incompleto non viene condiviso. Puoi completare fino a tre di questi scaricamenti per giorno UTC, con almeno 15 minuti tra uno e l'altro.\n\nL'export della Timeline per anno, in CSV o PDF, è incluso in Basic, Advanced e Development. Non è incluso nel Free."
+        "a": "Sì. In Impostazioni → Dati, su ogni piano, confermi, aspetti e poi condividi un solo zip del libretto: il file dei dati (JSON) più i file ancora presenti. Uno scaricamento incompleto non viene condiviso. Puoi completare fino a tre di questi scaricamenti per giorno UTC, con almeno 15 minuti tra uno e l'altro.\n\nL'export della Timeline per anno, in PDF, è incluso in Basic, Advanced e Development. Non è incluso nel Free."
       },
       {
         "q": "Posso vedere quanto mi costa davvero il veicolo?",
@@ -774,7 +774,7 @@
       "metaTitle": "Informativa sulla privacy — GarIQ",
       "metaDescription": "Come GarIQ tratta i dati di account, veicoli e documenti; bozze AI che Lei conferma; responsabili del trattamento; conservazione; e i Suoi diritti.",
       "title": "Informativa sulla privacy",
-      "updated": "2026-10-03",
+      "updated": "2026-10-06",
       "intro": "La presente Informativa sulla privacy spiega come **GarIQ** (l’app mobile e questo sito) tratta i dati personali. Descrive il prodotto così come è rilasciato oggi. Ciò che non è elencato qui non è da noi rivendicato.",
       "sections": [
         {
@@ -807,7 +807,7 @@
         },
         {
           "title": "Cancellazione dell’account ed esportazione",
-          "body": "Può eliminare l’account dall’interno dell’app GarIQ. Se cancella il Suo account, gli eventi che ha registrato nei garage condivisi di altri utenti restano visibili al proprietario, con il Suo nome. La cancellazione dell’account soft-elimina i dati personali ove appropriato, preserva la cronologia dei garage condivisi affinché gli altri membri non restino con record corrotti, ed elimina l’utente di autenticazione così che non possa più accedere.\n\nDa Impostazioni → Dati può scaricare il libretto su ogni piano, prima o al posto della cancellazione: un solo zip con il file dei dati (JSON) e i file ancora presenti. Uno scaricamento incompleto non viene condiviso. Può completare fino a tre di questi scaricamenti per giorno UTC, con almeno 15 minuti tra uno e l’altro. L’export della Timeline per anno, in CSV o PDF, è incluso in Basic, Advanced e Development, e non è incluso nel Free."
+          "body": "Può eliminare l’account dall’interno dell’app GarIQ. Se cancella il Suo account, gli eventi che ha registrato nei garage condivisi di altri utenti restano visibili al proprietario, con il Suo nome. La cancellazione dell’account soft-elimina i dati personali ove appropriato, preserva la cronologia dei garage condivisi affinché gli altri membri non restino con record corrotti, ed elimina l’utente di autenticazione così che non possa più accedere.\n\nDa Impostazioni → Dati può scaricare il libretto su ogni piano, prima o al posto della cancellazione: un solo zip con il file dei dati (JSON) e i file ancora presenti. Uno scaricamento incompleto non viene condiviso. Può completare fino a tre di questi scaricamenti per giorno UTC, con almeno 15 minuti tra uno e l’altro. L’export della Timeline per anno, in PDF, è incluso in Basic, Advanced e Development, e non è incluso nel Free."
         },
         {
           "title": "I Suoi diritti e come contattarci",

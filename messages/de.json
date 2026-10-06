@@ -371,7 +371,7 @@
       },
       {
         "title": "Timeline-Jahrexport",
-        "copy": "Exportiere ein Kalenderjahr als CSV oder PDF aus der Timeline — Basic, Advanced und Development. Nicht in Free enthalten."
+        "copy": "Exportiere ein Kalenderjahr als PDF aus der Timeline — Basic, Advanced und Development. Nicht in Free enthalten."
       },
       {
         "title": "Datenschutz",
@@ -647,7 +647,7 @@
           "Informationen per Foto, PDF oder Chat erfassen",
           "Smart Scan & Smart Insert",
           "KI-gestützte Dokumentenverwaltung für dein Fahrzeug",
-          "Fahrzeuggeschichte als PDF oder CSV exportieren",
+          "Fahrzeuggeschichte als PDF exportieren",
           "Originalfotos und PDFs direkt bei den Ereignissen behalten"
         ]
       },
@@ -710,7 +710,7 @@
       },
       {
         "q": "Kann ich meine Daten aus GarIQ exportieren?",
-        "a": "Ja. Unter Einstellungen → Daten bestätigst du auf jedem Tarif, wartest und teilst dann ein Zip deines Fahrtenbuchs: die Datendatei (JSON) plus die Dateien, die noch gespeichert sind. Ein unvollständiger Download wird nicht geteilt. Du kannst bis zu drei dieser Downloads pro UTC-Tag abschließen, mit mindestens 15 Minuten Abstand.\n\nEin separater Timeline-Jahrexport als CSV oder PDF ist in Basic, Advanced und Development enthalten. In Free ist er nicht enthalten."
+        "a": "Ja. Unter Einstellungen → Daten bestätigst du auf jedem Tarif, wartest und teilst dann ein Zip deines Fahrtenbuchs: die Datendatei (JSON) plus die Dateien, die noch gespeichert sind. Ein unvollständiger Download wird nicht geteilt. Du kannst bis zu drei dieser Downloads pro UTC-Tag abschließen, mit mindestens 15 Minuten Abstand.\n\nEin separater Timeline-Jahrexport als PDF ist in Basic, Advanced und Development enthalten. In Free ist er nicht enthalten."
       },
       {
         "q": "Kann ich sehen, wie viel mein Fahrzeug wirklich kostet?",
@@ -774,7 +774,7 @@
       "metaTitle": "Datenschutzerklärung — GarIQ",
       "metaDescription": "Wie GarIQ Konto-, Fahrzeug- und Dokumentendaten verarbeitet; KI-Entwürfe, die Sie bestätigen; Auftragsverarbeiter; Aufbewahrung; und Ihre Rechte.",
       "title": "Datenschutzerklärung",
-      "updated": "2026-10-03",
+      "updated": "2026-10-06",
       "intro": "Diese Datenschutzerklärung erläutert, wie **GarIQ** (die mobile App und diese Website) personenbezogene Daten verarbeitet. Sie beschreibt das Produkt so, wie es heute ausgeliefert wird. Was hier nicht genannt ist, beanspruchen wir nicht.",
       "sections": [
         {
@@ -807,7 +807,7 @@
         },
         {
           "title": "Kontolöschung und Export",
-          "body": "Sie können Ihr Konto in der GarIQ-App löschen. Wenn Sie Ihr Konto löschen, bleiben Ereignisse, die Sie in den gemeinsamen Garagen anderer Nutzer erfasst haben, für den Eigentümer sichtbar, mit Ihrem Namen. Die Kontolöschung soft-löscht personenbezogene Daten wo angemessen, bewahrt die Historie gemeinsamer Garagen, damit andere Mitglieder keine beschädigten Datensätze zurücklassen, und löscht Ihren Authentifizierungsnutzer, sodass Sie sich nicht mehr anmelden können.\n\nUnter Einstellungen → Daten können Sie Ihr Fahrtenbuch auf jedem Tarif herunterladen, vor oder anstelle der Löschung: ein Zip mit der Datendatei (JSON) und den Dateien, die noch gespeichert sind. Ein unvollständiger Download wird nicht geteilt. Sie können bis zu drei dieser Downloads pro UTC-Tag abschließen, mit mindestens 15 Minuten Abstand. Ein separater Timeline-Jahrexport als CSV oder PDF ist in Basic, Advanced und Development enthalten und in Free nicht enthalten."
+          "body": "Sie können Ihr Konto in der GarIQ-App löschen. Wenn Sie Ihr Konto löschen, bleiben Ereignisse, die Sie in den gemeinsamen Garagen anderer Nutzer erfasst haben, für den Eigentümer sichtbar, mit Ihrem Namen. Die Kontolöschung soft-löscht personenbezogene Daten wo angemessen, bewahrt die Historie gemeinsamer Garagen, damit andere Mitglieder keine beschädigten Datensätze zurücklassen, und löscht Ihren Authentifizierungsnutzer, sodass Sie sich nicht mehr anmelden können.\n\nUnter Einstellungen → Daten können Sie Ihr Fahrtenbuch auf jedem Tarif herunterladen, vor oder anstelle der Löschung: ein Zip mit der Datendatei (JSON) und den Dateien, die noch gespeichert sind. Ein unvollständiger Download wird nicht geteilt. Sie können bis zu drei dieser Downloads pro UTC-Tag abschließen, mit mindestens 15 Minuten Abstand. Ein separater Timeline-Jahrexport als PDF ist in Basic, Advanced und Development enthalten und in Free nicht enthalten."
         },
         {
           "title": "Ihre Rechte und wie Sie uns kontaktieren",

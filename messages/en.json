@@ -371,7 +371,7 @@
       },
       {
         "title": "Timeline year export",
-        "copy": "Export a calendar year of events as CSV or PDF from Timeline — Basic, Advanced, and Development. Not included on Free."
+        "copy": "Export a calendar year of events as PDF from Timeline — Basic, Advanced, and Development. Not included on Free."
       },
       {
         "title": "Privacy by design",
@@ -647,7 +647,7 @@
           "Capture information by photo, PDF or chat",
           "Smart Scan & Smart Insert",
           "AI-supported document management for your vehicle",
-          "Export vehicle history as PDF or CSV",
+          "Export vehicle history as PDF",
           "Keep original photos and PDFs on the events"
         ]
       },
@@ -710,7 +710,7 @@
       },
       {
         "q": "Can I export my data from GarIQ?",
-        "a": "Yes. In Settings → Data, on every plan, you confirm, wait, and then share one zip of your logbook: the data file (JSON) plus the files still stored with it. An incomplete download is not shared. You can finish up to three of these downloads per UTC day, with at least 15 minutes between them.\n\nA separate Timeline year export, as CSV or PDF, is included on Basic, Advanced, and Development. It is not included on Free."
+        "a": "Yes. In Settings → Data, on every plan, you confirm, wait, and then share one zip of your logbook: the data file (JSON) plus the files still stored with it. An incomplete download is not shared. You can finish up to three of these downloads per UTC day, with at least 15 minutes between them.\n\nA separate Timeline year export, as PDF, is included on Basic, Advanced, and Development. It is not included on Free."
       },
       {
         "q": "Can I see how much my vehicle really costs?",
@@ -774,7 +774,7 @@
       "metaTitle": "Privacy Policy — GarIQ",
       "metaDescription": "How GarIQ processes account, vehicle, and document data; AI drafts you confirm; processors; retention; and your rights.",
       "title": "Privacy Policy",
-      "updated": "2026-10-03",
+      "updated": "2026-10-06",
       "intro": "This Privacy Policy explains how **GarIQ** (the mobile app and this website) processes personal data. It describes the product as it ships today. If something is not listed here, we do not claim to do it.",
       "sections": [
         {
@@ -807,7 +807,7 @@
         },
         {
           "title": "Account deletion and export",
-          "body": "You can delete your account from inside the GarIQ app. If you delete your account, events you logged in other people’s shared garages remain visible to the owner, with your name. Account deletion soft-deletes personal data where appropriate, preserves shared-garage history so other members are not left with broken records, and deletes your authentication user so you can no longer sign in.\n\nFrom Settings → Data you can download your logbook on every plan, before or instead of deletion: one zip with the data file (JSON) and the files still stored with it. An incomplete download is not shared. You can finish up to three of these downloads per UTC day, with at least 15 minutes between them. A separate Timeline year export as CSV or PDF is included on Basic, Advanced, and Development, and is not included on Free."
+          "body": "You can delete your account from inside the GarIQ app. If you delete your account, events you logged in other people’s shared garages remain visible to the owner, with your name. Account deletion soft-deletes personal data where appropriate, preserves shared-garage history so other members are not left with broken records, and deletes your authentication user so you can no longer sign in.\n\nFrom Settings → Data you can download your logbook on every plan, before or instead of deletion: one zip with the data file (JSON) and the files still stored with it. An incomplete download is not shared. You can finish up to three of these downloads per UTC day, with at least 15 minutes between them. A separate Timeline year export as PDF is included on Basic, Advanced, and Development, and is not included on Free."
         },
         {
           "title": "Your rights and how to contact us",
