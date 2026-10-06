@@ -279,6 +279,10 @@
       {
         "title": "La tua storia. Il tuo formato. I tuoi dati.",
         "copy": "Da Impostazioni → Dati, su ogni piano, scarichi il libretto in un solo zip: il file dei dati (JSON) più i file ancora presenti. Confermi, aspetti, poi condividi il file. Uno scaricamento incompleto non viene condiviso. Fino a tre scaricamenti completati per giorno UTC, con almeno 15 minuti tra uno e l'altro."
+      },
+      {
+        "title": "Incidente? Cosa fare",
+        "copy": "Nella Home, auto, furgone, camion, moto, scooter e camper hanno il pulsante Incidente. Apre una guida a passi e i numeri di emergenza: 112 ovunque, poi Svizzera — 117 polizia, 144 ambulanza, 118 pompieri. Se hai già inserito una polizza con il telefono assistenza, la guida mostra anche quel numero di polizza e quel telefono. Indicazioni generali, non consulenza legale."
       }
     ]
   },
@@ -751,6 +755,10 @@
       {
         "q": "Perché GarIQ invece di note, Excel o una cartella?",
         "a": "Perché i dati non restano sparsi. GarIQ unisce informazioni, documenti, eventi, statistiche e storia in un posto — e le rende più facili da consultare, condividere e usare."
+      },
+      {
+        "q": "Cosa fa la guida Incidente?",
+        "a": "Nella Home di un'auto, un furgone, un camion, una moto, uno scooter o un camper, il pulsante Incidente apre una guida numerata: i passi da seguire, i numeri di emergenza (112 e, per la Svizzera, 117, 144 e 118) e, se hai già inserito una polizza con il telefono assistenza, il numero di polizza e quel telefono. Indicazioni generali, non consulenza legale. Segui le istruzioni delle autorità."
       }
     ]
   },

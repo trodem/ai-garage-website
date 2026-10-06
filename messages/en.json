@@ -279,6 +279,10 @@
       {
         "title": "Your story. Your format. Your data.",
         "copy": "From Settings → Data, on every plan, you download your logbook as one zip: the data file (JSON) plus the files still stored with it. You confirm, wait, then share the file. An incomplete download is not shared. Up to three completed downloads per UTC day, with at least 15 minutes between them."
+      },
+      {
+        "title": "Accident? What to do",
+        "copy": "On Home, a car, van, truck, motorcycle, scooter, or camper has an Accident button. It opens a step-by-step guide and emergency numbers: 112 everywhere, then Switzerland — 117 police, 144 ambulance, 118 fire. If you already entered a policy with an assistance phone, the guide also shows that policy number and phone. General guidance, not legal advice."
       }
     ]
   },
@@ -751,6 +755,10 @@
       {
         "q": "Why should I use GarIQ instead of notes, Excel or a folder?",
         "a": "Because your vehicle data is then no longer scattered across different places. GarIQ connects information, documents, events, statistics and the vehicle history in one place — and makes that information easier to access, share and use."
+      },
+      {
+        "q": "What does the Accident guide do?",
+        "a": "On Home for a car, van, truck, motorcycle, scooter, or camper, the Accident button opens a numbered guide: steps to follow, emergency numbers (112, and for Switzerland 117, 144, and 118), and — when a policy with an assistance phone is already entered — that policy number and phone. General guidance, not legal advice. Follow the authorities' instructions."
       }
     ]
   },

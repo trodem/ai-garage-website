@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import type { Icon as TablerIcon } from "@tabler/icons-react";
 import {
+  IconCarCrash,
   IconChartBar,
   IconDroplet,
   IconFileExport,
@@ -19,6 +20,7 @@ const PROBLEM_ICONS: TablerIcon[] = [
   IconChartBar,
   IconDroplet,
   IconFileExport,
+  IconCarCrash,
 ];
 
 export default async function ProblemSection() {
