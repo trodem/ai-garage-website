@@ -282,7 +282,7 @@
       },
       {
         "title": "Unfall? Was tun",
-        "copy": "Auf der Home haben Pkw, Van, Lastwagen, Motorrad, Roller und Wohnmobil einen Unfall-Button. Er öffnet eine Anleitung in Schritten und Notrufnummern: 112 überall, dann Schweiz — 117 Polizei, 144 Ambulanz, 118 Feuerwehr. Wenn du schon eine Police mit Assistance-Telefon eingetragen hast, zeigt die Anleitung auch diese Policennummer und dieses Telefon. Allgemeine Hinweise, keine Rechtsberatung."
+        "copy": "Auf der Home haben Pkw, Van, Lastwagen, Motorrad, Roller und Wohnmobil einen Unfall-Button. Er öffnet eine Anleitung in Schritten und die Notrufnummer 112. Allgemeine Hinweise, keine Rechtsberatung."
       }
     ]
   },
@@ -758,7 +758,7 @@
       },
       {
         "q": "Was macht die Unfall-Anleitung?",
-        "a": "Auf der Home von Pkw, Van, Lastwagen, Motorrad, Roller und Wohnmobil öffnet der Unfall-Button eine nummerierte Anleitung: Schritte zum Befolgen, Notrufnummern (112 und, für die Schweiz, 117, 144 und 118) und, wenn du schon eine Police mit Assistance-Telefon eingetragen hast, die Policennummer und dieses Telefon. Allgemeine Hinweise, keine Rechtsberatung. Folge den Anweisungen der Behörden."
+        "a": "Auf der Home von Pkw, Van, Lastwagen, Motorrad, Roller und Wohnmobil öffnet der Unfall-Button eine nummerierte Anleitung: Schritte zum Befolgen und die Notrufnummer 112. Allgemeine Hinweise, keine Rechtsberatung. Folge den Anweisungen der Behörden."
       }
     ]
   },
